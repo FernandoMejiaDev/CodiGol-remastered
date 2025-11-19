@@ -21,6 +21,10 @@ import evaluateAnswer from "../utils/evaluateAnswer";
 import { useNavigate } from "react-router-dom";
 import { navigateToNextPhase } from "../utils/navigateToNextPhase";
 
+// react-toastify Alert
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+
 const defaultCode = `
 <div class=" text-xs text-white ">
 Hola Tailwind
@@ -76,6 +80,18 @@ const Training = () => {
 
   return (
     <div className="relative w-full h-dvh">
+
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={true}
+        closeOnClick={false}
+        pauseOnHover={false}
+        theme="dark"
+        limit={1}
+      />
+
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
         style={{ backgroundImage: `url(${trainingFund})` }}
@@ -129,9 +145,7 @@ const Training = () => {
 
                       //Function to verify exercise as player response
                       if (isCorrect) {
-                        alert(
-                          "¡Golazo! 🎯 ¡Has dominado la técnica! Sigue así y anotarás más goles. ¡Vamos por el siguiente ejercicio! ⚽"
-                        );
+                        toast.success("¡Golazo! 🎯 ¡Has dominado la técnica! Sigue así y anotarás más goles. ⚽");
 
                         if (currentExerciseIndex < exercises.length - 1) {
                           // next exercise
@@ -139,14 +153,13 @@ const Training = () => {
                           setCode(defaultCode); // The code is reset when moving to the next exercise
                         } else {
                           // SWhen the exercises are finished, the coach congratulates you and you move on to the next phase of the game, which is the actual match.
-                          alert(
-                            "¡Bien! 🏆 ¡Has completado todos los ejercicios y dominado las técnicas! Ahora prepárate para el partido real. ¡A ganar! ⚽"
-                          );
+
+                          toast.success("¡Bien! 🏆 ¡Has completado todos los ejercicios y dominado las técnicas! Ahora prepárate para el partido real. ¡A ganar! ⚽");
 
                           handleFinishLevel(); //directional button to other phases
                         }
                       } else {
-                        alert(
+                        toast.error(
                           "¡Casi! ❌ No te preocupes, sigue practicando. Recuerda, la técnica es clave. Vuelve a revisar y corrige el error. ¡La próxima vez será gol! ⚽"
                         );
                       }
@@ -157,7 +170,7 @@ const Training = () => {
 
                 </div>
 
-                <div className="bg-neutral-950 text-lg p-2 flex flex-col gap-2 text-slate-100 border rounded-2xl items-start">
+                <div className="flex flex-col items-start gap-2 p-2 text-lg border bg-neutral-950 text-slate-100 rounded-2xl">
                   <strong>Entrenador dice:</strong>
 
                   <p>{currentExercise.prompt}</p>
