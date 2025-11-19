@@ -59,7 +59,7 @@ const Navigation = () => {
         <div
           src={MobileMenu}
           alt="Mobile Menu"
-          className="absolute z-10 w-16 h-16 cursor-pointer text-neutral-950 top-5 left-5"
+          className="absolute z-10 w-16 h-16 cursor-pointer top-5 left-5"
           onClick={toggleMenu}
         >
           <MobileMenu />

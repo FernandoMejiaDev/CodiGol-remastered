@@ -17,7 +17,7 @@ const MatchPresentation = () => {
   const matchData = MatchPresentationData.find(
     (match) => match.level === currentLevel
   );
-
+  
   useEffect(() => {
     const timeout = setTimeout(() => {
       navigateToNextPhase("MatchPresentation", navigate);
@@ -40,14 +40,14 @@ const MatchPresentation = () => {
         style={{ backgroundImage: `url(${Background})` }}
       ></div>
 
-      <div className="grid items-center justify-center grid-cols-5">
-        <div className="relative z-20 h-full">
+      <div className="flex flex-row h-full">
+        <div className="relative z-20 h-full text-slate-100">
           <Navigation />
         </div>
 
         {/* <ModalSize className="absolute" /> */}
 
-        <div className="relative flex flex-col h-dvh col-span-4 text-center text-white">
+        <div className="relative flex flex-col items-center justify-center flex-1 h-full p-4 text-center text-white">
           <h1 className="text-6xl font-bold drop-shadow-lg">Liga Full Stack</h1>
 
           <h1 className="mt-4 text-5xl font-bold drop-shadow-lg">45:00</h1>

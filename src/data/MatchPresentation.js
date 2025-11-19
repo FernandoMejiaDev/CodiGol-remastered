@@ -9,7 +9,7 @@ const MatchPresentation = [
     level: 1,
     Marker: "02",
     Rivalimg: GemRubies,
-    RivalsName: "GemRubies"
+    RivalsName: "Gem Rubies"
   },
    {
     id: 2,
