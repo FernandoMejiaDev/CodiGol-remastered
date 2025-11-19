@@ -32,7 +32,7 @@ export default function Timer({ onTimeOut, resetTrigger  }) {
   }, [onTimeOut, resetTrigger]);
 
   return (
-    <div className="top-0 right-0 absolute bg-black rounded-2xl text-white grid auto-cols-max grid-flow-col gap-5 text-center">
+    <div className="top-0 right-0 absolute m-2 bg-black rounded-2xl text-white grid auto-cols-max grid-flow-col gap-5 text-center">
       <div className="flex flex-col p-2">
         <span className="countdown font-mono text-5xl">
           <span>{String(remainingTime.minutes).padStart(2, "0")}</span>

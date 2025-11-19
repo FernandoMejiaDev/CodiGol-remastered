@@ -27,6 +27,10 @@ import { navigateToNextPhase } from "../utils/navigateToNextPhase";
 
 import { useGame } from "../context/GameContext"; // Collect match results
 
+// react-toastify Alert
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+
 const defaultCode = `
 <div class="">
   Hola Tailwind!
@@ -67,7 +71,7 @@ const Game = () => {
       resizer.addEventListener("mousedown", startResize);
     }
 
-    // Mostrar el editor directamente al cargar el componente del partido
+    // Display the editor directly when loading the match component
     setShowEditor(true);
 
     return () => {
@@ -129,21 +133,34 @@ const Game = () => {
   }, []);
 
   return (
+
     <div className="relative w-full h-dvh">
+
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={true}
+        closeOnClick={false}
+        pauseOnHover={false}
+        theme="dark"
+        limit={1}
+      />
+
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
         style={{ backgroundImage: `url(${TestFund})` }}
       ></div>
 
-      <div className="flex h-dvh gap-4 ">
+      <div className="flex h-full ">
         <div
           style={{ width: previewWidth }}
-          className="relative h-[85%] mt-32 "
+          className="relative h-[85%] mt-32 p-1"
         >
           <Preview code={code} setCode={setCode} />
         </div>
 
-        <div style={{ width: previewWidth }} className="absolute ">
+        <div style={{ width: previewWidth }} className="absolute text-slate-100">
           <Navigation />
         </div>
 
@@ -154,7 +171,7 @@ const Game = () => {
           className="relative w-2 bg-yellow-500 cursor-col-resize hover:bg-yellow-700"
         ></div>
 
-        <div className="relative flex flex-col justify-end flex-1 h-dvh">
+        <div className="relative flex flex-col justify-end flex-1 h-full px-1">
           <div className="bottom-0 w-full ">
             {/* Scene sequence: coach's dialogue, exercise */}
           </div>
@@ -182,16 +199,8 @@ const Game = () => {
 
           {showEditor && (
             <>
-              <div className="z-20 flex flex-col justify-center w-full h-full max-w-4xl gap-2 ">
+              <div className="z-20 flex flex-col justify-center w-full h-full max-w-4xl gap-2 mt-16">
                 <div className="flex flex-row w-full">
-                  <button
-                    className="max-w-[20rem] p-2 font-bold text-white bg-yellow-600 rounded  hover:bg-yellow-700"
-                    onClick={() => setShowExplanation(!showExplanation)}
-                  >
-                    {showExplanation
-                      ? "Ocultar Ejercicio"
-                      : "Mostrar Ejercicio"}
-                  </button>
 
                   <button
                     className="max-w-[20rem] p-2 font-bold text-white bg-sky-600 rounded  hover:bg-sky-700"
@@ -200,10 +209,12 @@ const Game = () => {
 
                       //Function to verify exercise as player response
                       if (isCorrect) {
-                        alert("¡Golazo! 🎯 Haz anotado un ¡Golazo!⚽");
+                        toast.success(
+                          "¡Golazo! 🎯 Haz anotado un ¡Golazo!⚽"
+                        );
                         handleCorrectAnswer();
                       } else {
-                        alert(
+                        toast.error(
                           "¡Casi! ❌ Haz fallado el tiro ¡La próxima vez será gol! ⚽"
                         );
                         nextExercise();
@@ -218,12 +229,11 @@ const Game = () => {
                   </button>
                 </div>
 
-                {showExplanation && (
-                  <div className="w-full max-w-xl p-4 mt-2 text-black bg-white rounded-lg shadow-xl max-h-40">
-                    <strong>Para anotar:</strong>
-                    <p>{currentExercise.prompt}</p>
-                  </div>
-                )}
+                <div className="flex flex-col items-start gap-2 p-2 text-base border bg-neutral-950 text-slate-100 rounded-2xl">
+                  <strong>Para anotar:</strong>
+                  <p>{currentExercise.prompt}</p>
+                </div>
+
                 <Editor code={code} setCode={setCode} />
               </div>
             </>
