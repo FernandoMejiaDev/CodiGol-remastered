@@ -18,6 +18,7 @@
     "react-router-dom": "^7.1.5",
     "react-scripts": "^5.0.0",
     "react-tech-slider": "^1.8.21",
+    "react-toastify": "^11.0.5",
     "tailwindcss": "^3.0.0"
   },
   "browserslist": {
