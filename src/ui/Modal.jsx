@@ -25,7 +25,7 @@ const Modal = () => {
 
       {/* Modal */}
       {isOpen && (
-        <div className="fixed inset-0 z-10 flex items-center justify-center bg-black bg-opacity-30">
+        <div className="fixed inset-0 z-10 flex items-center justify-center p-6 bg-black bg-opacity-30">
           <div className="relative w-full p-6 bg-white text-black rounded-lg shadow-lg max-w-[60rem]">
             <button
               onClick={toggleModal}
@@ -66,7 +66,7 @@ const Modal = () => {
               >
                 Hackathon de miduDev 2025
               </a>
-              . Solo el primer partido está disponible.
+              . Solo los primeros 3 partidos están disponible.
               <br />
               <br />
               Este proyecto usa <strong>React</strong>,{" "}

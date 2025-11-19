@@ -13,7 +13,7 @@ const Modal = ({ isOpen, toggleModal }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-30">
+    <div className="fixed inset-0 z-50 flex items-center justify-center  bg-black bg-opacity-30">
       <div className="relative w-full p-6 bg-white text-black rounded-lg shadow-lg max-w-[60rem] m-4">
         <button
           onClick={toggleModal}
@@ -48,7 +48,7 @@ const Modal = ({ isOpen, toggleModal }) => {
           >
             Hackathon de miduDev 2025
           </a>
-          . Solo el primer partido está disponible.
+          . Solo los primeros 3 partidos están disponible.
           <br />
           <br />
           Este proyecto usa <strong>React</strong>,{" "}
