@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3b51b3bf.css",
-    "main.js": "/static/js/main.9afe23c8.js",
+    "main.css": "/static/css/main.9d1c36b4.css",
+    "main.js": "/static/js/main.3e358d7b.js",
     "static/media/ExerciseFund.webp": "/static/media/ExerciseFund.f8178d29202bbf1af3f7.webp",
     "static/media/TestFund.webp": "/static/media/TestFund.ad054efe30837f7eb692.webp",
     "static/media/BankingFund.webp": "/static/media/BankingFund.09908ca7e45ddb6aad2e.webp",
@@ -22,13 +22,12 @@
     "static/media/KnightCoders.webp": "/static/media/KnightCoders.7802d6782debe7afc598.webp",
     "static/media/TrainerPose1.webp": "/static/media/TrainerPose1.f19c181e6ec0c1b58c8d.webp",
     "static/media/RivalGoalkeeper.webp": "/static/media/RivalGoalkeeper.26ddc1d9038643c06138.webp",
-    "static/media/MobileMenu.webp": "/static/media/MobileMenu.b9c2e010d8b9c09d5d25.webp",
     "index.html": "/index.html",
-    "main.3b51b3bf.css.map": "/static/css/main.3b51b3bf.css.map",
-    "main.9afe23c8.js.map": "/static/js/main.9afe23c8.js.map"
+    "main.9d1c36b4.css.map": "/static/css/main.9d1c36b4.css.map",
+    "main.3e358d7b.js.map": "/static/js/main.3e358d7b.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b51b3bf.css",
-    "static/js/main.9afe23c8.js"
+    "static/css/main.9d1c36b4.css",
+    "static/js/main.3e358d7b.js"
   ]
 }
