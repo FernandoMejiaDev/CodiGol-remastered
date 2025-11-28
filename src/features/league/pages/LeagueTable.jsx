@@ -1,25 +1,25 @@
 //Points table (general progress)
 import React, { useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { navigateToNextPhase } from "../utils/navigateToNextPhase";
+import { navigateToNextPhase } from "@/core/utils/navigateToNextPhase";
 import { useUser } from "@clerk/clerk-react";
-import { unlockNextPage } from "../utils/routeGuard";
-import ProtectedRoute from "../hook/ProtectedRoute";
-import Background from "../assets/img/Background.webp";
-import Navigation from "../../../ui/Navigation";
-import DialogueBox from "../../../ui/DialogueBox";
-import ModalSize from "../../../ui/ModalSize";
-import PhantomViper from "../assets/img/PhantomViper.webp";
-import GemRubies from "../assets/img/GemRubies.webp";
-import TuskElephants from "../assets/img/TuskElephants.webp";
-import JuggernautLeopard from "../assets/img/JuggernautLeopard.webp";
-import CodeSharks from "../assets/img/CodeSharks.webp";
-import SoarSwifts from "../assets/img/SoarSwifts.webp";
-import KnightCoders from "../assets/img/KnightCoders.webp";
-import ByteGophers from "../assets/img/ByteGophers.webp";
-import StyleChameleons from "../assets/img/StyleChameleons.webp";
-import WindJaguars from "../assets/img/WindJaguars.webp";
-import { useGame } from "../data/GameContext";
+import { unlockNextPage } from "@/core/utils/routeGuard";
+import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
+import Background from "@/assets/img/Background.webp";
+import Navigation from "@/ui/Navigation";
+import DialogueBox from "@/ui/DialogueBox";
+import ModalSize from "@/ui/ModalSize";
+import PhantomViper from "@/assets/img/PhantomViper.webp";
+import GemRubies from "@/assets/img/GemRubies.webp";
+import TuskElephants from "@/assets/img/TuskElephants.webp";
+import JuggernautLeopard from "@/assets/img/JuggernautLeopard.webp";
+import CodeSharks from "@/assets/img/CodeSharks.webp";
+import SoarSwifts from "@/assets/img/SoarSwifts.webp";
+import KnightCoders from "@/assets/img/KnightCoders.webp";
+import ByteGophers from "@/assets/img/ByteGophers.webp";
+import StyleChameleons from "@/assets/img/StyleChameleons.webp";
+import WindJaguars from "@/assets/img/WindJaguars.webp";
+import { useGame } from "@/features/league/data/leagueData";
 
 export const teams = [
   { id: 1, name: "Wind Jaguars", logo: WindJaguars },
@@ -132,7 +132,7 @@ const LeagueTable = () => {
         {/* <ModalSize className="absolute" /> */}
 
         <div className="relative text-white flex flex-col text-center p-6 m-auto max-w-[60rem]">
-          <h1 className="text-4xl font-bold text-white drop-shadow-lg mb-6">
+          <h1 className="mb-6 text-4xl font-bold text-white drop-shadow-lg">
             Tabla de Resultados
           </h1>
 
@@ -147,7 +147,7 @@ const LeagueTable = () => {
           {leagueTable.map((team) => (
             <div
               key={team.id}
-              className="grid items-center grid-cols-6 gap-4 p-3 last-of-type:rounded-b-2xl transition bg-neutral-950/60  hover:bg-neutral-950/70"
+              className="grid items-center grid-cols-6 gap-4 p-3 transition last-of-type:rounded-b-2xl bg-neutral-950/60 hover:bg-neutral-950/70"
             >
               <div className="flex items-center col-span-2">
                 <img

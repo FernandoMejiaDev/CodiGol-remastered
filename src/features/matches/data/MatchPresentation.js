@@ -1,7 +1,7 @@
 ///Opponent presentation scene that only lasts 10
 // seconds and moves to the SubBench scene
-import GemRubies from "../assets/img/GemRubies.webp";
-import WebHawks from "../assets/img/WebHawks.webp";
+import GemRubies from "@/assets/img/GemRubies.webp";
+import WebHawks from "@/assets/img/WebHawks.webp";
 
 const MatchPresentation = [
   {

@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { useUser } from "@clerk/clerk-react";
-import { useGame } from "../../../context/GameContext";
-import { unlockNextPage } from "../utils/routeGuard";
-import ProtectedRoute from "../hook/ProtectedRoute";
-import Background from "../assets/img/Background.webp";
-import Navigation from "../../../ui/Navigation";
+import { useGame } from "@/features/league/data/leagueData";
+import { unlockNextPage } from "@/core/utils/routeGuard";
+import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
+import Background from "@/assets/img/Background.webp";
+import Navigation from "@/ui/Navigation";
 import { useNavigate } from "react-router-dom";
-import { navigateToNextPhase } from "../utils/navigateToNextPhase";
-import ModalSize from "../../../ui/ModalSize";
+import { navigateToNextPhase } from "@/core/utils/navigateToNextPhase";
+import ModalSize from "@/ui/ModalSize";
 
 const FinalScore = () => {
   const { playerGoals, rivalGoals, playerTeam, rivalTeam, nextLevel } =
@@ -39,7 +39,7 @@ const FinalScore = () => {
 
         {/* <ModalSize className="absolute" /> */}
 
-        <div className="relative flex flex-col h-full m-auto p-4 text-center text-white ">
+        <div className="relative flex flex-col h-full p-4 m-auto text-center text-white ">
           <h1 className="text-6xl font-bold md:text-6xl drop-shadow-lg">
             Liga Full Stack
           </h1>

@@ -2,18 +2,17 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ClerkProvider } from "@clerk/clerk-react";
 const clerkFrontendApi = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
-import ProtectedRoute from "../hook/ProtectedRoute";
+import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
 
-import Home from "../page/Home";
-import LessonIntro from "../page/LessonIntro";
-import Training from "../page/Training";
-import MatchPresentation from "../page/MatchPresentation";
-import SubBench from "../page/SubBench";
-import Game from "../page/Game";
-import FinalScore from "../page/FinalScore";
-import LeagueTable from "../page/LeagueTable";
-import Prove from "../page/Prove";
-import FinalScene from "../page/FinalScene";
+import Home from "@/features/home/page/Home";
+import LessonIntro from "@/features/training/pages/LessonIntro";
+import Training from "@/features/training/pages/Training";
+import MatchPresentation from "@/features/matches/pages/MatchPresentation";
+import SubBench from "@/features/matches/pages/SubBench";
+import Game from "@/features/matches/pages/Game";
+import FinalScore from "@/features/matches/pages/FinalScore";
+import LeagueTable from "@/features/league/pages/LeagueTable";
+import FinalScene from "@/features/Final/pages/FinalScene";
 
 const App = () => {
   return (

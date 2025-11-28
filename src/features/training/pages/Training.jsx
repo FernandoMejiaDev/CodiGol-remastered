@@ -3,23 +3,23 @@
 import React, { useRef } from "react";
 import { useEffect, useState } from "react";
 import { useUser } from "@clerk/clerk-react";
-import { unlockNextPage } from "../utils/routeGuard";
-import ProtectedRoute from "../hook/ProtectedRoute";
-import trainingFund from "../assets/img/ExerciseFund.webp";
-import Navigation from "../../../ui/Navigation";
-import DialogueBox from "../../../ui/DialogueBox";
-import TrainingPoint from "../../../ui/TrainingPoint";
-import Preview from "../../../ui/Preview";
-import Editor from "../../../ui/Editor";
-import ModalSize from "../../../ui/ModalSize";
-import ModalExplanation from "../../../ui/ModalExplanation";
+import { unlockNextPage } from "@/core/utils/routeGuard";
+import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
+import trainingFund from "@/assets/img/ExerciseFund.webp";
+import Navigation from "@/ui/Navigation";
+import DialogueBox from "@/ui/DialogueBox";
+import TrainingPoint from "@/ui/TrainingPoint";
+import Preview from "@/ui/Preview";
+import Editor from "@/ui/Editor";
+import ModalSize from "@/ui/ModalSize";
+import ModalExplanation from "@/ui/ModalExplanation";
 //exercises and evaluate Answer
-import exercises from "../../../data/exercises";
-import evaluateAnswer from "../utils/evaluateAnswer";
+import exercises from "@/features/training/data/trainingLessons";
+import evaluateAnswer from "@/core/utils/evaluateAnswer";
 
 //At the end of the exercises it will take you to MatchPresentation
 import { useNavigate } from "react-router-dom";
-import { navigateToNextPhase } from "../utils/navigateToNextPhase";
+import { navigateToNextPhase } from "@/core/utils/navigateToNextPhase";
 
 // react-toastify Alert
 import { ToastContainer, toast } from 'react-toastify';

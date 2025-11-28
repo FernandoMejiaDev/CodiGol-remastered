@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import { useUser } from "@clerk/clerk-react";
 import { useNavigate } from "react-router-dom";
-import { navigateToNextPhase } from "../utils/navigateToNextPhase";
-import { unlockNextPage } from "../utils/routeGuard";
-import ProtectedRoute from "../hook/ProtectedRoute";
-import Background from "../assets/img/Background.webp";
-import Navigation from "../../../ui/Navigation";
-import WindJaguars from "../assets/img/WindJaguars.webp";
-import MatchPresentationData from "../../../data/MatchPresentation";
-import ModalSize from "../../../ui/ModalSize";
+import { navigateToNextPhase } from "@/core/utils/navigateToNextPhase";
+import { unlockNextPage } from "@/core/utils/routeGuard";
+import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
+import Background from "@/assets/img/Background.webp";
+import Navigation from "@/ui/Navigation";
+import WindJaguars from "@/assets/img/WindJaguars.webp";
+import MatchPresentationData from "@/features/matches/data/MatchPresentation";
+import ModalSize from "@/ui/ModalSize";
 
 const MatchPresentation = () => {
   const navigate = useNavigate();

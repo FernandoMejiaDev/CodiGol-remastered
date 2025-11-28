@@ -1,13 +1,13 @@
 import React from "react";
 import { useUser } from "@clerk/clerk-react";
-import ProtectedRoute from "../hook/ProtectedRoute";
+import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
 import { useNavigate } from "react-router-dom";
-import { resetGameProgress } from "../utils/routeGuard";
-import Background from "../assets/img/Background.webp";
-import FerCode from "../assets/img/FerCode.webp";
-import GitHub from "../assets/img/GitHub.webp";
-import EventTime from "../../ui/EventTime";
-import ModalSize from "../../ui/ModalSize";
+import { resetGameProgress } from "@/core/utils/routeGuard";
+import Background from "@/assets/img/Background.webp";
+import FerCode from "@/assets/img/FerCode.webp";
+import GitHub from "@/assets/img/GitHub.webp";
+import EventTime from "@/ui/EventTime"
+import ModalSize from "@/ui/ModalSize";
 
 const FinalScene = () => {
   const navigate = useNavigate();

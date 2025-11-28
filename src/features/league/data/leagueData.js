@@ -1,7 +1,7 @@
 // leagueData.js
 import { createContext, useContext, useState } from "react";
-import WindJaguars from "../assets/img/WindJaguars.webp";
-import GemRubies from "../assets/img/GemRubies.webp";
+import WindJaguars from "@/assets/img/WindJaguars.webp";
+import GemRubies from "@/assets/img/GemRubies.webp";
 
 const leagueData = createContext();
 export const GameProvider = ({ children }) => {

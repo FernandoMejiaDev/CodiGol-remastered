@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useUser, RedirectToSignIn } from "@clerk/clerk-react";
-import { canAccessPage, getLastUnlockedPage } from "../utils/routeGuard";
+import { canAccessPage, getLastUnlockedPage } from "@/core/utils/routeGuard";
 
 const ProtectedRoute = ({ children }) => {
   const { isSignedIn, isLoaded } = useUser();

@@ -2,12 +2,12 @@
 import React, { useRef } from "react";
 import { useState, useEffect } from "react";
 import { useUser } from "@clerk/clerk-react";
-import { unlockNextPage } from "../utils/routeGuard";
-import ProtectedRoute from "../hook/ProtectedRoute";
-import BankingFund from "../assets/img/BankingFund.webp";
-import Navigation from "../../../ui/Navigation";
-import DialogueBox from "../../../ui/DialogueBox";
-import ModalSize from "../../../ui/ModalSize";
+import { unlockNextPage } from "@/core/utils/routeGuard";
+import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
+import BankingFund from "@/assets/img/BankingFund.webp";
+import Navigation from "@/ui/Navigation";
+import DialogueBox from "@/ui/DialogueBox";
+import ModalSize from "@/ui/ModalSize";
 
 const SubBench = () => {
   const [level, setLevel] = useState(1);

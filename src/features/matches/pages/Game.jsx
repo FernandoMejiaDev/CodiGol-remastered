@@ -3,29 +3,29 @@
 import React, { useRef } from "react";
 import { useUser } from "@clerk/clerk-react";
 import { useEffect, useState } from "react";
-import { unlockNextPage } from "../utils/routeGuard";
-import ProtectedRoute from "../hook/ProtectedRoute";
-import ModalSize from "../../../ui/ModalSize";
-import TestFund from "../assets/img/TestFund.webp";
-import Navigation from "../../../ui/Navigation";
-import DialogueBox from "../../../ui/DialogueBox";
-import RivalGoalkeeper from "../assets/img/RivalGoalkeeper.webp";
-import Preview from "../../../ui/Preview";
-import Editor from "../../../ui/Editor";
+import { unlockNextPage } from "@/core/utils/routeGuard";
+import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
+import ModalSize from "@/ui/ModalSize";
+import TestFund from "@/assets/img/TestFund.webp";
+import Navigation from "@/ui/Navigation";
+import DialogueBox from "@/ui/DialogueBox";
+import RivalGoalkeeper from "@/assets/img/RivalGoalkeeper.webp";
+import Preview from "@/ui/Preview";
+import Editor from "@/ui/Editor";
 //GameData and evaluate Answer
-import GameData from "../../../data/Game";
-import evaluateAnswer from "../utils/evaluateAnswer";
-import Timer from "../../../ui/Timer";
+import GameData from "@/features/matches/data/Game";
+import evaluateAnswer from "@/core/utils/evaluateAnswer";
+import Timer from "@/ui/Timer";
 
 //ScoreBoard
-import MatchData from "../../../data/MatchData";
-import Scoreboard from "../../../ui/Scoreboard";
+import MatchData from "@/features/matches/data/MatchData";
+import Scoreboard from "@/ui/Scoreboard";
 
 //At the end of the GameData it will take you to MatchPresentation
 import { useNavigate } from "react-router-dom";
-import { navigateToNextPhase } from "../utils/navigateToNextPhase";
+import { navigateToNextPhase } from "@/core/utils/navigateToNextPhase";
 
-import { useGame } from "../../../context/GameContext"; // Collect match results
+import { useGame } from "@/features/league/data/leagueData"; // Collect match results
 
 // react-toastify Alert
 import { ToastContainer, toast } from 'react-toastify';

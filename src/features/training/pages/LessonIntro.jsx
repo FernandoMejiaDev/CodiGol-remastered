@@ -3,12 +3,12 @@ import React, { useRef } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useUser } from "@clerk/clerk-react";
-import ProtectedRoute from "../hook/ProtectedRoute";
-import trainingFund from "../assets/img/TrainingFund.webp";
-import Navigation from "../../../ui/Navigation";
-import DialogueBox from "../../../ui/DialogueBox";
-import ModalSize from "../../../ui/ModalSize";
-import { unlockNextPage } from "../utils/routeGuard";
+import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
+import trainingFund from "@/assets/img/TrainingFund.webp";
+import Navigation from "@/ui/Navigation";
+import DialogueBox from "@/ui/DialogueBox";
+import ModalSize from "@/ui/ModalSize";
+import { unlockNextPage } from "@/core/utils/routeGuard";
 
 
 const LessonIntro = () => {

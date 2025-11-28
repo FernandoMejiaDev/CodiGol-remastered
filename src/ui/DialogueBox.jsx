@@ -1,11 +1,11 @@
 //DialogueBox
 import { useState } from "react";
 import { useNavigate } from "react-router-dom"; //
-import TrainerPose1 from "../assets/img/TrainerPose1.webp";
-import lessonIntroDialogues from "../data/Dialogue";
-import trainingDialogues from "../data/Training";
-import SubBenchDialogues from "../data/SubBench"
-import { useGame } from "../features/league/data/GameContext"; // Game context
+import TrainerPose1 from "@/assets/img/TrainerPose1.webp";
+import lessonIntroDialogues from "@/features/training/data/trainingDialogues";
+import trainingDialogues from "@/features/training/data/trainingDialogues";
+import SubBenchDialogues from "@/features/matches/data/SubBench";
+import { useGame } from "@/features/league/data/leagueData"; // Game context
 
 const getDialoguesByPhase = (phase) => {
   switch (phase) {
@@ -62,7 +62,7 @@ const DialogueBox = ({ level = 1, currentPhase, onFinishDialog }) => {
   const isTrainer = speaker === "trainer";
 
   return (
-    <div className="flex items-end justify-center w-full bottom-0 ">
+    <div className="bottom-0 flex items-end justify-center w-full ">
       {isTrainer && (
         <img
           src={TrainerPose1}
@@ -80,13 +80,13 @@ const DialogueBox = ({ level = 1, currentPhase, onFinishDialog }) => {
         to-neutral-950/60
         to-90%
         z-20">
-        <div className="flex flex-col items-start m-auto gap-4 w-full max-w-5xl">
+        <div className="flex flex-col items-start w-full max-w-5xl gap-4 m-auto">
 
           <p className="text-center ">{text}</p>
           {index < currentDialogue.length - 1 ? (
             <button
               onClick={handleNext}
-              className="px-4 py-2  ml-auto text-white bg-blue-700 rounded hover:bg-blue-800"
+              className="px-4 py-2 ml-auto text-white bg-blue-700 rounded hover:bg-blue-800"
             >
               Siguiente
             </button>
@@ -99,7 +99,7 @@ const DialogueBox = ({ level = 1, currentPhase, onFinishDialog }) => {
                   handleFinishLevel(); //directional button to other phases
                 }
               }}
-              className="px-4 py-2  ml-auto text-white bg-green-700 rounded hover:bg-green-800"
+              className="px-4 py-2 ml-auto text-white bg-green-700 rounded hover:bg-green-800"
             >
               Continuar
             </button>

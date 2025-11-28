@@ -5,9 +5,9 @@ import {
   SignedOut,
   UserButton,
 } from "@clerk/clerk-react";
-import Background from "../assets/img/Background.webp";
-import Modal from "../../../ui/Modal";
-import ModalSize from "../../../ui/ModalSize";
+import Background from "@/assets/img/Background.webp";
+import Modal from "@/ui/Modal";
+import ModalSize from "@/ui/ModalSize";
 import { useUser } from "@clerk/clerk-react";
 import { useNavigate } from "react-router-dom";
 
