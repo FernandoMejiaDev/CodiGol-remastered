@@ -12,6 +12,7 @@ import SubBench from "@/features/matches/pages/SubBench";
 import Game from "@/features/matches/pages/Game";
 import FinalScore from "@/features/matches/pages/FinalScore";
 import LeagueTable from "@/features/league/pages/LeagueTable";
+import Prove from "@/features/home/page/Prove";
 import FinalScene from "@/features/Final/pages/FinalScene";
 
 const App = () => {
