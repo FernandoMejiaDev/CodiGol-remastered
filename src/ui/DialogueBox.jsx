@@ -1,7 +1,7 @@
 //DialogueBox
 import { useState } from "react";
 import { useNavigate } from "react-router-dom"; //
-import TrainerPose1 from "@/assets/img/TrainerPose1.webp";
+import TrainerPose1 from "assets/img/TrainerPose1.webp";
 import lessonIntroDialogues from "@/features/training/data/trainingDialogues";
 import trainingDialogues from "@/features/training/data/trainingDialogues";
 import SubBenchDialogues from "@/features/matches/data/SubBench";
@@ -66,7 +66,7 @@ const DialogueBox = ({ level = 1, currentPhase, onFinishDialog }) => {
       {isTrainer && (
         <img
           src={TrainerPose1}
-          alt="TrainerPose1"
+          alt="alt"
           className="relative z-10 object-contain w-40 md:w-56 lg:w-64"
         />
       )}

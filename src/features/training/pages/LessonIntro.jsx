@@ -1,15 +1,12 @@
 //Lesson Introduction
-import React, { useRef } from "react";
-import { useState } from "react";
-import { useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { useUser } from "@clerk/clerk-react";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
-import trainingFund from "@/assets/img/TrainingFund.webp";
+import trainingFund from "assets/img/TrainingFund.webp";
 import Navigation from "@/ui/Navigation";
 import DialogueBox from "@/ui/DialogueBox";
 import ModalSize from "@/ui/ModalSize";
 import { unlockNextPage } from "@/core/utils/routeGuard";
-
 
 const LessonIntro = () => {
   const [level, setLevel] = useState(1);
