@@ -2,7 +2,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { useUser } from "@clerk/clerk-react";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
-import trainingFund from "@/assets/img/TrainingFund.webp";
 import Navigation from "@/ui/Navigation";
 import DialogueBox from "@/ui/DialogueBox";
 import ModalSize from "@/ui/ModalSize";
@@ -27,7 +26,7 @@ const LessonIntro = () => {
     <div className="relative w-full h-dvh">
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
-        style={{ backgroundImage: `url(${trainingFund})` }}
+        style={{ backgroundImage: `url(/img/TrainingFund.webp)` }}
       ></div>
 
       <div className="grid items-center justify-center grid-cols-5 ">
@@ -65,7 +64,9 @@ const LessonIntro = () => {
           
           */}
 
+          {/*
           <DialogueBox level={level} currentPhase="LessonIntro" />
+           */}
         </div>
       </div>
     </div>

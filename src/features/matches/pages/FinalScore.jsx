@@ -3,7 +3,6 @@ import { useUser } from "@clerk/clerk-react";
 import { useGame } from "@/features/league/data/leagueData";
 import { unlockNextPage } from "@/core/utils/routeGuard";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
-import Background from "@/assets/img/Background.webp";
 import Navigation from "@/ui/Navigation";
 import { useNavigate } from "react-router-dom";
 import { navigateToNextPhase } from "@/core/utils/navigateToNextPhase";
@@ -14,22 +13,22 @@ const FinalScore = () => {
     useGame();
 
   const navigate = useNavigate();
- /*
-  useEffect(() => {
-    unlockNextPage("/LeagueTable");
-   const timeout = setTimeout(() => {
-      navigateToNextPhase("FinalScore", navigate);
-    }, );
-
-    return () => clearTimeout(timeout);
-  }, [navigate]);
-  */
+  /*
+   useEffect(() => {
+     unlockNextPage("/LeagueTable");
+    const timeout = setTimeout(() => {
+       navigateToNextPhase("FinalScore", navigate);
+     }, );
+ 
+     return () => clearTimeout(timeout);
+   }, [navigate]);
+   */
 
   return (
     <div className="relative w-full h-dvh">
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
-        style={{ backgroundImage: `url(${Background})` }}
+        style={{ backgroundImage: `url(/img/Background.webp)` }}
       ></div>
 
       <div className="flex flex-row h-full">

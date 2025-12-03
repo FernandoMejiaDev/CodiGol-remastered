@@ -7,7 +7,6 @@ import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
 import Navigation from "@/ui/Navigation";
 import DialogueBox from "@/ui/DialogueBox";
 import ModalSize from "@/ui/ModalSize";
-import BankingFund from "@/assets/img/BankingFund.webp";
 
 const SubBench = () => {
   const [level, setLevel] = useState(1);
@@ -20,7 +19,7 @@ const SubBench = () => {
     <div className="relative w-full h-dvh">
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
-        style={{ backgroundImage: `url(${BankingFund})` }}
+        style={{ backgroundImage: `url(/img/BankingFund.webp)` }}
       ></div>
 
       <div className="grid items-center justify-center grid-cols-5 ">

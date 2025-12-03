@@ -3,9 +3,6 @@ import { useUser } from "@clerk/clerk-react";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
 import { useNavigate } from "react-router-dom";
 import { resetGameProgress } from "@/core/utils/routeGuard";
-import Background from "@/assets/img/Background.webp";
-import FerCode from "@/assets/img/FerCode.webp";
-import GitHub from "@/assets/img/GitHub.webp";
 import EventTime from "@/ui/EventTime"
 import ModalSize from "@/ui/ModalSize";
 
@@ -44,7 +41,7 @@ const FinalScene = () => {
         <div className="absolute w-full p-4 text-2xl text-white md:text-4xl">
           <h1 className="">UNA JORNADA LLENA DE EMOCIÓN Y CÓDIGO</h1>
         </div>
-        <img src={Background} alt="" className="w-full h-auto " />
+        <img src="/img/Background.webp" alt="alt" className="w-full h-auto " />
         <div className="grid grid-cols-4 md:grid-cols-6 gap-2 justify-between items-center p-4 absolute bottom-0 left-0 w-full h-[33%] md:h-[20%] bg-red-600 ">
           <p className="col-span-3 text-lg text-white md:col-span-5 ">
             Comenzó la esperada Full Stack League con partidos emocionantes
@@ -99,7 +96,7 @@ const FinalScene = () => {
         </div>
 
         <div className="flex flex-col items-center justify-start text-center">
-          <img src={FerCode} alt="FerCode" className="w-full h-auto" />
+          <img src="/img/FerCode.webp" alt="FerCode" className="w-full h-auto" />
 
           <div className="grid items-center justify-center w-full grid-cols-4 p-2 text-white bg-neutral-800">
             <a
@@ -124,7 +121,7 @@ const FinalScene = () => {
         </div>
 
         <div className="flex flex-col items-center justify-start text-center ">
-          <img src={GitHub} alt="GitHub" className="w-full h-auto" />
+          <img src="/img/GitHub.webp" alt="GitHub" className="w-full h-auto" />
 
           <div className="grid items-center justify-center w-full grid-cols-4 p-2 text-white bg-neutral-800">
             <a

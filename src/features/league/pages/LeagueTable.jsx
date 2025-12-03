@@ -9,29 +9,18 @@ import Navigation from "@/ui/Navigation";
 import DialogueBox from "@/ui/DialogueBox";
 import ModalSize from "@/ui/ModalSize";
 import { useGame } from "@/features/league/data/leagueData";
-import Background from "@/assets/img/Background.webp";
-import PhantomViper from "@/assets/img/PhantomViper.webp";
-import GemRubies from "@/assets/img/GemRubies.webp";
-import TuskElephants from "@/assets/img/TuskElephants.webp";
-import JuggernautLeopard from "@/assets/img/JuggernautLeopard.webp";
-import CodeSharks from "@/assets/img/CodeSharks.webp";
-import SoarSwifts from "@/assets/img/SoarSwifts.webp";
-import KnightCoders from "@/assets/img/KnightCoders.webp";
-import ByteGophers from "@/assets/img/ByteGophers.webp";
-import StyleChameleons from "@/assets/img/StyleChameleons.webp";
-import WindJaguars from "@/assets/img/WindJaguars.webp";
 
 export const teams = [
-  { id: 1, name: "Wind Jaguars", logo: WindJaguars },
-  { id: 2, name: "Gem Rubies", logo: GemRubies },
-  { id: 3, name: "Tusk Elephants", logo: TuskElephants },
-  { id: 4, name: "Juggernaut Leopard", logo: JuggernautLeopard },
-  { id: 5, name: "Code Sharks", logo: CodeSharks },
-  { id: 6, name: "Soar Swifts", logo: SoarSwifts },
-  { id: 7, name: "Knight Coders", logo: KnightCoders },
-  { id: 8, name: "Byte Gophers", logo: ByteGophers },
-  { id: 9, name: "Style Chameleons", logo: StyleChameleons },
-  { id: 10, name: "Phantom Viper", logo: PhantomViper },
+  { id: 1, name: "Wind Jaguars", logo: "/img/WindJaguars.webp" },
+  { id: 2, name: "Gem Rubies", logo: "/img/GemRubies.webp" },
+  { id: 3, name: "Tusk Elephants", logo: "/img/TuskElephants.webp" },
+  { id: 4, name: "Juggernaut Leopard", logo: "/img/JuggernautLeopard.webp" },
+  { id: 5, name: "Code Sharks", logo: "/img/CodeSharks.webp" },
+  { id: 6, name: "Soar Swifts", logo: "/img/SoarSwifts.webp" },
+  { id: 7, name: "Knight Coders", logo: "/img/KnightCoders.webp" },
+  { id: 8, name: "Byte Gophers", logo: "/img/ByteGophers.webp" },
+  { id: 9, name: "Style Chameleons", logo: "/img/StyleChameleons.webp" },
+  { id: 10, name: "Phantom Viper", logo: "/img/PhantomViper.webp" },
 ];
 
 export const matchResults = [
@@ -105,23 +94,23 @@ const LeagueTable = () => {
   );
 
   const navigate = useNavigate();
-/*
-  useEffect(() => {
-    unlockNextPage("/FinalScene");
-
-    const timeout = setTimeout(() => {
-      navigateToNextPhase("LeagueTable", navigate);
-    }, 20000);
-
-    return () => clearTimeout(timeout);
-  }, [navigate]);
-  */
+  /*
+    useEffect(() => {
+      unlockNextPage("/FinalScene");
+  
+      const timeout = setTimeout(() => {
+        navigateToNextPhase("LeagueTable", navigate);
+      }, 20000);
+  
+      return () => clearTimeout(timeout);
+    }, [navigate]);
+    */
 
   return (
     <div className="relative w-full h-dvh">
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
-        style={{ backgroundImage: `url(${Background})` }}
+        style={{ backgroundImage: `url(/img/Background.webp)` }}
       ></div>
 
       <div className="flex flex-row h-full">

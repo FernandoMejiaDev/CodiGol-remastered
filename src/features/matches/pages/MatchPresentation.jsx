@@ -5,10 +5,9 @@ import { navigateToNextPhase } from "@/core/utils/navigateToNextPhase";
 import { unlockNextPage } from "@/core/utils/routeGuard";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
 import Navigation from "@/ui/Navigation";
-import MatchPresentationData from "@/features/matches/data/MatchPresentation";
 import ModalSize from "@/ui/ModalSize";
-import Background from "@/assets/img/Background.webp";
-import WindJaguars from "@/assets/img/WindJaguars.webp";
+//data
+import MatchPresentationData from "@/features/matches/data/MatchPresentation";
 
 const MatchPresentation = () => {
   const navigate = useNavigate();
@@ -37,7 +36,7 @@ const MatchPresentation = () => {
     <div className="relative w-full h-dvh">
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
-        style={{ backgroundImage: `url(${Background})` }}
+        style={{ backgroundImage: `url(/img/Background.webp)` }}
       ></div>
 
       <div className="flex flex-row h-full">
@@ -54,7 +53,7 @@ const MatchPresentation = () => {
 
           <div className="grid grid-cols-3 m-auto max-w-[60rem]">
             <div className="flex flex-col items-center justify-center gap-2 text-white">
-              <img src={WindJaguars} alt="WindJaguars" className="w-full h-auto" />
+              <img src="/img/WindJaguars.webp" alt="WindJaguars" className="w-full h-auto" />
               <div className="w-full h-2 bg-white"></div>
               <h1 className="text-4xl font-bold text-center">Wind Jaguars</h1>
             </div>

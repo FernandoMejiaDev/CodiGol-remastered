@@ -5,7 +5,6 @@ import {
   SignedOut,
   UserButton,
 } from "@clerk/clerk-react";
-import Background from "@/assets/img/Background.webp";
 import Modal from "@/ui/Modal";
 import ModalSize from "@/ui/ModalSize";
 import { useUser } from "@clerk/clerk-react";
@@ -31,7 +30,7 @@ const Home = () => {
     <div className="relative w-full h-dvh">
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
-        style={{ backgroundImage: `url(${Background})` }}
+        style={{ backgroundImage: `url(/img/Background.webp)` }}
       ></div>
 
       <div className="absolute inset-0 bg-black bg-opacity-60"></div>

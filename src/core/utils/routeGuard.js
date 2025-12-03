@@ -12,7 +12,8 @@ export function canAccessPage(currentPath) {
   // If it's the Home page or a page outside the flow, allow it.
   if (currentIndex === -1) return true;
 
-  // Only allow if it is on the same page as, or after, the last one unlocked  return currentIndex <= lastIndex;
+  // Only allow if it is on the same page as, or after, the last one unlocked  
+  // return currentIndex <= lastIndex;
 }
 
 export function unlockNextPage(currentPath) {

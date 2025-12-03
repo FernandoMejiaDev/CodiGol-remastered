@@ -10,8 +10,6 @@ import Navigation from "@/ui/Navigation";
 import DialogueBox from "@/ui/DialogueBox";
 import Preview from "@/ui/Preview";
 import Editor from "@/ui/Editor";
-import TestFund from "@/assets/img/TestFund.webp";
-import RivalGoalkeeper from "@/assets/img/RivalGoalkeeper.webp";
 //GameData and evaluate Answer
 import GameData from "@/features/matches/data/Game";
 import evaluateAnswer from "@/core/utils/evaluateAnswer";
@@ -149,7 +147,7 @@ const Game = () => {
 
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
-        style={{ backgroundImage: `url(${TestFund})` }}
+        style={{ backgroundImage: `url(/img/TestFund.webp)` }}
       ></div>
 
       <div className="flex h-full ">
@@ -177,7 +175,7 @@ const Game = () => {
           </div>
 
           <img
-            src={RivalGoalkeeper}
+            src="/img/RivalGoalkeeper.webp"
             alt="RivalGoalkeeper"
             className="absolute object-contain w-80 top-1/4 right-1/2"
           />

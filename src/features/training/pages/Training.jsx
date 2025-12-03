@@ -4,7 +4,6 @@ import React, { useRef, useEffect, useState } from "react";
 import { useUser } from "@clerk/clerk-react";
 import { unlockNextPage } from "@/core/utils/routeGuard";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
-import trainingFund from "@/assets/img/ExerciseFund.webp";
 import Navigation from "@/ui/Navigation";
 import DialogueBox from "@/ui/DialogueBox";
 import TrainingPoint from "@/ui/TrainingPoint";
@@ -93,7 +92,7 @@ const Training = () => {
 
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
-        style={{ backgroundImage: `url(${trainingFund})` }}
+        style={{ backgroundImage: `url(/img/ExerciseFund.webp)` }}
       ></div>
 
       <div className="flex h-dvh">
