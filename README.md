@@ -59,7 +59,7 @@ Cuando un usuario intenta iniciar el juego sin estar autenticado, se activa auto
 
 A continuación se muestran capturas del flujo de autenticación:
 
-<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered-/blob/main/assets/img/imgReadmeN1.webp"alt="Pantalla de inicio protegida por Clerk" /> <br/> <em>Pantalla inicial con botón de acceso</em> </p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered-/blob/main/assets/img/imgReadmeN2.webp" alt="Modal de login de Clerk" /> <br/> <em></em>Modal con una pequeña Introducción sobre CódiGol </p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered-/blob/main/assets/img/imgReadmeN3.webp" alt="Usuario autenticado" /> <br/> <em>Modal de login de Clerk SDK Integrado</em> </p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered-/blob/main/assets/img/imgReadmeN4.webp"  alt="Protección de rutas con Clerk" /> <br/> <em>Verificación de Rutas protegidas que verifican si el usuario ya ha iniciado sesión de otro modo lo redirige a la página principal</em>   </p>
+<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN1.webp"alt="Pantalla de inicio protegida por Clerk" /> <br/> <em>Pantalla inicial con botón de acceso</em> </p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN2.webp" alt="Modal de login de Clerk" /> <br/> <em></em>Modal con una pequeña Introducción sobre CódiGol </p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN3.webp" alt="Usuario autenticado" /> <br/> <em>Modal de login de Clerk SDK Integrado</em> </p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN4.webp"  alt="Protección de rutas con Clerk" /> <br/> <em>Verificación de Rutas protegidas que verifican si el usuario ya ha iniciado sesión de otro modo lo redirige a la página principal</em>   </p>
 
 # Detalles del Juego 
 
@@ -71,7 +71,7 @@ El camino hacia la victoria está dividido en 10 partidos, y cada uno representa
 
 `text-xs, text-lg, md:text-xl, etc`
 
-<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered-/blob/main/assets/img/imgReadmeN5.webp" alt="imgReadmeN5" /> 
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN5.webp" alt="imgReadmeN5" /> 
 
 ## 🧠 Entrenamiento antes del partido
 
@@ -79,7 +79,7 @@ Antes de cada partido, el jugador debe completar un entrenamiento. Aquí podrá 
 
 El entrenamiento solo termina cuando todas las respuestas son correctas, asegurando que el jugador domine bien la lección antes de entrar al campo.
 
-<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered-/blob/main/assets/img/imgReadmeN6.webp" alt="imgReadmeN6" /> 
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN6.webp" alt="imgReadmeN6" /> 
 
 ## ⚔️ El Partido
 
@@ -87,13 +87,13 @@ Una vez completado el entrenamiento, es momento del partido. En la escena de VS,
 
 A medida que se avanza en la liga, el **margen de error se reduce** y los desafíos se vuelven más exigentes.
 
-<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered-/blob/main/assets/img/imgReadmeN7.webp" alt="imgReadmeN7" /> 
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN7.webp" alt="imgReadmeN7" /> 
 
 ## 🧭 Estrategia y Recordatorio
 
 Antes de entrar al segundo tiempo, el entrenador te recuerda lo aprendido y te da contexto de lo que está en juego. Además, menciona que tienes **5 jugadas o estrategias** para crear oportunidades de anotar — esto representa tus **5 intentos** para resolver correctamente los ejercicios en el partido.
 
-<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered-/blob/main/assets/img/imgReadmeN8.webp" alt="imgReadmeN8" /> 
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN8.webp" alt="imgReadmeN8" /> 
 
 ## 🏟️ El Partido Real
 
@@ -107,7 +107,7 @@ Al final del partido, se muestra el resultado, que determinará la posición del
 
 El objetivo final es **sumar la mayor cantidad de puntos** a lo largo de la liga y convertirte en el campeón de la Full Stack League, dominando las técnicas más importantes de **Tailwind CSS** en el camino.
 
-<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered-/blob/main/assets/img/imgReadmeN9.webp" alt="imgReadmeN9" /> 
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN9.webp" alt="imgReadmeN9" /> 
 
 # 📱 Detalle sobre la Responsividad y Modal de Tamaño
 
