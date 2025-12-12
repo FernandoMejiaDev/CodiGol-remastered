@@ -23,6 +23,8 @@ Durante la transmisión final de la Hackathon organizada por [Midudev](https://w
 
 [![Ver mención en el stream](https://img.youtube.com/vi/0Z0Vy0VWQeY/hqdefault.jpg)](https://www.youtube.com/watch?v=0Z0Vy0VWQeY)
 
+[![Ver mención en el stream](https://img.shields.io/static/v1?message=youtube&logo=Youtube&label=&color=c91e1e&logoColor=white&labelColor=&style=for-the-badge)](https://www.youtube.com/watch?v=0Z0Vy0VWQeY)
+
 
 ## 🌐 Enlace a la demo 
 
