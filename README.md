@@ -117,7 +117,7 @@ El objetivo final es **sumar la mayor cantidad de puntos** a lo largo de la liga
 
 Este modal tiene como objetivo evitar problemas de visualización y usabilidad, especialmente en **celulares o tablets**, donde el entorno de desarrollo no sería óptimo. Para disfrutar de **CódiGol** correctamente, se recomienda utilizarlo en una computadora de escritorio o laptop con una resolución igual o superior a 1280px de ancho.
 
-<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered-/blob/main/assets/img/imgReadmeN10.webp" alt="imgReadmeN10" /> 
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN10.webp" alt="imgReadmeN10" /> 
 
 ## 🎯 Objetivo del juego
 
