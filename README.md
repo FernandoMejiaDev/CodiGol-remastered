@@ -1,6 +1,6 @@
 ![CódiGolLogo](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/CodiGolLogo.webp)
 
-#  ⚽ **CódiGol**
+#⚽ **CódiGol**
 
 **CódiGol** es un pequeño videojuego web diseñado para ayudarte a aprender y practicar Tailwind CSS de forma divertida y diferente. Inspirado en la emoción del fútbol, este juego te reta a anotar goles completando desafíos de diseño utilizando Tailwind.
 
@@ -52,7 +52,7 @@ Durante la transmisión final de la Hackathon organizada por [Midudev](https://w
  ## 🔐 Autenticación con Clerk
 
 Para poder jugar, los usuarios deben crear una cuenta o iniciar sesión.
-[Clerk SDK](https://clerk.com/docs) se ha utilizado para manejar la autenticación, protegiendo las rutas del juego y personalizando la experiencia del jugador con sesiones activas.
+**Clerk SDK** se ha utilizado para manejar la autenticación, protegiendo las rutas del juego y personalizando la experiencia del jugador con sesiones activas.
 
 ## Integración con Clerk
 **CódiGol** utiliza **Clerk SDK** como sistema de autenticación para gestionar el acceso de los usuarios. La integración de **Clerk SDK** permite proteger rutas y garantizar que solo los usuarios registrados puedan acceder a la experiencia completa del juego.
