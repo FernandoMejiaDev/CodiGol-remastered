@@ -55,9 +55,9 @@ Para poder jugar, los usuarios deben crear una cuenta o iniciar sesión.
 [Clerk SDK](https://clerk.com/docs) se ha utilizado para manejar la autenticación, protegiendo las rutas del juego y personalizando la experiencia del jugador con sesiones activas.
 
 ## Integración con Clerk
-**CódiGol** utiliza [Clerk SDK](https://clerk.com/docs) como sistema de autenticación para gestionar el acceso de los usuarios. La integración de [Clerk SDK](https://clerk.com/docs) permite proteger rutas y garantizar que solo los usuarios registrados puedan acceder a la experiencia completa del juego.
+**CódiGol** utiliza **Clerk SDK** como sistema de autenticación para gestionar el acceso de los usuarios. La integración de **Clerk SDK** permite proteger rutas y garantizar que solo los usuarios registrados puedan acceder a la experiencia completa del juego.
 
-Cuando un usuario intenta iniciar el juego sin estar autenticado, se activa automáticamente el modal de inicio de sesión o registro proporcionado por [Clerk SDK](https://clerk.com/docs).
+Cuando un usuario intenta iniciar el juego sin estar autenticado, se activa automáticamente el modal de inicio de sesión o registro proporcionado por **Clerk SDK**.
 
 A continuación se muestran capturas del flujo de autenticación:
 
@@ -129,7 +129,7 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
 
 - Cada pantalla está pensada como una fase: introducción, entrenamiento, partido y resultado.
 - Los ejercicios se evalúan en tiempo real y afectan el marcador.
-- Las rutas están protegidas con [Clerk SDK](https://clerk.com/docs) por que si se intenta acceder lo redireccionará a la página principal.
+- Las rutas están protegidas con **Clerk SDK** por que si se intenta acceder lo redireccionará a la página principal.
 
 ## 🚀 Instalación y uso local
 
@@ -139,7 +139,7 @@ Si deseas correr **CódiGol** en tu máquina local, sigue estos pasos:
 2. Instala las dependencias
      ```
     npm install
-3. Crea el archivo `.env` y integra la variable de entorno para integrar [Clerk SDK](https://clerk.com/docs)
+3. Crea el archivo `.env` y integra la variable de entorno para integrar **Clerk SDK**
 4. Inicia el servidor de desarrollo
     ```
      npm start
