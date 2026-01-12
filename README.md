@@ -1,6 +1,6 @@
 ![CódiGolLogo](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/CodiGolLogo.webp)
 
-#⚽ **CódiGol**
+# ⚽ **CódiGol**
 
 **CódiGol** es un pequeño videojuego web diseñado para ayudarte a aprender y practicar Tailwind CSS de forma divertida y diferente. Inspirado en la emoción del fútbol, este juego te reta a anotar goles completando desafíos de diseño utilizando Tailwind.
 
