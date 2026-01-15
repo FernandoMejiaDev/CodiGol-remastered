@@ -8,11 +8,11 @@ Esta idea surgió como un concepto que había descartado tiempo atrás, pero gra
 
 Inicialmente, el proyecto estaba pensado para enseñar JavaScript, pero al notar que ya existen muchas plataformas enfocadas en eso, decidí optar por **Tailwind CSS**, ya que más allá de su documentación oficial, no encontré recursos prácticos e interactivos para aprenderlo. Por eso, este proyecto busca ser una forma diferente, entretenida y dinámica de dominar **Tailwind CSS**, combinando aprendizaje y mecánicas de juego.
 
-Como parte del desarrollo para la [Hackathon de MiduDev 2025](https://github.com/midudev/hackaton-clerk-2025?tab=readme-ov-file#%EF%B8%8F-c%C3%B3mo-participar-en-la-hackat%C3%B3n), se integró [Clerk SDK](https://clerk.com/docs) para la autenticación de usuarios donde **es necesario registrarse o iniciar sesión para poder jugar**.
+Como parte del desarrollo para la [Hackathon de MiduDev 2025](https://github.com/midudev/hackaton-clerk-2025?tab=readme-ov-file#%EF%B8%8F-c%C3%B3mo-participar-en-la-hackat%C3%B3n), se integró [Clerk](https://clerk.com/docs) para la autenticación de usuarios donde **es necesario registrarse o iniciar sesión para poder jugar**.
 
 ## 🏅 Mención Especial en la Final de la Hackathon de Midudev 
 
-Durante la transmisión final de la Hackathon organizada por [Midudev](https://www.twitch.tv/videos/2465451345) y [Clerk SDK](https://clerk.com/docs), ¡**CódiGol** fue destacado como uno de los proyectos más originales! ⚽🔥
+Durante la transmisión final de la Hackathon organizada por [Midudev](https://www.twitch.tv/videos/2465451345) y [Clerk](https://clerk.com/docs), ¡**CódiGol** fue destacado como uno de los proyectos más originales! ⚽🔥
 
 > *"Luego también hay gente que se ha atrevido a hacer como una plataforma para aprender Tailwind. Se llama CódiGol. Tienes el entrenador, el coach aquí. Y entonces te va explicando la técnica del responsive y tal... Golazo. Has dominado la técnica..."*  
 > — *Midudev en el stream de la final de la Hackathon 2025*
@@ -52,12 +52,12 @@ Durante la transmisión final de la Hackathon organizada por [Midudev](https://w
  ## 🔐 Autenticación con Clerk
 
 Para poder jugar, los usuarios deben crear una cuenta o iniciar sesión.
-**Clerk SDK** se ha utilizado para manejar la autenticación, protegiendo las rutas del juego y personalizando la experiencia del jugador con sesiones activas.
+**Clerk** se ha utilizado para manejar la autenticación, protegiendo las rutas del juego y personalizando la experiencia del jugador con sesiones activas.
 
 ## Integración con Clerk
-**CódiGol** utiliza **Clerk SDK** como sistema de autenticación para gestionar el acceso de los usuarios. La integración de **Clerk SDK** permite proteger rutas y garantizar que solo los usuarios registrados puedan acceder a la experiencia completa del juego.
+**CódiGol** utiliza **Clerk** como sistema de autenticación para gestionar el acceso de los usuarios. La integración de **Clerk** permite proteger rutas y garantizar que solo los usuarios registrados puedan acceder a la experiencia completa del juego.
 
-Cuando un usuario intenta iniciar el juego sin estar autenticado, se activa automáticamente el modal de inicio de sesión o registro proporcionado por **Clerk SDK**.
+Cuando un usuario intenta iniciar el juego sin estar autenticado, se activa automáticamente el modal de inicio de sesión o registro proporcionado por **Clerk**.
 
 A continuación se muestran capturas del flujo de autenticación:
 
