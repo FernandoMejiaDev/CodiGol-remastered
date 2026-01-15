@@ -61,7 +61,7 @@ Cuando un usuario intenta iniciar el juego sin estar autenticado, se activa auto
 
 A continuación se muestran capturas del flujo de autenticación:
 
-<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN1.webp"alt="Pantalla de inicio protegida por Clerk" /> <br/> <em>Pantalla inicial con botón de acceso</em> </p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN2.webp" alt="Modal de login de Clerk" /> <br/> <em></em>Modal con una pequeña Introducción sobre CódiGol </p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN3.webp" alt="Usuario autenticado" /> <br/> <em>Modal de login de Clerk SDK Integrado</em> </p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN4.webp"  alt="Protección de rutas con Clerk" /> <br/> <em>Verificación de Rutas protegidas que verifican si el usuario ya ha iniciado sesión de otro modo lo redirige a la página principal</em>   </p>
+<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN1.webp"alt="Pantalla de inicio protegida por Clerk" /> <br/> <em>Pantalla inicial con botón de acceso</em> </p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN2.webp" alt="Modal de login de Clerk" /> <br/> <em></em>Modal con una pequeña Introducción sobre CódiGol </p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN3.webp" alt="Usuario autenticado" /> <br/> <em>Modal de login de Clerk Integrado</em> </p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN4.webp"  alt="Protección de rutas con Clerk" /> <br/> <em>Verificación de Rutas protegidas que verifican si el usuario ya ha iniciado sesión de otro modo lo redirige a la página principal</em>   </p>
 
 # Detalles del Juego 
 
@@ -129,7 +129,7 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
 
 - Cada pantalla está pensada como una fase: introducción, entrenamiento, partido y resultado.
 - Los ejercicios se evalúan en tiempo real y afectan el marcador.
-- Las rutas están protegidas con **Clerk SDK** por que si se intenta acceder lo redireccionará a la página principal.
+- Las rutas están protegidas con **Clerk** por que si se intenta acceder lo redireccionará a la página principal.
 
 ## 🚀 Instalación y uso local
 
