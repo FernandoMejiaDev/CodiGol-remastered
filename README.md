@@ -219,7 +219,7 @@ src/
 
 ## ❤️ Agradecimientos
 
-- A MiduDev y Clerk por organizar la hackathon.
+- A **MiduDev y Clerk** por organizar la hackathon.
 - A ti, por jugar y aprender con **CódiGol** y leer este readMe.
 
 ## 📜 Licencia
