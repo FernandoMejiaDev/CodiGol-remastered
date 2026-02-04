@@ -219,7 +219,7 @@ src/
 
 ## ❤️ Agradecimientos
 
-- A [MiduDev y Clerk SDK](https://github.com/midudev/hackaton-clerk-2025?tab=readme-ov-file#%EF%B8%8F-c%C3%B3mo-participar-en-la-hackat%C3%B3n) por organizar la hackathon.
+- A MiduDev y Clerk por organizar la hackathon.
 - A ti, por jugar y aprender con **CódiGol** y leer este readMe.
 
 ## 📜 Licencia
