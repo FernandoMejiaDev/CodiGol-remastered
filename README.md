@@ -153,67 +153,7 @@ La arquitectura de **CódiGol** está pensada para mantener el código limpio, m
 <details>
 <summary>📁 Estructura completa</summary>
     
-  ```bash
-src/
-├── assets/
-│   ├── images/         # Imágenes utilizadas en el juego (fondos, jugadores, logos, etc.)
-│   └── svg/            # Archivos SVG como íconos o elementos vectoriales
-│
-├── context/
-│   └── GameContext.jsx # Maneja el estado global del juego (progreso, marcador, etc.)
-│
-├── Data/
-│   ├── Dialogue.js           # Contiene los diálogos del entrenador y escenas del juego
-│   ├── exercises.js          # Ejercicios interactivos para practicar Tailwind
-│   ├── Game.js               # Datos y configuración del partido en curso
-│   ├── MatchData.js          # Información de los partidos (equipos, rondas, etc.)
-│   ├── MatchPresentation.js  # Datos para la pantalla de presentación del partido
-│   ├── SubBench.js           # Datos de los jugadores en la banca
-│   └── Training.js           # Datos para la sección de entrenamiento
-│
-├── Hook/
-│   └── ProtectedRoute.jsx    # Hook que protege rutas para usuarios autenticados con Clerk
-│
-├── Page/                     # Páginas que muestra contenido de cada escena de Screens
-│
-├── screens/
-│   ├── LessonIntro.jsx       # Introducción teórica de cada lección
-│   ├── Training.jsx          # Entrenamiento previo al partido (resolución de ejercicios)
-│   ├── MatchPresentation.jsx # Pantalla de presentación tipo “versus” antes del partido
-│   ├── SubBench.jsx          # Pantalla de selección de jugador desde la banca
-│   ├── Game.jsx              # Escenario principal donde se juega y se resuelven ejercicios
-│   ├── LeagueTable.jsx       # Tabla de posiciones o progreso en la liga
-│   ├── FinalScore.jsx        # Muestra el resultado final del partido
-│   └── FinalScene.jsx        # Escena final del juego 
-│
-├── styles/
-│   ├── index.css             # Archivo base de estilos generales
-│   └── tailwind.css          # Importaciones de Tailwind y configuración personalizada
-│
-├── ui/                       # Componentes reutilizables en diferentes pantallas
-│   ├── CodeEditor.jsx        # Editor donde el jugador escribe código
-│   ├── DialogueBox.jsx       # Cuadro de diálogo para mensajes del entrenador
-│   ├── Editor.jsx            # Componente visual del editor
-│   ├── EventTime.jsx         # Representa eventos en tiempo real durante el juego
-│   ├── Modal.jsx             # Modal genérico
-│   ├── ModalNavigation.jsx   # Modal para navegación entre fases
-│   ├── ModalSize.jsx         # Modal para elegir tamaño de componente visual
-│   ├── Navigation.jsx        # Barra de navegación del juego
-│   ├── Preview.jsx           # Vista previa del resultado del código
-│   ├── ScoreBoard.jsx        # Marcador en tiempo real del partido
-│   ├── Timer.jsx             # Cronómetro del juego
-│   └── TrainingPoint.jsx     # Punto de progreso en el entrenamiento
-│
-├── utils/                    # Funciones de utilidad para lógica del juego
-│   ├── EvaluateAnswer.js         # Evalúa si el código del jugador es correcto
-│   ├── navigateToNextPhase.js   # Lógica para pasar a la siguiente fase del juego
-│   ├── routeFlow.js             # Flujo de rutas del juego según el estado
-│   ├── routeGuard.js            # Protege rutas si no hay sesión iniciada
-│   └── useTime.js               # Hook personalizado para el manejo del tiempo
-│
-├── App.jsx                 # Define el flujo de rutas principales y estructura del juego
-└── index.js                # Punto de entrada de la aplicación
-
+  ```
 ```
 </details>
 
