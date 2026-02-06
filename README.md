@@ -163,8 +163,8 @@ src/
 │ 
 ├── assets/
 │   ├── svg/
-│   │     ├── Close.jsx 
-│   │     └── MobileMenu.jsx
+│   │   ├── Close.jsx 
+│   │   └── MobileMenu.jsx
 │   ├──  # Las imágenes están en la carpeta public por que se usan rutas absolutas
 │
 ├── core/   
@@ -205,34 +205,34 @@ src/
 │   │   ├── components/
 │   │   │ 
 │   │   ├── data/
-│   │   │   ├ ── events/ 
-│   │   │   ├ ── logic/ 
-│   │   │   ├ ── matches/ 
+│   │   │   ├── events/ 
+│   │   │   ├── logic/ 
+│   │   │   ├── matches/ 
 │   │   │   │   ├── gem-rubies.js 
 │   │   │   │   ├── knight-coders.js 
 │   │   │   │   └──  style-chamaleons.js 
-│   │   │   ├ ── Game.jsx
-│   │   │   ├ ── MatchData.jsx
-│   │   │   ├ ── MatchesList.js
-│   │   │   ├ ── MatchPresentation.js
+│   │   │   ├── Game.jsx
+│   │   │   ├── MatchData.jsx
+│   │   │   ├── MatchesList.js
+│   │   │   ├── MatchPresentation.js
 │   │   │   └── SubBench.js
 │   │   │ 
 │   │   ├── Page/ 
-│   │   │   ├ ── Final.jsx 
-│   │   │   ├ ── Game.jsx 
-│   │   │   ├ ── MatchPresentation.jsx 
+│   │   │   ├── Final.jsx 
+│   │   │   ├── Game.jsx 
+│   │   │   ├── MatchPresentation.jsx 
 │   │   │   └──  SubBench.jsx 
 │   │   
 │   ├── training/              
 │   │   ├── components/
 │   │   │ 
 │   │   ├── data/
-│   │   │   ├ ── lessonIntroDialogue.js
-│   │   │   ├ ── trainingDialogues.js
-│   │   │   ├ ── trainingLessons.js 
+│   │   │   ├── lessonIntroDialogue.js
+│   │   │   ├── trainingDialogues.js
+│   │   │   ├── trainingLessons.js 
 │   │   │ 
 │   │   ├── Page/ 
-│   │   │   ├ ── LessonIntro.jsx 
+│   │   │   ├── LessonIntro.jsx 
 │   │   │   └──  Training.jsx
 │ 
 ├── styles/
