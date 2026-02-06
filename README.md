@@ -154,6 +154,108 @@ La arquitectura de **CódiGol** está pensada para mantener el código limpio, m
 <summary>📁 Estructura completa</summary>
     
   ```
+src/
+├── app/
+│   ├── Providers/
+│   │   └── GameProvider.jsx
+│   ├── App.jsx
+│   └── routes.jsx
+│ 
+├── assets/
+│   ├── svg/
+│   │     ├── Close.jsx 
+│   │     └── MobileMenu.jsx
+│   ├──  # Las imágenes están en la carpeta public por que se usan rutas absolutas
+│
+├── core/   
+│   ├── constans/              
+│   │   ├── gameConfig.js               
+│   ├── hooks/              
+│   │   ├── userTime.js
+│   ├── utils/              
+│   │   ├── evaluateAnswer.js
+│   │   ├── matchManager.js
+│   │   ├── NavigateToNextPhase.js
+│   │   ├── routeFlow.js
+│   │   └── routeGuard.js
+│
+├── features/
+│   ├── auth/              
+│   │   ├── components/
+│   │   │   └── ProtectedRoute.jsx
+│   │   └── services/
+│   │       └── clerkSession.js
+│   │ 
+│   ├── Final/              
+│   │   ├── pages/
+│   │   │   └── FinalScene.jsx 
+│   │ 
+│   ├── home/              
+│   │   ├── pages/
+│   │   │   ├── Home.jsx 
+│   │   │   └── Prove.jsx
+│   │ 
+│   ├── league/              
+│   │   ├── data/
+│   │   │   └──  leagueData.jsx 
+│   │   ├──pages/
+│   │   │   └── LeagueTable.jsx
+│   │ 
+│   ├── matches/              
+│   │   ├── components/
+│   │   │ 
+│   │   ├── data/
+│   │   │   ├ ── events/ 
+│   │   │   ├ ── logic/ 
+│   │   │   ├ ── matches/ 
+│   │   │   │   ├── gem-rubies.js 
+│   │   │   │   ├── knight-coders.js 
+│   │   │   │   └──  style-chamaleons.js 
+│   │   │   ├ ── Game.jsx
+│   │   │   ├ ── MatchData.jsx
+│   │   │   ├ ── MatchesList.js
+│   │   │   ├ ── MatchPresentation.js
+│   │   │   └── SubBench.js
+│   │   │ 
+│   │   ├── Page/ 
+│   │   │   ├ ── Final.jsx 
+│   │   │   ├ ── Game.jsx 
+│   │   │   ├ ── MatchPresentation.jsx 
+│   │   │   └──  SubBench.jsx 
+│   │   
+│   ├── training/              
+│   │   ├── components/
+│   │   │ 
+│   │   ├── data/
+│   │   │   ├ ── lessonIntroDialogue.js
+│   │   │   ├ ── trainingDialogues.js
+│   │   │   ├ ── trainingLessons.js 
+│   │   │ 
+│   │   ├── Page/ 
+│   │   │   ├ ── LessonIntro.jsx 
+│   │   │   └──  Training.jsx
+│ 
+├── styles/
+│   ├──  index.css 
+│   └──  tailwind.css 
+│ 
+├── ui/
+│   ├──  CodeEditor.jsx 
+│   ├──  DialogueBox.jsx 
+│   ├──  Editor.jsx 
+│   ├──  EventTime.jsx 
+│   ├──  Modal.jsx 
+│   ├──  ModalExplanation.jsx 
+│   ├──  ModalInNavigation.jsx 
+│   ├──  ModalSize.jsx 
+│   ├──  Navigation.jsx 
+│   ├──  Preview.jsx 
+│   ├──  Scoreboard.jsx 
+│   ├──  Timer.jsx 
+│   └──  TrainingPoint.jsx
+│
+└── index.js
+
 ```
 </details>
 
