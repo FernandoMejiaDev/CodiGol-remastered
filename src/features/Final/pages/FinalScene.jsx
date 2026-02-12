@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { resetGameProgress } from "@/core/utils/routeGuard";
 import EventTime from "@/ui/EventTime"
 import ModalSize from "@/ui/ModalSize";
+import GitHub from "@/assets/svg/Github";
 
 const FinalScene = () => {
   const navigate = useNavigate();
@@ -18,153 +19,113 @@ const FinalScene = () => {
     navigate("/", { replace: true });
   };
   return (
-    <div className="flex flex-col items-center justify-center gap-2 px-4 py-8 min-h-dvh bg-slate-100">
-      <div className="w-full text-2xl max-w-[80rem] text-slate-600 font-bold flex flex-row justify-between p-2 border-b-4 border-neutral-800">
-        <EventTime />
+    <div className="min-h-dvh bg-gradient-to-b from-neutral-900 via-neutral-800 to-black text-white flex flex-col">
 
-        <h1>#123456789</h1>
-      </div>
+      <section className="flex flex-col items-center justify-center text-center py-20 px-6 space-y-6">
+        {/* FULL STACK LEAGUE COMPLETADA */}
+        <h1 className="text-4xl md:text-6xl font-extrabold tracking-wide">
+          DEMO COMPLETADA
+        </h1>
 
-      {/* <ModalSize className="absolute" /> */}
+        {/*Has terminado la primera temporada de CódiGol. */}
+        <p className="max-w-2xl text-neutral-300 text-lg md:text-xl">
+          Has terminado la demo de CódiGol.
+          Gracias por jugar y explorar esta experiencia de aprendizaje.
+        </p>
 
-      <div className="w-full text-white max-w-[80rem] p-4 text-2xl md:text-6xl font-bold tracking-widest text-center uppercase bg-neutral-800">
-        <h1 className="">INICIA LA FULL STACK LEAGUE</h1>
-      </div>
+        <div className="h-1 w-32 bg-yellow-400 rounded-full"></div>
+      </section>
 
-      <div className="w-full max-w-[80rem] text-lg md:text-4xl text-center border-t-4 text-slate-600 border-neutral-800">
-        <h2 className="">
-          Resumen de la primera jornada de la Full Stack League
-        </h2>
-      </div>
+      <section className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8 pb-20">
 
-      <div className="relative w-full max-w-[80rem] mx-auto">
-        <div className="absolute w-full p-4 text-2xl text-white md:text-4xl">
-          <h1 className="">UNA JORNADA LLENA DE EMOCIÓN Y CÓDIGO</h1>
+        <div className="bg-neutral-800/60 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <h2 className="text-xl font-bold mb-4 text-yellow-400">
+            Sobre CódiGol
+          </h2>
+
+          <p className="text-neutral-300">
+            Proyecto creado para practicar Tailwind CSS mediante
+            mecánicas de fútbol gamificadas.
+          </p>
+
+          <p className="text-neutral-300">
+            Proyecto con participación en la Hackathon de MiduDev 2025.
+          </p>
+
+          <a
+            href="https://github.com/midudev/hackaton-clerk-2025?tab=readme-ov-file#%EF%B8%8F-c%C3%B3mo-participar-en-la-hackat%C3%B3n"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-4 text-sm font-semibold text-yellow-400 hover:underline"
+          >
+            Ver Hackathon →
+          </a>
         </div>
-        <img src="/img/Background.webp" alt="alt" className="w-full h-auto " />
-        <div className="grid grid-cols-4 md:grid-cols-6 gap-2 justify-between items-center p-4 absolute bottom-0 left-0 w-full h-[33%] md:h-[20%] bg-red-600 ">
-          <p className="col-span-3 text-lg text-white md:col-span-5 ">
-            Comenzó la esperada Full Stack League con partidos emocionantes
-            desde el primer minuto.
-          </p>
 
-          <div className="flex p-4 text-lg font-bold text-red-600 bg-yellow-400 ">
-            <h1 className="m-auto">PAG 10</h1>
-          </div>
-        </div>
-      </div>
+        <div className="bg-neutral-800/60 backdrop-blur-md p-6 rounded-2xl items-center flex flex-col shadow-lg hover:scale-105 transition text-center">
 
-      <div className="mt-2 grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-[80rem] mx-auto">
-        <div className="flex flex-col items-center justify-start text-center bg-yellow-400">
-          <div className="grid items-center justify-center w-full grid-cols-4 p-2 text-white bg-neutral-800">
-            <a
-              className="col-span-3 font-bold hover:text-red-600"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/midudev/hackaton-clerk-2025?tab=readme-ov-file#%EF%B8%8F-c%C3%B3mo-participar-en-la-hackat%C3%B3n"
-            >
-              Hackathon de Midudev 2025
-            </a>
+          <img
+            src="/img/FerCode.webp"
+            alt="Fernando"
+            className="w-28 h-28 mx-auto rounded-full mb-4 border-4 border-yellow-400 object-cover"
+          />
 
-            <div className="flex p-2 font-bold bg-red-600">
-              <h1 className="m-auto ">2</h1>
-            </div>
-          </div>
+          <h2 className="text-xl font-bold text-yellow-400">
+            Fernando Mejía
+          </h2>
 
-          <p className="p-2 text-base md:text-xl">
-            <strong>CódiGol</strong> es una demo creada como parte de la
-            Hackathon organizada por Midudev 2025. Este pequeño videojuego web
-            tiene como objetivo ayudar a practicar y aprender Tailwind CSS de
-            manera divertida y visual.
-          </p>
-
-          <p className="p-2 text-base md:text-xl">
-            La idea surgió al notar que, más allá de la documentación oficial,
-            no existían muchas experiencias interactivas para aprender Tailwind.
-            Por eso nació <strong>CódiGol</strong>: una propuesta creativa para
-            quienes buscan una forma distinta de entender y aplicar esta potente
-            herramienta de estilos.
-          </p>
-
-          <p className="p-2 text-base md:text-xl">
-            Actualmente es solo una demo, pero en el futuro se lanzará una
-            versión más completa y avanzada.{" "}
-            <span className="font-bold">
-              ¡Gracias por visitar y ser parte de este primer paso!
-            </span>
+          <p className="text-neutral-300 mt-3 text-sm">
+            Combinando fútbol y código para hacer el aprendizaje más divertido.
           </p>
         </div>
 
-        <div className="flex flex-col items-center justify-start text-center">
-          <img src="/img/FerCode.webp" alt="FerCode" className="w-full h-auto" />
-
-          <div className="grid items-center justify-center w-full grid-cols-4 p-2 text-white bg-neutral-800">
-            <a
-              className="col-span-3 font-bold hover:text-red-600"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://fercode.netlify.app/"
-            >
-              Fernando Mejía
-            </a>
-
-            <div className="flex p-2 font-bold bg-red-600">
-              <h1 className="m-auto">3</h1>
-            </div>
+        <div className="bg-neutral-800/60 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition text-center">
+          <div className="w-20 h-20 text-yellow-400 m-auto">
+            <GitHub className="w-full h-full" />
           </div>
 
-          <p className="p-2 text-base md:text-xl">
-            Soy un apasionado por el código y el aprendizaje. CódiGol es una
-            forma de combinar mi gusto por el fútbol y la programación para
-            ayudar a otros a aprender mientras se divierten jugando.
+          <h2 className="text-xl font-bold text-yellow-400">
+            Código Abierto
+          </h2>
+
+          <p className="text-neutral-300 mt-3 text-sm">
+            Explora el proyecto y su evolución.
           </p>
+
+          <a
+            href="https://github.com/FernandoMejiaDev/CodiGol-remastered"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-4 text-sm font-semibold text-yellow-400 hover:underline"
+          >
+            Ver GitHub →
+          </a>
         </div>
 
-        <div className="flex flex-col items-center justify-start text-center ">
-          <img src="/img/GitHub.webp" alt="GitHub" className="w-full h-auto" />
+      </section>
 
-          <div className="grid items-center justify-center w-full grid-cols-4 p-2 text-white bg-neutral-800">
-            <a
-              className="col-span-3 font-bold hover:text-red-600"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/FernadoCodeDev"
-            >
-              GitHub
-            </a>
+      <section className="mt-auto bg-neutral-900 py-8 border-t border-neutral-700">
+        <div className="flex flex-col md:flex-row justify-center gap-6">
 
-            <div className="flex p-2 font-bold bg-red-600">
-              <h1 className="m-auto ">4</h1>
-            </div>
-          </div>
+          <button
+            onClick={handleRestart}
+            className="px-8 py-3 bg-yellow-400 text-black font-bold rounded-xl hover:scale-105 transition"
+          >
+            Nueva Temporada
+          </button>
 
-          <p className="p-2 text-base md:text-xl">
-            Puedes revisar mi perfil de GitHub para conocer más sobre este
-            proyecto y otros desarrollos personales. ¡Espero que encuentres algo
-            que te inspire o te ayude en tu camino como desarrollador!
-            <span className="font-bold"> ¡Gracias por Jugar!</span>
-          </p>
+          <button
+            onClick={handleGoHome}
+            className="px-8 py-3 border border-yellow-400 text-yellow-400 font-bold rounded-xl hover:bg-yellow-400 hover:text-black transition"
+          >
+            Volver al Inicio
+          </button>
+
         </div>
-      </div>
+      </section>
 
-      <div className="w-full text-2xl max-w-[80rem] h-1 bg-neutral-800"></div>
-
-      <div className="w-full text-2xl max-w-[80rem] flex flex-col md:flex-row justify-center md:justify-between p-2 border-t-4 border-neutral-800">
-        <button
-          className="p-2 font-bold text-neutral-800 hover:bg-neutral-300"
-          onClick={handleRestart}
-        >
-          Volver a Jugar
-        </button>
-
-        <button
-          className="p-2 font-bold text-neutral-800 hover:bg-neutral-300"
-          onClick={handleGoHome}
-        >
-          Volver al inicio
-        </button>
-      </div>
     </div>
+
   );
 };
 
