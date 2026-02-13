@@ -5,7 +5,7 @@ import {
   SignedOut,
   UserButton,
 } from "@clerk/clerk-react";
-import Modal from "@/ui/Modal";
+import ModalInstruction from "@/ui/ModalInstruction";
 import ModalSize from "@/ui/ModalSize";
 import { useUser } from "@clerk/clerk-react";
 import { useNavigate } from "react-router-dom";
@@ -55,7 +55,7 @@ const Home = () => {
             ¡Jugar Ahora!
           </button>
 
-          <Modal />
+          <ModalInstruction />
 
           <SignedOut>
             <SignInButton

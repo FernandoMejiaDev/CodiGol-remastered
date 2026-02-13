@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import MobileMenu from "../assets/svg/MobileMenu";
 import CloseMenuIcon from "../assets/svg/Close";
-import ModalInNavigation from "./ModalInNavigation";
 
 const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,10 +8,6 @@ const Navigation = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen); // Menu Status
   };
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const toggleModal = () => setIsModalOpen(!isModalOpen);
 
   return (
     <div className="flex flex-row ">
@@ -35,13 +30,6 @@ const Navigation = () => {
             <div className="flex flex-col justify-between gap-2 p-8">
               <h1 className="mb-4 text-5xl font-bold md:text-6xl text-slate-100">CódiGol</h1>
 
-              <button
-                onClick={toggleModal}
-                className="w-full px-6 py-2 font-semibold text-black bg-white hover:bg-gray-200 rounded-xl"
-              >
-                Instrucciones
-              </button>
-
               <a href="/">
                 <button className="w-full px-6 py-2 font-semibold text-black bg-white hover:bg-gray-200 rounded-xl">
                   Regresar
@@ -53,7 +41,6 @@ const Navigation = () => {
         </div>
       )}
 
-      <ModalInNavigation isOpen={isModalOpen} toggleModal={toggleModal} />
 
       {!menuOpen && (
         <div
