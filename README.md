@@ -81,7 +81,7 @@ Antes de cada partido, el jugador debe completar un entrenamiento. Aquí podrá 
 
 El entrenamiento solo termina cuando todas las respuestas son correctas, asegurando que el jugador domine bien la lección antes de entrar al campo.
 
-<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN6.webp" alt="imgReadmeN6" /> 
+<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN6.webp"alt="alt" /> <br/> <em>Pantalla inicial de entrenamiento</em> </p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN7.webp" alt="alt" /> <br/> <em></em>Ejercicio práctico</p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN8.webp" alt="alt" /> <br/> <em>Anotación</em> </p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN9.webp"  alt="alt" /> <br/> <em>Modal de explicación sobre las clases de Tailwind CSS</em>   </p>
 
 ## ⚔️ El Partido
 
@@ -89,13 +89,13 @@ Una vez completado el entrenamiento, es momento del partido. En la escena de VS,
 
 A medida que se avanza en la liga, el **margen de error se reduce** y los desafíos se vuelven más exigentes.
 
-<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN7.webp" alt="imgReadmeN7" /> 
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN10.webp" alt="imgReadmeN10" /> 
 
 ## 🧭 Estrategia y Recordatorio
 
 Antes de entrar al segundo tiempo, el entrenador te recuerda lo aprendido y te da contexto de lo que está en juego. Además, menciona que tienes **5 jugadas o estrategias** para crear oportunidades de anotar — esto representa tus **5 intentos** para resolver correctamente los ejercicios en el partido.
 
-<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN8.webp" alt="imgReadmeN8" /> 
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN11.webp" alt="imgReadmeN11" /> 
 
 ## 🏟️ El Partido Real
 
@@ -109,7 +109,8 @@ Al final del partido, se muestra el resultado, que determinará la posición del
 
 El objetivo final es **sumar la mayor cantidad de puntos** a lo largo de la liga y convertirte en el campeón de la Full Stack League, dominando las técnicas más importantes de **Tailwind CSS** en el camino.
 
-<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN9.webp" alt="imgReadmeN9" /> 
+<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN12.webp"alt="alt" /> <br/> <em>Partido</em> </p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN13.webp" alt="alt" /> <br/> <em></em>Posición en la liga</p>
+
 
 # 📱 Detalle sobre la Responsividad y Modal de Tamaño
 
@@ -117,7 +118,7 @@ El objetivo final es **sumar la mayor cantidad de puntos** a lo largo de la liga
 
 Este modal tiene como objetivo evitar problemas de visualización y usabilidad, especialmente en **celulares o tablets**, donde el entorno de desarrollo no sería óptimo. Para disfrutar de **CódiGol** correctamente, se recomienda utilizarlo en una computadora de escritorio o laptop con una resolución igual o superior a 1280px de ancho.
 
-<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN10.webp" alt="imgReadmeN10" /> 
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN15.webp" alt="imgReadmeN15" /> 
 
 ## 🎯 Objetivo del juego
 
