@@ -230,7 +230,7 @@ src/
 │   │   ├── data/
 │   │   │   ├── lessonIntroDialogue.js
 │   │   │   ├── trainingDialogues.js
-│   │   │   ├── trainingLessons.js 
+│   │   │   └── trainingLessons.js 
 │   │   │ 
 │   │   └── Page/ 
 │   │       ├── LessonIntro.jsx 
