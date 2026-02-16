@@ -198,7 +198,7 @@ src/
 │   │ 
 │   ├── league/              
 │   │   ├── data/
-│   │   │   └──  leagueData.jsx 
+│   │   │   └── leagueData.jsx 
 │   │   └── pages/
 │   │       └── LeagueTable.jsx
 │   │ 
@@ -211,7 +211,7 @@ src/
 │   │   │   ├── matches/ 
 │   │   │   │   ├── gem-rubies.js 
 │   │   │   │   ├── knight-coders.js 
-│   │   │   │   └──  style-chamaleons.js 
+│   │   │   │   └── style-chamaleons.js 
 │   │   │   ├── Game.jsx
 │   │   │   ├── MatchData.jsx
 │   │   │   ├── MatchesList.js
@@ -222,7 +222,7 @@ src/
 │   │       ├── Final.jsx 
 │   │       ├── Game.jsx 
 │   │       ├── MatchPresentation.jsx 
-│   │       └──  SubBench.jsx 
+│   │       └── SubBench.jsx 
 │   │   
 │   ├── training/              
 │   │   ├── components/
@@ -234,26 +234,26 @@ src/
 │   │   │ 
 │   │   └── Page/ 
 │   │       ├── LessonIntro.jsx 
-│   │       └──  Training.jsx
+│   │       └── Training.jsx
 │ 
 ├── styles/
-│   ├──  index.css 
-│   └──  tailwind.css 
+│   ├── index.css 
+│   └── tailwind.css 
 │ 
 ├── ui/
-│   ├──  CodeEditor.jsx 
-│   ├──  DialogueBox.jsx 
-│   ├──  Editor.jsx 
-│   ├──  EventTime.jsx 
-│   ├──  Modal.jsx 
-│   ├──  ModalExplanation.jsx 
-│   ├──  ModalInNavigation.jsx 
-│   ├──  ModalSize.jsx 
-│   ├──  Navigation.jsx 
-│   ├──  Preview.jsx 
-│   ├──  Scoreboard.jsx 
-│   ├──  Timer.jsx 
-│   └──  TrainingPoint.jsx
+│   ├── CodeEditor.jsx 
+│   ├── DialogueBox.jsx 
+│   ├── Editor.jsx 
+│   ├── EventTime.jsx 
+│   ├── Modal.jsx 
+│   ├── ModalExplanation.jsx 
+│   ├── ModalInNavigation.jsx 
+│   ├── ModalSize.jsx 
+│   ├── Navigation.jsx 
+│   ├── Preview.jsx 
+│   ├── Scoreboard.jsx 
+│   ├── Timer.jsx 
+│   └── TrainingPoint.jsx
 │
 └── index.js
 
