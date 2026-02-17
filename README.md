@@ -224,17 +224,17 @@ src/
 │   │       ├── MatchPresentation.jsx 
 │   │       └── SubBench.jsx 
 │   │   
-│   ├── training/              
-│   │   ├── components/
-│   │   │ 
-│   │   ├── data/
-│   │   │   ├── lessonIntroDialogue.js
-│   │   │   ├── trainingDialogues.js
-│   │   │   └── trainingLessons.js 
-│   │   │ 
-│   │   └── Page/ 
-│   │       ├── LessonIntro.jsx 
-│   │       └── Training.jsx
+│   └── training/              
+│       ├── components/
+│       │ 
+│       ├── data/
+│       │   ├── lessonIntroDialogue.js
+│       │   ├── trainingDialogues.js
+│       │   └── trainingLessons.js 
+│       │ 
+│       └── Page/ 
+│           ├── LessonIntro.jsx 
+│           └── Training.jsx
 │ 
 ├── styles/
 │   ├── index.css 
