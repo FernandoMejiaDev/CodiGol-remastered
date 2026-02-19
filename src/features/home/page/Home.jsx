@@ -35,7 +35,7 @@ const Home = () => {
 
       <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
-      {/* <ModalSize className="absolute" /> */}
+       <ModalSize className="absolute" /> 
 
       <div className="relative z-10 flex flex-col items-center justify-center px-4 text-center text-white h-dvh">
         <h1 className="mb-4 text-5xl font-bold md:text-6xl">
