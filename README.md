@@ -166,19 +166,19 @@ src/
 │   ├── svg/
 │   │   ├── Close.jsx 
 │   │   └── MobileMenu.jsx
-│   ├──  # Las imágenes están en la carpeta public por que se usan rutas absolutas
+│   └──  # Las imágenes están en la carpeta public por que se usan rutas absolutas
 │
 ├── core/   
 │   ├── constans/              
-│   │   ├── gameConfig.js               
+│   │   └── gameConfig.js               
 │   ├── hooks/              
-│   │   ├── userTime.js
-│   ├── utils/              
-│   │   ├── evaluateAnswer.js
-│   │   ├── matchManager.js
-│   │   ├── NavigateToNextPhase.js
-│   │   ├── routeFlow.js
-│   │   └── routeGuard.js
+│   │   └── userTime.js
+│   └── utils/              
+│       ├── evaluateAnswer.js
+│       ├── matchManager.js
+│       ├── NavigateToNextPhase.js
+│       ├── routeFlow.js
+│       └── routeGuard.js
 │
 ├── features/
 │   ├── auth/              
@@ -188,19 +188,19 @@ src/
 │   │       └── clerkSession.js
 │   │ 
 │   ├── Final/              
-│   │   ├── pages/
-│   │   │   └── FinalScene.jsx 
+│   │   └── pages/
+│   │       └── FinalScene.jsx 
 │   │ 
 │   ├── home/              
-│   │   ├── pages/
-│   │   │   ├── Home.jsx 
-│   │   │   └── Prove.jsx
+│   │   └── pages/
+│   │       ├── Home.jsx 
+│   │       └── Prove.jsx
 │   │ 
 │   ├── league/              
 │   │   ├── data/
-│   │   │   └──  leagueData.jsx 
-│   │   ├──pages/
-│   │   │   └── LeagueTable.jsx
+│   │   │   └── leagueData.jsx 
+│   │   └── pages/
+│   │       └── LeagueTable.jsx
 │   │ 
 │   ├── matches/              
 │   │   ├── components/
@@ -211,49 +211,49 @@ src/
 │   │   │   ├── matches/ 
 │   │   │   │   ├── gem-rubies.js 
 │   │   │   │   ├── knight-coders.js 
-│   │   │   │   └──  style-chamaleons.js 
+│   │   │   │   └── style-chamaleons.js 
 │   │   │   ├── Game.jsx
 │   │   │   ├── MatchData.jsx
 │   │   │   ├── MatchesList.js
 │   │   │   ├── MatchPresentation.js
 │   │   │   └── SubBench.js
 │   │   │ 
-│   │   ├── Page/ 
-│   │   │   ├── Final.jsx 
-│   │   │   ├── Game.jsx 
-│   │   │   ├── MatchPresentation.jsx 
-│   │   │   └──  SubBench.jsx 
+│   │   └── Page/ 
+│   │       ├── Final.jsx 
+│   │       ├── Game.jsx 
+│   │       ├── MatchPresentation.jsx 
+│   │       └── SubBench.jsx 
 │   │   
-│   ├── training/              
-│   │   ├── components/
-│   │   │ 
-│   │   ├── data/
-│   │   │   ├── lessonIntroDialogue.js
-│   │   │   ├── trainingDialogues.js
-│   │   │   ├── trainingLessons.js 
-│   │   │ 
-│   │   ├── Page/ 
-│   │   │   ├── LessonIntro.jsx 
-│   │   │   └──  Training.jsx
+│   └── training/              
+│       ├── components/
+│       │ 
+│       ├── data/
+│       │   ├── lessonIntroDialogue.js
+│       │   ├── trainingDialogues.js
+│       │   └── trainingLessons.js 
+│       │ 
+│       └── Page/ 
+│           ├── LessonIntro.jsx 
+│           └── Training.jsx
 │ 
 ├── styles/
-│   ├──  index.css 
-│   └──  tailwind.css 
+│   ├── index.css 
+│   └── tailwind.css 
 │ 
 ├── ui/
-│   ├──  CodeEditor.jsx 
-│   ├──  DialogueBox.jsx 
-│   ├──  Editor.jsx 
-│   ├──  EventTime.jsx 
-│   ├──  Modal.jsx 
-│   ├──  ModalExplanation.jsx 
-│   ├──  ModalInNavigation.jsx 
-│   ├──  ModalSize.jsx 
-│   ├──  Navigation.jsx 
-│   ├──  Preview.jsx 
-│   ├──  Scoreboard.jsx 
-│   ├──  Timer.jsx 
-│   └──  TrainingPoint.jsx
+│   ├── CodeEditor.jsx 
+│   ├── DialogueBox.jsx 
+│   ├── Editor.jsx 
+│   ├── EventTime.jsx 
+│   ├── Modal.jsx 
+│   ├── ModalExplanation.jsx 
+│   ├── ModalInNavigation.jsx 
+│   ├── ModalSize.jsx 
+│   ├── Navigation.jsx 
+│   ├── Preview.jsx 
+│   ├── Scoreboard.jsx 
+│   ├── Timer.jsx 
+│   └── TrainingPoint.jsx
 │
 └── index.js
 
