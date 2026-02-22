@@ -140,7 +140,7 @@ Si deseas correr **CódiGol** en tu máquina local, sigue estos pasos:
 2. Instala las dependencias
      ```
     npm install
-3. Crea el archivo `.env` y integra la variable de entorno para integrar **Clerk SDK**
+3. Crea el archivo `.env` y integra la variable de entorno para integrar **Clerk**
 4. Inicia el servidor de desarrollo
     ```
      npm start
