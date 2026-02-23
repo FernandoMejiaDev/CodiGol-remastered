@@ -93,7 +93,7 @@ A medida que se avanza en la liga, el **margen de error se reduce** y los desaf�
 
 ## 🧭 Estrategia y Recordatorio
 
-Antes de entrar al segundo tiempo, el entrenador te recuerda lo aprendido y te da contexto de lo que está en juego. Además, menciona que tienes **5 jugadas o estrategias** para crear oportunidades de anotar — esto representa tus **5 intentos** para resolver correctamente los ejercicios en el partido.
+Antes de entrar al segundo tiempo, el entrenador te recuerda lo aprendido y te da contexto de lo que está en juego. Además, menciona que tienes **5 jugadas o estrategias** para crear oportunidades de anotar esto representa tus **5 intentos** para resolver correctamente los ejercicios en el partido.
 
 <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN11.webp" alt="imgReadmeN11" /> 
 
@@ -268,6 +268,4 @@ src/
 ## 📜 Licencia
 Este proyecto fue desarrollado como proyecto para la [Hackathon de MiduDev 2025](https://github.com/midudev/hackaton-clerk-2025?tab=readme-ov-file#%EF%B8%8F-c%C3%B3mo-participar-en-la-hackat%C3%B3n) y está disponible con fines educativos y demostrativos.
 
-
 ---
-
