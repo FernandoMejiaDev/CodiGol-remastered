@@ -146,7 +146,7 @@ Si deseas correr **CódiGol** en tu máquina local, sigue estos pasos:
      npm start
 ## ⚡ ¿Por qué usar npm start?
 **CódiGol** está construido con React, por lo que requiere un entorno de desarrollo para compilar y visualizar correctamente la aplicación.
-El comando `npm start` inicia el servidor de desarrollo de React, permitiendo ver los cambios en tiempo real.
+El comando `pnpm start` inicia el servidor de desarrollo de React, permitiendo ver los cambios en tiempo real.
 
 ## 🚧  Estructura del proyecto 🧱
 La arquitectura de **CódiGol** está pensada para mantener el código limpio, modular y fácil de escalar. Aquí se explica cada carpeta y archivo clave del proyecto:
