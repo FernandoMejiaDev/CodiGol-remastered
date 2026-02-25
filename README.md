@@ -139,11 +139,11 @@ Si deseas correr **CódiGol** en tu máquina local, sigue estos pasos:
 1. Clona el repositorio
 2. Instala las dependencias
      ```
-    npm install
+    pnpm install
 3. Crea el archivo `.env` y integra la variable de entorno para integrar **Clerk**
 4. Inicia el servidor de desarrollo
     ```
-     npm start
+     pnpm start
 ## ⚡ ¿Por qué usar npm start?
 **CódiGol** está construido con React, por lo que requiere un entorno de desarrollo para compilar y visualizar correctamente la aplicación.
 El comando `pnpm start` inicia el servidor de desarrollo de React, permitiendo ver los cambios en tiempo real.
