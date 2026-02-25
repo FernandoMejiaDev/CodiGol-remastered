@@ -137,11 +137,15 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
 Si deseas correr **CódiGol** en tu máquina local, sigue estos pasos:
 
 1. Clona el repositorio
-2. Instala las dependencias
+2. Instala las dependencias usando pnpm
+3. Instalación globalmente usando npm
+     ```
+    npm install -g pnpm
+3. Instalación de las dependencias
      ```
     pnpm install
-3. Crea el archivo `.env` y integra la variable de entorno para integrar **Clerk**
-4. Inicia el servidor de desarrollo
+4. Crea el archivo `.env` y integra la variable de entorno para integrar **Clerk**
+5. Inicia el servidor de desarrollo
     ```
      pnpm start
 ## ⚡ ¿Por qué usar npm start?
