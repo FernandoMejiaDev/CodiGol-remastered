@@ -2,7 +2,7 @@
 
 # ⚽ **CódiGol**
 
-**CódiGol** es un pequeño videojuego web diseñado para ayudarte a aprender y practicar Tailwind CSS de forma divertida y diferente. Inspirado en la emoción del fútbol, este juego te reta a anotar goles completando desafíos de diseño utilizando Tailwind.
+**CódiGol** es un pequeño videojuego web diseñado para ayudarte a aprender y practicar **Tailwind CSS** de forma divertida y diferente. Inspirado en la emoción del fútbol, este juego te reta a anotar goles completando desafíos de diseño utilizando **Tailwind CSS**.
 
 Esta idea surgió como un concepto que había descartado tiempo atrás, pero gracias a la experiencia adquirida y la motivación de la [Hackathon de MiduDev 2025](https://github.com/midudev/hackaton-clerk-2025?tab=readme-ov-file#%EF%B8%8F-c%C3%B3mo-participar-en-la-hackat%C3%B3n), decidí retomarla y convertirla en una demo funcional. El desarrollo **se realizó en menos de 10 días, desde el 8 hasta el 21 de mayo de 2025**, como parte del reto.
 
@@ -24,7 +24,6 @@ Durante la transmisión final de la Hackathon organizada por [Midudev](https://w
 [![Ver mención en el stream](https://img.youtube.com/vi/0Z0Vy0VWQeY/hqdefault.jpg)](https://www.youtube.com/watch?v=0Z0Vy0VWQeY)
 
 [![Ver mención en el stream](https://img.shields.io/static/v1?message=youtube&logo=Youtube&label=&color=c91e1e&logoColor=white&labelColor=&style=for-the-badge)](https://www.youtube.com/watch?v=0Z0Vy0VWQeY)
-
 
 ## 🌐 Enlace a la demo 
 
