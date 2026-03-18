@@ -258,7 +258,6 @@ src/
 │   └── TrainingPoint.jsx
 │
 └── index.js
-
 ```
 </details>
 
