@@ -155,6 +155,8 @@ La arquitectura de **CódiGol** está pensada para mantener el código limpio, m
 
 <details>
 <summary>📁 Estructura completa</summary>
+ 
+<br/>
     
   ```
 src/
