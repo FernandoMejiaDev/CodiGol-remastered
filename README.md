@@ -80,7 +80,7 @@ Antes de cada partido, el jugador debe completar un entrenamiento. Aquí podrá 
 
 El entrenamiento solo termina cuando todas las respuestas son correctas, asegurando que el jugador domine bien la lección antes de entrar al campo.
 
-<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN6.webp"alt="alt" /> <br/> <em>Pantalla inicial de entrenamiento</em> </p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN7.webp" alt="alt" /> <br/> <em></em>Ejercicio práctico</p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN8.webp" alt="alt" /> <br/> <em>Anotación</em> </p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN9.webp"  alt="alt" /> <br/> <em>Modal de explicación sobre las clases de Tailwind CSS</em>   </p>
+<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN6.webp"alt="alt" /> <br/> <em>Pantalla inicial de entrenamiento</em> </p> <p align="center"> <br/> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN7.webp" alt="alt" /> <br/> <em></em>Ejercicio práctico</p> <p align="center"> <br/> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN8.webp" alt="alt" /> <br/> <em>Anotación</em> </p> <p align="center"> <br/> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN9.webp"  alt="alt" /> <br/> <em>Modal de explicación sobre las clases de Tailwind CSS</em>   </p>
 
 ## ⚔️ El Partido
 
