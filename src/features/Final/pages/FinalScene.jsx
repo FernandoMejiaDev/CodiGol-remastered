@@ -19,27 +19,27 @@ const FinalScene = () => {
     navigate("/", { replace: true });
   };
   return (
-    <div className="min-h-dvh bg-gradient-to-b from-neutral-900 via-neutral-800 to-black text-white flex flex-col">
+    <div className="flex flex-col text-white min-h-dvh bg-gradient-to-b from-neutral-900 via-neutral-800 to-black">
 
-      <section className="flex flex-col items-center justify-center text-center py-20 px-6 space-y-6">
+      <section className="flex flex-col items-center justify-center px-6 py-20 space-y-6 text-center">
         {/* FULL STACK LEAGUE COMPLETADA */}
-        <h1 className="text-4xl md:text-6xl font-extrabold tracking-wide">
+        <h1 className="text-4xl font-extrabold tracking-wide md:text-6xl">
           DEMO COMPLETADA
         </h1>
 
         {/*Has terminado la primera temporada de CódiGol. */}
-        <p className="max-w-2xl text-neutral-300 text-lg md:text-xl">
+        <p className="max-w-2xl text-lg text-neutral-300 md:text-xl">
           Has terminado la demo de CódiGol.
           Gracias por jugar y explorar esta experiencia de aprendizaje.
         </p>
 
-        <div className="h-1 w-32 bg-yellow-400 rounded-full"></div>
+        <div className="w-32 h-1 bg-yellow-400 rounded-full"></div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8 pb-20">
+      <section className="grid max-w-6xl gap-8 px-6 pb-20 mx-auto md:grid-cols-3">
 
-        <div className="bg-neutral-800/60 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
-          <h2 className="text-xl font-bold mb-4 text-yellow-400">
+        <div className="p-6 transition shadow-lg bg-neutral-800/60 backdrop-blur-md rounded-2xl hover:scale-105">
+          <h2 className="mb-4 text-xl font-bold text-yellow-400">
             Sobre CódiGol
           </h2>
 
@@ -62,25 +62,26 @@ const FinalScene = () => {
           </a>
         </div>
 
-        <div className="bg-neutral-800/60 backdrop-blur-md p-6 rounded-2xl items-center flex flex-col shadow-lg hover:scale-105 transition text-center">
+        <div className="flex flex-col items-center p-6 text-center transition shadow-lg bg-neutral-800/60 backdrop-blur-md rounded-2xl hover:scale-105">
 
           <img
             src="/img/FerCode.webp"
             alt="Fernando"
-            className="w-28 h-28 mx-auto rounded-full mb-4 border-4 border-yellow-400 object-cover"
+            className="object-cover mx-auto mb-4 border-4 border-yellow-400 rounded-full w-28 h-28"
+            loading="lazy"
           />
 
           <h2 className="text-xl font-bold text-yellow-400">
             Fernando Mejía
           </h2>
 
-          <p className="text-neutral-300 mt-3 text-sm">
+          <p className="mt-3 text-sm text-neutral-300">
             Combinando fútbol y código para hacer el aprendizaje más divertido.
           </p>
         </div>
 
-        <div className="bg-neutral-800/60 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition text-center">
-          <div className="w-20 h-20 text-yellow-400 m-auto">
+        <div className="p-6 text-center transition shadow-lg bg-neutral-800/60 backdrop-blur-md rounded-2xl hover:scale-105">
+          <div className="w-20 h-20 m-auto text-yellow-400">
             <GitHub className="w-full h-full" />
           </div>
 
@@ -88,7 +89,7 @@ const FinalScene = () => {
             Código Abierto
           </h2>
 
-          <p className="text-neutral-300 mt-3 text-sm">
+          <p className="mt-3 text-sm text-neutral-300">
             Explora el proyecto y su evolución.
           </p>
 
@@ -104,19 +105,19 @@ const FinalScene = () => {
 
       </section>
 
-      <section className="mt-auto bg-neutral-900 py-8 border-t border-neutral-700">
-        <div className="flex flex-col md:flex-row justify-center gap-6">
+      <section className="py-8 mt-auto border-t bg-neutral-900 border-neutral-700">
+        <div className="flex flex-col justify-center gap-6 md:flex-row">
 
           <button
             onClick={handleRestart}
-            className="px-8 py-3 bg-yellow-400 text-black font-bold rounded-xl hover:scale-105 transition"
+            className="px-8 py-3 font-bold text-black transition bg-yellow-400 rounded-xl hover:scale-105"
           >
             Nueva Temporada
           </button>
 
           <button
             onClick={handleGoHome}
-            className="px-8 py-3 border border-yellow-400 text-yellow-400 font-bold rounded-xl hover:bg-yellow-400 hover:text-black transition"
+            className="px-8 py-3 font-bold text-yellow-400 transition border border-yellow-400 rounded-xl hover:bg-yellow-400 hover:text-black"
           >
             Volver al Inicio
           </button>

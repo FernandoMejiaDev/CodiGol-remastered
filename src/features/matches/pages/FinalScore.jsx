@@ -53,6 +53,7 @@ const FinalScore = () => {
                 src={playerTeam.logo}
                 alt={playerTeam.name}
                 className="object-contain w-80 h-80"
+                loading="lazy"
               />
               <div className="w-full h-2 bg-white"></div>
               <h1 className="text-4xl font-bold text-center">
@@ -71,6 +72,7 @@ const FinalScore = () => {
                 src={rivalTeam.logo}
                 alt={rivalTeam.name}
                 className="object-contain w-80 h-80"
+                loading="lazy"
               />
               <div className="w-full h-2 bg-white"></div>
               <h1 className="text-4xl font-bold text-center">

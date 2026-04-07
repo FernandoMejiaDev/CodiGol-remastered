@@ -142,6 +142,7 @@ const LeagueTable = () => {
                   src={team.logo}
                   alt={team.name}
                   className="object-contain w-10 h-10 mr-2"
+                  loading="lazy"
                 />
                 <span className="font-medium">{team.name}</span>
               </div>

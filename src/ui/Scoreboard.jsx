@@ -15,6 +15,7 @@ export default function Scoreboard({
           src={playerTeam.logo}
           alt="img"
           className="object-contain w-20 h-20"
+          loading="lazy"
         />
         <span className="text-lg">{playerGoals}</span>
         <span>{playerTeam.name}</span>

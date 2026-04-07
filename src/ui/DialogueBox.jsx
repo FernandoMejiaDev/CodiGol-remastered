@@ -67,10 +67,11 @@ const DialogueBox = ({ level = 1, currentPhase, onFinishDialog }) => {
           src="/img/TrainerPose1.webp"
           alt="alt"
           className="relative z-10 object-contain w-40 md:w-56 lg:w-64"
+          loading="lazy"
         />
       )}
 
-      <div className=" absolute w-full bottom-0 px-8 py-12 text-lg text-slate-100 md:text-xl
+      <div className=" absolute w-full bottom-0 px-8 py-12 h-60 text-lg text-slate-100 md:text-xl
         bg-gradient-to-b 
         from-transparent 
         from-1%
@@ -79,9 +80,9 @@ const DialogueBox = ({ level = 1, currentPhase, onFinishDialog }) => {
         to-neutral-950/60
         to-90%
         z-20">
-        <div className="flex flex-col items-start w-full max-w-5xl gap-4 m-auto">
+        <div className="grid items-start w-full max-w-5xl grid-cols-5 gap-4 m-auto">
 
-          <p className="text-center ">{text}</p>
+          <p className="col-span-4 text-start">{text}</p>
           {index < currentDialogue.length - 1 ? (
             <button
               onClick={handleNext}

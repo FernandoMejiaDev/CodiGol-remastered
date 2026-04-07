@@ -16,7 +16,7 @@ const MatchPresentation = () => {
   const matchData = MatchPresentationData.find(
     (match) => match.level === currentLevel
   );
-  
+
   useEffect(() => {
     const timeout = setTimeout(() => {
       navigateToNextPhase("MatchPresentation", navigate);
@@ -53,7 +53,12 @@ const MatchPresentation = () => {
 
           <div className="grid grid-cols-3 m-auto max-w-[60rem]">
             <div className="flex flex-col items-center justify-center gap-2 text-white">
-              <img src="/img/WindJaguars.webp" alt="WindJaguars" className="object-contain w-80 h-80" />
+              <img
+                src="/img/WindJaguars.webp"
+                alt="WindJaguars"
+                className="object-contain w-80 h-80"
+                loading="lazy"
+              />
               <div className="w-full h-2 bg-white"></div>
               <h1 className="text-4xl font-bold text-center">Wind Jaguars</h1>
             </div>
@@ -67,6 +72,7 @@ const MatchPresentation = () => {
                 src={matchData.Rivalimg}
                 alt={matchData.RivalsName}
                 className="object-contain w-80 h-80"
+                loading="lazy"
               />
               <div className="w-full h-2 bg-white"></div>
               <h1 className="text-4xl font-bold text-center">

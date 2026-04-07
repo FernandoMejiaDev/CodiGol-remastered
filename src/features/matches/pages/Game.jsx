@@ -178,6 +178,7 @@ const Game = () => {
             src="/img/RivalGoalkeeper.webp"
             alt="RivalGoalkeeper"
             className="absolute object-contain w-80 top-1/4 right-1/2"
+            loading="lazy"
           />
 
           <Scoreboard
