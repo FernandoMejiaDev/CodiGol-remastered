@@ -13,7 +13,7 @@ export default function CodeEditor() {
   const [code, setCode] = useState(defaultCode);
 
   return (
-    <div className="grid min-h-screen grid-cols-2 gap-4 p-4 bg-gray-100">
+    <div className="grid grid-cols-2 gap-4 p-4 bg-gray-100 h-dvh">
       <Editor />
       <Preview />
     </div>
