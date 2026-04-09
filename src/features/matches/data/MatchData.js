@@ -10,10 +10,10 @@ const MatchData = {
   },
   rivalTeam: {
     name: "Gem Rubies",
-    score: 2,
+    score: 0,
     logo: "/img/GemRubies.webp",
   },
-  matchMinutes: [48, 60, 75, 86, 92],
+  matchMinutes: [48, 60, 75, 86, 90],
 };
 
 export default MatchData;

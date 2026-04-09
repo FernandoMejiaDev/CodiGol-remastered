@@ -63,8 +63,8 @@ const MatchPresentation = () => {
               <h1 className="text-4xl font-bold text-center">Wind Jaguars</h1>
             </div>
             <div className="flex flex-col items-center justify-center gap-2 text-white">
-              <h1 className="font-bold text-center text-7xl">
-                00 - {matchData.Marker}
+              <h1 className="font-bold text-center text-9xl">
+                0 - {matchData.Marker}
               </h1>
             </div>
             <div className="flex flex-col items-center justify-center gap-2 text-white">
