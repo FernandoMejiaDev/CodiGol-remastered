@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { useUser } from "@clerk/clerk-react";
 import { unlockNextPage } from "@/core/utils/routeGuard";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
-import Navigation from "@/ui/Navigation";
 import DialogueBox from "@/ui/DialogueBox";
 import ModalSize from "@/ui/ModalSize";
 
@@ -16,16 +15,13 @@ const SubBench = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-dvh overflow-hidden">
+    <div className="relative w-full overflow-hidden h-dvh">
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
         style={{ backgroundImage: `url(/img/BankingFund.webp)` }}
       ></div>
 
       <div className="grid items-center justify-center grid-cols-5 ">
-        <div className="relative z-20 h-full text-slate-100">
-          <Navigation />
-        </div>
 
         {/* <ModalSize className="absolute" /> */}
 

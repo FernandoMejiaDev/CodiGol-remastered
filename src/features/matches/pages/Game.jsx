@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import { unlockNextPage } from "@/core/utils/routeGuard";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
 import ModalSize from "@/ui/ModalSize";
-import Navigation from "@/ui/Navigation";
 import DialogueBox from "@/ui/DialogueBox";
 import Preview from "@/ui/Preview";
 import Editor from "@/ui/Editor";
@@ -156,10 +155,6 @@ const Game = () => {
           className="relative h-[85%] mt-32 p-1"
         >
           <Preview code={code} setCode={setCode} />
-        </div>
-
-        <div style={{ width: previewWidth }} className="absolute text-slate-100">
-          <Navigation />
         </div>
 
         {/* <ModalSize className="absolute" /> */}

@@ -5,7 +5,6 @@ import { navigateToNextPhase } from "@/core/utils/navigateToNextPhase";
 import { useUser } from "@clerk/clerk-react";
 import { unlockNextPage } from "@/core/utils/routeGuard";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
-import Navigation from "@/ui/Navigation";
 import DialogueBox from "@/ui/DialogueBox";
 import ModalSize from "@/ui/ModalSize";
 import { useGame } from "@/features/league/data/leagueData";
@@ -113,9 +112,6 @@ const LeagueTable = () => {
       ></div>
 
       <div className="flex flex-row h-full">
-        <div className="relative z-20 h-full text-slate-100">
-          <Navigation />
-        </div>
 
         {/* <ModalSize className="absolute" /> */}
 

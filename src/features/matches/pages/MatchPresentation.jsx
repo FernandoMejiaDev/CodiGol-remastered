@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { navigateToNextPhase } from "@/core/utils/navigateToNextPhase";
 import { unlockNextPage } from "@/core/utils/routeGuard";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
-import Navigation from "@/ui/Navigation";
 import ModalSize from "@/ui/ModalSize";
 //data
 import MatchPresentationData from "@/features/matches/data/MatchPresentation";
@@ -40,9 +39,6 @@ const MatchPresentation = () => {
       ></div>
 
       <div className="flex flex-row h-full">
-        <div className="relative z-20 h-full text-slate-100">
-          <Navigation />
-        </div>
 
         {/* <ModalSize className="absolute" /> */}
 

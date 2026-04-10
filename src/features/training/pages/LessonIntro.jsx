@@ -2,7 +2,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { useUser } from "@clerk/clerk-react";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
-import Navigation from "@/ui/Navigation";
 import DialogueBox from "@/ui/DialogueBox";
 import ModalSize from "@/ui/ModalSize";
 import { unlockNextPage } from "@/core/utils/routeGuard";
@@ -30,9 +29,6 @@ const LessonIntro = () => {
       ></div>
 
       <div className="grid items-center justify-center grid-cols-5 ">
-        <div className="relative z-20 h-full ">
-          <Navigation />
-        </div>
 
         <div className="absolute bottom-0 w-full">
 

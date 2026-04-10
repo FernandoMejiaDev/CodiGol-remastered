@@ -3,7 +3,6 @@ import { useUser } from "@clerk/clerk-react";
 import { useGame } from "@/features/league/data/leagueData";
 import { unlockNextPage } from "@/core/utils/routeGuard";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
-import Navigation from "@/ui/Navigation";
 import { useNavigate } from "react-router-dom";
 import { navigateToNextPhase } from "@/core/utils/navigateToNextPhase";
 import ModalSize from "@/ui/ModalSize";
@@ -32,9 +31,6 @@ const FinalScore = () => {
       ></div>
 
       <div className="flex flex-row h-full">
-        <div className="relative z-20 h-full text-slate-100">
-          <Navigation />
-        </div>
 
         {/* <ModalSize className="absolute" /> */}
 

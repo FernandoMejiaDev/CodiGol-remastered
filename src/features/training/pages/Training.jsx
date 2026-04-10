@@ -4,7 +4,6 @@ import React, { useRef, useEffect, useState } from "react";
 import { useUser } from "@clerk/clerk-react";
 import { unlockNextPage } from "@/core/utils/routeGuard";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
-import Navigation from "@/ui/Navigation";
 import DialogueBox from "@/ui/DialogueBox";
 import TrainingPoint from "@/ui/TrainingPoint";
 import Preview from "@/ui/Preview";
@@ -101,10 +100,6 @@ const Training = () => {
           className="relative h-[85%] mt-32 p-1"
         >
           <Preview code={code} setCode={setCode} />
-        </div>
-
-        <div style={{ width: previewWidth }} className="absolute ">
-          <Navigation />
         </div>
 
         {/* <ModalSize className="absolute" /> */}
