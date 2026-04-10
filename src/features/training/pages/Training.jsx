@@ -97,19 +97,19 @@ const Training = () => {
       <div className="flex h-dvh">
         <div
           style={{ width: previewWidth }}
-          className="relative h-[85%] mt-32 p-1"
+          className="relative h-[85%] min-w-40 mt-32 p-1"
         >
           <Preview code={code} setCode={setCode} />
         </div>
 
-        {/* <ModalSize className="absolute" /> */}
+      {/* <ModalSize className="absolute" /> */} 
 
         <div
           ref={resizerRef}
           className="relative w-2 bg-yellow-500 cursor-col-resize hover:bg-yellow-700"
         ></div>
 
-        <div className="relative flex flex-col justify-end flex-1 h-dvh">
+        <div className="relative flex flex-col justify-end flex-1 min-w-[33rem] h-dvh">
           <div className="bottom-0 w-full ">
             {/* Scene sequence: coach's dialogue, exercise */}
             {!showEditor && (

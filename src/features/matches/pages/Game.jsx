@@ -131,7 +131,7 @@ const Game = () => {
 
   return (
 
-    <div className="relative w-full h-dvh overflow-hidden">
+    <div className="relative w-full overflow-hidden h-dvh">
 
       <ToastContainer
         position="top-right"
@@ -152,7 +152,7 @@ const Game = () => {
       <div className="flex h-full ">
         <div
           style={{ width: previewWidth }}
-          className="relative h-[85%] mt-32 p-1"
+          className="relative h-[85%] min-w-40 mt-32 p-1 z-10"
         >
           <Preview code={code} setCode={setCode} />
         </div>
@@ -161,20 +161,20 @@ const Game = () => {
 
         <div
           ref={resizerRef}
-          className="relative w-2 bg-yellow-500 cursor-col-resize hover:bg-yellow-700"
+          className="relative z-10 w-2 bg-yellow-500 cursor-col-resize hover:bg-yellow-700"
         ></div>
-
-        <div className="relative flex flex-col justify-end flex-1 h-full px-1">
-          <div className="bottom-0 w-full ">
-            {/* Scene sequence: coach's dialogue, exercise */}
-          </div>
 
           <img
             src="/img/RivalGoalkeeper.webp"
             alt="RivalGoalkeeper"
-            className="absolute object-contain w-80 top-1/4 right-1/2"
+            className="absolute z-0 object-contain w-80 top-1/4 right-1/3"
             loading="lazy"
           />
+
+        <div className="relative flex flex-col justify-end flex-1 h-full z-10 px-1 min-w-[33rem]">
+          <div className="bottom-0 w-full ">
+            {/* Scene sequence: coach's dialogue, exercise */}
+          </div>
 
           <Scoreboard
             className="absolute"
