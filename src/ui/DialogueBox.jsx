@@ -1,10 +1,11 @@
 //DialogueBox
 import { useState } from "react";
 import { useNavigate } from "react-router-dom"; //
-import lessonIntroDialogues from "@/features/training/data/trainingDialogues";
+import lessonIntroDialogues from "@/features/training/data/lessonIntroDialogue";
 import trainingDialogues from "@/features/training/data/trainingDialogues";
 import SubBenchDialogues from "@/features/matches/data/SubBench";
 import { useGame } from "@/features/league/data/leagueData"; // Game context
+import renderTextWithCode from "@/ui/renderTextWithCode"; // Function to differentiate text from code
 
 const getDialoguesByPhase = (phase) => {
   switch (phase) {
@@ -82,8 +83,9 @@ const DialogueBox = ({ level = 1, currentPhase, onFinishDialog }) => {
         z-20">
         <div className="grid items-start w-full max-w-5xl grid-cols-5 gap-4 m-auto">
 
-          <p className="col-span-4 text-start">{text}</p>
-          {index < currentDialogue.length - 1 ? (
+          <p className="col-span-4 text-2xl text-start">
+            {renderTextWithCode(text)}
+          </p>          {index < currentDialogue.length - 1 ? (
             <button
               onClick={handleNext}
               className="px-4 py-2 ml-auto text-white bg-blue-700 rounded hover:bg-blue-800"

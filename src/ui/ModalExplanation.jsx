@@ -31,7 +31,7 @@ const ModalExplanation = () => {
                         {/* HEADER */}
                         <div className="flex items-center justify-between px-8 py-5 border-b bg-gray-50">
                             <h2 className="text-2xl font-bold tracking-tight">
-                                 Lección: Responsive
+                                Lección: Responsive
                             </h2>
 
                             <button
@@ -107,11 +107,14 @@ const ModalExplanation = () => {
                                 </h3>
 
                                 <code className="px-4 py-2 text-base font-mono bg-white border rounded-lg shadow-sm">
-                                    text-3xl lg:text-8xl
+                                    text-base lg:text-xl
                                 </code>
 
-                                <p className="mt-3 text-sm text-gray-600">
-                                    Texto grande en desktop, normal en móvil.
+                                <p className="mt-3 max-w-xl m-auto text-sm text-gray-600">
+                                    La clase  establece un tamaño de fuente base de <span className="font-bold">16px</span> para
+                                    dispositivos móviles y pantallas pequeñas, y lo aumenta automáticamente
+                                    a <span className="font-bold">20px</span>  solo cuando la pantalla alcanza el punto de
+                                    interrupción <span className="font-bold">lg (pantallas grandes).</span>
                                 </p>
                             </div>
 

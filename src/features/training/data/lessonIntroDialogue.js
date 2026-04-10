@@ -2,35 +2,27 @@
 
 const lessonIntroDialogue = {
   1: [
-    {
-      speaker: "trainer",
-      text: "¡Atención equipo! Reúnanse. Este año no será como los anteriores… será nuestra temporada.",
-    },
-    {
-      speaker: "trainer",
-      text: "Demos la bienvenida a un nuevo Wind Jaguar. Prepárense para algo diferente.",
-    },
-    {
-      speaker: "trainer",
-      text: "El título nos fue arrebatado por Phantom Viper... pero eso queda atrás.",
-    },
-    {
-      speaker: "trainer",
-      text: "Este año cambiamos de estrategia. Usaremos algo veloz, preciso y elegante: Tailwind CSS.",
-    },
-    {
-      speaker: "trainer",
-      text: "No es magia. Son clases. Y quien las domine, dominará la liga.",
-    },
-    {
-      speaker: "trainer",
-      text: "Con disciplina y estilo, conquistaremos la Full Stack League. Todo empieza ahora.",
-    },
-    {
-      speaker: "trainer",
-      text: "¡Vamos equipo!",
-    },
-  ],
+  {
+    speaker: "trainer",
+    text: "Atención equipo, este año es diferente. Perdimos la liga contra Phantom Viper... pero esta vez vamos a cambiar eso.",
+  },
+  {
+    speaker: "trainer",
+    text: "Tenemos un nuevo jugador en el equipo. Y también una nueva forma de jugar.",
+  },
+  {
+    speaker: "trainer",
+    text: "Usaremos Tailwind CSS: clases rápidas, precisas y directas. Si las dominamos, tendremos ventaja en el campo de juego.",
+  },
+  {
+    speaker: "trainer",
+    text: "Empezaremos con algo clave: hacer que todo se adapte a cualquier pantalla. Lo que aprendas aquí, lo usarán en el partido.",
+  },
+  {
+    speaker: "trainer",
+    text: "Vayan al entrenamiento. Aprendan, practiquen… y luego demuéstrenlo en el campo.",
+  },
+],
   2: [
     {
       speaker: "trainer",

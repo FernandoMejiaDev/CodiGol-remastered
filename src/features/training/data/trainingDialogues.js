@@ -3,46 +3,29 @@ const trainingDialogues = {
   1: [
     {
       speaker: "trainer",
-      text: "¡Bien! Vamos a empezar con algo crucial: la técnica responsive de Tailwind CSS.",
+      text: "Vamos con algo clave: el diseño responsive en Tailwind. Esto permite que tu interfaz se adapte a cualquier pantalla.",
     },
     {
       speaker: "trainer",
-      text: "Un equipo se adapta a todo... ¡igual que nosotros a cualquier pantalla!",
+      text: "Tailwind usa prefijos como `sm:`, `md:`, `lg:`, `xl:` y `2xl:` para aplicar estilos según el tamaño del dispositivo.",
     },
     {
       speaker: "trainer",
-      text: "Con Tailwind usamos clases como sm:, md:, lg:, xl:, y 2xl: para cambiar estilos según el tamaño de pantalla.",
+      text: "Por ejemplo: `text-sm` es pequeño por defecto, pero `md:text-2xl` lo hace más grande en pantallas medianas.",
     },
     {
       speaker: "trainer",
-      text: "Ejemplo: `text-sm` es texto pequeño, pero `md:text-2xl` lo hace gigante en pantallas medianas. ¡Así cambiamos de jugada!",
+      text: "Esto significa que puedes cambiar estilos dependiendo del dispositivo sin escribir CSS complejo.",
     },
     {
       speaker: "trainer",
-      text: "Estas clases se activan desde: sm (640px), md (768px), lg (1024px), xl (1280px) y 2xl (1536px).",
+      text: "No necesitas memorizar todo. Enfócate en entender cómo se aplican los prefijos.",
     },
     {
       speaker: "trainer",
-      text: "Con eso puedes ajustar texto, tamaños, visibilidad... lo que necesites.",
-    },
-    {
-      speaker: "trainer",
-      text: "¿Quieres ocultar algo en móvil? Usa `hidden` por defecto y `md:block` para mostrarlo en pantallas medianas.",
-    },
-    {
-      speaker: "trainer",
-      text: "También tienes text-xs (12px) hasta text-9xl (128px) para controlar el tamaño de letra.",
-    },
-    {
-      speaker: "trainer",
-      text: "La misión: crear un texto que se adapte al dispositivo, como un grito que crece con la pantalla.",
-    },
-    {
-      speaker: "trainer",
-      text: "¡Ahora ve al ejercicio! Si te atoras, puedes repasar esto en el entrenamiento.",
+      text: "Ahora es tu turno. Aplica esto en el ejercicio. Si te atoras, usa el botón de ayuda para repasar las clases.",
     },
   ],
-
   2: [
     {
       speaker: "trainer",
