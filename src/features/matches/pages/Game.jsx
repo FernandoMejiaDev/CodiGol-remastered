@@ -132,7 +132,7 @@ const Game = () => {
 
   return (
 
-    <div className="relative w-full h-dvh overflow-x-hidden">
+    <div className="relative w-full h-dvh overflow-hidden">
 
       <ToastContainer
         position="top-right"

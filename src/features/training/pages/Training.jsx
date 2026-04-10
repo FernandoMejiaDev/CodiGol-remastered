@@ -77,7 +77,7 @@ const Training = () => {
   }, []);
 
   return (
-    <div className="relative w-full overflow-x-hidden h-dvh">
+    <div className="relative w-full overflow-hidden h-dvh">
 
       <ToastContainer
         position="top-right"

@@ -19,7 +19,7 @@ const FinalScene = () => {
     navigate("/", { replace: true });
   };
   return (
-    <div className="flex flex-col overflow-x-hidden text-white min-h-dvh bg-gradient-to-b from-neutral-900 via-neutral-800 to-black">
+    <div className="flex flex-col overflow-hidden text-white min-h-dvh bg-gradient-to-b from-neutral-900 via-neutral-800 to-black">
 
       <section className="flex flex-col items-center justify-center px-6 py-20 space-y-6 text-center">
         {/* FULL STACK LEAGUE COMPLETADA */}
