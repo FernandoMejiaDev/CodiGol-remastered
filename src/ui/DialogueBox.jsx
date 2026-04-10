@@ -76,9 +76,9 @@ const DialogueBox = ({ level = 1, currentPhase, onFinishDialog }) => {
         bg-gradient-to-b 
         from-transparent 
         from-1%
-        via-neutral-950/60 
+        via-neutral-950/80 
         via-10%
-        to-neutral-950/60
+        to-neutral-950/80
         to-90%
         z-20">
         <div className="grid items-start w-full max-w-5xl grid-cols-5 gap-4 m-auto">
