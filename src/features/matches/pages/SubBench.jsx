@@ -16,7 +16,7 @@ const SubBench = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-dvh">
+    <div className="relative w-full h-dvh overflow-x-hidden">
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
         style={{ backgroundImage: `url(/img/BankingFund.webp)` }}

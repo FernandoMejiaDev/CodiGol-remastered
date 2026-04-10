@@ -23,7 +23,7 @@ const LessonIntro = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-dvh">
+    <div className="relative w-full overflow-x-hidden h-dvh">
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
         style={{ backgroundImage: `url(/img/TrainingFund.webp)` }}
