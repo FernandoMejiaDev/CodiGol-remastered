@@ -3,8 +3,25 @@ import { useEffect, useState } from "react";
 export default function Preview({ code }) {
   return (
     <div
-      className=" w-full h-full max-h-[80vh] overflow-y-auto p-2 bg-neutral-950/80 border rounded-2xl "
-      dangerouslySetInnerHTML={{ __html: code }}
-    />
+      className=" w-full h-full max-h-[75vh] overflow-y-auto p-2 bg-neutral-950/80 border rounded-2xl "
+    > 
+
+    < iframe
+        value={code}
+        onChange={(e) => setCode(e.target.value)
+        }
+        srcDoc={`
+            <html>
+              <head>
+                <script src="https://cdn.tailwindcss.com"></script>
+              </head>
+              <body class="p-4">
+                ${code}
+              </body>
+            </html>
+          `}
+      ></ iframe>
+    
+    </div>
   );
 }
