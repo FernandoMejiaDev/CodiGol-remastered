@@ -3,11 +3,12 @@ import { useEffect, useState } from "react";
 export default function Preview({ code }) {
   return (
     <div
-      className=" w-full h-full max-h-[75vh] overflow-y-auto p-2 bg-neutral-950/80 border rounded-2xl "
-    > 
+      className=" w-full h-full max-h-[75vh] overflow-y-auto p-1 bg-neutral-950/80 border rounded-2xl "
+    >
 
-    < iframe
+      < iframe
         value={code}
+        className="h-full"
         onChange={(e) => setCode(e.target.value)
         }
         srcDoc={`
@@ -21,7 +22,7 @@ export default function Preview({ code }) {
             </html>
           `}
       ></ iframe>
-    
+
     </div>
   );
 }

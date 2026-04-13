@@ -22,11 +22,10 @@ import { navigateToNextPhase } from "@/core/utils/navigateToNextPhase";
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 
-const defaultCode = `
-<div class="text-xs text-white">
+const defaultCode = 
+`<div class="text-xs text-white">
 Hola Tailwind
-</div>
-`;
+</div>`;
 
 const Training = () => {
   const [code, setCode] = useState(defaultCode);
