@@ -9,12 +9,12 @@ const styles = {
   warning: {
     border: "border-yellow-500",
     text: "text-yellow-600",
-    face: "Face3.webp",
+    face: "Face2.webp",
   },
   error: {
     border: "border-red-500",
     text: "text-red-600",
-    face: "Face2.webp",
+    face: "Face3.webp",
   }
 };
 
