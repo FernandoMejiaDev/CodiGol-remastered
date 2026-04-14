@@ -44,7 +44,7 @@ const AlertFeedback = ({ message, type = "error", duration = 5000, onClose }) =>
       `}
     >
       <div className={`flex items-center gap-2 p-4 text-white border-l-4 rounded-lg shadow-lg bg-neutral-900 ${styles[type]?.border || styles.success.border}`}>
-        
+
         <svg
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -67,7 +67,7 @@ const AlertFeedback = ({ message, type = "error", duration = 5000, onClose }) =>
           src={`/img/${styles[type]?.face || styles.success.face}`}
           alt="Face"
           className="object-contain w-12 h-12"
-        />
+          loading="lazy" />
       </div>
     </div>
   );
