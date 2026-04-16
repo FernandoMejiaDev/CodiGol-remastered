@@ -70,8 +70,6 @@ En **CódiGol**, el jugador se une a los **Wind Jaguars**, un equipo decidido a 
 
 El camino hacia la victoria está dividido en 10 partidos, y cada uno representa una lección clave sobre Tailwind. En el primer encuentro, por ejemplo, el jugador aprende sobre **diseño responsivo y clases de texto**. 
 
-`text-xs, text-lg, md:text-xl, etc`
-
 <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN5.webp" alt="imgReadmeN5" /> 
 
 ## 🧠 Entrenamiento antes del partido
