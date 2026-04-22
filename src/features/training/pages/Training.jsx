@@ -5,7 +5,6 @@ import { useUser } from "@clerk/clerk-react";
 import { unlockNextPage } from "@/core/utils/routeGuard";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
 import DialogueBox from "@/ui/DialogueBox";
-import TrainingPoint from "@/ui/TrainingPoint";
 import Preview from "@/ui/Preview";
 import Editor from "@/ui/Editor";
 import ModalSize from "@/ui/ModalSize";
@@ -18,16 +17,30 @@ import evaluateAnswer from "@/core/utils/evaluateAnswer";
 import { useNavigate } from "react-router-dom";
 import { navigateToNextPhase } from "@/core/utils/navigateToNextPhase";
 
-// react-toastify Alert
-import { ToastContainer, toast } from 'react-toastify';
-import "react-toastify/dist/ReactToastify.css";
+//ResizingLine
+import ResizingLine from "@/ui/ResizingLine";
 
-const defaultCode = 
-`<div class="text-xs text-white">
+// Alert
+import AlertFeedback from "@/ui/AlertFeedback";
+
+const defaultCode =
+  `<div class="text-xs text-white">
 Hola Tailwind
 </div>`;
 
 const Training = () => {
+
+  //ResizingLine
+  //Resize screens in width, preview screen and editor screen
+  const [previewWidth, setPreviewWidth] = useState(400); // start width
+
+  //Alert Feedback
+  const [alert, setAlert] = useState({
+    show: false,
+    message: "",
+    type: "success", // success | error | warning
+  });
+
   const [code, setCode] = useState(defaultCode);
   const [showEditor, setShowEditor] = useState(false);
   const [lastTrainerText, setLastTrainerText] = useState(""); // View exercise button
@@ -36,34 +49,6 @@ const Training = () => {
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
   const currentExercise = exercises[currentExerciseIndex];
 
-  //Resize screens in width, preview screen and editor screen
-  const [previewWidth, setPreviewWidth] = useState(400); // start width
-
-  const resizerRef = useRef(null);
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      setPreviewWidth(e.clientX);
-    };
-
-    const stopResize = () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("mouseup", stopResize);
-    };
-
-    const startResize = () => {
-      window.addEventListener("mousemove", handleMouseMove);
-      window.addEventListener("mouseup", stopResize);
-    };
-
-    const resizer = resizerRef.current;
-    if (resizer) {
-      resizer.addEventListener("mousedown", startResize);
-    }
-
-    return () => {
-      if (resizer) resizer.removeEventListener("mousedown", startResize);
-    };
-  }, []);
 
   const navigate = useNavigate();
   const handleFinishLevel = () => {
@@ -77,16 +62,15 @@ const Training = () => {
   return (
     <div className="relative w-full overflow-hidden h-dvh">
 
-      <ToastContainer
-        position="top-right"
-        autoClose={3000}
-        hideProgressBar={false}
-        newestOnTop={true}
-        closeOnClick={false}
-        pauseOnHover={false}
-        theme="dark"
-        limit={1}
-      />
+      {alert.show && (
+        <AlertFeedback
+          message={alert.message}
+          type={alert.type}
+          onClose={() =>
+            setAlert((prev) => ({ ...prev, show: false }))
+          }
+        />
+      )}
 
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
@@ -95,18 +79,13 @@ const Training = () => {
 
       <div className="flex h-dvh">
         <div
-          style={{ width: previewWidth }}
+          style={{ width: `${previewWidth}px` }}
           className="relative h-[85%] min-w-40 mt-32 p-1"
         >
           <Preview code={code} setCode={setCode} />
         </div>
 
-      {/* <ModalSize className="absolute" /> */} 
-
-        <div
-          ref={resizerRef}
-          className="relative w-2 bg-yellow-500 cursor-col-resize hover:bg-yellow-700"
-        ></div>
+        <ResizingLine setPreviewWidth={setPreviewWidth} />
 
         <div className="relative flex flex-col justify-end flex-1 min-w-[33rem] h-dvh">
           <div className="bottom-0 w-full ">
@@ -135,25 +114,43 @@ const Training = () => {
                     onClick={() => {
                       const isCorrect = evaluateAnswer(code, currentExercise);
 
-                      //Function to verify exercise as player response
                       if (isCorrect) {
-                        toast.success("¡Golazo! 🎯 ¡Has dominado la técnica! Sigue así y anotarás más goles. ⚽");
+                        // mensaje temporal (luego vendrá del analyzer)
+                        const message = "¡Golazo! 🎯 ¡Has dominado la técnica! ⚽";
+
+                        setAlert({
+                          show: true,
+                          message,
+                          type: "success",
+                        });
 
                         if (currentExerciseIndex < exercises.length - 1) {
-                          // next exercise
-                          setCurrentExerciseIndex((prev) => prev + 1);
-                          setCode(defaultCode); // The code is reset when moving to the next exercise
+                          setTimeout(() => {
+                            setCurrentExerciseIndex((prev) => prev + 1);
+                            setCode(defaultCode);
+                          }, 1500); // esperar a que se vea la alerta
                         } else {
-                          // SWhen the exercises are finished, the coach congratulates you and you move on to the next phase of the game, which is the actual match.
+                          setTimeout(() => {
+                            setAlert({
+                              show: true,
+                              message:
+                                "¡Bien! 🏆 Has completado el entrenamiento. Prepárate para el partido.",
+                              type: "success",
+                            });
 
-                          toast.success("¡Bien! 🏆 ¡Has completado todos los ejercicios y dominado las técnicas! Ahora prepárate para el partido real. ¡A ganar! ⚽");
-
-                          handleFinishLevel(); //directional button to other phases
+                            handleFinishLevel();
+                          }, 5000);
                         }
                       } else {
-                        toast.error(
-                          "¡Casi! ❌ No te preocupes, sigue practicando. Recuerda, la técnica es clave. Vuelve a revisar y corrige el error. ¡La próxima vez será gol! ⚽"
-                        );
+                        // aquí luego irá el feedback inteligente
+                        const message =
+                          "¡Casi! ❌ Revisa cómo estás aplicando las clases.";
+
+                        setAlert({
+                          show: true,
+                          message,
+                          type: "error",
+                        });
                       }
                     }}
                   >
