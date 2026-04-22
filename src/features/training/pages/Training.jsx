@@ -115,7 +115,7 @@ const Training = () => {
                       const isCorrect = evaluateAnswer(code, currentExercise);
 
                       if (isCorrect) {
-                        // mensaje temporal (luego vendrá del analyzer)
+                        // analyzeAnswer
                         const message = "¡Golazo! 🎯 ¡Has dominado la técnica! ⚽";
 
                         setAlert({
@@ -128,7 +128,7 @@ const Training = () => {
                           setTimeout(() => {
                             setCurrentExerciseIndex((prev) => prev + 1);
                             setCode(defaultCode);
-                          }, 1500); // esperar a que se vea la alerta
+                          }, 5000);
                         } else {
                           setTimeout(() => {
                             setAlert({
@@ -142,7 +142,7 @@ const Training = () => {
                           }, 5000);
                         }
                       } else {
-                        // aquí luego irá el feedback inteligente
+                        //Next message prop for feedback
                         const message =
                           "¡Casi! ❌ Revisa cómo estás aplicando las clases.";
 
