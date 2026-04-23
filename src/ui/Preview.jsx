@@ -8,7 +8,7 @@ export default function Preview({ code }) {
 
       < iframe
         value={code}
-        className="h-full"
+        className="w-full h-full"
         onChange={(e) => setCode(e.target.value)
         }
         srcDoc={`

@@ -82,7 +82,7 @@ const Training = () => {
           style={{ width: `${previewWidth}px` }}
           className="relative h-[85%] min-w-40 mt-32 p-1"
         >
-          <Preview code={code} setCode={setCode} />
+          <Preview code={code} setCode={setCode} className="w-auto" />
         </div>
 
         <ResizingLine setPreviewWidth={setPreviewWidth} />
