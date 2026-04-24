@@ -1,6 +1,14 @@
 
 const parseClasses = (input) => {
-  return input
+  // Start by looking for what's inside the class="" of the div
+const classMatch = input.match(/class\s*=\s*["']([^"']+)["']/);
+
+  if (!classMatch) return [];
+
+  const classContent = classMatch[1];
+
+  // we separate the classes from class=""
+  return classContent
     .trim()
     .split(/\s+/)
     .filter(Boolean);
@@ -62,5 +70,6 @@ export const analyzeClasses = (userInput, requiredClasses) => {
   // Result
   result.isCorrect = result.missing.length === 0;
 
+  //console.log(result);
   return result;
 };
