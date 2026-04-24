@@ -29,7 +29,7 @@ export const analyzeAnswer = (analysis, attempts) => {
   }
 
   // ERROR CASE (many attempts)
-  if (attempts >= 3) {
+  if ((attempts + 1) % 4 === 0) {
     const randomError =
       errorMessages[Math.floor(Math.random() * errorMessages.length)];
 
