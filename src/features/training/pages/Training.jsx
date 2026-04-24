@@ -1,14 +1,24 @@
 //Practical training
-//Dialogues and exercise
 import React, { useRef, useEffect, useState } from "react";
+
+//Clerk
 import { useUser } from "@clerk/clerk-react";
 import { unlockNextPage } from "@/core/utils/routeGuard";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
+
+//exercises and evaluate Answer
+import { analyzeClasses } from "@/features/components/AnalysisClasses";
+import { analyzeAnswer } from "@/features/components/analyzeAnswer";
+
+//UI
 import DialogueBox from "@/ui/DialogueBox";
 import Preview from "@/ui/Preview";
 import Editor from "@/ui/Editor";
+
+//Size and Modal
 import ModalSize from "@/ui/ModalSize";
 import ModalExplanation from "@/ui/ModalExplanation";
+
 //exercises and evaluate Answer
 import exercises from "@/features/training/data/trainingLessons";
 import evaluateAnswer from "@/core/utils/evaluateAnswer";
@@ -48,6 +58,13 @@ const Training = () => {
   //exercises and evaluate Answer
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
   const currentExercise = exercises[currentExerciseIndex];
+
+  //props of analyzeAnswer
+  // `attempts` is a state variable that resides within the Training component, 
+  // but the `analyzeAnswer` function (which is in an external file) has no 
+  // idea what it is unless it is explicitly passed; otherwise, it marks it as 
+  // `attempts is not defined`.
+  const [attempts, setAttempts] = useState(0);
 
 
   const navigate = useNavigate();
@@ -112,45 +129,31 @@ const Training = () => {
                   <button
                     className="max-w-[20rem] p-2 font-bold text-white bg-sky-600 rounded  hover:bg-sky-700"
                     onClick={() => {
-                      const isCorrect = evaluateAnswer(code, currentExercise);
+                      const analysis = analyzeClasses(code, currentExercise.requiredClasses);
 
-                      if (isCorrect) {
-                        // analyzeAnswer
-                        const message = "¡Golazo! 🎯 ¡Has dominado la técnica! ⚽";
+                      const feedback = analyzeAnswer(analysis, attempts);
 
-                        setAlert({
-                          show: true,
-                          message,
-                          type: "success",
-                        });
+                      setAlert({
+                        show: true,
+                        message: feedback.message,
+                        type: feedback.type,
+                      });
+
+                      if (feedback.type === "success") {
+                        setAttempts(0);
 
                         if (currentExerciseIndex < exercises.length - 1) {
                           setTimeout(() => {
                             setCurrentExerciseIndex((prev) => prev + 1);
                             setCode(defaultCode);
-                          }, 5000);
+                          }, 3000);
                         } else {
                           setTimeout(() => {
-                            setAlert({
-                              show: true,
-                              message:
-                                "¡Bien! 🏆 Has completado el entrenamiento. Prepárate para el partido.",
-                              type: "success",
-                            });
-
                             handleFinishLevel();
-                          }, 5000);
+                          }, 3000);
                         }
                       } else {
-                        //Next message prop for feedback
-                        const message =
-                          "¡Casi! ❌ Revisa cómo estás aplicando las clases.";
-
-                        setAlert({
-                          show: true,
-                          message,
-                          type: "error",
-                        });
+                        setAttempts((prev) => prev + 1);
                       }
                     }}
                   >
