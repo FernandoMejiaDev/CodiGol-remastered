@@ -7,8 +7,8 @@ import { unlockNextPage } from "@/core/utils/routeGuard";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
 
 //exercises and evaluate Answer
-import { analyzeClasses } from "@/features/components/AnalysisClasses";
-import { analyzeAnswer } from "@/features/components/analyzeAnswer";
+import { analyzeClasses } from "@/core/utils/AnalysisClasses";
+import { analyzeAnswer } from "@/core/utils/analyzeAnswer";
 
 //UI
 import DialogueBox from "@/ui/DialogueBox";
