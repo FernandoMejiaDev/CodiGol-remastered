@@ -1,6 +1,5 @@
 //Configurable feedback by level/topic
 
-// feedbackConfig.js
 export const feedbackConfig = {
   1: {
     // responsive
