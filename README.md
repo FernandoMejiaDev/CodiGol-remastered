@@ -1,5 +1,6 @@
 > [!TIP]
-> Este repositorio corresponde a la versión remasterizada de **CódiGol**, reconstruida desde cero a partir del proyecto original presentado en una hackathon.  
+> Este repositorio corresponde a la versión remasterizada de **CódiGol**, reconstruida desde cero a partir del proyecto original presentado en la Hackathon de MiduDev 2025.
+>   
 > El objetivo es mejorar la arquitectura, optimizar el código e implementar funcionalidades que no pudieron incluirse en la versión inicial.  
 > 
 > Puedes ver la versión original aquí:  
