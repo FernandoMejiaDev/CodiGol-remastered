@@ -1,3 +1,5 @@
+import { feedbackConfig } from "./feedbackConfig";
+
 const successMessages = [
   "¡Golazo! Dominaste la técnica.",
   "¡Perfecto! Aplicaste todo correctamente.",
@@ -13,8 +15,6 @@ const errorMessages = [
   "Detente un momento y revisa el ejercicio.",
   "Vas rápido, pero no correcto. Ajusta.",
 ];
-
-import { feedbackConfig } from "./feedbackConfig";
 
 export const analyzeAnswer = (analysis, attempts, level) => {
   //Level 2 feedback config
