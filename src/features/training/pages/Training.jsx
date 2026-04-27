@@ -131,7 +131,11 @@ const Training = () => {
                     onClick={() => {
                       const analysis = analyzeClasses(code, currentExercise.requiredClasses);
 
-                      const feedback = analyzeAnswer(analysis, attempts);
+                      const feedback = analyzeAnswer(
+                        analysis, 
+                        attempts,
+                        currentExercise.level
+                      );
 
                       setAlert({
                         show: true,

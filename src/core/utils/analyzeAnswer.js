@@ -1,4 +1,3 @@
-
 const successMessages = [
   "¡Golazo! Dominaste la técnica.",
   "¡Perfecto! Aplicaste todo correctamente.",
@@ -15,7 +14,16 @@ const errorMessages = [
   "Vas rápido, pero no correcto. Ajusta.",
 ];
 
-export const analyzeAnswer = (analysis, attempts) => {
+import { feedbackConfig } from "./feedbackConfig";
+
+export const analyzeAnswer = (analysis, attempts, level) => {
+  //Level 2 feedback config
+  const config = feedbackConfig[level] || feedbackConfig[1];
+  const msg = config.messages;
+
+  analysis.wrongColor = true;
+  analysis.wrongShade = true;
+
   // If that's correct
   if (analysis.isCorrect) {
     const randomMessage =
@@ -43,30 +51,29 @@ export const analyzeAnswer = (analysis, attempts) => {
   //  WARNING (feedback )
   let message = "";
 
-  // PRIORITY 1  lack of base
   const missingBase = analysis.missing.filter((cls) => !cls.includes(":"));
 
-  if (missingBase.length > 0) {
-    message =
-      "Vas bien, pero falta definir correctamente el estilo base del texto.";
+  // PRIORITY 1  lack of base
+  if (missingBase.length > 0 && msg.missingBase) {
+    message = msg.missingBase;
   }
-
   // PRIORITY 2  lack of responsive
-  else if (analysis.missing.length > 0) {
-    message =
-      "Casi lo tienes. Falta adaptar el estilo para pantallas más grandes.";
+  else if (analysis.missing.length > 0 && msg.missingResponsive) {
+    message = msg.missingResponsive;
   }
-
   // PRIORITY 3 extra classes
-  else if (analysis.extra.length > 0) {
-    message =
-      "Estás usando clases innecesarias. Intenta simplificar la solución.";
+  else if (analysis.extra.length > 0 && msg.extra) {
+    message = msg.extra;
+  } 
+  //LEVEL 2 specific feedback   
+  else if (analysis.wrongColor && msg.wrongColor) {
+    message = msg.wrongColor;
+  } else if (analysis.wrongShade && msg.wrongShade) {
+    message = msg.wrongShade;
   }
-
   // fallback
   else {
-    message =
-      "Revisa cómo estás aplicando las clases y vuelve a intentarlo.";
+    message = msg.fallback;
   }
 
   return {
