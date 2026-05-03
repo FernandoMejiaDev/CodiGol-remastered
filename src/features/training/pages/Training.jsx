@@ -134,6 +134,7 @@ const Training = () => {
                     setAttempts={setAttempts}
                     setAlert={setAlert}
                     mode="training"
+                    label="Probar jugada"
                     onSuccess={() => {
                       if (currentExerciseIndex < exercises.length - 1) {
                         setTimeout(() => {

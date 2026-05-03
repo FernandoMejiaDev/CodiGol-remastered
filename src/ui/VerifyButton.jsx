@@ -1,3 +1,7 @@
+//Score verification button for training and matches, 
+// component to distinguish between messages in each 
+// context for alerts
+
 //exercises and evaluate Answer
 import { analyzeClasses } from "@/core/utils/AnalysisClasses";
 import { analyzeAnswer } from "@/core/utils/analyzeAnswer";
@@ -8,8 +12,9 @@ const VerifyButton = ({
   attempts,
   setAttempts,
   setAlert,
-  onSuccess, // qué hacer cuando acierta
-  mode = "training", // 👈 clave
+  onSuccess,
+  mode = "training",
+  label //To change the button message
 }) => {
   const handleVerify = () => {
     const analysis = analyzeClasses(code, exercise.requiredClasses);
@@ -29,7 +34,7 @@ const VerifyButton = ({
 
     if (feedback.type === "success") {
       setAttempts(0);
-      onSuccess(); // 👈 delegas el comportamiento
+      onSuccess();
     } else {
       setAttempts((prev) => prev + 1);
     }
@@ -40,7 +45,7 @@ const VerifyButton = ({
       className="max-w-[20rem] p-2 font-bold text-white bg-sky-600 rounded hover:bg-sky-700"
       onClick={handleVerify}
     >
-      Verificar respuesta
+      {label}
     </button>
   );
 };
