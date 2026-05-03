@@ -6,14 +6,16 @@ import { useUser } from "@clerk/clerk-react";
 import { unlockNextPage } from "@/core/utils/routeGuard";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
 
-//exercises and evaluate Answer
+/*exercises and evaluate Answer
 import { analyzeClasses } from "@/core/utils/AnalysisClasses";
 import { analyzeAnswer } from "@/core/utils/analyzeAnswer";
+*/
 
 //UI
 import DialogueBox from "@/ui/DialogueBox";
 import Preview from "@/ui/Preview";
 import Editor from "@/ui/Editor";
+import VerifyButton from "@/ui/VerifyButton";
 
 //Size and Modal
 import ModalSize from "@/ui/ModalSize";
@@ -65,7 +67,6 @@ const Training = () => {
   // idea what it is unless it is explicitly passed; otherwise, it marks it as 
   // `attempts is not defined`.
   const [attempts, setAttempts] = useState(0);
-
 
   const navigate = useNavigate();
   const handleFinishLevel = () => {
@@ -126,43 +127,26 @@ const Training = () => {
 
                   <ModalExplanation />
 
-                  <button
-                    className="max-w-[20rem] p-2 font-bold text-white bg-sky-600 rounded  hover:bg-sky-700"
-                    onClick={() => {
-                      const analysis = analyzeClasses(code, currentExercise.requiredClasses);
-
-                      const feedback = analyzeAnswer(
-                        analysis, 
-                        attempts,
-                        currentExercise.level
-                      );
-
-                      setAlert({
-                        show: true,
-                        message: feedback.message,
-                        type: feedback.type,
-                      });
-
-                      if (feedback.type === "success") {
-                        setAttempts(0);
-
-                        if (currentExerciseIndex < exercises.length - 1) {
-                          setTimeout(() => {
-                            setCurrentExerciseIndex((prev) => prev + 1);
-                            setCode(defaultCode);
-                          }, 3000);
-                        } else {
-                          setTimeout(() => {
-                            handleFinishLevel();
-                          }, 3000);
-                        }
+                  <VerifyButton
+                    code={code}
+                    exercise={currentExercise}
+                    attempts={attempts}
+                    setAttempts={setAttempts}
+                    setAlert={setAlert}
+                    mode="training"
+                    onSuccess={() => {
+                      if (currentExerciseIndex < exercises.length - 1) {
+                        setTimeout(() => {
+                          setCurrentExerciseIndex((prev) => prev + 1);
+                          setCode(defaultCode);
+                        }, 3000);
                       } else {
-                        setAttempts((prev) => prev + 1);
+                        setTimeout(() => {
+                          handleFinishLevel();
+                        }, 3000);
                       }
                     }}
-                  >
-                    Verificar respuesta
-                  </button>
+                  />
 
                 </div>
 

@@ -1,16 +1,20 @@
 import { feedbackConfig } from "./feedbackConfig";
 
+export const analyzeAnswer = (analysis, attempts, level, mode = "training") => {
+  const levelConfig = feedbackConfig[level] || feedbackConfig[1];
 
+  const selectedConfig =
+    mode === "match" ? levelConfig.MatchMessages : levelConfig.TrainingMessages;
 
-export const analyzeAnswer = (analysis, attempts, level) => {
-  //Level 2 feedback config
-  const config = feedbackConfig[level] || feedbackConfig[1];
-  const msg = config.messages;
+  const {
+    successMessages = [],
+    errorMessages = [],
+    FeedbackMessages = {},
+  } = selectedConfig || {};
 
-  analysis.wrongColor = true;
-  analysis.wrongShade = true;
+  const msg = FeedbackMessages;
 
-  // If that's correct
+  // success
   if (analysis.isCorrect) {
     const randomMessage =
       successMessages[Math.floor(Math.random() * successMessages.length)];
@@ -22,7 +26,9 @@ export const analyzeAnswer = (analysis, attempts, level) => {
     };
   }
 
-  // ERROR CASE (many attempts)
+  // ERROR
+  // If the user fails in the cycle, the WARNING message will be displayed 3 times,
+  // and the fourth time an error message will be displayed, continuing that cycle.
   if ((attempts + 1) % 4 === 0) {
     const randomError =
       errorMessages[Math.floor(Math.random() * errorMessages.length)];
@@ -34,31 +40,22 @@ export const analyzeAnswer = (analysis, attempts, level) => {
     };
   }
 
-  //  WARNING (feedback)
+  // WARNING
   let message = "";
 
   const missingBase = analysis.missing.filter((cls) => !cls.includes(":"));
 
-  // PRIORITY 1  lack of base
   if (missingBase.length > 0 && msg.missingBase) {
     message = msg.missingBase;
-  }
-  // PRIORITY 2  lack of responsive
-  else if (analysis.missing.length > 0 && msg.missingResponsive) {
+  } else if (analysis.missing.length > 0 && msg.missingResponsive) {
     message = msg.missingResponsive;
-  }
-  // PRIORITY 3 extra classes
-  else if (analysis.extra.length > 0 && msg.extra) {
+  } else if (analysis.extra.length > 0 && msg.extra) {
     message = msg.extra;
-  } 
-  //LEVEL 2 specific feedback   
-  else if (analysis.wrongColor && msg.wrongColor) {
+  } else if (analysis.wrongColor && msg.wrongColor) {
     message = msg.wrongColor;
   } else if (analysis.wrongShade && msg.wrongShade) {
     message = msg.wrongShade;
-  }
-  // fallback
-  else {
+  } else {
     message = msg.fallback;
   }
 
