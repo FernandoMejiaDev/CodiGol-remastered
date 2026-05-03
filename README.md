@@ -1,4 +1,4 @@
-> [!TIP]
+> [!IMPORTANT]
 > Este repositorio corresponde a la versión remasterizada de **CódiGol**, reconstruida desde cero a partir del proyecto original presentado en la Hackathon de MiduDev 2025.
 >   
 > El objetivo es mejorar la arquitectura, optimizar el código e implementar funcionalidades que no pudieron incluirse en la versión inicial.  
@@ -49,7 +49,7 @@ Durante la transmisión final de la Hackathon organizada por [Midudev](https://w
 
 ![javascript](https://img.shields.io/static/v1?message=javascript&logo=javascript&label=&color=F7DF1E&logoColor=black&labelColor=&style=for-the-badge)
 ![react](https://img.shields.io/static/v1?message=react&logo=react&label=&color=61DAFB&logoColor=black&labelColor=&style=for-the-badge)
-![tailwind](https://img.shields.io/static/v1?message=tailwindCSS&logo=tailwindcss&label=&color=06B6D4&logoColor=white&labelColor=&style=for-the-badge)
+![tailwind](https://img.shields.io/static/v1?message=tailwind_CSS&logo=tailwindcss&label=&color=06B6D4&logoColor=white&labelColor=&style=for-the-badge)
 ![vite](https://img.shields.io/static/v1?message=vite&logo=vite&label=&color=646CFF&logoColor=white&labelColor=&style=for-the-badge)
 ![pnpm](https://img.shields.io/static/v1?message=pnpm&logo=pnpm&label=&color=F69220&logoColor=white&labelColor=&style=for-the-badge)
 ![clerk](https://img.shields.io/static/v1?message=clerk&logo=clerk&label=&color=6C47FF&logoColor=white&labelColor=&style=for-the-badge)
