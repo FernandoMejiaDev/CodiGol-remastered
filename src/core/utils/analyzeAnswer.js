@@ -1,20 +1,6 @@
 import { feedbackConfig } from "./feedbackConfig";
 
-const successMessages = [
-  "¡Golazo! Dominaste la técnica.",
-  "¡Perfecto! Aplicaste todo correctamente.",
-  "¡Excelente! Se nota el entrenamiento.",
-  "¡Impecable! Entendiste el responsive.",
-  "Bien! Sigue así.",
-];
 
-const errorMessages = [
-  "Estás fallando demasiado. Concéntrate y revisa bien.",
-  "No tires por tirar, piensa la jugada.",
-  "Así no vas a anotar. Analiza lo que haces.",
-  "Detente un momento y revisa el ejercicio.",
-  "Vas rápido, pero no correcto. Ajusta.",
-];
 
 export const analyzeAnswer = (analysis, attempts, level) => {
   //Level 2 feedback config
@@ -48,7 +34,7 @@ export const analyzeAnswer = (analysis, attempts, level) => {
     };
   }
 
-  //  WARNING (feedback )
+  //  WARNING (feedback)
   let message = "";
 
   const missingBase = analysis.missing.filter((cls) => !cls.includes(":"));

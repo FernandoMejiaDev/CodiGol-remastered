@@ -5,10 +5,12 @@ import { useUser } from "@clerk/clerk-react";
 import { useEffect, useState } from "react";
 import { unlockNextPage } from "@/core/utils/routeGuard";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
+
 import ModalSize from "@/ui/ModalSize";
 import DialogueBox from "@/ui/DialogueBox";
 import Preview from "@/ui/Preview";
 import Editor from "@/ui/Editor";
+
 //GameData and evaluate Answer
 import GameData from "@/features/matches/data/Game";
 import evaluateAnswer from "@/core/utils/evaluateAnswer";
@@ -24,9 +26,11 @@ import { navigateToNextPhase } from "@/core/utils/navigateToNextPhase";
 
 import { useGame } from "@/features/league/data/leagueData"; // Collect match results
 
-// react-toastify Alert
-import { ToastContainer, toast } from 'react-toastify';
-import "react-toastify/dist/ReactToastify.css";
+//ResizingLine
+import ResizingLine from "@/ui/ResizingLine";
+
+// Alert
+import AlertFeedback from "@/ui/AlertFeedback";
 
 const defaultCode = `
 <div class="">
@@ -35,6 +39,18 @@ const defaultCode = `
 `;
 
 const Game = () => {
+
+  //ResizingLine
+  //Resize screens in width, preview screen and editor screen
+  const [previewWidth, setPreviewWidth] = useState(400); // start width
+
+  //Alert Feedback
+  const [alert, setAlert] = useState({
+    show: false,
+    message: "",
+    type: "success", // success | error | warning
+  });
+
   const [code, setCode] = useState(defaultCode);
   const [showEditor, setShowEditor] = useState(false);
   const [lastTrainerText, setLastTrainerText] = useState(""); // View exercise button
@@ -44,49 +60,17 @@ const Game = () => {
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
   const currentExercise = GameData[currentExerciseIndex];
 
-  //Resize screens in width, preview screen and editor screen
-  const [previewWidth, setPreviewWidth] = useState(400); // start width
+  //If the player runs out of time or makes a mistake in his answer, then we move
+  // on to the next exercise called the function that indicates that time has run
+  // out or that he has made a mistake.
 
-  const resizerRef = useRef(null);
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      setPreviewWidth(e.clientX);
-    };
-
-    const stopResize = () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("mouseup", stopResize);
-    };
-
-    const startResize = () => {
-      window.addEventListener("mousemove", handleMouseMove);
-      window.addEventListener("mouseup", stopResize);
-    };
-
-    const resizer = resizerRef.current;
-    if (resizer) {
-      resizer.addEventListener("mousedown", startResize);
-    }
-
-    // Display the editor directly when loading the match component
-    setShowEditor(true);
-
-    return () => {
-      if (resizer) resizer.removeEventListener("mousedown", startResize);
-    };
-  }, []);
+  const [timerResetKey, setTimerResetKey] = useState(0);
 
   //Next Phase
   const navigate = useNavigate();
   const handleFinishLevel = () => {
     navigateToNextPhase("Game", navigate);
   };
-
-  //If the player runs out of time or makes a mistake in his answer, then we move
-  // on to the next exercise called the function that indicates that time has run
-  // out or that he has made a mistake.
-
-  const [timerResetKey, setTimerResetKey] = useState(0);
 
   const nextExercise = () => {
     if (currentExerciseIndex < GameData.length - 1) {
@@ -133,17 +117,6 @@ const Game = () => {
 
     <div className="relative w-full overflow-hidden h-dvh">
 
-      <ToastContainer
-        position="top-right"
-        autoClose={3000}
-        hideProgressBar={false}
-        newestOnTop={true}
-        closeOnClick={false}
-        pauseOnHover={false}
-        theme="dark"
-        limit={1}
-      />
-
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
         style={{ backgroundImage: `url(/img/TestFund.webp)` }}
@@ -151,25 +124,22 @@ const Game = () => {
 
       <div className="flex h-full ">
         <div
-          style={{ width: previewWidth }}
+          style={{ width: `${previewWidth}px` }}
           className="relative h-[85%] min-w-40 mt-32 p-1 z-10"
         >
-          <Preview code={code} setCode={setCode} />
+          <Preview code={code} setCode={setCode} className="w-auto" />
         </div>
 
         {/* <ModalSize className="absolute" /> */}
 
-        <div
-          ref={resizerRef}
-          className="relative z-10 w-2 bg-yellow-500 cursor-col-resize hover:bg-yellow-700"
-        ></div>
+        <ResizingLine setPreviewWidth={setPreviewWidth} />
 
-          <img
-            src="/img/RivalGoalkeeper.webp"
-            alt="RivalGoalkeeper"
-            className="absolute z-0 object-contain w-80 top-1/4 right-1/3"
-            loading="lazy"
-          />
+        <img
+          src="/img/RivalGoalkeeper.webp"
+          alt="RivalGoalkeeper"
+          className="absolute z-0 object-contain w-80 top-1/4 right-1/3"
+          loading="lazy"
+        />
 
         <div className="relative flex flex-col justify-end flex-1 h-full z-10 px-1 min-w-[33rem]">
           <div className="bottom-0 w-full ">
@@ -191,47 +161,57 @@ const Game = () => {
             resetTrigger={timerResetKey}
           />
 
-          {showEditor && (
-            <>
-              <div className="z-20 flex flex-col justify-center w-full h-full max-w-4xl gap-2 mt-16">
-                <div className="flex flex-row w-full">
 
-                  <button
-                    className="max-w-[20rem] p-2 font-bold text-white bg-sky-600 rounded  hover:bg-sky-700"
-                    onClick={() => {
-                      const isCorrect = evaluateAnswer(code, currentExercise);
+          <div className="z-20 flex flex-col justify-center w-full h-full max-w-4xl gap-2 mt-16">
+            <div className="flex flex-row w-full">
 
-                      //Function to verify exercise as player response
-                      if (isCorrect) {
-                        toast.success(
-                          "¡Golazo! 🎯 Haz anotado un ¡Golazo!⚽"
-                        );
-                        handleCorrectAnswer();
-                      } else {
-                        toast.error(
-                          "¡Casi! ❌ Haz fallado el tiro ¡La próxima vez será gol! ⚽"
-                        );
-                        nextExercise();
-                        saveMatchResult();
-                      }
+              <button
+                className="max-w-[20rem] p-2 font-bold text-white bg-sky-600 rounded  hover:bg-sky-700"
+                onClick={() => {
+                  const analysis = analyzeClasses(code, currentExercise.requiredClasses);
 
-                      nextExercise();
-                      saveMatchResult();
-                    }}
-                  >
-                    Verificar respuesta
-                  </button>
-                </div>
+                  const feedback = analyzeAnswer(
+                    analysis,
+                    attempts,
+                    currentExercise.level
+                  );
 
-                <div className="flex flex-col items-start gap-2 p-2 text-base border bg-neutral-950 text-slate-100 rounded-2xl">
-                  <strong>Para anotar:</strong>
-                  <p>{currentExercise.prompt}</p>
-                </div>
+                  setAlert({
+                    show: true,
+                    message: feedback.message,
+                    type: feedback.type,
+                  });
 
-                <Editor code={code} setCode={setCode} />
-              </div>
-            </>
-          )}
+                  if (feedback.type === "success") {
+                    setAttempts(0);
+
+                    if (currentExerciseIndex < exercises.length - 1) {
+                      setTimeout(() => {
+                        setCurrentExerciseIndex((prev) => prev + 1);
+                        setCode(defaultCode);
+                      }, 3000);
+                    } else {
+                      setTimeout(() => {
+                        handleFinishLevel();
+                      }, 3000);
+                    }
+                  } else {
+                    setAttempts((prev) => prev + 1);
+                  }
+                }}
+              >
+                Verificar respuesta
+              </button>
+            </div>
+
+            <div className="flex flex-col items-start gap-2 p-2 text-base border bg-neutral-950 text-slate-100 rounded-2xl">
+              <strong>Para anotar:</strong>
+              <p>{currentExercise.prompt}</p>
+            </div>
+
+            <Editor code={code} setCode={setCode} />
+          </div>
+
         </div>
       </div>
     </div>
