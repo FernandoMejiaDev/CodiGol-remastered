@@ -3,6 +3,9 @@
 export const feedbackConfig = {
   1: {
     TrainingMessages: {
+      CompletionMessage: [
+        "Buen trabajo. El entrenamiento terminó. Ahora prepárate: entrarás en el segundo tiempo. Es momento de aplicar lo aprendido.",
+      ],
 
       //Success messages
       successMessages: [
@@ -35,25 +38,19 @@ export const feedbackConfig = {
     },
 
     MatchMessages: {
-      successMessages: [
-      ],
+      successMessages: [],
 
       // Feedback messages
       FeedbackMessages: {
-        missingBase:
-          "",
-        missingResponsive:
-          "",
-        extra:
-          "",
+        missingBase: "",
+        missingResponsive: "",
+        extra: "",
         fallback: "",
       },
 
       //Error messages
-      errorMessages: [
-        "",
-      ],
-    }
+      errorMessages: [""],
+    },
   },
 
   2: {

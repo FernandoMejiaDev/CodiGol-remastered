@@ -50,7 +50,7 @@ const Training = () => {
   const [alert, setAlert] = useState({
     show: false,
     message: "",
-    type: "success", // success | error | warning
+    type: "success", // success | error | warning | complete
   });
 
   const [code, setCode] = useState(defaultCode);
@@ -67,6 +67,8 @@ const Training = () => {
   // idea what it is unless it is explicitly passed; otherwise, it marks it as 
   // `attempts is not defined`.
   const [attempts, setAttempts] = useState(0);
+
+  //at the end of the exercises
 
   const navigate = useNavigate();
   const handleFinishLevel = () => {
@@ -136,15 +138,19 @@ const Training = () => {
                     mode="training"
                     label="Probar jugada"
                     onSuccess={() => {
-                      if (currentExerciseIndex < exercises.length - 1) {
-                        setTimeout(() => {
-                          setCurrentExerciseIndex((prev) => prev + 1);
-                          setCode(defaultCode);
-                        }, 3000);
-                      } else {
-                        setTimeout(() => {
-                          handleFinishLevel();
-                        }, 3000);
+                      if (feedback.type === "success") {
+                        setAttempts(0);
+
+                        if (currentExerciseIndex < exercises.length - 1) {
+                          setTimeout(() => {
+                            setCurrentExerciseIndex((prev) => prev + 1);
+                            setCode(defaultCode);
+                          }, 3000);
+                        } else {
+                          setTimeout(() => {
+                            handleFinishLevel();
+                          }, 3000);
+                        }
                       }
                     }}
                   />
