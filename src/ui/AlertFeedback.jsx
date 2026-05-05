@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const styles = {
 
-  Completed: {
+  complete: {
     border: "border-lime-500",
     text: "text-lime-600",
     face: "Face1.webp",

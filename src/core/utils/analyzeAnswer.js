@@ -7,14 +7,13 @@ export const analyzeAnswer = (analysis, attempts, level, mode = "training") => {
     mode === "match" ? levelConfig.MatchMessages : levelConfig.TrainingMessages;
 
   const {
-      CompletionMessages = [],
+    CompletionMessages = [],
     successMessages = [],
     FeedbackMessages = {},
-    errorMessages = [], 
+    errorMessages = [],
   } = selectedConfig || {};
 
   const msg = FeedbackMessages;
-
 
   // success
   if (analysis.isCorrect) {

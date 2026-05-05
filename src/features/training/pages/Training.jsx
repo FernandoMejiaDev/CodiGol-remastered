@@ -6,6 +6,8 @@ import { useUser } from "@clerk/clerk-react";
 import { unlockNextPage } from "@/core/utils/routeGuard";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
 
+import { feedbackConfig } from "@/core/utils/feedbackConfig";
+
 /*exercises and evaluate Answer
 import { analyzeClasses } from "@/core/utils/AnalysisClasses";
 import { analyzeAnswer } from "@/core/utils/analyzeAnswer";
@@ -67,6 +69,17 @@ const Training = () => {
   // idea what it is unless it is explicitly passed; otherwise, it marks it as 
   // `attempts is not defined`.
   const [attempts, setAttempts] = useState(0);
+
+  const getCompletionMessage = () => {
+    const levelConfig = feedbackConfig[currentExercise.level] || feedbackConfig[1];
+    const messages = levelConfig.TrainingMessages?.CompletionMessage || [];
+
+    if (!messages.length) {
+      return "¡Entrenamiento completado!";
+    }
+
+    return messages[Math.floor(Math.random() * messages.length)];
+  };
 
   //at the end of the exercises
 
@@ -138,19 +151,30 @@ const Training = () => {
                     mode="training"
                     label="Probar jugada"
                     onSuccess={() => {
-                      if (feedback.type === "success") {
-                        setAttempts(0);
+                      setAttempts(0);
 
-                        if (currentExerciseIndex < exercises.length - 1) {
-                          setTimeout(() => {
-                            setCurrentExerciseIndex((prev) => prev + 1);
-                            setCode(defaultCode);
-                          }, 3000);
-                        } else {
-                          setTimeout(() => {
-                            handleFinishLevel();
-                          }, 3000);
-                        }
+                      const isLastExercise =
+                        currentExerciseIndex === exercises.length - 1;
+
+                      if (!isLastExercise) {
+                        // Next Exercise
+                        setTimeout(() => {
+                          setCurrentExerciseIndex((prev) => prev + 1);
+                          setCode(defaultCode);
+                        }, 2000);
+                      } else {
+                        // Completed
+                        const completionMessage = getCompletionMessage();
+
+                        setAlert({
+                          show: true,
+                          message: completionMessage,
+                          type: "complete",
+                        });
+
+                        setTimeout(() => {
+                          handleFinishLevel();
+                        }, 7000);
                       }
                     }}
                   />
