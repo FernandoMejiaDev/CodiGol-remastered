@@ -127,8 +127,8 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
 ## 🎯 Objetivo del juego
 
 - Ganar la liga enfrentando a 10 equipos diferentes
-- Resolver ejercicios reales de Tailwind para avanzar
-- Mejorar tus habilidades de **TailwindCSS** en un contexto práctico y divertido
+- Resolver ejercicios reales de **Tailwind CSS** para avanzar
+- Mejorar tus habilidades de **Tailwind CSS** en un contexto práctico y divertido
 
 ## 📋 Notas técnicas
 
