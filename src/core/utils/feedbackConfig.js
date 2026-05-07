@@ -39,29 +39,37 @@ export const feedbackConfig = {
 
     MatchMessages: {
       CompletionMessage: [
-        "Partido Terminado"
+        "¡Pitazo final! El partido termina y todo se decidirá en el marcador.",
       ],
 
       successMessages: [
-        "Gold",
-        "¡Golazo!",
-        "¡Perfecto!",
-        "¡Excelente!",
-        "¡Impecable!",
+        "¡GOOOOOOL de Wind Jaguars! Gran definición del jugador.",
+        "¡Golazo! Tremenda jugada colectiva y excelente remate.",
+        "¡La mandó al fondo de la red! Wind Jaguars encuentra el espacio.",
+        "¡Qué definición! El arquero no pudo hacer nada ante ese disparo.",
+        "¡Gol de Wind Jaguars! La afición estalla en las gradas.",
       ],
 
       // Feedback messages
       FeedbackMessages: {
-        missingBase: "Buen pase, pero falto definir el estilo base del texto.",
-        missingResponsive: "Gran jugada, pero ",
-        extra: "",
-        fallback: "Hay que revaluar la jugadas que estás haciendo.",
+        missingBase:
+          "Buen pase, pero faltó definir correctamente el estilo base del texto.",
+        missingResponsive:
+          "La jugada fue buena, pero no logró adaptarse al cambio de ritmo en la cancha.",
+        extra:
+          "Demasiados movimientos innecesarios. La jugada perdió claridad en el área.",
+        fallback:
+          "Wind Jaguars mantiene la posesión, pero necesita construir mejor la jugada.",
       },
 
       //Error messages
       errorMessages: [
-        "Le ha pegado horrible, el equipo debe concentrarse si busca anotar",
-        "Tiro al palo, Estuvo muy cerca de anotar",],
+        "¡Disparo desviado! La jugada termina sin peligro para el rival.",
+        "¡Ataja el arquero! Wind Jaguars desperdicia una oportunidad clara.",
+        "¡La pelota se estrella en el poste! Qué cerca estuvo el gol.",
+        "Intentó sorprender desde lejos, pero el disparo se va por encima del arco.",
+        "La defensa rival corta la jugada y aleja el peligro del área.",
+      ],
     },
   },
 
