@@ -99,6 +99,7 @@ const Training = () => {
         <AlertFeedback
           message={alert.message}
           type={alert.type}
+          mode="training"
           onClose={() =>
             setAlert((prev) => ({ ...prev, show: false }))
           }

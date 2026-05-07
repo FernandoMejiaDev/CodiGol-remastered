@@ -38,18 +38,30 @@ export const feedbackConfig = {
     },
 
     MatchMessages: {
-      successMessages: [],
+      CompletionMessage: [
+        "Partido Terminado"
+      ],
+
+      successMessages: [
+        "Gold",
+        "¡Golazo!",
+        "¡Perfecto!",
+        "¡Excelente!",
+        "¡Impecable!",
+      ],
 
       // Feedback messages
       FeedbackMessages: {
-        missingBase: "",
-        missingResponsive: "",
+        missingBase: "Buen pase, pero falto definir el estilo base del texto.",
+        missingResponsive: "Gran jugada, pero ",
         extra: "",
-        fallback: "",
+        fallback: "Hay que revaluar la jugadas que estás haciendo.",
       },
 
       //Error messages
-      errorMessages: [""],
+      errorMessages: [
+        "Le ha pegado horrible, el equipo debe concentrarse si busca anotar",
+        "Tiro al palo, Estuvo muy cerca de anotar",],
     },
   },
 

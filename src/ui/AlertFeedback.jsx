@@ -6,25 +6,35 @@ const styles = {
     border: "border-lime-500",
     text: "text-lime-600",
     face: "Face1.webp",
+    commentator: "Commentator1.webp",
   },
   success: {
     border: "border-cyan-500",
     text: "text-cyan-600",
     face: "Face1.webp",
+    commentator: "Commentator1.webp",
+
   },
   warning: {
     border: "border-yellow-500",
     text: "text-yellow-600",
     face: "Face2.webp",
+    commentator: "Commentator2.webp",
   },
   error: {
     border: "border-red-500",
     text: "text-red-600",
     face: "Face3.webp",
+    commentator: "Commentator3.webp",
   }
 };
 
-const AlertFeedback = ({ message, type = "error", duration = 5000, onClose }) => {
+const AlertFeedback = ({ 
+  message, 
+  mode = "training", 
+  type = "error", 
+  duration = 5000, 
+  onClose }) => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -40,6 +50,13 @@ const AlertFeedback = ({ message, type = "error", duration = 5000, onClose }) =>
 
     return () => clearTimeout(timer);
   }, []);
+
+   const currentStyle = styles[type] || styles.success;
+
+  const currentImage =
+    mode === "match"
+      ? currentStyle.commentator
+      : currentStyle.face;
 
   return (
     <div
@@ -70,10 +87,11 @@ const AlertFeedback = ({ message, type = "error", duration = 5000, onClose }) =>
         </p>
 
         <img
-          src={`/img/${styles[type]?.face || styles.success.face}`}
-          alt="Face"
+          src={`/img/${currentImage}`}
+          alt="Character"
           className="object-contain w-12 h-12"
-          loading="lazy" />
+          loading="lazy"
+        />
       </div>
     </div>
   );

@@ -50,7 +50,7 @@ const Game = () => {
   const [alert, setAlert] = useState({
     show: false,
     message: "",
-    type: "success", // success | error | warning
+    type: "success", // success | error | warning | complete
   });
 
   const [code, setCode] = useState(defaultCode);
@@ -61,13 +61,14 @@ const Game = () => {
   //GameData and evaluate Answer
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
   const currentExercise = GameData[currentExerciseIndex];
+  
 
-   //props of analyzeAnswer
-    // `attempts` is a state variable that resides within the Training component, 
-    // but the `analyzeAnswer` function (which is in an external file) has no 
-    // idea what it is unless it is explicitly passed; otherwise, it marks it as 
-    // `attempts is not defined`.
-    const [attempts, setAttempts] = useState(0);
+  //props of analyzeAnswer
+  // `attempts` is a state variable that resides within the Training component, 
+  // but the `analyzeAnswer` function (which is in an external file) has no 
+  // idea what it is unless it is explicitly passed; otherwise, it marks it as 
+  // `attempts is not defined`.
+  const [attempts, setAttempts] = useState(0);
 
   //If the player runs out of time or makes a mistake in his answer, then we move
   // on to the next exercise called the function that indicates that time has run
@@ -126,10 +127,11 @@ const Game = () => {
 
     <div className="relative w-full overflow-hidden h-dvh">
 
-{alert.show && (
+      {alert.show && (
         <AlertFeedback
           message={alert.message}
           type={alert.type}
+          mode="match"
           onClose={() =>
             setAlert((prev) => ({ ...prev, show: false }))
           }
@@ -180,7 +182,6 @@ const Game = () => {
             resetTrigger={timerResetKey}
           />
 
-
           <div className="z-20 flex flex-col justify-center w-full h-full max-w-4xl gap-2 mt-16">
             <div className="flex flex-row w-full">
 
@@ -190,7 +191,7 @@ const Game = () => {
                 attempts={attempts}
                 setAttempts={setAttempts}
                 setAlert={setAlert}
-                mode="training"
+                mode="match"
                 label="Disparar"
                 onSuccess={() => {
                   if (currentExerciseIndex < exercises.length - 1) {
