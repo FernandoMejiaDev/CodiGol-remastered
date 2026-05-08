@@ -40,7 +40,6 @@ Durante la transmisión final de la Hackathon organizada por [Midudev](https://w
 ## 🧠 ¿Qué aprenderás?
 
 - Fundamentos y clases de utilidad de **Tailwind CSS**
-- Estilos responsive
 - Buenas prácticas al trabajar con **Tailwind CSS**
 
 ## 🛠 Tecnologías utilizadas
