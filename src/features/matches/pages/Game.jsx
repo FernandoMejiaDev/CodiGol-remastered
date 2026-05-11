@@ -61,7 +61,7 @@ const Game = () => {
   //GameData and evaluate Answer
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
   const currentExercise = GameData[currentExerciseIndex];
-  
+
 
   //props of analyzeAnswer
   // `attempts` is a state variable that resides within the Training component, 
@@ -194,15 +194,30 @@ const Game = () => {
                 mode="match"
                 label="Disparar"
                 onSuccess={() => {
-                  if (currentExerciseIndex < exercises.length - 1) {
+                  setAttempts(0);
+
+                  const isLastExercise =
+                    currentExerciseIndex === exercises.length - 1;
+
+                  if (!isLastExercise) {
+                    // Next Exercise
                     setTimeout(() => {
                       setCurrentExerciseIndex((prev) => prev + 1);
                       setCode(defaultCode);
-                    }, 3000);
+                    }, 2000);
                   } else {
+                    // Completed
+                    const completionMessage = getCompletionMessage();
+
+                    setAlert({
+                      show: true,
+                      message: completionMessage,
+                      type: "complete",
+                    });
+
                     setTimeout(() => {
                       handleFinishLevel();
-                    }, 3000);
+                    }, 7000);
                   }
                 }}
               />
