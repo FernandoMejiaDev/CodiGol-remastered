@@ -12,7 +12,6 @@ import Preview from "@/ui/Preview";
 import Editor from "@/ui/Editor";
 import VerifyButton from "@/ui/VerifyButton";
 
-
 //GameData and evaluate Answer
 import GameData from "@/features/matches/data/Game";
 import evaluateAnswer from "@/core/utils/evaluateAnswer";
