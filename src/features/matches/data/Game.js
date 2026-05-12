@@ -4,29 +4,30 @@ const GameData = [
     id: 1,
     level: 1,
     prompt:
-      "El texto debe iniciar con 20px, aumentar a 36px al llegar a pantallas medianas, y llegar a 72px en pantallas grandes ",
-    requiredClasses: ["text-lg", "md:text-4xl", "lg:text-7xl"],
+      "Usa un tamaño base para el texto y haz que aumente en pantallas grandes a 5xl.",
+
+    requiredClasses: ["text-base", "lg:text-5xl"],
   },
   {
     id: 2,
     level: 1,
     prompt:
-      "En móviles el texto debe ser de 14px, a partir de 640px debe ser 24px, a partir de 1024px debe ser 48px, y en 1536px en adelante debe ser 96px.",
-    requiredClasses: ["text-sm", "sm:text-2xl", "lg:text-5xl", "2xl:text-8xl"],
+      "Inicia con un tamaño grande (lg). Al llegar a pantallas md, triplica su impacto a 4xl, y en pantallas lg elévatelo al nivel 7xl.",
+    requiredClasses: ["text-lg", "md:text-4xl", "lg:text-7xl"],
   },
   {
     id: 3,
     level: 1,
     prompt:
-      "El texto debe tener 32px a partir de sm, 60px en 2xl, y no debe mostrar ningún texto en pantallas menores a sm.",
-    requiredClasses: ["hidden", "sm:block", "sm:text-3xl", "2xl:text-6xl"],
+    "El texto debe ser pequeño (sm) en móviles. Aplica saltos de tamaño en cada breakpoint: en sm usa 2xl, en lg sube a 5xl y en 2xl termina con el tamaño 8xl.",
+    requiredClasses: ["text-sm", "sm:text-2xl", "lg:text-5xl", "2xl:text-8xl"],
   },
 
   {
     id: 4,
     level: 1,
     prompt:
-      "El texto debe medir 12px en móviles, 24px en pantallas pequeñas, 30px en medianas, 36px en grandes, y 48px en extra grandes.",
+    "Crea una escala gradual: empieza en extra pequeño (xs). En cada breakpoint (sm, md, lg, xl), sube el texto exactamente dos niveles en la escala de Tailwind.",
     requiredClasses: [
       "text-xs",
       "sm:text-xl",
@@ -40,14 +41,14 @@ const GameData = [
     id: 5,
     level: 1,
     prompt:
-      "El texto debe tener un tamaño diferente en cada breakpoint: 12px en pantallas menores a 640px, al llegar a 640px un tamaño de 14px, al llegar a 768px un tamaño de 16px, al llegar a 1024px un tamaño de 24px, al llegar a 1280px un tamaño de 36px y al llegar a 1536px un tamaño de 96px",
+    "Crea un texto completamente responsive usando todos los breakpoints de Tailwind para aumentar gradualmente su tamaño empezando con xl por cada breakpoints sumale un 1 al texto.",
     requiredClasses: [
-      "text-xs",
-      "sm:text-sm",
-      "md:text-base",
-      "lg:text-2xl",
-      "xl:text-4xl",
-      "2xl:text-8xl",
+      "text-xl",
+      "sm:text-2xl",
+      "md:text-3xl",
+      "lg:text-4xl",
+      "xl:text-5xl",
+      "2xl:text-6xl",
     ],
   },
 ];
