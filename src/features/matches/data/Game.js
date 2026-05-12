@@ -1,6 +1,6 @@
 // Game Test
 const GameData = [
-  
+
   {
     id: 1,
     level: 1,
@@ -9,6 +9,7 @@ const GameData = [
 
     requiredClasses: ["text-base", "lg:text-5xl"],
   },
+
   {
     id: 2,
     level: 1,
@@ -16,6 +17,7 @@ const GameData = [
       "Inicia con un tamaño grande (lg). Al llegar a pantallas md, triplica su impacto a 4xl, y en pantallas lg elévatelo al nivel 7xl.",
     requiredClasses: ["text-lg", "md:text-4xl", "lg:text-7xl"],
   },
+  
   {
     id: 3,
     level: 1,
