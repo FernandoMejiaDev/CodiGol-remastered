@@ -1,6 +1,6 @@
 // Game Test
 const GameData = [
-
+  
   {
     id: 1,
     level: 1,
@@ -17,12 +17,12 @@ const GameData = [
       "Inicia con un tamaño grande (lg). Al llegar a pantallas md, triplica su impacto a 4xl, y en pantallas lg elévatelo al nivel 7xl.",
     requiredClasses: ["text-lg", "md:text-4xl", "lg:text-7xl"],
   },
-  
+
   {
     id: 3,
     level: 1,
     prompt:
-    "El texto debe ser pequeño (sm) en móviles. Aplica saltos de tamaño en cada breakpoint: en sm usa 2xl, en lg sube a 5xl y en 2xl termina con el tamaño 8xl.",
+      "El texto debe ser pequeño (sm) en móviles. Aplica saltos de tamaño en cada breakpoint: en sm usa 2xl, en lg sube a 5xl y en 2xl termina con el tamaño 8xl.",
     requiredClasses: ["text-sm", "sm:text-2xl", "lg:text-5xl", "2xl:text-8xl"],
   },
 
@@ -30,13 +30,14 @@ const GameData = [
     id: 4,
     level: 1,
     prompt:
-    "Crea una escala gradual: empieza en extra pequeño (xs). En cada breakpoint (sm, md, lg, xl), sube el texto exactamente dos niveles en la escala de Tailwind.",
+      "Crea una escala progresiva: empieza con el texto extra pequeño (xs). En pantallas sm salta a text-xl. A partir de ahí, sube el tamaño en cada breakpoint (md, lg, xl y 2xl) saltando de dos en dos (de xl a 3xl) para demostrar un crecimiento imparable.",
     requiredClasses: [
       "text-xs",
       "sm:text-xl",
-      "md:text-2xl",
-      "lg:text-3xl",
-      "xl:text-5xl",
+      "md:text-3xl",
+      "lg:text-5xl",
+      "xl:text-7xl",
+      "2xl:text-9xl",
     ],
   },
 
@@ -44,7 +45,7 @@ const GameData = [
     id: 5,
     level: 1,
     prompt:
-    "Crea un texto completamente responsive usando todos los breakpoints de Tailwind para aumentar gradualmente su tamaño empezando con xl por cada breakpoints sumale un 1 al texto.",
+      "Crea un texto responsive que use todos los breakpoints. Empieza en text-xl (móvil) y aumenta gradualmente en sm, md, lg, xl hasta culminar en 2xl con el tamaño 6xl.",
     requiredClasses: [
       "text-xl",
       "sm:text-2xl",
