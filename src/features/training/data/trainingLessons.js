@@ -1,6 +1,5 @@
 //Training trainingLessons used in Training
 const trainingLessons = [
-  
   {
     id: 1,
     level: 1,
@@ -21,16 +20,16 @@ const trainingLessons = [
     id: 3,
     level: 1,
     prompt:
-      "Crea una escala completa: empieza en 12px, sube a un tamaño estándar (16px) en sm, aumenta a 24px en md y termina con la clase 2xl:text-6xl.",
-    requiredClasses: ["text-xs", "sm:text-base", "md:text-2xl", "2xl:text-6xl"],
+      "Inicia con un tamaño de 18px. En pantallas medianas (md) sube a 30px, y para pantallas extra grandes (xl), usa con la clase text-7xl.",
+    requiredClasses: ["text-sm", "md:text-3xl", "xl:text-7xl"],
   },
 
   {
     id: 4,
     level: 1,
     prompt:
-      "Haz que el texto sea invisible (hidden) en móviles. Debe aparecer como un bloque en md con un texto en 5xl",
-    requiredClasses: ["hidden", "md:block", "md:text-5xl"],
+      "Crea una escala completa: empieza en 12px, sube a un tamaño estándar (16px) en sm, aumenta a 24px en md y termina con la clase 2xl:text-6xl.",
+    requiredClasses: ["text-xs", "sm:text-base", "md:text-2xl", "2xl:text-6xl"],
   },
 ];
 
