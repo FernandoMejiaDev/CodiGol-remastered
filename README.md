@@ -129,6 +129,8 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
 - Resolver ejercicios reales de **Tailwind CSS** para avanzar
 - Mejorar tus habilidades de **Tailwind CSS** en un contexto práctico y divertido
 
+## ✨Mejoras de la remasterización
+
 ## 📋 Notas técnicas
 
 - Cada pantalla está pensada como una fase: introducción, entrenamiento, partido y resultado.
