@@ -4,29 +4,22 @@ const SubBench = {
   1: [
     {
       speaker: "trainer",
-      text: "El partido sigue empatado contra los Gem Rubies... es su turno para jugar.",
+      text: "Seguimos 0 a 0 contra los Gem Rubies. Necesitamos mover el partido. Vas a entrar en el segundo tiempo. Mantén la calma y juega simple.",
     },
     {
       speaker: "trainer",
-      text: "Es tu oportunidad. Entrarás al segundo tiempo, y quedan 5 jugadas clave.",
+      text: "Recuerda el entrenamiento: usa bien los breakpoints y adapta cada jugada. No necesitas acertar todo en el primer intento. A veces el rebote queda vivo.",
     },
     {
       speaker: "trainer",
-      text: "Aquí ya no hay pausas ni explicaciones. Solo tú y el campo.",
+      text: "Pero cuidado: si desperdiciamos demasiadas oportunidades, ellos se quedarán con el balón. Juega con inteligencia, confía en tu equipo y aprovecha cada ataque.",
     },
     {
       speaker: "trainer",
-      text: "Confía en lo que entrenaste. Cada clase, cada detalle... ahora importa.",
-    },
-    {
-      speaker: "trainer",
-      text: "Este partido puede irse para cualquier lado.",
-    },
-    {
-      speaker: "trainer",
-      text: "Demuestra por qué mereces estar aquí. Entra y cambia el juego.",
+      text: "Muy bien... es tu turno. Entra al campo y cambia el ritmo del partido.",
     },
   ],
+
   2: [
     {
       speaker: "trainer",
