@@ -12,7 +12,7 @@ const trainingLessons = [
     id: 2,
     level: 1,
     prompt:
-      "Inicia con un tamaño base de 16px. En pantallas md cámbialo a 24px y en pantallas lg usa la clase text-4xl para un acabado de titular.",
+      "Inicia con un tamaño base de 16px. En pantallas md cámbialo a 24px y en pantallas lg usa la clase text-4xl.",
     requiredClasses: ["text-base", "md:text-2xl", "lg:text-4xl"],
   },
 
