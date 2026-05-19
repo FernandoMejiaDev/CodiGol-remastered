@@ -1,29 +1,32 @@
 //Practical training
 //Dialogues and exercise
-import React, { useRef } from "react";
+import React from "react";
+
 import { useUser } from "@clerk/clerk-react";
 import { useEffect, useState } from "react";
 import { unlockNextPage } from "@/core/utils/routeGuard";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
 
+//At the end of the GameData it will take you to MatchPresentation
+import { useNavigate } from "react-router-dom";
+import { navigateToNextPhase } from "@/core/utils/navigateToNextPhase";
+
 import ModalSize from "@/ui/ModalSize";
-import DialogueBox from "@/ui/DialogueBox";
 import Preview from "@/ui/Preview";
 import Editor from "@/ui/Editor";
 import VerifyButton from "@/ui/VerifyButton";
 
 //GameData and evaluate Answer
 import GameData from "@/features/matches/data/Game";
-import evaluateAnswer from "@/core/utils/evaluateAnswer";
+
 import Timer from "@/ui/Timer";
 
 //ScoreBoard
 import MatchData from "@/features/matches/data/MatchData";
 import Scoreboard from "@/ui/Scoreboard";
 
-//At the end of the GameData it will take you to MatchPresentation
-import { useNavigate } from "react-router-dom";
-import { navigateToNextPhase } from "@/core/utils/navigateToNextPhase";
+//exercises and evaluate Answer
+import exercises from "@/features/training/data/trainingLessons";
 
 import { useGame } from "@/features/league/data/leagueData"; // Collect match results
 
@@ -53,14 +56,10 @@ const Game = () => {
   });
 
   const [code, setCode] = useState(defaultCode);
-  const [showEditor, setShowEditor] = useState(false);
-  const [lastTrainerText, setLastTrainerText] = useState(""); // View exercise button
-  const [showExplanation, setShowExplanation] = useState(false); // Request explanation
 
   //GameData and evaluate Answer
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
   const currentExercise = GameData[currentExerciseIndex];
-
 
   //props of analyzeAnswer
   // `attempts` is a state variable that resides within the Training component, 
@@ -94,12 +93,12 @@ const Game = () => {
   };
 
   const handleTimeOut = () => {
-    alert("Se te acabó el tiempo. ¡Fallaste el tiro!");
+    //alert("Se te acabó el tiempo. ¡Fallaste el tiro!");
     nextExercise();
   };
 
   //ScoreBoard
-  //const [playerGoals, setPlayerGoals] = useState(MatchData.playerTeam.score);
+  const [setPlayerGoals] = useState(MatchData.playerTeam.score);
   const [rivalGoals] = useState(MatchData.rivalTeam.score);
   const [exerciseIndex, setExerciseIndex] = useState(0);
 
