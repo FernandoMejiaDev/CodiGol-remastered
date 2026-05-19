@@ -8,11 +8,6 @@ import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
 
 import { feedbackConfig } from "@/core/utils/feedbackConfig";
 
-/*exercises and evaluate Answer
-import { analyzeClasses } from "@/core/utils/AnalysisClasses";
-import { analyzeAnswer } from "@/core/utils/analyzeAnswer";
-*/
-
 //UI
 import DialogueBox from "@/ui/DialogueBox";
 import Preview from "@/ui/Preview";
@@ -25,7 +20,6 @@ import ModalExplanation from "@/ui/ModalExplanation";
 
 //exercises and evaluate Answer
 import exercises from "@/features/training/data/trainingLessons";
-import evaluateAnswer from "@/core/utils/evaluateAnswer";
 
 //At the end of the exercises it will take you to MatchPresentation
 import { useNavigate } from "react-router-dom";
