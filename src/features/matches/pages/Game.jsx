@@ -1,9 +1,6 @@
-//Practical training
-//Dialogues and exercise
-import React from "react";
 
+import React, { useEffect, useState } from "react";
 import { useUser } from "@clerk/clerk-react";
-import { useEffect, useState } from "react";
 import { unlockNextPage } from "@/core/utils/routeGuard";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
 
@@ -24,9 +21,6 @@ import Timer from "@/ui/Timer";
 //ScoreBoard
 import MatchData from "@/features/matches/data/MatchData";
 import Scoreboard from "@/ui/Scoreboard";
-
-//exercises and evaluate Answer
-import exercises from "@/features/training/data/trainingLessons";
 
 import { useGame } from "@/features/league/data/leagueData"; // Collect match results
 
@@ -195,7 +189,7 @@ const Game = () => {
                   setAttempts(0);
 
                   const isLastExercise =
-                    currentExerciseIndex === exercises.length - 1;
+                    currentExerciseIndex === MatchData.length - 1;
 
                   if (!isLastExercise) {
                     // Next Exercise
