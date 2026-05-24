@@ -1,6 +1,12 @@
 import { feedbackConfig } from "./feedbackConfig";
 
-export const analyzeAnswer = (analysis, attempts, level, mode = "training") => {
+export const analyzeAnswer = (
+  analysis,
+  attempts,
+  level,
+  mode = "training",
+  eventType = null,
+) => {
   const levelConfig = feedbackConfig[level] || feedbackConfig[1];
 
   const selectedConfig =
@@ -11,9 +17,22 @@ export const analyzeAnswer = (analysis, attempts, level, mode = "training") => {
     successMessages = [],
     FeedbackMessages = {},
     errorMessages = [],
+    TimeMessages = [],
   } = selectedConfig || {};
 
   const msg = FeedbackMessages;
+
+  // TIME
+if (eventType === "timeout") {
+  const randomTimeMessage =
+    TimeMessages[Math.floor(Math.random() * TimeMessages.length)];
+
+  return {
+    type: "time",
+    message: randomTimeMessage,
+    resetAttempts: false,
+  };
+}
 
   // success
   if (analysis.isCorrect) {

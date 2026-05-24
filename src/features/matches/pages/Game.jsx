@@ -1,8 +1,9 @@
-
 import React, { useEffect, useState } from "react";
 import { useUser } from "@clerk/clerk-react";
 import { unlockNextPage } from "@/core/utils/routeGuard";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
+
+import { analyzeAnswer } from "@/core/utils/analyzeAnswer";
 
 //At the end of the GameData it will take you to MatchPresentation
 import { useNavigate } from "react-router-dom";
@@ -87,8 +88,23 @@ const Game = () => {
   };
 
   const handleTimeOut = () => {
-    //alert("Se te acabó el tiempo. ¡Fallaste el tiro!");
-    nextExercise();
+    const feedback = analyzeAnswer(
+      {},
+      attempts,
+      currentExercise.level,
+      "match",
+      "timeout"
+    );
+
+    setAlert({
+      show: true,
+      message: feedback.message,
+      type: feedback.type,
+    });
+
+    setTimeout(() => {
+      nextExercise();
+    }, 1000);
   };
 
   //ScoreBoard
@@ -100,7 +116,7 @@ const Game = () => {
 
   const handleCorrectAnswer = () => {
     updatePlayerGoals();
-    // setPlayerGoals((prev) => prev + 1);
+    //setPlayerGoals((prev) => prev + 1);
     if (exerciseIndex < 5) setExerciseIndex((prev) => prev + 1);
   };
 

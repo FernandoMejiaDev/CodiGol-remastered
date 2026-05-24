@@ -8,6 +8,12 @@ const styles = {
     face: "Face1.webp",
     commentator: "Commentator1.webp",
   },
+  time: {
+    border: "border-white",
+    text: "text-white",
+    face: "Face1.webp",
+    commentator: "Commentator1.webp",
+  },
   success: {
     border: "border-cyan-500",
     text: "text-cyan-600",

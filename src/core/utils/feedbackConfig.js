@@ -70,6 +70,14 @@ export const feedbackConfig = {
         "Intentó sorprender desde lejos, pero el disparo se va por encima del arco.",
         "La defensa rival corta la jugada y aleja el peligro del área.",
       ],
+
+      TimeMessages: [
+        "¡Se demora demasiado! La defensa recupera el balón.",
+        "Se acabó el tiempo y la jugada termina en nada.",
+        "El arquero controla sin problemas tras la demora.",
+        "Tardó mucho en decidir y perdió la oportunidad.",
+        "La defensa cierra espacios y termina la jugada.",
+      ],
     },
   },
 
