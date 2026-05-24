@@ -71,6 +71,7 @@ export const feedbackConfig = {
         "La defensa rival corta la jugada y aleja el peligro del área.",
       ],
 
+      //Time messages
       TimeMessages: [
         "¡Se demora demasiado! La defensa recupera el balón.",
         "Se acabó el tiempo y la jugada termina en nada.",
