@@ -9,8 +9,8 @@ const styles = {
     commentator: "Commentator1.webp",
   },
   time: {
-    border: "border-white",
-    text: "text-white",
+    border: "border-slate-100",
+    text: "text-slate-100",
     face: "Face1.webp",
     commentator: "Commentator1.webp",
   },
@@ -19,7 +19,6 @@ const styles = {
     text: "text-cyan-600",
     face: "Face1.webp",
     commentator: "Commentator1.webp",
-
   },
   warning: {
     border: "border-yellow-500",
