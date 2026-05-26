@@ -3,6 +3,7 @@
 export const feedbackConfig = {
   1: {
     TrainingMessages: {
+      //Completion Message
       CompletionMessage: [
         "Buen trabajo. El entrenamiento terminó. Ahora prepárate: entrarás en el segundo tiempo. Es momento de aplicar lo aprendido.",
       ],
@@ -38,10 +39,12 @@ export const feedbackConfig = {
     },
 
     MatchMessages: {
+      //Completion Message
       CompletionMessage: [
         "¡Pitazo final! El partido termina y todo se decidirá en el marcador.",
       ],
 
+      //Success messages
       successMessages: [
         "¡GOOOOOOL de Wind Jaguars! Gran definición del jugador.",
         "¡Golazo! Tremenda jugada colectiva y excelente remate.",
