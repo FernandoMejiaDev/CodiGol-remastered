@@ -69,12 +69,6 @@ const Game = () => {
 
   const [timerResetKey, setTimerResetKey] = useState(0);
 
-  //Next Phase
-  const navigate = useNavigate();
-  const handleFinishLevel = () => {
-    navigateToNextPhase("Game", navigate);
-  };
-
   const nextExercise = () => {
     if (currentExerciseIndex < GameData.length - 1) {
       setCurrentExerciseIndex((prev) => prev + 1);
@@ -116,12 +110,18 @@ const Game = () => {
 
   const handleCorrectAnswer = () => {
     updatePlayerGoals();
-    //setPlayerGoals((prev) => prev + 1);
+    setPlayerGoals((prev) => prev + 1);
     if (exerciseIndex < 5) setExerciseIndex((prev) => prev + 1);
   };
 
   //Save the final match result
   const { saveMatchResult } = useGame();
+
+  //Next Phase
+  const navigate = useNavigate();
+  const handleFinishLevel = () => {
+    navigateToNextPhase("Game", navigate);
+  };
 
   useEffect(() => {
     saveMatchResult(); // Save the result after the match ends
@@ -234,7 +234,7 @@ const Game = () => {
 
             <div className="flex flex-col items-start gap-2 p-2 text-base border bg-neutral-950 text-slate-100 rounded-2xl">
               <strong>Para anotar:</strong>
-              <p>{currentExercise.prompt}</p>
+              <p>{currentExercise?.prompt}</p>
             </div>
 
             <Editor code={code} setCode={setCode} />
