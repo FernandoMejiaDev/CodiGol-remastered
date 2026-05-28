@@ -31,6 +31,8 @@ import ResizingLine from "@/ui/ResizingLine";
 // Alert
 import AlertFeedback from "@/ui/AlertFeedback";
 
+import { feedbackConfig } from "@/core/utils/feedbackConfig";
+
 const defaultCode = `
 <div class="">
   Hola Tailwind!
@@ -49,6 +51,17 @@ const Game = () => {
     message: "",
     type: "success", // success | error | warning | complete
   });
+
+  const getCompletionMessage = () => {
+    const levelConfig = feedbackConfig[currentExercise.level] || feedbackConfig[1];
+    const messages = levelConfig.MatchMessages?.CompletionMessage || [];
+
+    if (!messages.length) {
+      return "¡Partido Terminado!";
+    }
+
+    return messages[Math.floor(Math.random() * messages.length)];
+  };
 
   const [code, setCode] = useState(defaultCode);
 
@@ -205,7 +218,7 @@ const Game = () => {
                   setAttempts(0);
 
                   const isLastExercise =
-                    currentExerciseIndex === MatchData.length - 1;
+                    currentExerciseIndex === GameData.length - 1;
 
                   if (!isLastExercise) {
                     // Next Exercise
@@ -232,10 +245,12 @@ const Game = () => {
 
             </div>
 
-            <div className="flex flex-col items-start gap-2 p-2 text-base border bg-neutral-950 text-slate-100 rounded-2xl">
-              <strong>Para anotar:</strong>
-              <p>{currentExercise?.prompt}</p>
-            </div>
+            {currentExercise && (
+              <div className="flex flex-col items-start gap-2 p-2 text-base border bg-neutral-950 text-slate-100 rounded-2xl">
+                <strong>Para anotar:</strong>
+                <p>{currentExercise.prompt}</p>
+              </div>
+            )}
 
             <Editor code={code} setCode={setCode} />
           </div>
