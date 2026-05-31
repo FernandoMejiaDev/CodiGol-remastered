@@ -41,7 +41,7 @@ export const feedbackConfig = {
     MatchMessages: {
       //Completion Message
       CompletionMessage: [
-        "¡Pitazo final! El partido termina y todo se decidirá en el marcador.",
+        "¡Pitazo final! El partido termina y todo ha quedado decidido en el marcador.",
       ],
 
       //Success messages
