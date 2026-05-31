@@ -89,7 +89,7 @@ El entrenamiento solo termina cuando todas las respuestas son correctas, asegura
 
 ## ⚔️ El Partido
 
-Una vez completado el entrenamiento, es momento del partido. En la escena de VS, se presenta el contexto del enfrentamiento. Por ejemplo, en el primer partido, los **Wind Jaguars** van perdiendo 2-0 contra los **Gem Rubies**.
+Una vez completado el entrenamiento, es momento del partido. En la escena de **VS**, se presenta el contexto del enfrentamiento. Por ejemplo, en el primer partido, los **Wind Jaguars** van empatados 0-0 contra los **Gem Rubies**.
 
 A medida que se avanza en la liga, el **margen de error se reduce** y los desafíos se vuelven más exigentes.
 
