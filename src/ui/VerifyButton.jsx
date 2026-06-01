@@ -2,6 +2,7 @@
 // component to distinguish between messages in each 
 // context for alerts
 
+import { useEffect } from "react";
 //exercises and evaluate Answer
 import { analyzeClasses } from "@/core/utils/AnalysisClasses";
 import { analyzeAnswer } from "@/core/utils/analyzeAnswer";
@@ -13,11 +14,29 @@ const VerifyButton = ({
   setAttempts,
   setAlert,
   onSuccess,
+  onFail,
   mode = "training",
-  label //To change the button message
+  label,
 }) => {
+
+  /* 
+  useEffect(() => {
+     console.log("attempts actualizado:", attempts);
+   }, [attempts]);
+  */
+
   const handleVerify = () => {
-    const analysis = analyzeClasses(code, exercise.requiredClasses);
+    const analysis = analyzeClasses(
+      code,
+      exercise.requiredClasses
+    );
+
+    /* console.log({
+       mode,
+       attempts,
+       nextAttempt: attempts + 1,
+     });
+    */
 
     const feedback = analyzeAnswer(
       analysis,
@@ -25,6 +44,8 @@ const VerifyButton = ({
       exercise.level,
       mode
     );
+
+    //console.log("feedback:", feedback);
 
     setAlert({
       show: true,
@@ -34,10 +55,22 @@ const VerifyButton = ({
 
     if (feedback.type === "success") {
       setAttempts(0);
-      onSuccess();
-    } else {
-      setAttempts((prev) => prev + 1);
+      onSuccess?.();
+      return;
     }
+
+    if (feedback.endPlay) {
+      setAttempts(0);
+      onFail?.();
+      return;
+    }
+
+    
+    setAttempts((prev) => {
+       //console.log("incrementando desde:", prev);
+       return prev + 1;
+     });
+    
   };
 
   return (

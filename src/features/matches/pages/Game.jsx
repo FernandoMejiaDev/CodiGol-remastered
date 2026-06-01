@@ -241,6 +241,13 @@ const Game = () => {
                     }, 7000);
                   }
                 }}
+
+                onFail={() => {
+                  // final ruling
+                  setTimeout(() => {
+                    nextExercise();
+                  }, 2000);
+                }}
               />
 
             </div>

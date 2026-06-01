@@ -23,16 +23,16 @@ export const analyzeAnswer = (
   const msg = FeedbackMessages;
 
   // TIME
-if (eventType === "timeout") {
-  const randomTimeMessage =
-    TimeMessages[Math.floor(Math.random() * TimeMessages.length)];
+  if (eventType === "timeout") {
+    const randomTimeMessage =
+      TimeMessages[Math.floor(Math.random() * TimeMessages.length)];
 
-  return {
-    type: "time",
-    message: randomTimeMessage,
-    resetAttempts: false,
-  };
-}
+    return {
+      type: "time",
+      message: randomTimeMessage,
+      resetAttempts: false,
+    };
+  }
 
   // success
   if (analysis.isCorrect) {
@@ -43,13 +43,17 @@ if (eventType === "timeout") {
       type: "success",
       message: randomMessage,
       resetAttempts: true,
+      endPlay: true,
     };
   }
 
-  // ERROR
-  // If the user fails in the cycle, the WARNING message will be displayed 3 times,
-  // and the fourth time an error message will be displayed, continuing that cycle.
-  if ((attempts + 1) % 4 === 0) {
+  //If the user fails the cycle, a WARNING message will be displayed three times,
+  // and on the fourth attempt, an ERROR message will be displayed, thus continuing
+  //  the cycle in the case of training. In the case of a match (game file),
+  // a WARNING message will be displayed once, and on the second attempt,
+  // an ERROR message will be displayed, moving on to the next exercise.
+
+  if (mode === "training" && (attempts + 1) % 4 === 0) {
     const randomError =
       errorMessages[Math.floor(Math.random() * errorMessages.length)];
 
@@ -57,6 +61,20 @@ if (eventType === "timeout") {
       type: "error",
       message: randomError,
       resetAttempts: false,
+      endPlay: false,
+    };
+  }
+
+  //Match (Game File)
+  if (mode === "match" && (attempts + 1) % 2 === 0) {
+    const randomError =
+      errorMessages[Math.floor(Math.random() * errorMessages.length)];
+
+    return {
+      type: "error",
+      message: randomError,
+      resetAttempts: true,
+      endPlay: true,
     };
   }
 
@@ -83,5 +101,6 @@ if (eventType === "timeout") {
     type: "warning",
     message,
     resetAttempts: false,
+    endPlay: false,
   };
 };
