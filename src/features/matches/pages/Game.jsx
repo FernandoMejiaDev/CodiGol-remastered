@@ -84,6 +84,7 @@ const Game = () => {
 
   const nextExercise = () => {
     if (currentExerciseIndex < GameData.length - 1) {
+      setAttempts(0);
       setCurrentExerciseIndex((prev) => prev + 1);
       setCode(defaultCode);
       setTimerResetKey((prev) => prev + 1);
@@ -94,7 +95,15 @@ const Game = () => {
     }
   };
 
+  const [timeoutProcessing, setTimeoutProcessing] = useState(false);
+
   const handleTimeOut = () => {
+    if (timeoutProcessing) return;
+
+    setTimeoutProcessing(true);
+
+    //console.log("TIMEOUT", currentExerciseIndex);
+
     const feedback = analyzeAnswer(
       {},
       attempts,
@@ -111,6 +120,7 @@ const Game = () => {
 
     setTimeout(() => {
       nextExercise();
+      setTimeoutProcessing(false);
     }, 1000);
   };
 
