@@ -255,13 +255,10 @@ src/
 │   ├── AlertFeedback.jsx
 │   ├── DialogueBox.jsx 
 │   ├── Editor.jsx
-│   ├── Editor.jsx 
 │   ├── EventTime.jsx 
-│   ├── Modal.jsx 
 │   ├── ModalExplanation.jsx 
-│   ├── ModalInNavigation.jsx 
+│   ├── ModalInstruction.jsx 
 │   ├── ModalSize.jsx 
-│   ├── Navigation.jsx 
 │   ├── Preview.jsx 
 │   ├── Scoreboard.jsx 
 │   ├── Timer.jsx 
