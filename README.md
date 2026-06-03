@@ -262,8 +262,10 @@ src/
 │   ├── Preview.jsx
 │   ├── ResizingLine.jsx
 │   ├── Scoreboard.jsx 
-│   ├── Timer.jsx 
-│   └── TrainingPoint.jsx
+│   ├── Timer.jsx
+│   ├── TrainingPoint.jsx
+│   ├── VerifyButton.jsx 
+│   └── renderTextWithCode.jsx
 │
 └── index.js
 ```
