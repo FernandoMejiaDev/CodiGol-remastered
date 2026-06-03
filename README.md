@@ -259,7 +259,8 @@ src/
 │   ├── ModalExplanation.jsx 
 │   ├── ModalInstruction.jsx 
 │   ├── ModalSize.jsx 
-│   ├── Preview.jsx 
+│   ├── Preview.jsx
+│   ├── ResizingLine.jsx
 │   ├── Scoreboard.jsx 
 │   ├── Timer.jsx 
 │   └── TrainingPoint.jsx
