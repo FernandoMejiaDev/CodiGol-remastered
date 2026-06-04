@@ -195,15 +195,14 @@ src/
 │       └── routeGuard.js
 │
 ├── features/
+│   ├── Final/              
+│   │   └── pages/
+│   │       └── FinalScene.jsx 
 │   ├── auth/              
 │   │   ├── components/
 │   │   │   └── ProtectedRoute.jsx
 │   │   └── services/
 │   │       └── clerkSession.js
-│   │ 
-│   ├── Final/              
-│   │   └── pages/
-│   │       └── FinalScene.jsx 
 │   │ 
 │   ├── home/              
 │   │   └── pages/
@@ -217,11 +216,7 @@ src/
 │   │       └── LeagueTable.jsx
 │   │ 
 │   ├── matches/              
-│   │   ├── components/
-│   │   │ 
 │   │   ├── data/
-│   │   │   ├── events/ 
-│   │   │   ├── logic/ 
 │   │   │   ├── matches/ 
 │   │   │   │   ├── gem-rubies.js 
 │   │   │   │   ├── knight-coders.js 
