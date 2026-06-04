@@ -234,8 +234,6 @@ src/
 │   │       └── SubBench.jsx 
 │   │   
 │   └── training/              
-│       ├── components/
-│       │ 
 │       ├── data/
 │       │   ├── lessonIntroDialogue.js
 │       │   ├── trainingDialogues.js
