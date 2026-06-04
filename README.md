@@ -184,8 +184,11 @@ src/
 │   │   └── gameConfig.js               
 │   ├── hooks/              
 │   │   └── userTime.js
-│   └── utils/              
+│   └── utils/
+│       ├── AnalysisClasses.js
+│       ├── analyzeAnswer.js
 │       ├── evaluateAnswer.js
+│       ├── feedbackConfig.js
 │       ├── matchManager.js
 │       ├── NavigateToNextPhase.js
 │       ├── routeFlow.js
