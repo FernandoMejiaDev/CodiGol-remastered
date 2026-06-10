@@ -49,7 +49,7 @@ const Game = () => {
   const [alert, setAlert] = useState({
     show: false,
     message: "",
-    type: "success", // success | error | warning | complete
+    type: "success", // complete | time | success | warning | error
   });
 
   const getCompletionMessage = () => {
