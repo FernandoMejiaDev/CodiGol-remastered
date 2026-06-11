@@ -93,7 +93,7 @@ Una vez completado el entrenamiento, es momento del partido. En la escena de **V
 
 A medida que se avanza en la liga, el **margen de error se reduce** y los desafíos se vuelven más exigentes.
 
-<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/img_readme_Scene_VS_New_N1.webp" alt="imgReadmeN10" /> 
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/img_readme_Scene_VS_New_N1.webp" alt="img_readme_Scene_VS_New" /> 
 
 ## 🧭 Estrategia y Recordatorio
 
