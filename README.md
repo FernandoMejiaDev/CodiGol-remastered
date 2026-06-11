@@ -77,7 +77,7 @@ En **CódiGol**, el jugador se une a los **Wind Jaguars**, un equipo decidido a 
 
 El camino hacia la victoria está dividido en 10 partidos, y cada uno representa una lección clave sobre **Tailwind CSS**. En el primer encuentro, por ejemplo, el jugador aprende sobre **diseño responsivo y clases de texto**. 
 
-<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N1.webp" alt="imgReadmeN5" /> 
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N1.webp" alt="Image_Readme_Training_New" /> 
 
 ## 🧠 Entrenamiento antes del partido
 
@@ -85,7 +85,7 @@ Antes de cada partido, el jugador debe completar un entrenamiento. Aquí podrá 
 
 El entrenamiento solo termina cuando todas las respuestas son correctas, asegurando que el jugador domine bien la lección antes de entrar al campo.
 
-<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N2.webp"alt="alt" /> <br/> <em>Pantalla inicial de entrenamiento</em> </p> <p align="center"> <br/> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N3.webp" alt="alt" /> <br/> <em></em>Ejercicio práctico</p> <p align="center"> <br/> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N4.webp" alt="alt" /> <br/> <em>Anotación</em> </p> <p align="center"> <br/> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N8.webp"  alt="alt" /> <br/> <em>Modal de explicación sobre las clases de Tailwind CSS</em>   </p>
+<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N2.webp"alt="alt" /> <br/> <em>Pantalla inicial de entrenamiento</em> </p> <p align="center"> <br/> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N3.webp" alt="Image_Readme_Training_New" /> <br/> <em></em>Ejercicio práctico</p> <p align="center"> <br/> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N4.webp" alt="Image_Readme_Training_New" /> <br/> <em>Anotación</em> </p> <p align="center"> <br/> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N8.webp"  alt="Image_Readme_Training_New" /> <br/> <em>Modal de explicación sobre las clases de Tailwind CSS</em>   </p>
 
 ## ⚔️ El Partido
 
