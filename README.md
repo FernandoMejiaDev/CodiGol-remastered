@@ -99,7 +99,7 @@ A medida que se avanza en la liga, el **margen de error se reduce** y los desaf�
 
 Antes de entrar al segundo tiempo, el entrenador te recuerda lo aprendido y te da contexto de lo que está en juego. Además, menciona que tienes **5 jugadas o estrategias** para crear oportunidades de anotar esto representa tus **5 intentos** para resolver correctamente los ejercicios en el partido.
 
-<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN11.webp" alt="imgReadmeN11" /> 
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/img_readme_bench_scene_new.webp" alt="imgReadmeN11" /> 
 
 ## 🏟️ El Partido Real
 
