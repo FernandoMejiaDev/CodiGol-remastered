@@ -113,7 +113,7 @@ Al final del partido, se muestra el resultado, que determinará la posición del
 
 El objetivo final es **sumar la mayor cantidad de puntos** a lo largo de la liga y convertirte en el campeón de la Full Stack League, dominando las técnicas más importantes de **Tailwind CSS** en el camino.
 
-<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/img_readme_new_match_N1.webp"alt="alt" /> <br/> <em>Partido</em> </p> <p align="img_readme_bench_scene"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN13.webp" alt="alt"/><br/><em></em>Posición en la liga</p>
+<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/img_readme_new_match_N1.webp"alt="alt" /> <br/> <em>Partido</em> </p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/imgReadmeN13.webp" alt="alt"/><br/><em></em>Posición en la liga</p>
 
 # 📱 Detalle sobre la Responsividad y Modal de Tamaño
 
