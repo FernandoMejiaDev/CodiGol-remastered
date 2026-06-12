@@ -131,6 +131,10 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
 
 ## ✨Mejoras de la remasterización
 
+<details>
+<summary>Alertas</summary>
+<details>
+
 ## 📋 Notas técnicas
 
 - Cada pantalla está pensada como una fase: introducción, entrenamiento, partido y resultado.
