@@ -133,7 +133,13 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
 
 <details>
 <summary>Alertas</summary>
-<details>
+
+ <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_old_N4.webp"alt="Pantalla de inicio protegida por Clerk" /> <br/> <em></em> </p>
+
+ ---
+
+ 
+</details>
 
 ## 📋 Notas técnicas
 
