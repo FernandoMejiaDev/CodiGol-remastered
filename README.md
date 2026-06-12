@@ -27,22 +27,22 @@ Durante la transmisión final de la Hackathon organizada por [Midudev](https://w
 
 😅 Sí, el entrenador hablaba un poquito de más en la introducción (¡gracias por ese feedback, Midu!), pero ya lo solucioné: **ahora los diálogos son más cortos y directos al grano**, para que la experiencia sea más ágil y divertida.
 
-📺 **Puedes ver ese momento aquí (¡es un tremendo golazo!):**
+**Puedes ver ese momento aquí (¡es un tremendo golazo!):**
 
 [![Ver mención en el stream](https://img.youtube.com/vi/0Z0Vy0VWQeY/hqdefault.jpg)](https://www.youtube.com/watch?v=0Z0Vy0VWQeY)
 
 [![Ver mención en el stream](https://img.shields.io/static/v1?message=youtube&logo=Youtube&label=&color=c91e1e&logoColor=white&labelColor=&style=for-the-badge)](https://www.youtube.com/watch?v=0Z0Vy0VWQeY)
 
-## 🌐 Enlace a la demo 
+## Enlace a la demo 
 
 [![codigol](https://img.shields.io/static/v1?message=Juega-CódiGol-ahora&logo=devbox&label=&color=06B6D4&logoColor=white&labelColor=&style=for-the-badge)](https://codigol-demo.netlify.app/)
 
-## 🧠 ¿Qué aprenderás?
+## ¿Qué aprenderás?
 
 - Fundamentos y clases de utilidad de **Tailwind CSS**
 - Buenas prácticas al trabajar con **Tailwind CSS**
 
-## 🛠 Tecnologías utilizadas
+## Tecnologías utilizadas
 
 <div align="left">
 
