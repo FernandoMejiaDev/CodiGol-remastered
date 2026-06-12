@@ -18,7 +18,7 @@ Inicialmente, el proyecto estaba pensado para enseñar JavaScript, pero al notar
 
 Como parte del desarrollo para la [Hackathon de MiduDev 2025](https://github.com/midudev/hackaton-clerk-2025?tab=readme-ov-file#%EF%B8%8F-c%C3%B3mo-participar-en-la-hackat%C3%B3n), se integró [Clerk](https://clerk.com/docs) para la autenticación de usuarios donde **es necesario registrarse o iniciar sesión para poder jugar**.
 
-## 🏅 Mención Especial en la Final de la Hackathon de Midudev 
+## *Mención Especial en la Final de la Hackathon de Midudev* 
 
 Durante la transmisión final de la Hackathon organizada por [Midudev](https://www.twitch.tv/videos/2465451345) y [Clerk](https://clerk.com/docs), ¡**CódiGol** fue destacado como uno de los proyectos más originales! ⚽🔥
 
