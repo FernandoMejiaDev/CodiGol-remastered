@@ -140,8 +140,6 @@ const Game = () => {
 
   const rivalGoals = MatchData.rivalTeam.score;
 
-  //const [exerciseIndex, setExerciseIndex] = useState(0);
-
   const handleCorrectAnswer = () => {
     updatePlayerGoals();
     setPlayerGoals((prev) => prev + 1);
