@@ -91,7 +91,15 @@ const Game = () => {
       //In both cases, whether the exercise is good or bad,
       // the timer is reset.
     } else {
-      handleFinishLevel();
+      const completionMessage = getCompletionMessage();
+
+      setAlert({
+        show: true,
+        message: completionMessage,
+        type: "complete"
+      });
+
+      setTimeout(handleFinishLevel, 7000);
     }
   };
 
@@ -125,11 +133,14 @@ const Game = () => {
   };
 
   //ScoreBoard
-  const [setPlayerGoals] = useState(MatchData.playerTeam.score);
-  const [rivalGoals] = useState(MatchData.rivalTeam.score);
-  const [exerciseIndex, setExerciseIndex] = useState(0);
 
-  const { playerGoals, updatePlayerGoals } = useGame();
+  const [playerGoals, setPlayerGoals] = useState(
+    MatchData.playerTeam.score
+  );
+
+  const rivalGoals = MatchData.rivalTeam.score;
+
+  //const [exerciseIndex, setExerciseIndex] = useState(0);
 
   const handleCorrectAnswer = () => {
     updatePlayerGoals();
@@ -204,7 +215,7 @@ const Game = () => {
             rivalTeam={MatchData.rivalTeam}
             playerGoals={playerGoals}
             rivalGoals={rivalGoals}
-            currentMinute={MatchData.matchMinutes[exerciseIndex]}
+            currentMinute={MatchData.matchMinutes[currentExerciseIndex]}
           />
 
           <Timer
@@ -226,6 +237,8 @@ const Game = () => {
                 label="Disparar"
                 onSuccess={() => {
                   setAttempts(0);
+
+                  setPlayerGoals(prev => prev + 1);
 
                   const isLastExercise =
                     currentExerciseIndex === GameData.length - 1;
