@@ -134,6 +134,10 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
 <details>
 <summary>Alertas</summary>
 
+# Alertas
+
+## Alertas Antiguas
+
 <br>
 
 <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_old_N4.webp"alt="Image_Readme_Training_old" /> <br/> <em></em> </p>
