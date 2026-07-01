@@ -144,7 +144,9 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
 
  ---
 
- ## Nuevas Alertas
+ # Nuevas Alertas
+
+ ## Alerta de tipo acierto
 
 <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N4.webp"alt="Alert_Success" /> <br/> <em></em> </p>
 <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N5.webp"alt="Alert_Warning " /> <br/> <em></em> </p>
