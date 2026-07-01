@@ -159,6 +159,8 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
  ## Alerta de tiempo terminado
 <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N9.webp"alt="Alert_Timer" /> <br/> <em></em> </p>
 
+ ## Alerta de completado
+
 <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N7.webp"alt="Alert_Complete" /> <br/> <em></em> </p>
  
 </details>
