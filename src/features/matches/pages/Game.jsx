@@ -140,23 +140,18 @@ const Game = () => {
 
   const rivalGoals = MatchData.rivalTeam.score;
 
-  const handleCorrectAnswer = () => {
-    updatePlayerGoals();
-    setPlayerGoals((prev) => prev + 1);
-    if (exerciseIndex < 5) setExerciseIndex((prev) => prev + 1);
-  };
-
   //Save the final match result
   const { saveMatchResult } = useGame();
 
   //Next Phase
   const navigate = useNavigate();
   const handleFinishLevel = () => {
+    saveMatchResult(playerGoals, rivalGoals);
     navigateToNextPhase("Game", navigate);
   };
 
   useEffect(() => {
-    saveMatchResult(); // Save the result after the match ends
+    saveMatchResult(playerGoals, rivalGoals); // Save the result after the match ends
   }, []);
 
   useEffect(() => {
