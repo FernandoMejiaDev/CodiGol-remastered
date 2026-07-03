@@ -6,8 +6,7 @@ export const GameProvider = ({ children }) => {
   const [currentLevel, setCurrentLevel] = useState(1); // Current level (1 = first match)
 
   const [currentTeam, setCurrentTeam] = useState(null);
-  //const [playerGoals, setPlayerGoals] = useState(0);
-  //const [rivalGoals, setRivalGoals] = useState(2);
+
   const [playerTeam, setPlayerTeam] = useState({
     name: "Wind Jaguars",
     logo: "/img/WindJaguars.webp",
@@ -18,8 +17,6 @@ export const GameProvider = ({ children }) => {
   });
 
   const nextLevel = () => setCurrentLevel((prev) => prev + 1);
-
-  //const updatePlayerGoals = () => setPlayerGoals((prev) => prev + 1);
 
   const [finalResult, setFinalResult] = useState(null); // 'win' | 'draw' | 'lose'
 
