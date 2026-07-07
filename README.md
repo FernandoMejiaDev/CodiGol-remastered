@@ -107,7 +107,7 @@ Durante el partido, el jugador **aplica lo aprendido** en el entrenamiento. Cada
 
 Al final del partido, se muestra el resultado, que determinará la posición del equipo en la tabla:
 
-- ✅ Victoria = **3 puntos**
+- Victoria = **3 puntos**
 - 🤝 Empate = **1 punto**
 - ❌ Derrota = **0 puntos**
 
