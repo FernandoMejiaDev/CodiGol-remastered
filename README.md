@@ -109,7 +109,7 @@ Al final del partido, se muestra el resultado, que determinará la posición del
 
 - Victoria = **3 puntos**
 - Empate = **1 punto**
-- ❌ Derrota = **0 puntos**
+- Derrota = **0 puntos**
 
 El objetivo final es **sumar la mayor cantidad de puntos** a lo largo de la liga y convertirte en el campeón de la Full Stack League, dominando las técnicas más importantes de **Tailwind CSS** en el camino.
 
