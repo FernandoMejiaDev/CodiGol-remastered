@@ -23,7 +23,8 @@ import Timer from "@/ui/Timer";
 import MatchData from "@/features/matches/data/MatchData";
 import Scoreboard from "@/ui/Scoreboard";
 
-import { useGame } from "@/features/league/data/leagueData"; // Collect match results
+// Collect match results
+import { useGame } from "@/features/league/data/leagueData"; 
 
 //ResizingLine
 import ResizingLine from "@/ui/ResizingLine";
