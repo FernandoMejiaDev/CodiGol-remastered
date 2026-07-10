@@ -13,9 +13,16 @@ const MatchPresentation = [
     id: 2,
     level: 2,
     Rivalimg: "/img/WebHawks.webp",
-    Marker: "03",
+    Marker: "02",
     RivalsName: "Web Hawks"
   },
+  {
+    id: 3,
+    level: 3,
+    Rivalimg: "/img/CodeSharks.webp",
+    Marker: "03",
+    RivalsName: "Code Sharks"
+  }
 
 ];
 
