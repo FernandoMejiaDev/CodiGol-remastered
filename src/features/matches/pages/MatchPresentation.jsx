@@ -50,7 +50,7 @@ const MatchPresentation = () => {
           <div className="grid grid-cols-3 m-auto max-w-[60rem]">
             <div className="flex flex-col items-center justify-center gap-2 text-white">
               <img
-                src="/img/WindJaguars.webp"
+                src="/img/Wind_Jaguars.webp"
                 alt="WindJaguars"
                 className="object-contain w-80 h-80"
                 loading="lazy"
