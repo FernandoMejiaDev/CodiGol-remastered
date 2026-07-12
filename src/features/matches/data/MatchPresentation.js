@@ -6,20 +6,20 @@ const MatchPresentation = [
     id: 1,
     level: 1,
     Marker: "0",
-    Rivalimg: "/img/GemRubies.webp",
+    Rivalimg: "/img/Gem_Rubies.webp",
     RivalsName: "Gem Rubies"
   },
    {
     id: 2,
     level: 2,
-    Rivalimg: "/img/WebHawks.webp",
+    Rivalimg: "/img/Web_Hawks.webp",
     Marker: "02",
     RivalsName: "Web Hawks"
   },
   {
     id: 3,
     level: 3,
-    Rivalimg: "/img/CodeSharks.webp",
+    Rivalimg: "/img/Code_Sharks.webp",
     Marker: "03",
     RivalsName: "Code Sharks"
   }
