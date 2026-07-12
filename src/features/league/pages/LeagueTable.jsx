@@ -10,16 +10,19 @@ import ModalSize from "@/ui/ModalSize";
 import { useGame } from "@/features/league/data/leagueData";
 
 export const teams = [
-  { id: 1, name: "Wind Jaguars", logo: "/img/WindJaguars.webp" },
-  { id: 2, name: "Gem Rubies", logo: "/img/GemRubies.webp" },
-  { id: 3, name: "Tusk Elephants", logo: "/img/TuskElephants.webp" },
-  { id: 4, name: "Juggernaut Leopard", logo: "/img/JuggernautLeopard.webp" },
-  { id: 5, name: "Code Sharks", logo: "/img/CodeSharks.webp" },
-  { id: 6, name: "Soar Swifts", logo: "/img/SoarSwifts.webp" },
-  { id: 7, name: "Knight Coders", logo: "/img/KnightCoders.webp" },
-  { id: 8, name: "Byte Gophers", logo: "/img/ByteGophers.webp" },
-  { id: 9, name: "Style Chameleons", logo: "/img/StyleChameleons.webp" },
-  { id: 10, name: "Phantom Viper", logo: "/img/PhantomViper.webp" },
+  { id: 1, name: "Wind Jaguars", logo: "/img/Wind_Jaguars.webp" },
+  { id: 2, name: "Gem Rubies", logo: "/img/Gem_Rubies.webp" },
+  { id: 3, name: "Tusk Elephants", logo: "/img/Tusk_Elephants.webp" },
+  { id: 4, name: "Juggernaut Leopard", logo: "/img/Juggernaut_Leopards.webp" },
+  { id: 5, name: "Code Sharks", logo: "/img/Code_Sharks.webp" },
+  { id: 6, name: "Soar Swifts", logo: "/img/Soar_Swifts.webp" },
+  { id: 7, name: "Knight Coders", logo: "/img/Knight_Coders.webp" },
+  { id: 8, name: "Byte Gophers", logo: "/img/Byte_Gophers.webp" },
+  { id: 9, name: "Style Chameleons", logo: "/img/Style_Chameleons.webp" },
+  { id: 10, name: "Phantom Viper", logo: "/img/Phantom_Viper.webp" },
+  { id: 11, name: "Forge Minotaurs", logo: "/img/Forge_Minotaurs.webp" },
+  { id: 12, name: "Web Hawks", logo: "/img/Web_Hawks.webp" },
+
 ];
 
 export const matchResults = [
@@ -27,6 +30,8 @@ export const matchResults = [
   { homeId: 5, awayId: 6, result: "draw" },
   { homeId: 7, awayId: 8, result: "home" },
   { homeId: 9, awayId: 10, result: "away" },
+  { homeId: 11, awayId: 12, result: "away" },
+
 ];
 
 const LeagueTable = () => {
