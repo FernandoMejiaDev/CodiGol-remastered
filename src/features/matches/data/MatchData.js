@@ -7,12 +7,12 @@ const MatchData = [
     playerTeam: {
       name: "Wind Jaguars",
       score: 0,
-      logo: "/img/WindJaguars.webp",
+      logo: "/img/Wind_Jaguars.webp",
     },
     rivalTeam: {
       name: "Gem Rubies",
       score: 0,
-      logo: "/img/GemRubies.webp",
+      logo: "/img/Gem_Rubies.webp",
     },
     matchMinutes: [48, 60, 75, 86, 90],
   },
@@ -22,12 +22,12 @@ const MatchData = [
     playerTeam: {
       name: "Wind Jaguars",
       score: 0,
-      logo: "/img/WindJaguars.webp",
+      logo: "/img/Wind_Jaguars.webp",
     },
     rivalTeam: {
       name: "Web Hawks",
       score: 1,
-      logo: "/img/WebHawks.webp",
+      logo: "/img/Web_Hawks.webp",
     },
     matchMinutes: [52, 59, 82, 89, 90+3],
   },
@@ -37,12 +37,12 @@ const MatchData = [
     playerTeam: {
       name: "Wind Jaguars",
       score: 0,
-      logo: "/img/WindJaguars.webp",
+      logo: "/img/Wind_Jaguars.webp",
     },
     rivalTeam: {
       name: "Code Sharks",
       score: 3,
-      logo: "/img/CodeSharks.webp",
+      logo: "/img/Code_Sharks.webp",
     },
     matchMinutes: [60, 65, 78, 85, 90],
   },
