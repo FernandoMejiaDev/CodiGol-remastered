@@ -115,7 +115,7 @@ const LeagueTable = () => {
     */
 
   return (
-    <div className="relative overflow-hidden flex flex-col p-6 m-auto text-white min-h-dvh">
+    <div className="relative overflow-hidden flex flex-col p-6 m-auto text-white h-dvh">
 
       <div
         className="absolute inset-0 flex flex-col object-cover object-center w-full h-full object-fixed"
@@ -155,10 +155,13 @@ const LeagueTable = () => {
           <div className="text-center">Pts</div>
         </div>
 
-        {leagueTable.map((team, index) => (
-          <div
-            key={team.id}
-            className={`
+        <div className="max-h-[40rem] overflow-y-auto">
+
+
+          {leagueTable.map((team, index) => (
+            <div
+              key={team.id}
+              className={`
         grid
         grid-cols-[60px_2.5fr_repeat(8,70px)]
         items-center
@@ -168,84 +171,85 @@ const LeagueTable = () => {
         bg-neutral-950/60
 
                 ${index === 0
-                ? "bg-cyan-800/60 border-l-4 border-cyan-600"
-                : index === leagueTable.length - 1
-                  ? "bg-red-800/60 border-l-4 border-red-600"
-                  : ""
-              }
+                  ? "bg-cyan-800/60 border-l-4 border-cyan-600"
+                  : index === leagueTable.length - 1
+                    ? "bg-red-800/60 border-l-4 border-red-600"
+                    : ""
+                }
 
         hover:bg-neutral-950/80
 
         ${index === leagueTable.length - 1
-                ? "rounded-b-2xl"
-                : ""
-              }
+                  ? "rounded-b-2xl"
+                  : ""
+                }
       `}
-          >
-
-            {/* Table position */}
-            <div
-              className={"text-center font-bold"}
             >
-              {index + 1}
+
+              {/* Table position */}
+              <div
+                className={"text-center font-bold"}
+              >
+                {index + 1}
+              </div>
+
+              <div className="flex items-center">
+                <img
+                  src={team.logo}
+                  alt={team.name}
+                  className="object-contain w-10 h-10 mr-3"
+                  loading="lazy"
+                />
+
+                <span className="font-medium">
+                  {team.name}
+                </span>
+              </div>
+
+              {/* PJ */}
+              <div className="text-center">
+                {team.wins + team.draws + team.losses}
+              </div>
+
+              {/* G */}
+              <div className="text-center">
+                {team.wins}
+              </div>
+
+              {/* E */}
+              <div className="text-center">
+                {team.draws}
+              </div>
+
+              {/* P */}
+              <div className="text-center">
+                {team.losses}
+              </div>
+
+              {/* GF */}
+              <div className="text-center">
+                {team.goalsFor}
+              </div>
+
+              {/* GC */}
+              <div className="text-center">
+                {team.goalsAgainst}
+              </div>
+
+              {/* DG */}
+              <div className="text-center">
+                {team.goalDifference}
+              </div>
+
+              {/* points */}
+              <div className="text-xl font-bold text-center ">
+                {team.points}
+              </div>
+
             </div>
 
-            <div className="flex items-center">
-              <img
-                src={team.logo}
-                alt={team.name}
-                className="object-contain w-10 h-10 mr-3"
-                loading="lazy"
-              />
-
-              <span className="font-medium">
-                {team.name}
-              </span>
-            </div>
-
-            {/* PJ */}
-            <div className="text-center">
-              {team.wins + team.draws + team.losses}
-            </div>
-
-            {/* G */}
-            <div className="text-center">
-              {team.wins}
-            </div>
-
-            {/* E */}
-            <div className="text-center">
-              {team.draws}
-            </div>
-
-            {/* P */}
-            <div className="text-center">
-              {team.losses}
-            </div>
-
-            {/* GF */}
-            <div className="text-center">
-              {team.goalsFor}
-            </div>
-
-            {/* GC */}
-            <div className="text-center">
-              {team.goalsAgainst}
-            </div>
-
-            {/* DG */}
-            <div className="text-center">
-              {team.goalDifference}
-            </div>
-
-            {/* points */}
-            <div className="text-xl font-bold text-center ">
-              {team.points}
-            </div>
-
-          </div>
-
-        ))}
+          ))}
+        </div>
       </div>
 
     </div>
