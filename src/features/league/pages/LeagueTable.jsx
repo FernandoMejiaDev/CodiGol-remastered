@@ -115,10 +115,10 @@ const LeagueTable = () => {
     */
 
   return (
-    <div className="relative flex flex-col p-6 m-auto text-white h-dvh">
+    <div className="relative overflow-hidden flex flex-col p-6 m-auto text-white min-h-dvh">
 
       <div
-        className="absolute inset-0 bg-fixed bg-center bg-cover"
+        className="absolute inset-0 flex flex-col object-cover object-center w-full h-full object-fixed"
         style={{ backgroundImage: `url(/img/Background.webp)` }}
       ></div>
 
@@ -167,13 +167,12 @@ const LeagueTable = () => {
         transition
         bg-neutral-950/60
 
-                ${
-    index === 0
-      ? "bg-cyan-900/80 border-l-4 border-cyan-600"
-      : index === leagueTable.length - 1
-      ? "bg-red-900/80 border-l-4 border-red-600"
-      : ""
-  }
+                ${index === 0
+                ? "bg-cyan-800/60 border-l-4 border-cyan-600"
+                : index === leagueTable.length - 1
+                  ? "bg-red-800/60 border-l-4 border-red-600"
+                  : ""
+              }
 
         hover:bg-neutral-950/80
 
