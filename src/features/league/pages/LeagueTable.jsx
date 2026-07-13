@@ -25,12 +25,20 @@ export const teams = [
 
 ];
 
+//For home teams, the first parameter (HomeId) is used, 
+// and for away teams, the second (AwayId) is used; 
+// the result is about the home team.
+
+//For example, HomeId 3 is about the Tusk Elephants versus the Juggernaut Leopard, 
+// with the Juggernaut Leopard being the winners, therefore the home team (Tusk Elephants) lost, 
+// their result being "lose".
+
 export const matchResults = [
-  { homeId: 3, awayId: 4, result: "away" },
-  { homeId: 5, awayId: 6, result: "draw" },
-  { homeId: 7, awayId: 8, result: "home" },
-  { homeId: 9, awayId: 10, result: "away" },
-  { homeId: 11, awayId: 12, result: "away" },
+  { HomeId: 3, AwayId: 4, result: "lose" },
+  { HomeId: 5, AwayId: 6, result: "draw" },
+  { HomeId: 7, AwayId: 8, result: "winner" },
+  { HomeId: 9, AwayId: 10, result: "lose" },
+  { HomeId: 11, AwayId: 12, result: "lose" },
 
 ];
 
@@ -44,13 +52,13 @@ const LeagueTable = () => {
     const rival = teams.find((team) => team.name === "Gem Rubies");
 
     let result;
-    if (finalResult === "win") result = "home";
-    else if (finalResult === "lose") result = "away";
+    if (finalResult === "win") result = "winner";
+    else if (finalResult === "lose") result = "lose";
     else result = "draw";
 
     fullMatchResults.push({
-      homeId: player.id,
-      awayId: rival.id,
+      HomeId: player.id,
+      AwayId: rival.id,
       result,
     });
   }
@@ -73,23 +81,23 @@ const LeagueTable = () => {
       };
     });
 
-    matchResults.forEach(({ homeId, awayId, result }) => {
-      const home = table[homeId];
-      const away = table[awayId];
+    matchResults.forEach(({ HomeId, AwayId, result }) => {
+      const winner = table[HomeId];
+      const lose = table[AwayId];
 
-      if (result === "home") {
-        home.wins++;
-        home.points += 3;
-        away.losses++;
-      } else if (result === "away") {
-        away.wins++;
-        away.points += 3;
-        home.losses++;
+      if (result === "winner") {
+        winner.wins++;
+        winner.points += 3;
+        lose.losses++;
+      } else if (result === "lose") {
+        lose.wins++;
+        lose.points += 3;
+        winner.losses++;
       } else if (result === "draw") {
-        home.draws++;
-        away.draws++;
-        home.points += 1;
-        away.points += 1;
+        winner.draws++;
+        lose.draws++;
+        winner.points += 1;
+        lose.points += 1;
       }
     });
 
@@ -118,9 +126,11 @@ const LeagueTable = () => {
     <div className="relative overflow-hidden flex flex-col p-6 m-auto text-white h-dvh">
 
       <div
-        className="absolute inset-0 flex flex-col object-cover object-center w-full h-full object-fixed"
+        className="absolute inset-0 bg-fixed bg-center bg-cover"
         style={{ backgroundImage: `url(/img/Background.webp)` }}
       ></div>
+
+      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
       <div className="relative flex flex-col justify-center h-full m-auto max-w-7xl">
 
