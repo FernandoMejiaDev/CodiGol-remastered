@@ -179,6 +179,8 @@ const Game = () => {
         style={{ backgroundImage: `url(/img/TestFund.webp)` }}
       ></div>
 
+      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+
       <div className="flex h-full ">
         <div
           style={{ width: `${previewWidth}px` }}
@@ -194,7 +196,7 @@ const Game = () => {
         <img
           src="/img/RivalGoalkeeper.webp"
           alt="RivalGoalkeeper"
-          className="absolute z-0 object-contain w-80 top-1/4 right-1/3"
+          className="absolute z-0 object-contain w-52 bottom-1/4 right-1/3"
           loading="lazy"
         />
 
