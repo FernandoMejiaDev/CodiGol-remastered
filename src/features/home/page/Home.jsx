@@ -33,7 +33,7 @@ const Home = () => {
         style={{ backgroundImage: `url(/img/Background.webp)` }}
       ></div>
 
-      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
 
        <ModalSize className="absolute" /> 
 
