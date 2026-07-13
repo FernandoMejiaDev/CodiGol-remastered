@@ -21,6 +21,8 @@ const SubBench = () => {
         style={{ backgroundImage: `url(/img/BankingFund.webp)` }}
       ></div>
 
+      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+
       <div className="grid items-center justify-center grid-cols-5 ">
 
         {/* <ModalSize className="absolute" /> */}
