@@ -167,6 +167,13 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
  
 </details>
 
+<details>
+<summary>Equipos</summary>
+
+ ---
+<details>
+
+
 ## Notas técnicas
 
 - Cada pantalla está pensada como una fase: introducción, entrenamiento, partido y resultado.
