@@ -170,7 +170,8 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
 <details>
 <summary>Equipos</summary>
 
-<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Wind_Jaguars_team.webp"alt="Wind_Jaguars_team" /> <br/> <em></em> </p>
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Wind_Jaguars_team.webp" alt="Wind_Jaguars_team" /> 
+
 
 
  ---
