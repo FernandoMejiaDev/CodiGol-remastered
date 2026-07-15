@@ -194,18 +194,13 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
 
 <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Web_Hawks_team.webp" alt="Web_Hawks_team" /> 
 
-<img src="" alt="" /> 
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Cache_Rhinos_team.webp" alt="Cache_Rhinos_team" /> 
 
-<img src="" alt="" /> 
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Kernel_Titans_team.webp" alt="Kernel_Titans_team" /> 
 
-<img src="" alt="" /> 
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Stack_Bisons_team.webp" alt="Stack_Bisons_team" /> 
 
-
-
-
-
-
-
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Vector_Dragons_team.webp" alt="Vector_Dragons_team.webp" /> 
 
  ---
 </details>
