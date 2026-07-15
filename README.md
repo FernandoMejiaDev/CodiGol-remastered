@@ -171,7 +171,7 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
 <summary>Equipos</summary>
 
  ---
-<details>
+</details>
 
 
 ## Notas técnicas
