@@ -172,6 +172,39 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
 
 <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Wind_Jaguars_team.webp" alt="Wind_Jaguars_team" /> 
 
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Gem_Rubies_team.webp" alt="Gem_Rubies_team" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Tusk_Elephants_team.webp" alt="Tusk_Elephants_team" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Juggernaut_Leopards_team.webp" alt="Juggernaut_Leopards_team" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Code_Sharks_team.webp" alt="Code_Sharks_team" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Soar_Swifts_team.webp" alt="Soar_Swifts_team" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Knight_Coders_team.webp" alt="Knight_Coders_team" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Byte_Gophers_team.webp" alt="Byte_Gophers_team" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Style_Chameleons_team.webp" alt="Style_Chameleons_team" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Phantom_Viper_team.webp" alt="Phantom_Viper_team" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Forge_Minotaurs_team.webp" alt="Forge_Minotaurs_team" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Web_Hawks_team.webp" alt="Web_Hawks_team" /> 
+
+<img src="" alt="" /> 
+
+<img src="" alt="" /> 
+
+<img src="" alt="" /> 
+
+
+
+
+
+
 
 
  ---
