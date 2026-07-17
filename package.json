@@ -11,15 +11,15 @@
   },
   "dependencies": {
     "@clerk/clerk-react": "^5.61.3",
-    "autoprefixer": "^10.4.27",
-    "postcss": "^8.5.8",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
+    "autoprefixer": "^10.5.4",
+    "postcss": "^8.5.19",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
     "react-masonry-css": "^1.0.16",
-    "react-router-dom": "^7.14.0",
+    "react-router-dom": "^7.18.1",
     "react-scripts": "^5.0.1",
     "react-tech-slider": "^1.8.23",
-    "react-toastify": "^11.0.5",
+    "react-toastify": "^11.1.0",
     "tailwindcss": "^3.4.19"
   },
   "browserslist": {
@@ -38,6 +38,6 @@
     "@vitejs/plugin-react": "^5.2.0",
     "customize-cra": "^1.0.0",
     "react-app-rewired": "^2.2.1",
-    "vite": "^7.3.2"
+    "vite": "^7.3.6"
   }
 }
