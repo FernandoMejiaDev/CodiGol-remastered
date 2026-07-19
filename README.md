@@ -37,6 +37,9 @@ Durante la transmisión final de la Hackathon organizada por *[Midudev](https://
 
 [![codigol](https://img.shields.io/static/v1?message=Juega-CódiGol-ahora&logo=devbox&label=&color=06B6D4&logoColor=white&labelColor=&style=for-the-badge)](https://codigol-demo.netlify.app/)
 
+  <a href="https://codigol-demo.netlify.app/"><img alt="Youtube" title="Youtube" src="https://img.shields.io/badge/-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white"/></a>
+
+
 ## ¿Qué aprenderás?
 
 - Fundamentos y clases de utilidad de **Tailwind CSS**
