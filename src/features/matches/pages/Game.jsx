@@ -196,7 +196,7 @@ const Game = () => {
         <img
           src="/img/RivalGoalkeeper.webp"
           alt="RivalGoalkeeper"
-          className="absolute z-0 object-contain w-52 bottom-1/4 right-1/3"
+          className="absolute z-0 object-contain w-52 bottom-1/4 right-[42%]"
           loading="lazy"
         />
 
