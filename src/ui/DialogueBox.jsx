@@ -67,7 +67,7 @@ const DialogueBox = ({ level = 1, currentPhase, onFinishDialog }) => {
         <img
           src="/img/TrainerPose1.webp"
           alt="alt"
-          className="relative z-10 object-contain w-40 md:w-56 lg:w-64"
+          className="relative z-10 object-contain w-72 md:w-80 lg:w-96"
           loading="lazy"
         />
       )}
