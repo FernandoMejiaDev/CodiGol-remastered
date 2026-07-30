@@ -34,8 +34,8 @@ import AlertFeedback from "@/ui/AlertFeedback";
 
 import { feedbackConfig } from "@/core/utils/feedbackConfig";
 
-const defaultCode = `
-<div class="">
+const defaultCode = 
+`<div class="">
   Hola Tailwind!
 </div>
 `;
@@ -133,13 +133,20 @@ const Game = () => {
     }, 1000);
   };
 
-  //ScoreBoard
-
-  const [playerGoals, setPlayerGoals] = useState(
-    MatchData.playerTeam.score
+  //Level 1 is the first match/data point in the array, the match against the Gem Rubies
+  //progress with the level to gradually increase in the next matches
+  const currentLevel = 1;
+  
+  const currentMatch = MatchData.find(
+    match => match.level === currentLevel
   );
+  
+  //ScoreBoard
+  const [playerGoals, setPlayerGoals] = useState(
+  currentMatch.playerTeam.score
+);
 
-  const rivalGoals = MatchData.rivalTeam.score;
+const rivalGoals = currentMatch.rivalTeam.score;
 
   //Save the final match result
   const { saveMatchResult } = useGame();
@@ -207,11 +214,11 @@ const Game = () => {
 
           <Scoreboard
             className="absolute"
-            playerTeam={MatchData.playerTeam}
-            rivalTeam={MatchData.rivalTeam}
+            playerTeam={currentMatch.playerTeam}
+            rivalTeam={currentMatch.rivalTeam}
             playerGoals={playerGoals}
             rivalGoals={rivalGoals}
-            currentMinute={MatchData.matchMinutes[currentExerciseIndex]}
+            currentMinute={currentMatch.matchMinutes[currentExerciseIndex]}
           />
 
           <Timer
