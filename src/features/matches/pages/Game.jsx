@@ -24,7 +24,7 @@ import MatchData from "@/features/matches/data/MatchData";
 import Scoreboard from "@/ui/Scoreboard";
 
 // Collect match results
-import { useGame } from "@/features/league/data/leagueData"; 
+import { useGame } from "@/features/league/data/leagueData";
 
 //ResizingLine
 import ResizingLine from "@/ui/ResizingLine";
@@ -34,8 +34,8 @@ import AlertFeedback from "@/ui/AlertFeedback";
 
 import { feedbackConfig } from "@/core/utils/feedbackConfig";
 
-const defaultCode = 
-`<div class="">
+const defaultCode =
+  `<div class="">
   Hola Tailwind!
 </div>
 `;
@@ -136,17 +136,17 @@ const Game = () => {
   //Level 1 is the first match/data point in the array, the match against the Gem Rubies
   //progress with the level to gradually increase in the next matches
   const currentLevel = 1;
-  
+
   const currentMatch = MatchData.find(
     match => match.level === currentLevel
   );
-  
+
   //ScoreBoard
   const [playerGoals, setPlayerGoals] = useState(
-  currentMatch.playerTeam.score
-);
+    currentMatch.playerTeam.score
+  );
 
-const rivalGoals = currentMatch.rivalTeam.score;
+  const rivalGoals = currentMatch.rivalTeam.score;
 
   //Save the final match result
   const { saveMatchResult } = useGame();
@@ -154,12 +154,24 @@ const rivalGoals = currentMatch.rivalTeam.score;
   //Next Phase
   const navigate = useNavigate();
   const handleFinishLevel = () => {
-    saveMatchResult(playerGoals, rivalGoals);
+    saveMatchResult(
+      currentMatch.playerTeam,
+      currentMatch.rivalTeam,
+      playerGoals,
+      rivalGoals);
     navigateToNextPhase("Game", navigate);
   };
 
   useEffect(() => {
-    saveMatchResult(playerGoals, rivalGoals); // Save the result after the match ends
+    console.log("Partido Guardado");
+
+    saveMatchResult(
+      currentMatch.playerTeam,
+      currentMatch.rivalTeam,
+      playerGoals,
+      rivalGoals
+    );
+    // Save the result after the match ends
   }, []);
 
   useEffect(() => {

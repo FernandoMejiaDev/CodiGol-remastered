@@ -1,4 +1,4 @@
-// leagueData.js
+// leagueData.jsx
 import { createContext, useContext, useState } from "react";
 
 const leagueData = createContext();
@@ -20,18 +20,31 @@ export const GameProvider = ({ children }) => {
 
   const [finalResult, setFinalResult] = useState(null); // 'win' | 'draw' | 'lose'
 
-  const saveMatchResult = (playerGoals, rivalGoals) => {
+  const [lastMatch, setLastMatch] = useState(null);
+
+  const saveMatchResult = (playerTeam, rivalTeam, playerGoals, rivalGoals) => {
+
+     console.log("saveMatchResult", {
+    playerTeam,
+    rivalTeam,
+    playerGoals,
+    rivalGoals,
+  });
+
+    setLastMatch({
+      playerTeam,
+      rivalTeam,
+      playerGoals,
+      rivalGoals,
+    });
 
     if (playerGoals > rivalGoals) {
       setFinalResult("win");
-    }
-    else if (playerGoals === rivalGoals) {
+    } else if (playerGoals === rivalGoals) {
       setFinalResult("draw");
-    }
-    else {
+    } else {
       setFinalResult("lose");
     }
-
   };
 
   return (
@@ -43,6 +56,7 @@ export const GameProvider = ({ children }) => {
         rivalTeam,
         saveMatchResult,
         finalResult,
+        lastMatch,
       }}
     >
       {children}
