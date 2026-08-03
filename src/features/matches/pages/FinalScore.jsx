@@ -69,13 +69,13 @@ const FinalScore = () => {
             <div className="flex flex-col items-center justify-center gap-2 text-white">
               <img
                 src={lastMatch.rivalTeam.logo}
-                alt={lastMatch.rivalTeam.RivalsName}
+                alt={lastMatch.rivalTeam.Name}
                 className="object-contain w-80 h-80"
                 loading="lazy"
               />
               <div className="w-full h-2 bg-white"></div>
               <h1 className="text-4xl font-bold text-center">
-                {lastMatch.rivalTeam.RivalsName}
+                {lastMatch.rivalTeam.name}
               </h1>
             </div>
           </div>
