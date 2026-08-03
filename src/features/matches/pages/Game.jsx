@@ -153,26 +153,16 @@ const Game = () => {
 
   //Next Phase
   const navigate = useNavigate();
-  const handleFinishLevel = () => {
+  const handleFinishLevel = (finalPlayerGoals = playerGoals) => {
     saveMatchResult(
       currentMatch.playerTeam,
       currentMatch.rivalTeam,
-      playerGoals,
-      rivalGoals);
-    navigateToNextPhase("Game", navigate);
-  };
-
-  useEffect(() => {
-    console.log("Partido Guardado");
-
-    saveMatchResult(
-      currentMatch.playerTeam,
-      currentMatch.rivalTeam,
-      playerGoals,
+      finalPlayerGoals,
       rivalGoals
     );
-    // Save the result after the match ends
-  }, []);
+
+    navigateToNextPhase("Game", navigate);
+  };
 
   useEffect(() => {
     unlockNextPage("/FinalScore");
@@ -253,19 +243,22 @@ const Game = () => {
                 onSuccess={() => {
                   setAttempts(0);
 
-                  setPlayerGoals(prev => prev + 1);
+                  const newGoals = playerGoals + 1;
+                  setPlayerGoals(newGoals);
 
                   const isLastExercise =
                     currentExerciseIndex === GameData.length - 1;
 
                   if (!isLastExercise) {
                     // Next Exercise
+
                     setTimeout(() => {
-                      setCurrentExerciseIndex((prev) => prev + 1);
+                      setCurrentExerciseIndex(prev => prev + 1);
                       setCode(defaultCode);
                     }, 2000);
-                  } else {
                     // Completed
+
+                  } else {
                     const completionMessage = getCompletionMessage();
 
                     setAlert({
@@ -275,7 +268,7 @@ const Game = () => {
                     });
 
                     setTimeout(() => {
-                      handleFinishLevel();
+                      handleFinishLevel(newGoals);
                     }, 7000);
                   }
                 }}

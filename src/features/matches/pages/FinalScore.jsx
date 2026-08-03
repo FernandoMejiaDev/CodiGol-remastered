@@ -13,7 +13,6 @@ const FinalScore = () => {
   const { lastMatch } = useGame();
 
   const navigate = useNavigate();
-
   
   useEffect(() => {
     unlockNextPage("/LeagueTable");
