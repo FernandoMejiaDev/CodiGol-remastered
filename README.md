@@ -293,10 +293,22 @@ src/
 │   │ 
 │   ├── matches/              
 │   │   ├── data/
-│   │   │   ├── teams/ 
-│   │   │   │   ├── gem-rubies.js 
-│   │   │   │   ├── knight-coders.js 
-│   │   │   │   └── style-chamaleons.js 
+│   │   │   ├── teams/
+│   │   │   │   ├── byte_gophers.js
+│   │   │   │   ├── code_sharks.js
+│   │   │   │   ├── forge_minotaurs.js
+│   │   │   │   ├── gem_rubies.js
+│   │   │   │   ├── index.js
+│   │   │   │   ├── juggernaut_leopard.js
+│   │   │   │   ├── knight_coders.js
+│   │   │   │   ├── knight_coders.js
+│   │   │   │   ├── phantom_viper.js
+│   │   │   │   ├── soar_swifts.js
+│   │   │   │   ├── style_chamaleons.js
+│   │   │   │   ├── teamIds.js
+│   │   │   │   ├── tusk_elephants.js
+│   │   │   │   ├── web_hawks.js
+│   │   │   │   └── wind_Jaguars.js
 │   │   │   ├── Game.jsx
 │   │   │   ├── MatchData.jsx
 │   │   │   ├── MatchesList.js
