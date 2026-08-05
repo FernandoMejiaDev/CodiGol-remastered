@@ -293,10 +293,15 @@ src/
 │   │ 
 │   ├── matches/              
 │   │   ├── data/
-│   │   │   └── matches/ 
-│   │   │       ├── gem-rubies.js 
-│   │   │       ├── knight-coders.js 
-│   │   │       └── style-chamaleons.js 
+│   │   │   ├── teams/ 
+│   │   │   │   ├── gem-rubies.js 
+│   │   │   │   ├── knight-coders.js 
+│   │   │   │   └── style-chamaleons.js 
+│   │   │   ├── Game.jsx
+│   │   │   ├── MatchData.jsx
+│   │   │   ├── MatchesList.js
+│   │   │   ├── MatchPresentation.js
+│   │   │   └── SubBench.js
 │   │   │ 
 │   │   └── Page/ 
 │   │       ├── Final.jsx 
