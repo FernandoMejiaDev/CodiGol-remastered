@@ -171,6 +171,8 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
 <details>
 <summary>Equipos</summary>
 
+# Equipos de la liga Full Stack
+
 <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Wind_Jaguars_team.webp" alt="Wind_Jaguars_team" /> 
 
 <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Gem_Rubies_team.webp" alt="Gem_Rubies_team" /> 
