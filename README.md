@@ -171,6 +171,8 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
 <details>
 <summary>Equipos</summary>
 
+# Equipos de la liga Full Stack
+
 <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Wind_Jaguars_team.webp" alt="Wind_Jaguars_team" /> 
 
 <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Gem_Rubies_team.webp" alt="Gem_Rubies_team" /> 
@@ -287,16 +289,30 @@ src/
 │   │ 
 │   ├── league/              
 │   │   ├── data/
+│   │   │   ├── fixtures.js
 │   │   │   └── leagueData.jsx 
 │   │   └── pages/
 │   │       └── LeagueTable.jsx
 │   │ 
 │   ├── matches/              
 │   │   ├── data/
-│   │   │   ├── matches/ 
-│   │   │   │   ├── gem-rubies.js 
-│   │   │   │   ├── knight-coders.js 
-│   │   │   │   └── style-chamaleons.js 
+│   │   │   ├── teams/
+│   │   │   │   ├── byte_gophers.js
+│   │   │   │   ├── code_sharks.js
+│   │   │   │   ├── forge_minotaurs.js
+│   │   │   │   ├── gem_rubies.js
+│   │   │   │   ├── index.js
+│   │   │   │   ├── juggernaut_leopard.js
+│   │   │   │   ├── knight_coders.js
+│   │   │   │   ├── knight_coders.js
+│   │   │   │   ├── phantom_viper.js
+│   │   │   │   ├── soar_swifts.js
+│   │   │   │   ├── style_chamaleons.js
+│   │   │   │   ├── teamIds.js
+│   │   │   │   ├── tusk_elephants.js
+│   │   │   │   ├── web_hawks.js
+│   │   │   │   └── wind_Jaguars.js
+│   │   │   │
 │   │   │   ├── Game.jsx
 │   │   │   ├── MatchData.jsx
 │   │   │   ├── MatchesList.js
