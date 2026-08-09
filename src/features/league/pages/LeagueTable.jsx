@@ -43,23 +43,36 @@ export const matchResults = [
 ];
 
 const LeagueTable = () => {
-  const { finalResult } = useGame();
+
+  const { finalResult, lastMatch } = useGame();
 
   let fullMatchResults = [...matchResults];
 
-  if (finalResult) {
-    const player = teams.find((team) => team.name === "Wind Jaguars");
-    const rival = teams.find((team) => team.name === "Gem Rubies");
+  if (lastMatch) {
+    const player = teams.find(
+      (team) => team.name === lastMatch.playerTeam.name
+    );
+
+    const rival = teams.find(
+      (team) => team.name === lastMatch.rivalTeam.name
+    );
 
     let result;
-    if (finalResult === "win") result = "winner";
-    else if (finalResult === "lose") result = "lose";
-    else result = "draw";
+
+    if (lastMatch.playerGoals > lastMatch.rivalGoals) {
+      result = "winner";
+    } else if (lastMatch.playerGoals < lastMatch.rivalGoals) {
+      result = "lose";
+    } else {
+      result = "draw";
+    }
 
     fullMatchResults.push({
       HomeId: player.id,
       AwayId: rival.id,
       result,
+      goalsFor: lastMatch.playerGoals,
+      goalsAgainst: lastMatch.rivalGoals,
     });
   }
 
@@ -75,31 +88,56 @@ const LeagueTable = () => {
         draws: 0,
         losses: 0,
         points: 0,
-        goalsFor: "-",
-        goalsAgainst: "-",
-        goalDifference: "-",
+        goalsFor: 0,
+        goalsAgainst: 0,
+        goalDifference: 0,
+        hasGoalData: false
       };
+
     });
 
-    matchResults.forEach(({ HomeId, AwayId, result }) => {
-      const winner = table[HomeId];
-      const lose = table[AwayId];
+    matchResults.forEach(
+      ({ HomeId, AwayId, result, goalsFor, goalsAgainst }) => {
+        const home = table[HomeId];
+        const away = table[AwayId];
 
-      if (result === "winner") {
-        winner.wins++;
-        winner.points += 3;
-        lose.losses++;
-      } else if (result === "lose") {
-        lose.wins++;
-        lose.points += 3;
-        winner.losses++;
-      } else if (result === "draw") {
-        winner.draws++;
-        lose.draws++;
-        winner.points += 1;
-        lose.points += 1;
+        if (result === "winner") {
+          home.wins++;
+          home.points += 3;
+          away.losses++;
+        } else if (result === "lose") {
+          away.wins++;
+          away.points += 3;
+          home.losses++;
+        } else if (result === "draw") {
+          home.draws++;
+          away.draws++;
+          home.points += 1;
+          away.points += 1;
+        }
+
+         if (
+        typeof goalsFor === "number" &&
+        typeof goalsAgainst === "number"
+      ) {
+        home.goalsFor += goalsFor;
+        home.goalsAgainst += goalsAgainst;
+
+        away.goalsFor += goalsAgainst;
+        away.goalsAgainst += goalsFor;
+
+        home.hasGoalData = true;
+        away.hasGoalData = true;
+        }
       }
-    });
+    );
+
+     Object.values(table).forEach((team) => {
+    if (team.hasGoalData) {
+      team.goalDifference =
+        team.goalsFor - team.goalsAgainst;
+    }
+  });
 
     return table;
   };
@@ -123,7 +161,7 @@ const LeagueTable = () => {
     */
 
   return (
-    <div className="relative overflow-hidden flex flex-col p-6 m-auto text-white h-dvh">
+    <div className="relative flex flex-col p-6 m-auto overflow-hidden text-white h-dvh">
 
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
@@ -238,17 +276,17 @@ const LeagueTable = () => {
 
               {/* GF */}
               <div className="text-center">
-                {team.goalsFor}
+                {team.hasGoalData ? team.goalsFor : "-"}
               </div>
 
               {/* GC */}
               <div className="text-center">
-                {team.goalsAgainst}
+                {team.hasGoalData ? team.goalsAgainst : "-"}
               </div>
 
               {/* DG */}
               <div className="text-center">
-                {team.goalDifference}
+                {team.hasGoalData ? team.goalDifference : "-"}
               </div>
 
               {/* points */}
