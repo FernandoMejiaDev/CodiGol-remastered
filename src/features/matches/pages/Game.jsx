@@ -154,17 +154,20 @@ const Game = () => {
   //Next Phase
   const navigate = useNavigate();
   const handleFinishLevel = (finalPlayerGoals = playerGoals) => {
+
     saveMatchResult(
       currentMatch.playerTeam,
       currentMatch.rivalTeam,
       finalPlayerGoals,
-      rivalGoals
+      rivalGoals,
     );
-
     navigateToNextPhase("Game", navigate);
   };
 
   useEffect(() => {
+
+    //console.log("handleFinishLevelr:", playerGoals);
+
     unlockNextPage("/FinalScore");
   }, []);
 
