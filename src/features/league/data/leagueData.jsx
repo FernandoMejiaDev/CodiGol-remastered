@@ -24,14 +24,13 @@ export const GameProvider = ({ children }) => {
 
   const saveMatchResult = (playerTeam, rivalTeam, playerGoals, rivalGoals) => {
 
-    /*
     console.log("saveMatchResult", {
       playerTeam,
       rivalTeam,
       playerGoals,
       rivalGoals,
     });
-    */
+    
 
     setLastMatch({
       playerTeam,

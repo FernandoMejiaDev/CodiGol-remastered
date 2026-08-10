@@ -5,144 +5,25 @@ import { navigateToNextPhase } from "@/core/utils/navigateToNextPhase";
 import { useUser } from "@clerk/clerk-react";
 import { unlockNextPage } from "@/core/utils/routeGuard";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
-import DialogueBox from "@/ui/DialogueBox";
-import ModalSize from "@/ui/ModalSize";
+//import ModalSize from "@/ui/ModalSize";
 import { useGame } from "@/features/league/data/leagueData";
 
-export const teams = [
-  { id: 1, name: "Wind Jaguars", logo: "/img/Wind_Jaguars.webp" },
-  { id: 2, name: "Gem Rubies", logo: "/img/Gem_Rubies.webp" },
-  { id: 3, name: "Tusk Elephants", logo: "/img/Tusk_Elephants.webp" },
-  { id: 4, name: "Juggernaut Leopard", logo: "/img/Juggernaut_Leopards.webp" },
-  { id: 5, name: "Code Sharks", logo: "/img/Code_Sharks.webp" },
-  { id: 6, name: "Soar Swifts", logo: "/img/Soar_Swifts.webp" },
-  { id: 7, name: "Knight Coders", logo: "/img/Knight_Coders.webp" },
-  { id: 8, name: "Byte Gophers", logo: "/img/Byte_Gophers.webp" },
-  { id: 9, name: "Style Chameleons", logo: "/img/Style_Chameleons.webp" },
-  { id: 10, name: "Phantom Viper", logo: "/img/Phantom_Viper.webp" },
-  { id: 11, name: "Forge Minotaurs", logo: "/img/Forge_Minotaurs.webp" },
-  { id: 12, name: "Web Hawks", logo: "/img/Web_Hawks.webp" },
-
-];
-
-//For home teams, the first parameter (HomeId) is used, 
-// and for away teams, the second (AwayId) is used; 
-// the result is about the home team.
-
-//For example, HomeId 3 is about the Tusk Elephants versus the Juggernaut Leopard, 
-// with the Juggernaut Leopard being the winners, therefore the home team (Tusk Elephants) lost, 
-// their result being "lose".
-
-export const matchResults = [
-  { HomeId: 3, AwayId: 4, result: "lose" },
-  { HomeId: 5, AwayId: 6, result: "draw" },
-  { HomeId: 7, AwayId: 8, result: "winner" },
-  { HomeId: 9, AwayId: 10, result: "lose" },
-  { HomeId: 11, AwayId: 12, result: "lose" },
-
-];
+import { calculateTable } from "@/features/league/utils/calculateTable";
+import { buildMatchResults } from "@/features/league/utils/BuildMatchResults";
+import { teams } from "@/features/matches/data/teams/index";
+import { matchResults } from "@/features/league/data/matchResults";
 
 const LeagueTable = () => {
 
-  const { finalResult, lastMatch } = useGame();
+  const { lastMatch } = useGame();
 
-  let fullMatchResults = [...matchResults];
+   const fullMatchResults = buildMatchResults(
+    matchResults,
+    teams,
+    lastMatch
+  );
 
-  if (lastMatch) {
-    const player = teams.find(
-      (team) => team.name === lastMatch.playerTeam.name
-    );
-
-    const rival = teams.find(
-      (team) => team.name === lastMatch.rivalTeam.name
-    );
-
-    let result;
-
-    if (lastMatch.playerGoals > lastMatch.rivalGoals) {
-      result = "winner";
-    } else if (lastMatch.playerGoals < lastMatch.rivalGoals) {
-      result = "lose";
-    } else {
-      result = "draw";
-    }
-
-    fullMatchResults.push({
-      HomeId: player.id,
-      AwayId: rival.id,
-      result,
-      goalsFor: lastMatch.playerGoals,
-      goalsAgainst: lastMatch.rivalGoals,
-    });
-  }
-
-  const calculateTable = (matchResults) => {
-    const table = {};
-
-    teams.forEach((team) => {
-      table[team.id] = {
-        id: team.id,
-        name: team.name,
-        logo: team.logo,
-        wins: 0,
-        draws: 0,
-        losses: 0,
-        points: 0,
-        goalsFor: 0,
-        goalsAgainst: 0,
-        goalDifference: 0,
-        hasGoalData: false
-      };
-
-    });
-
-    matchResults.forEach(
-      ({ HomeId, AwayId, result, goalsFor, goalsAgainst }) => {
-        const home = table[HomeId];
-        const away = table[AwayId];
-
-        if (result === "winner") {
-          home.wins++;
-          home.points += 3;
-          away.losses++;
-        } else if (result === "lose") {
-          away.wins++;
-          away.points += 3;
-          home.losses++;
-        } else if (result === "draw") {
-          home.draws++;
-          away.draws++;
-          home.points += 1;
-          away.points += 1;
-        }
-
-         if (
-        typeof goalsFor === "number" &&
-        typeof goalsAgainst === "number"
-      ) {
-        home.goalsFor += goalsFor;
-        home.goalsAgainst += goalsAgainst;
-
-        away.goalsFor += goalsAgainst;
-        away.goalsAgainst += goalsFor;
-
-        home.hasGoalData = true;
-        away.hasGoalData = true;
-        }
-      }
-    );
-
-     Object.values(table).forEach((team) => {
-    if (team.hasGoalData) {
-      team.goalDifference =
-        team.goalsFor - team.goalsAgainst;
-    }
-  });
-
-    return table;
-  };
-
-  const leagueTable = Object.values(calculateTable(fullMatchResults)).sort(
+  const leagueTable = Object.values(calculateTable(teams, fullMatchResults)).sort(
     (a, b) => b.points - a.points
   );
 

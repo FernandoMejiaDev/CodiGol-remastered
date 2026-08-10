@@ -14,4 +14,4 @@ const WebHawks = {
   isPlayer: false,
 };
 
-export default Web_Hawks;
+export default WebHawks;
