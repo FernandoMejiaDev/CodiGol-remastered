@@ -22,6 +22,7 @@ const LeagueTable = () => {
     teams,
     lastMatch
   );
+  //console.log("FULL MATCH RESULTS:", fullMatchResults)
 
   const leagueTable = Object.values(calculateTable(teams, fullMatchResults)).sort(
     (a, b) => b.points - a.points

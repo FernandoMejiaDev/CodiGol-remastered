@@ -2,7 +2,7 @@
 
 const GemRubies = {
   id: 2,
-  name: "Gem_Rubies",
+  name: "Gem Rubies",
   logo: "/img/Gem_Rubies.webp",
 
   strength: 81,
