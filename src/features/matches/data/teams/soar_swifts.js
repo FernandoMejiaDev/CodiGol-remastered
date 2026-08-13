@@ -8,9 +8,6 @@ const SoarSwifts = {
   strength: 84,
   attack: 82,
   defense: 82,
-
-  playStyle: "balanced",
-
   isPlayer: false,
 };
 

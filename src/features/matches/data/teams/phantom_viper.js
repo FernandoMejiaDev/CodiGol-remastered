@@ -8,9 +8,6 @@ const PhantomViper = {
   strength: 92,
   attack: 95,
   defense: 86,
-
-  playStyle: "attack",
-
   isPlayer: false,
 };
 

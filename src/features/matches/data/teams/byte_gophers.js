@@ -8,9 +8,6 @@ const ByteGophers = {
   strength: 80,
   attack: 80,
   defense: 84,
-
-  playStyle: "balanced",
-
   isPlayer: false,
 };
 

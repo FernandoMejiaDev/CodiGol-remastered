@@ -8,9 +8,6 @@ const WebHawks = {
   strength: 85,
   attack: 87,
   defense: 88,
-
-  playStyle: "defensive",
-
   isPlayer: false,
 };
 

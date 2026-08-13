@@ -8,9 +8,6 @@ const ForgeMinotaurs = {
   strength: 83,
   attack: 86,
   defense: 84,
-
-  playStyle: "Balanced",
-
   isPlayer: false,
 };
 

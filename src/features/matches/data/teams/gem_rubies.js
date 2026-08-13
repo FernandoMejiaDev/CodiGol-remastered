@@ -8,9 +8,6 @@ const GemRubies = {
   strength: 81,
   attack: 82,
   defense: 86,
-
-  playStyle: "defensive",
-
   isPlayer: false,
 };
 

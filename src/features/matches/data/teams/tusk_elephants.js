@@ -8,9 +8,6 @@ const TuskElephants = {
   strength: 85,
   attack: 76,
   defense: 92,
-
-  playStyle: "defensive",
-
   isPlayer: false,
 };
 

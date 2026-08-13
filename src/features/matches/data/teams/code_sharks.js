@@ -8,9 +8,6 @@ const CodeSharks = {
   strength: 85,
   attack: 86,
   defense: 80,
-
-  playStyle: "attack",
-
   isPlayer: false,
 };
 

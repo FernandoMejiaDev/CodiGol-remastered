@@ -8,9 +8,6 @@ const StyleChameleons = {
   strength: 85,
   attack: 85,
   defense: 85,
-
-  playStyle: "balanced",
-
   isPlayer: false,
 };
 
