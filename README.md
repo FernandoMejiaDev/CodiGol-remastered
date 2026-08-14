@@ -211,6 +211,13 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
  ---
 </details>
 
+<details>
+ <summary>Partidos</summary>
+
+
+ 
+ ---
+</details>
 
 ## Notas técnicas
 
