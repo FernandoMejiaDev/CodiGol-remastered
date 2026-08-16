@@ -26,7 +26,7 @@ The probability of scoring refers to the likelihood that the team will create sc
 The formula is (local attack * local strength) divided by (local attack * local strength) and the sum of (visiting defense * visiting strength)
 
 Formula:
-localTeam.attack X localTeam.Strength / (localTeam.attack X localTeam.Strength) + (localTeam.defense X visitorTeam.strength)
+localTeam.attack * localTeam.Strength / (localTeam.attack * localTeam.Strength) + (localTeam.defense X visitorTeam.strength)
 
 Reverse formula for the visiting team
 
