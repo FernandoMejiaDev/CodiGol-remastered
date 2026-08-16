@@ -197,6 +197,9 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
 
 <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Web_Hawks_team.webp" alt="Web_Hawks_team" /> 
 
+---
+###
+
 <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Cache_Rhinos_team.webp" alt="Cache_Rhinos_team" /> 
 
 <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Kernel_Titans_team.webp" alt="Kernel_Titans_team" /> 
@@ -208,6 +211,15 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
  ---
 </details>
 
+<details>
+ <summary>Partidos</summary>
+
+<details>
+ <summary>Partidos de Wind Jaguars</summary>
+ ---
+</details> 
+ ---
+</details>
 
 ## Notas técnicas
 
