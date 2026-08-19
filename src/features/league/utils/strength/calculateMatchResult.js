@@ -4,6 +4,8 @@ import { calculateGoalkeeperChance } from "./calculateGoalkeeperChance";
 import { calculateGoalChance } from "./calculateGoalChance";
 import { rollChance } from "./rollChance";
 
+// All matches have a total base of 20 chances which is divided between the possession 
+// of each one, corresponding to the percentage, the amount is assigned to each one
 const BASE_OCCASIONS = 20;
 
 export const calculateMatchResult = (localTeam, visitorTeam) => {
