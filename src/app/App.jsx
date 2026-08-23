@@ -14,6 +14,7 @@ import FinalScore from "@/features/matches/pages/FinalScore";
 import LeagueTable from "@/features/league/pages/LeagueTable";
 import Prove from "@/features/home/page/Prove";
 import FinalScene from "@/features/Final/pages/FinalScene";
+import TestStrengthSystemPage from "@/features/training/pages/testStrengthSystemPage";
 
 const App = () => {
   return (
@@ -25,16 +26,16 @@ const App = () => {
           <Route
             path="/LessonIntro"
             element={
-             /*  <ProtectedRoute>*/
-                <LessonIntro />
-             /*  </ProtectedRoute>*/
+              /*  <ProtectedRoute>*/
+              <LessonIntro />
+              /*  </ProtectedRoute>*/
             }
           />
           <Route
             path="/Training"
             element={
               /*<ProtectedRoute>*/
-                <Training />
+              <Training />
               /*</ProtectedRoute>*/
             }
           />
@@ -42,7 +43,7 @@ const App = () => {
             path="/MatchPresentation"
             element={
               /*<ProtectedRoute>*/
-                <MatchPresentation />
+              <MatchPresentation />
               /*</ProtectedRoute>*/
             }
           />
@@ -50,7 +51,7 @@ const App = () => {
             path="/SubBench"
             element={
               /*<ProtectedRoute>*/
-                <SubBench />
+              <SubBench />
               /*</ProtectedRoute>*/
             }
           />
@@ -58,7 +59,7 @@ const App = () => {
             path="/Game"
             element={
               /*<ProtectedRoute>*/
-                <Game />
+              <Game />
               /*</ProtectedRoute>*/
             }
           />
@@ -66,7 +67,7 @@ const App = () => {
             path="/FinalScore"
             element={
               /*<ProtectedRoute>*/
-                <FinalScore />
+              <FinalScore />
               /*</ProtectedRoute>*/
             }
           />
@@ -74,7 +75,7 @@ const App = () => {
             path="/LeagueTable"
             element={
               /*<ProtectedRoute>*/
-                <LeagueTable />
+              <LeagueTable />
               /*</ProtectedRoute>*/
             }
           />
@@ -82,11 +83,13 @@ const App = () => {
             path="/FinalScene"
             element={
               /*<ProtectedRoute>*/
-                <FinalScene />
+              <FinalScene />
               /*</ProtectedRoute>*/
             }
           />
           <Route path="/Prove" element={<Prove />} />
+          <Route path="/TestStrengthSystemPage" element={<TestStrengthSystemPage />} />
+
         </Routes>
       </Router>
     </ClerkProvider>
