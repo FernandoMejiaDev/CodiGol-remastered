@@ -6,21 +6,24 @@ import { useUser } from "@clerk/clerk-react";
 import { unlockNextPage } from "@/core/utils/routeGuard";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
 
-import testStrengthSystem from "@/features/league/utils/strength/testStrengthSystem";
+import TestStrengthSystem from "@/features/league/utils/strength/testStrengthSystem";
 
-const testStrengthSystemPage = () => {
+const TestStrengthSystemPage = () => {
 
   return (
     <div className="relative w-full overflow-hidden h-dvh">
 
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
-        style={{ backgroundImage: `url(/img/ExerciseFund.webp)` }}
+        style={{
+          backgroundImage: `url(/img/ExerciseFund.webp)`
+        }}
       ></div>
 
+      <TestStrengthSystem />
 
     </div>
   );
 };
 
-export default testStrengthSystemPage;
+export default TestStrengthSystemPage;
