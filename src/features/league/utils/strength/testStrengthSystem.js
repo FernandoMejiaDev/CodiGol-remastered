@@ -1,8 +1,18 @@
 import { useEffect, useRef} from "react";
 import TuskElephants from "@/features/matches/data/teams/tusk_elephants";
-import PhantomViper from "@/features/matches/data/teams/phantom_viper";
+import JuggernautLeopard from "@/features/matches/data/teams/juggernaut_leopard";
+
 import CodeSharks from "@/features/matches/data/teams/code_sharks";
+import SoarSwifts from "@/features/matches/data/teams/soar_swifts";
+
 import KnightCoders from "@/features/matches/data/teams/knight_coders";
+import ByteGophers from "@/features/matches/data/teams/byte_gophers";
+
+import StyleChameleons from "@/features/matches/data/teams/style_chameleons";
+import PhantomViper from "@/features/matches/data/teams/phantom_viper";
+
+import ForgeMinotaurs from "@/features/matches/data/teams/forge_minotaurs";
+import WebHawks from "@/features/matches/data/teams/web_hawks";
 
 import { calculateMatchResult } from "@/features/league/utils/strength/calculateMatchResult";
 
@@ -19,9 +29,9 @@ const TestStrengthSystem = () => {
     const simulateMatches = (
       localTeam,
       visitorTeam,
-      //100 matches to analyze the result and see the correct 
+      //1,000 matches to analyze the result and see the correct 
       // functioning of the equations
-      numberOfMatches = 100 
+      numberOfMatches = 1000
     ) => {
 
       let localWins = 0;
@@ -73,31 +83,70 @@ const TestStrengthSystem = () => {
     };
 
     const result = calculateMatchResult(
-      PhantomViper,
-      TuskElephants
+      TuskElephants,
+      JuggernautLeopard,
     );
 
-    console.log("PHANTOM VIPER VS TUSK ELEPHANTS");
+    console.log("TUSK ELEPHANTS VS JuggernautLeopard");
     console.log(result);
 
     simulateMatches(
-      PhantomViper,
       TuskElephants,
-      100
+      JuggernautLeopard,
     );
 
     const result2 = calculateMatchResult(
       CodeSharks,
-      KnightCoders
+      SoarSwifts
     );
 
-    console.log("CODE SHARKS VS KNIGHT CODERS");
+    console.log("CODE SHARKS VS SOAR SWIFTS");
     console.log(result2);
 
     simulateMatches(
       CodeSharks,
+      SoarSwifts,
+      
+    );
+
+    const result3 = calculateMatchResult(
       KnightCoders,
-      100
+      ByteGophers
+    );
+
+    console.log("KnightCoders VS ByteGophers");
+    console.log(result3);
+
+    simulateMatches(
+      KnightCoders,
+      ByteGophers
+      
+    );
+
+    const result4 = calculateMatchResult(
+      StyleChameleons,
+      PhantomViper
+    );
+
+    console.log("StyleChameleons VS PhantomViper");
+    console.log(result4);
+
+    simulateMatches(
+      StyleChameleons,
+      PhantomViper
+    );
+
+    const result5 = calculateMatchResult(
+      ForgeMinotaurs,
+      WebHawks
+    );
+
+    console.log("ForgeMinotaurs VS WebHawks");
+    console.log(result5);
+
+    simulateMatches(
+      ForgeMinotaurs,
+      WebHawks
     );
 
   }, []);
