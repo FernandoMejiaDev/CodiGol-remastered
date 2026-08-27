@@ -216,9 +216,13 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
 
 <details>
  <summary>Partidos de Wind Jaguars</summary>
+ 
  ---
+ 
 </details> 
+
  ---
+ 
 </details>
 
 ## Notas técnicas
