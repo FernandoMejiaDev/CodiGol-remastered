@@ -12,6 +12,10 @@ import StyleChameleons from "@/features/matches/data/Style_Chameleons";
 import PhantomViper from "@/features/matches/data/Phantom_Viper";
 import ForgeMinotaurs from "@/features/matches/data/Forge_Minotaurs";
 import WebHawks from "@/features/matches/data/Web_Hawks";
+import CacheRhinos from "@/features/matches/data/Cache_Rhinos";
+import KernelTitans from "@/features/matches/data/Kernel_Titans";
+import StackBisons from "@/features/matches/data/Stack_Bisons";
+import VectorDragons from "@/features/matches/data/Vector_Dragons";
 
 export const TEAM = {
   WIND_JAGUARS: WindJaguars.id,
@@ -26,4 +30,8 @@ export const TEAM = {
   PHANTOM_VIPER: PhantomViper.id,
   FORGE_MINOTAURS: ForgeMinotaurs.id,
   WEB_HAWKS: WebHawks.id,
+  CACHE_RHINOS: CacheRhinos.id,
+  KERNEL_TITANS: KernelTitans.id,
+  STACK_BISONS: StackBisons.id,
+  VECTOR_DRAGONS: VectorDragons.id,
 };
