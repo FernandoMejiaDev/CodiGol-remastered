@@ -1,18 +1,19 @@
 import { useEffect, useRef} from "react";
+
 import TuskElephants from "@/features/matches/data/teams/tusk_elephants";
 import JuggernautLeopard from "@/features/matches/data/teams/juggernaut_leopard";
-
 import CodeSharks from "@/features/matches/data/teams/code_sharks";
 import SoarSwifts from "@/features/matches/data/teams/soar_swifts";
-
 import KnightCoders from "@/features/matches/data/teams/knight_coders";
 import ByteGophers from "@/features/matches/data/teams/byte_gophers";
-
 import StyleChameleons from "@/features/matches/data/teams/style_chameleons";
 import PhantomViper from "@/features/matches/data/teams/phantom_viper";
-
 import ForgeMinotaurs from "@/features/matches/data/teams/forge_minotaurs";
 import WebHawks from "@/features/matches/data/teams/web_hawks";
+import CacheRhinos from "@/features/matches/data/teams/Cache_Rhinos";
+import KernelTitans from "@/features/matches/data/teams/Kernel_Titans";
+import StackBisons from "@/features/matches/data/teams/Stack_Bisons";
+import VectorDragons from "@/features/matches/data/teams/Vector_Dragons";
 
 import { calculateMatchResult } from "@/features/league/utils/strength/calculateMatchResult";
 
@@ -82,73 +83,21 @@ const TestStrengthSystem = () => {
       );
     };
 
+    // Match simulation, prints it to Test Strength System Page 
+    // for display on console, data to check the system and results
+
     const result = calculateMatchResult(
+      PhantomViper,
       TuskElephants,
-      JuggernautLeopard,
     );
 
-    console.log("TUSK ELEPHANTS VS JuggernautLeopard");
+    console.log("PhantomViper VS TUSK ELEPHANTS");
     console.log(result);
 
     simulateMatches(
+      PhantomViper,
       TuskElephants,
-      JuggernautLeopard,
     );
-
-    const result2 = calculateMatchResult(
-      CodeSharks,
-      SoarSwifts
-    );
-
-    console.log("CODE SHARKS VS SOAR SWIFTS");
-    console.log(result2);
-
-    simulateMatches(
-      CodeSharks,
-      SoarSwifts,
-      
-    );
-
-    const result3 = calculateMatchResult(
-      KnightCoders,
-      ByteGophers
-    );
-
-    console.log("KnightCoders VS ByteGophers");
-    console.log(result3);
-
-    simulateMatches(
-      KnightCoders,
-      ByteGophers
-      
-    );
-
-    const result4 = calculateMatchResult(
-      StyleChameleons,
-      PhantomViper
-    );
-
-    console.log("StyleChameleons VS PhantomViper");
-    console.log(result4);
-
-    simulateMatches(
-      StyleChameleons,
-      PhantomViper
-    );
-
-    const result5 = calculateMatchResult(
-      ForgeMinotaurs,
-      WebHawks
-    );
-
-    console.log("ForgeMinotaurs VS WebHawks");
-    console.log(result5);
-
-    simulateMatches(
-      ForgeMinotaurs,
-      WebHawks
-    );
-
   }, []);
 
   return null;
