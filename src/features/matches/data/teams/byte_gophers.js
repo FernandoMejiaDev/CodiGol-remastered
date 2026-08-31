@@ -2,7 +2,7 @@
 
 const ByteGophers = {
   id: 8,
-  name: "Knight Coders",
+  name: "Byte Gophers",
   logo: "/img/Byte_Gophers.webp",
 
   strength: 80,
