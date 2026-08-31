@@ -12,6 +12,10 @@ import StyleChameleons from "@/features/matches/data/teams/style_chameleons";
 import PhantomViper from "@/features/matches/data/teams/phantom_viper";
 import ForgeMinotaurs from "@/features/matches/data/teams/forge_minotaurs";
 import WebHawks from "@/features/matches/data/teams/web_hawks";
+import CacheRhinos from "@/features/matches/data/Cache_Rhinos";
+import KernelTitans from "@/features/matches/data/Kernel_Titans";
+import StackBisons from "@/features/matches/data/Stack_Bisons";
+import VectorDragons from "@/features/matches/data/Vector_Dragons";
 
 export const teams = [
   WindJaguars,
@@ -26,4 +30,8 @@ export const teams = [
   PhantomViper,
   ForgeMinotaurs,
   WebHawks,
+  CacheRhinos,
+  KernelTitans,
+  StackBisons,
+  VectorDragons,
 ];
