@@ -25,7 +25,7 @@ const FinalScore = () => {
   
 
   return (
-    <div className="relative w-full h-dvh overflow-hidden">
+    <div className="relative w-full overflow-hidden h-dvh">
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
         style={{ backgroundImage: `url(/img/Background.webp)` }}

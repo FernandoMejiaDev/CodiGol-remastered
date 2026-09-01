@@ -8,26 +8,19 @@ import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
 //import ModalSize from "@/ui/ModalSize";
 import { useGame } from "@/features/league/data/leagueData";
 
-import { calculateTable } from "@/features/league/utils/calculateTable";
-import { buildMatchResults } from "@/features/league/utils/BuildMatchResults";
 import { teams } from "@/features/matches/data/teams/index";
-import { matchResults } from "@/features/league/data/matchResults";
+import { buildMatchResults } from "@/features/league/utils/BuildMatchResults";
+import { calculateTable } from "@/features/league/utils/calculateTable";
 
 const LeagueTable = () => {
 
-  const { lastMatch } = useGame();
+  const { leagueResults } = useGame();
 
-   const fullMatchResults = buildMatchResults(
-    matchResults,
-    teams,
-    lastMatch
-  );
-  //console.log("FULL MATCH RESULTS:", fullMatchResults)
-
-  const leagueTable = Object.values(calculateTable(teams, fullMatchResults)).sort(
+  const leagueTable = Object.values(
+    calculateTable(teams, leagueResults)
+  ).sort(
     (a, b) => b.points - a.points
   );
-
   /*
   const navigate = useNavigate();
 

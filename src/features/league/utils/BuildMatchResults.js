@@ -1,16 +1,6 @@
-export const buildMatchResults = (matchResults, teams, lastMatch) => {
-  const fullMatchResults = [...matchResults];
-
+export const buildMatchResults = (lastMatch) => {
   if (!lastMatch) {
-    return fullMatchResults;
-  }
-
-  const player = teams.find((team) => team.name === lastMatch.playerTeam.name);
-
-  const rival = teams.find((team) => team.name === lastMatch.rivalTeam.name);
-
-  if (!player || !rival) {
-    return fullMatchResults;
+    return [];
   }
 
   let result;
@@ -23,13 +13,13 @@ export const buildMatchResults = (matchResults, teams, lastMatch) => {
     result = "draw";
   }
 
-  fullMatchResults.push({
-    HomeId: player.id,
-    AwayId: rival.id,
-    result,
-    goalsFor: lastMatch.playerGoals,
-    goalsAgainst: lastMatch.rivalGoals,
-  });
-
-  return fullMatchResults;
+  return [
+    {
+      HomeId: lastMatch.playerTeam.id,
+      AwayId: lastMatch.rivalTeam.id,
+      result,
+      goalsFor: lastMatch.playerGoals,
+      goalsAgainst: lastMatch.rivalGoals,
+    },
+  ];
 };

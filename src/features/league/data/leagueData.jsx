@@ -1,9 +1,13 @@
-// leagueData.jsx
 import { createContext, useContext, useState } from "react";
 
+import { fixtures } from "@/features/league/data/fixtures";
+import { teams } from "@/features/matches/data/teams";
+import { simulateLeagueRound } from "@/features/league/utils/strength/simulateLeagueRound";
+
 const leagueData = createContext();
+
 export const GameProvider = ({ children }) => {
-  const [currentLevel, setCurrentLevel] = useState(1); // Current level (1 = first match)
+  const [currentLevel, setCurrentLevel] = useState(1);
 
   const [currentTeam, setCurrentTeam] = useState(null);
 
@@ -11,6 +15,7 @@ export const GameProvider = ({ children }) => {
     name: "Wind Jaguars",
     logo: "/img/WindJaguars.webp",
   });
+
   const [rivalTeam] = useState({
     name: "Gem Rubies",
     logo: "/img/GemRubies.webp",
@@ -18,20 +23,31 @@ export const GameProvider = ({ children }) => {
 
   const nextLevel = () => setCurrentLevel((prev) => prev + 1);
 
-  const [finalResult, setFinalResult] = useState(null); // 'win' | 'draw' | 'lose'
+  const [finalResult, setFinalResult] = useState(null);
 
   const [lastMatch, setLastMatch] = useState(null);
 
-  const saveMatchResult = (playerTeam, rivalTeam, playerGoals, rivalGoals) => {
+  const [leagueResults, setLeagueResults] = useState([]);
 
-    /*
-    console.log("saveMatchResult", {
-      playerTeam,
-      rivalTeam,
-      playerGoals,
-      rivalGoals,
-    });
-    */
+  const saveMatchResult = (
+    playerTeam,
+    rivalTeam,
+    playerGoals,
+    rivalGoals
+  ) => {
+
+    const playerResult = {
+      HomeId: playerTeam.id,
+      AwayId: rivalTeam.id,
+      goalsFor: playerGoals,
+      goalsAgainst: rivalGoals,
+      result:
+        playerGoals > rivalGoals
+          ? "winner"
+          : playerGoals < rivalGoals
+          ? "lose"
+          : "draw",
+    };
 
     setLastMatch({
       playerTeam,
@@ -39,6 +55,16 @@ export const GameProvider = ({ children }) => {
       playerGoals,
       rivalGoals,
     });
+
+    const roundFixtures = fixtures[currentLevel];
+
+    const results = simulateLeagueRound(
+      roundFixtures,
+      teams,
+      playerResult
+    );
+
+    setLeagueResults(results);
 
     if (playerGoals > rivalGoals) {
       setFinalResult("win");
@@ -59,6 +85,7 @@ export const GameProvider = ({ children }) => {
         saveMatchResult,
         finalResult,
         lastMatch,
+        leagueResults,
       }}
     >
       {children}

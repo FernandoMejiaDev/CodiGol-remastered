@@ -15,7 +15,7 @@ export const fixtures = {
   ],
 
   2: [
-    { homeId: TEAM.GEM_RUBIES, awayId: TEAM.WEB_HAWKS }, 
+    { homeId: TEAM.GEM_RUBIES, awayId: TEAM.PHANTOM_VIPER }, 
     { homeId: TEAM.WIND_JAGUARS, awayId: TEAM.WEB_HAWKS }, // Wind Jaguars vs Web Hawks
     { homeId: TEAM.TUSK_ELEPHANTS, awayId: TEAM.CODE_SHARKS },
     { homeId: TEAM.JUGGERNAUT_LEOPARD, awayId: TEAM.KNIGHT_CODERS },
