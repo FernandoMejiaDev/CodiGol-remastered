@@ -1,3 +1,5 @@
+import { calculateMatchResult } from "@/features/league/utils/strength/calculateMatchResult";
+
 export const simulateLeagueRound = (fixtures, teams, playerResult) => {
   const results = [];
 
