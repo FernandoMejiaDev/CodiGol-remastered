@@ -149,31 +149,58 @@ El jugador también puede consultar explicaciones sobre las clases utilizadas, r
 
 ## El Partido
 
-Una vez completado el entrenamiento, es momento del partido. En la escena de **VS**, se presenta el contexto del enfrentamiento. Por ejemplo, en el primer partido, los **Wind Jaguars** van empatados 0-0 contra los **Gem Rubies**.
+Una vez completado el entrenamiento, llega el momento de poner en práctica lo aprendido durante el partido.
 
-A medida que se avanza en la liga, el **margen de error se reduce** y los desafíos se vuelven más exigentes.
+Como nuevo integrante de los **Wind Jaguars**, el jugador comienza el encuentro desde el banquillo y entra al campo durante el segundo tiempo. En la primera jornada, el equipo se encuentra **0-0 frente a los Gem Rubies**, dejando al jugador la responsabilidad de aprovechar sus oportunidades para cambiar el resultado.
 
-<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/img_readme_Scene_VS_New_N1.webp" alt="img_readme_Scene_VS_New" /> 
+Antes de comenzar el segundo tiempo, la escena **VS** presenta el enfrentamiento y establece el contexto del partido.
+
+<p align="center"> <br/> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/img_readme_Scene_VS_New_N1.webp" alt="img_readme_Scene_VS_New" /> <br/> <em>Presentación del enfrentamiento entre Wind Jaguars y Gem Rubies.</em> </p> 
+
+A medida que el jugador avanza por la **Full Stack League**, los partidos se vuelven más exigentes. El equipo puede comenzar los encuentros con un marcador desfavorable y el jugador dispondrá de un margen de error cada vez menor para conseguir la remontada.
 
 ## Estrategia y Recordatorio
 
-Antes de entrar al segundo tiempo, el entrenador te recuerda lo aprendido y te da contexto de lo que está en juego. Además, menciona que tienes **5 jugadas o estrategias** para crear oportunidades de anotar esto representa tus **5 intentos** para resolver correctamente los ejercicios en el partido.
+Antes de entrar al campo, el entrenador recuerda al jugador el concepto de **Tailwind CSS** trabajado durante el entrenamiento y explica lo que está en juego en el segundo tiempo.
 
-<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/img_readme_bench_scene_new.webp" alt="img_readme_bench_scene" /> 
+El jugador cuenta con **5 jugadas**, que representan las **5 oportunidades disponibles para resolver ejercicios durante el partido**. Cada jugada corresponde a un desafío basado exclusivamente en la técnica de Tailwind CSS aprendida en el entrenamiento.
 
-## El Partido Real
+Durante el partido sí es posible equivocarse. Cada ejercicio cuenta con un máximo de **2 intentos**: el intento inicial y una segunda oportunidad.
 
-Durante el partido, el jugador **aplica lo aprendido** en el entrenamiento. Cada ejercicio es una jugada, y solo hay **una oportunidad** para acertar. Si fallas, se pasa directamente al siguiente ejercicio.
+Cuando la primera respuesta es incorrecta, la jugada no termina inmediatamente. La situación se representa dentro de la narrativa del partido: el balón puede ser detenido, rebotar en el poste o permanecer en juego, dando al jugador una última oportunidad para completar correctamente la jugada.
 
-Al final del partido, se muestra el resultado, que determinará la posición del equipo en la tabla:
+Si el segundo intento también falla, la oportunidad se pierde y el partido continúa con la siguiente jugada.
 
-- Victoria = **3 puntos**
-- Empate = **1 punto**
-- Derrota = **0 puntos**
 
-El objetivo final es **sumar la mayor cantidad de puntos** a lo largo de la liga y convertirte en el campeón de la Full Stack League, dominando las técnicas más importantes de **Tailwind CSS** en el camino.
+<p align="center"> <br/> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/img_readme_bench_scene_new.webp" alt="img_readme_bench_scene" /> <br/> <em>El entrenador explica la estrategia y las oportunidades disponibles antes del segundo tiempo.</em> </p> 
 
-<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/img_readme_new_match_N1.webp"alt="alt" /> <br/> <em>Partido</em> </p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/img_Readme_new_league_table.webp" alt="alt"/><br/><em></em>Posición en la liga</p>
+## El partido en juego
+
+Durante el segundo tiempo, el jugador debe **aplicar los conocimientos adquiridos durante el entrenamiento**. Cada ejercicio representa una jugada del partido y cada respuesta correcta se convierte en una oportunidad para avanzar hacia el gol.
+
+Las jugadas no ocurren todas en el mismo momento. Cada una se desarrolla en un minuto diferente del partido, haciendo que el marcador avance progresivamente hasta los minutos finales. De esta manera, el tiempo funciona también como parte de la narrativa: cuando el encuentro se acerca al minuto 90, las oportunidades restantes representan los últimos momentos para cambiar el resultado.
+
+Cada ejercicio dispone de **90 segundos** para ser resuelto. Si el tiempo se agota, la jugada se considera perdida y el partido continúa. Dentro de la narrativa, esto representa que el jugador tardó demasiado en ejecutar la acción y terminó realizando un disparo sin peligro.
+
+El jugador debe administrar sus oportunidades y resolver correctamente los desafíos antes de que se termine el tiempo y se pierdan las últimas posibilidades de anotar.
+
+<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/img_readme_new_match_N1.webp"alt="alt" /> <br/> <em>Pantalla principal del partido, mostrando la jugada actual y el marcador avanzando durante el encuentro.</em> </p> 
+
+## Resultado y clasificación
+
+Al finalizar el partido, se muestra el resultado obtenido y su impacto en la **Full Stack League**.
+
+El sistema de puntuación sigue las reglas tradicionales del fútbol:
+
+- **Victoria:** 3 puntos
+- **Empate:** 1 punto
+- **Derrota:** 0 puntos
+
+El objetivo es conseguir la mayor cantidad de puntos posibles a lo largo de las 30 jornadas y llevar a los Wind Jaguars hasta el primer lugar de la clasificación.
+
+<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/img_Readme_new_league_table.webp" alt="alt"/><br/><em></em>Tabla de posiciones de la liga.</p>
+
+El resultado de cada partido no solo determina los puntos obtenidos, sino que también condiciona el camino del jugador durante la competición. Cada ejercicio de Tailwind CSS se convierte así en una oportunidad para cambiar el marcador y acercarse al campeonato.
 
 ## Detalle sobre la Responsividad y Modal de Tamaño
 
