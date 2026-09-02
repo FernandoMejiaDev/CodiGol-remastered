@@ -4,7 +4,7 @@
 > El objetivo es mejorar la arquitectura, optimizar el código e implementar las funcionalidades que no pudieron incluirse en la versión inicial.  
 > 
 > Puedes ver la versión original aquí:  
-> *[CodiGol-Demo](https://github.com/FernandoMejiaDev/CodiGol-Demo)*
+> *[CodiGol](https://github.com/FernandoMejiaDev/CodiGol)*
 
 ![CódiGolLogo](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/CodiGolLogo.webp)
 
