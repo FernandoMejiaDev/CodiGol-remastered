@@ -4,26 +4,23 @@ export const simulateLeagueRound = (fixtures, teams, playerResult) => {
   const results = [];
 
   fixtures.forEach((match) => {
-    const homeTeam = teams.find(
-      (team) => team.id === match.homeId
-    );
+    const homeTeam = teams.find((team) => team.id === match.homeId);
 
-    const visitorTeam = teams.find(
-      (team) => team.id === match.awayId
-    );
+    const visitorTeam = teams.find((team) => team.id === match.awayId);
 
-    const isPlayerMatch =
-      homeTeam.isPlayer || visitorTeam.isPlayer;
+    const isPlayerMatch = homeTeam.isPlayer || visitorTeam.isPlayer;
 
     if (isPlayerMatch) {
-      results.push(playerResult);
+      results.push({
+        ...playerResult,
+        HomeId: homeTeam.id,
+        AwayId: visitorTeam.id,
+      });
+
       return;
     }
 
-    const result = calculateMatchResult(
-      homeTeam,
-      visitorTeam
-    );
+    const result = calculateMatchResult(homeTeam, visitorTeam);
 
     results.push({
       HomeId: homeTeam.id,
@@ -34,8 +31,8 @@ export const simulateLeagueRound = (fixtures, teams, playerResult) => {
         result.localGoals > result.visitorGoals
           ? "winner"
           : result.localGoals < result.visitorGoals
-          ? "lose"
-          : "draw",
+            ? "lose"
+            : "draw",
     });
   });
 

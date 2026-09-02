@@ -94,9 +94,9 @@ const LeagueTable = () => {
         bg-neutral-950/60
 
                 ${index === 0
-                  ? "bg-cyan-800/60 border-l-4 border-cyan-600"
+                  ? "border-l-4 border-cyan-600"
                   : index === leagueTable.length - 1
-                    ? "bg-red-800/60 border-l-4 border-red-600"
+                    ? "border-l-4 border-red-600"
                     : ""
                 }
 
