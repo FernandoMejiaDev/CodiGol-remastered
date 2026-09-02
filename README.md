@@ -107,19 +107,45 @@ Durante la transmisión final de la Hackathon organizada por *[Midudev](https://
 
 ## Historia y Temática de CódiGol
 
-En **CódiGol**, el jugador se une a los **Wind Jaguars**, un equipo decidido a conquistar la **Full Stack League**. Desde el primer momento, el entrenador te da la bienvenida al equipo y te explica cómo funcionará tu entrenamiento, en cada partido aprenderás una **nueva técnica de Tailwind CSS**.
+En **CódiGol**, el jugador se une a los **Wind Jaguars**, un equipo decidido a conquistar la **Full Stack League**. Desde el comienzo, el entrenador da la bienvenida al jugador y explica cómo será su camino dentro del equipo: **cada partido representa una nueva lección de Tailwind CSS**.
 
-El camino hacia la victoria está dividido en 10 partidos, y cada uno representa una lección clave sobre **Tailwind CSS**. En el primer encuentro, por ejemplo, el jugador aprende sobre **diseño responsivo y clases de texto**. 
+El recorrido está compuesto por **15 partidos**, y cada uno introduce un nuevo concepto o técnica de **Tailwind CSS** que el jugador deberá aprender y aplicar durante el encuentro.
 
-<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N1.webp" alt="Image_Readme_Training_New" /> 
+En el primer partido, por ejemplo, el jugador comienza aprendiendo sobre **diseño responsivo y clases de texto**, para posteriormente poner estos conocimientos en práctica durante el entrenamiento y el partido.
+
+<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N1.webp"alt="Image_Readme_Training_New" /> <br/> <em>Primera escena de entrenamiento junto al entrenador.</em> </p>
 
 ## Entrenamiento antes del partido
 
-Antes de cada partido, el jugador debe completar un entrenamiento. Aquí podrá **experimentar, cometer errores y aprender sin presión**. El entrenador explicará cómo funciona cada clase de **Tailwind CSS**, y el jugador deberá resolver ejercicios prácticos para avanzar.
+Antes de disputar cada partido, el jugador debe completar una sesión de entrenamiento relacionada con la lección correspondiente.
 
-El entrenamiento solo termina cuando todas las respuestas son correctas, asegurando que el jugador domine bien la lección antes de entrar al campo.
+Durante el entrenamiento, el jugador puede experimentar, cometer errores y aprender sin la presión de un partido. El entrenador presenta los conceptos de Tailwind CSS y, posteriormente, el jugador debe resolver ejercicios prácticos para avanzar.
 
-<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N2.webp"alt="alt" /> <br/> <em>Pantalla inicial de entrenamiento</em> </p> <p align="center"> <br/> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N3.webp" alt="Image_Readme_Training_New" /> <br/> <em></em>Ejercicio práctico</p> <p align="center"> <br/> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N4.webp" alt="Image_Readme_Training_New" /> <br/> <em>Anotación</em> </p> <p align="center"> <br/> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N8.webp"  alt="Image_Readme_Training_New" /> <br/> <em>Modal de explicación sobre las clases de Tailwind CSS</em>   </p>
+Los ejercicios están diseñados para que el jugador aplique directamente los conceptos explicados. El entrenamiento concluye cuando se han completado correctamente todos los ejercicios de la lección, preparando al jugador para poner esos conocimientos en práctica durante el partido.
+
+### Introducción de la lección
+
+El entrenador presenta el concepto de Tailwind CSS que se trabajará durante la sesión.
+
+<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N2.webp"alt="alt" /> <br/> <em>Pantalla inicial de entrenamiento</em> </p> 
+
+### Ejercicio práctico
+
+El jugador recibe un desafío y debe escribir la solución utilizando las clases de **Tailwind CSS** aprendidas.
+
+<p align="center"> <br/> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N3.webp" alt="Image_Readme_Training_New" /> <br/> <em></em>Ejercicio práctico</p> 
+
+### Resolución del ejercicio
+
+Al completar correctamente el desafío, el jugador consigue avanzar en el entrenamiento y se muestra el resultado de su acción.
+
+<p align="center"> <br/> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N4.webp" alt="Image_Readme_Training_New" /> <br/> <em>Ejercicio completado / anotación.</em> </p> 
+
+### Explicación de las clases
+
+El jugador también puede consultar explicaciones sobre las clases utilizadas, reforzando el concepto antes de continuar con los siguientes ejercicios.
+
+<p align="center"> <br/> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N8.webp"  alt="Image_Readme_Training_New" /> <br/> <em>Modal de explicación sobre las clases de Tailwind CSS</em>   </p>
 
 ## El Partido
 
