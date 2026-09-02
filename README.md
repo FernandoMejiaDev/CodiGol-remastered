@@ -57,7 +57,7 @@ Durante la transmisión final de la Hackathon organizada por *[Midudev](https://
 
 ## Enlace a la demo 
 
-![codigol](https://img.shields.io/badge/juega_códigol-000000?style=for-the-badge&logo=devbox&logoColor=06B6D4)
+[![codigol](https://img.shields.io/badge/juega_códigol-000000?style=for-the-badge&logo=devbox&logoColor=06B6D4)](https://codigol.netlify.app/)
 
 ## ¿Qué aprenderás?
 
