@@ -33,7 +33,7 @@ const ResizingLine = ({ setPreviewWidth }) => {
     return (
         <div
             ref={ResizerRef}
-            className="relative w-2 bg-yellow-500 cursor-col-resize hover:bg-yellow-700"
+            className="relative z-50 w-2 bg-yellow-500 cursor-col-resize hover:bg-yellow-700"
         ></div>
     );
 };
