@@ -10,11 +10,33 @@
 
 # CÓDIGOL
 
-**CódiGol** es un pequeño videojuego web diseñado para ayudarte a aprender y practicar **Tailwind CSS** de forma divertida y diferente. Inspirado en la emoción del fútbol, este juego te reta a anotar goles completando desafíos de diseño utilizando **Tailwind CSS**.
+CódiGol es un videojuego web educativo diseñado para aprender y practicar Tailwind CSS de una forma diferente, utilizando el fútbol como temática principal.
 
-Esta idea surgió como un concepto que había descartado tiempo atrás, pero gracias a la experiencia adquirida y la motivación de la *[Hackathon de MiduDev 2025](https://github.com/midudev/hackaton-clerk-2025?tab=readme-ov-file#%EF%B8%8F-c%C3%B3mo-participar-en-la-hackat%C3%B3n)*, decidí retomarla y convertirla en una demo funcional. El desarrollo **se realizó en menos de 10 días, desde el 8 hasta el 21 de mayo de 2025**, como parte del reto.
+La idea combina aprendizaje y competición: en lugar de controlar jugadores en un entorno 2D o 3D, el jugador se sitúa en distintos momentos de un partido y debe resolver ejercicios de Tailwind CSS para conseguir oportunidades de gol. Cada desafío completado correctamente permite avanzar en el partido, con el objetivo final de ganar encuentros y conquistar la liga.
 
-Inicialmente, el proyecto estaba pensado para enseñar JavaScript, pero al notar que ya existen muchas plataformas enfocadas en eso, decidí optar por **Tailwind CSS**, ya que más allá de su documentación oficial, no encontré recursos prácticos e interactivos para aprenderlo. Por eso, este proyecto busca ser una forma diferente, entretenida y dinámica de dominar **Tailwind CSS**, combinando aprendizaje y mecánicas de juego.
+## Origen del proyecto
+
+CódiGol nació originalmente como un concepto que había dejado de lado tiempo atrás. La oportunidad de retomarlo llegó con la *[Hackathon de MiduDev 2025](https://github.com/midudev/hackaton-clerk-2025?tab=readme-ov-file#%EF%B8%8F-c%C3%B3mo-participar-en-la-hackat%C3%B3n)*, donde decidí convertir la idea en una demo funcional.
+
+La versión original de CódiGol, fue desarrollada en menos de 10 días, entre el 8 y el 21 de mayo de 2025, como parte del reto de la Hackathon. El proyecto recibió una mención honorífica durante la competición.
+
+El tiempo limitado de desarrollo hizo que algunas ideas y aspectos técnicos tuvieran que simplificarse para poder completar una versión funcional dentro del plazo. Después de la Hackathon, y a partir de las críticas, comentarios y una revisión personal del proyecto, surgieron varias oportunidades de mejora.
+
+## La remasterización
+
+Esta versión de **CódiGol** nace como una **remasterización desarrollada desde cero.** En lugar de modificar progresivamente la versión vainilla, decidí reconstruir el proyecto utilizando una nueva arquitectura y replanteando diferentes aspectos de su desarrollo.
+
+El objetivo de esta remasterización no es únicamente mejorar la apariencia del proyecto, sino también **revisar su estructura, lógica, experiencia de usuario y contenido**, tomando como referencia todo lo aprendido durante el desarrollo de la primera versión.
+
+## ¿Por qué Tailwind CSS?
+
+Inicialmente, CódiGol estaba pensado para enseñar **JavaScript**. Sin embargo, decidí cambiar el enfoque hacia **Tailwind CSS**, buscando crear una experiencia práctica e interactiva para aprender sus clases y conceptos mediante ejercicios.
+
+En lugar de limitar el aprendizaje a la lectura de documentación, CódiGol plantea los conceptos dentro de situaciones propias de un partido de fútbol. El jugador debe aplicar lo aprendido para resolver cada desafío y avanzar en el encuentro.
+
+Como resultado, el proyecto busca combinar **aprendizaje, práctica y gamificación**, utilizando el fútbol como una forma de contextualizar los ejercicios de Tailwind CSS, De esta forma, el proyecto conserva la idea original de utilizar el fútbol como contexto para aprender Tailwind CSS, pero busca llevarla a una experiencia mucho más completa y pulida.
+
+## Autenticación
 
 Como parte del desarrollo para la *[Hackathon de MiduDev 2025](https://github.com/midudev/hackaton-clerk-2025?tab=readme-ov-file#%EF%B8%8F-c%C3%B3mo-participar-en-la-hackat%C3%B3n), se integró [Clerk](https://clerk.com/docs)* para la autenticación de usuarios donde **es necesario registrarse o iniciar sesión para poder jugar**.
 
