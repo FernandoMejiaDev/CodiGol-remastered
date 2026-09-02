@@ -36,6 +36,15 @@ export const GameProvider = ({ children }) => {
     rivalGoals
   ) => {
 
+    /*
+    console.log("Saving match result:", {
+      playerTeam,
+      rivalTeam,
+      playerGoals,
+      rivalGoals
+    });
+    */
+
     const playerResult = {
       HomeId: playerTeam.id,
       AwayId: rivalTeam.id,
@@ -45,8 +54,8 @@ export const GameProvider = ({ children }) => {
         playerGoals > rivalGoals
           ? "winner"
           : playerGoals < rivalGoals
-          ? "lose"
-          : "draw",
+            ? "lose"
+            : "draw",
     };
 
     setLastMatch({
