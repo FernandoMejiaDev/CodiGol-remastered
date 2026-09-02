@@ -38,9 +38,9 @@ Como resultado, el proyecto busca combinar **aprendizaje, práctica y gamificaci
 
 # Autenticación con Clerk
 
-La autenticación con Clerk fue uno de los requisitos de la Hackathon de MiduDev 2025, por lo que se incorporó desde la versión original de CódiGol. Esta funcionalidad se mantiene en CódiGol Remastered como parte de la experiencia del proyecto.
+La autenticación con *[Clerk](https://clerk.com/docs)* fue uno de los requisitos de la *[Hackathon de MiduDev 2025](https://github.com/midudev/hackaton-clerk-2025?tab=readme-ov-file#%EF%B8%8F-c%C3%B3mo-participar-en-la-hackat%C3%B3n)*, por lo que se incorporó desde la versión original de CódiGol. Esta funcionalidad se mantiene en CódiGol Remastered como parte de la experiencia del proyecto.
 
-Para acceder al juego, el usuario debe registrarse o iniciar sesión. Clerk se encarga de gestionar las sesiones de usuario y el acceso a las rutas protegidas, permitiendo que determinadas partes del juego solo estén disponibles para usuarios autenticados.
+Para acceder al juego, el usuario debe registrarse o iniciar sesión. **Clerk** se encarga de gestionar las sesiones de usuario y el acceso a las rutas protegidas, permitiendo que determinadas partes del juego solo estén disponibles para usuarios autenticados.
 
 En la remasterización se mantuvo este sistema de autenticación, pero se integró nuevamente dentro de la nueva arquitectura del proyecto y se adaptó al flujo general de la aplicación.
 
