@@ -36,9 +36,34 @@ En lugar de limitar el aprendizaje a la lectura de documentación, CódiGol plan
 
 Como resultado, el proyecto busca combinar **aprendizaje, práctica y gamificación**, utilizando el fútbol como una forma de contextualizar los ejercicios de Tailwind CSS, De esta forma, el proyecto conserva la idea original de utilizar el fútbol como contexto para aprender Tailwind CSS, pero busca llevarla a una experiencia mucho más completa y pulida.
 
-## Autenticación
+# Autenticación con Clerk
 
-Como parte del desarrollo para la *[Hackathon de MiduDev 2025](https://github.com/midudev/hackaton-clerk-2025?tab=readme-ov-file#%EF%B8%8F-c%C3%B3mo-participar-en-la-hackat%C3%B3n), se integró [Clerk](https://clerk.com/docs)* para la autenticación de usuarios donde **es necesario registrarse o iniciar sesión para poder jugar**.
+La autenticación con Clerk fue uno de los requisitos de la Hackathon de MiduDev 2025, por lo que se incorporó desde la versión original de CódiGol. Esta funcionalidad se mantiene en CódiGol Remastered como parte de la experiencia del proyecto.
+
+Para acceder al juego, el usuario debe registrarse o iniciar sesión. Clerk se encarga de gestionar las sesiones de usuario y el acceso a las rutas protegidas, permitiendo que determinadas partes del juego solo estén disponibles para usuarios autenticados.
+
+En la remasterización se mantuvo este sistema de autenticación, pero se integró nuevamente dentro de la nueva arquitectura del proyecto y se adaptó al flujo general de la aplicación.
+
+## Flujo de autenticación
+
+El flujo comienza en la pantalla principal, donde el usuario puede acceder al sistema de autenticación.
+
+### Pantalla inicial
+
+<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_readme_Home_N1.webp"alt="Pantalla de inicio protegida por Clerk" /> <br/> <em>La pantalla de inicio presenta al usuario la opción de acceder al juego mediante el sistema de autenticación.</em> </p> 
+
+### Inicio de sesión o registro
+
+<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_readme_Home_N2.webp" alt="Modal de login de Clerk" /> <br/><em>Una vez completada la autenticación, el usuario puede acceder al flujo del juego. La sesión activa también permite personalizar la experiencia según el estado del usuario.</em>
+
+### Introducción sobre CódiGol
+ 
+</p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_readme_Home_N3.webp" alt="Usuario autenticado" /> <br/> <em>Modal con una pequeña Introducción sobre CódiGol </em> </p> 
+
+### Protección de rutas
+<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_readme_Home_N4.webp"alt="Protección de rutas con Clerk" /> <br/> <em>Las rutas que requieren autenticación verifican si existe una sesión activa. Si un usuario intenta acceder directamente a una ruta protegida sin haber iniciado sesión, es redirigido a la pantalla principal para iniciar el proceso de autenticación.</em> </p>
+
+
 
 ## *Mención Especial en la Final de la Hackathon de Midudev* 
 
@@ -75,22 +100,8 @@ Durante la transmisión final de la Hackathon organizada por *[Midudev](https://
 ![pnpm](https://img.shields.io/badge/pnpm-000000?style=for-the-badge&logo=pnpm&logoColor=F69220)
 ![clerk](https://img.shields.io/badge/clerk-000000?style=for-the-badge&logo=clerk&logoColor=6C47FF)
 
-
 </div>
 
- ## Autenticación con Clerk
-
-Para poder jugar, los usuarios deben crear una cuenta o iniciar sesión.
-**Clerk** se ha utilizado para manejar la autenticación, protegiendo las rutas del juego y personalizando la experiencia del jugador con sesiones activas.
-
-## Integración con Clerk
-**CódiGol** utiliza **Clerk** como sistema de autenticación para gestionar el acceso de los usuarios. La integración de **Clerk** permite proteger rutas y garantizar que solo los usuarios registrados puedan acceder a la experiencia completa del juego.
-
-Cuando un usuario intenta iniciar el juego sin estar autenticado, se activa automáticamente el modal de inicio de sesión o registro proporcionado por **Clerk**.
-
-A continuación se muestran capturas del flujo de autenticación:
-
-<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_readme_Home_N1.webp"alt="Pantalla de inicio protegida por Clerk" /> <br/> <em>Pantalla inicial con botón de acceso</em> </p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_readme_Home_N2.webp" alt="Modal de login de Clerk" /> <br/><em>Modal de login de Clerk Integrado</em></p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_readme_Home_N3.webp" alt="Usuario autenticado" /> <br/> <em>Modal con una pequeña Introducción sobre CódiGol </em> </p> <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_readme_Home_N4.webp"alt="Protección de rutas con Clerk" /> <br/> <em>Verificación de Rutas protegidas que verifican si el usuario ya ha iniciado sesión de otro modo lo redirige a la página principal</em>   </p>
 
 # Detalles del Juego 
 
