@@ -30,7 +30,7 @@ El objetivo de esta remasterización no es únicamente mejorar la apariencia del
 
 ## ¿Por qué Tailwind CSS?
 
-Inicialmente, CódiGol estaba pensado para enseñar JavaScript. Sin embargo, al notar que ya existen muchas plataformas enfocadas en eso, decidí optar por Tailwind CSS, ya que, más allá de su documentación oficial, no encontré recursos prácticos e interactivos para aprenderlo. Por ello decidí cambiar el enfoque hacia Tailwind CSS, buscando crear una experiencia práctica e interactiva para aprender sus clases y conceptos mediante ejercicios.
+Inicialmente, CódiGol estaba pensado para enseñar **JavaScript**. Sin embargo, al notar que ya existen muchas plataformas enfocadas en eso, decidí optar por **Tailwind CSS**, ya que, más allá de su documentación oficial, no encontré recursos prácticos e interactivos para aprenderlo. Por ello decidí cambiar el enfoque hacia **Tailwind CSS**, buscando crear una experiencia práctica e interactiva para aprender sus clases y conceptos mediante ejercicios.
 
 En lugar de limitar el aprendizaje a la lectura de documentación, CódiGol plantea los conceptos dentro de situaciones propias de un partido de fútbol. El jugador debe aplicar lo aprendido para resolver cada desafío y avanzar en el encuentro.
 
