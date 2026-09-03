@@ -308,9 +308,25 @@ Como consecuencia, **React Toastify dejó de ser necesaria y fue eliminada de la
 </details>
 
 <details>
-<summary>Equipos</summary>
+<summary>Equipos de la liga Full Stack</summary>
 
-# Equipos de la liga Full Stack
+# Equipos de la liga
+
+Los equipos de la **Full Stack League** están inspirados en diferentes **lenguajes de programación y conceptos relacionados con el desarrollo de software**. Cada uno cuenta con una identidad propia representada principalmente a través de su escudo.
+
+## Rediseño de los escudos
+
+En **CódiGol (versión original)**, los escudos fueron diseñados utilizando estilos visuales diferentes entre sí. Algunos incorporaban mascotas, otros utilizaban elementos relacionados con el fútbol y cada equipo podía presentar una estética distinta, desde referencias al estilo anime hasta diseños inspirados en el origami.
+
+Para la remasterización se decidió establecer una **identidad visual más consistente para toda la liga**. Los escudos fueron rediseñados desde cero utilizando un estilo de **caricatura minimalista en 2D**, manteniendo la personalidad individual de cada equipo pero unificando su apariencia dentro del universo de CódiGol.
+
+El resultado es una liga visualmente más coherente, donde los equipos conservan sus referencias relacionadas con la programación, pero comparten un mismo lenguaje gráfico.
+
+## Equipos de la Full Stack League
+
+Los siguientes equipos forman parte de la competición:
+
+Galería de escudos de los equipos de la Full Stack League.
 
 <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Wind_Jaguars_team.webp" alt="Wind_Jaguars_team" /> 
 
