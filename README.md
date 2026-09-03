@@ -452,7 +452,8 @@ src/
 │       │   └── trainingLessons.js 
 │       │ 
 │       └── Page/ 
-│           ├── LessonIntro.jsx 
+│           ├── LessonIntro.jsx
+│           ├── testStrengthSystemPage.jsx 
 │           └── Training.jsx
 │ 
 ├── styles/
