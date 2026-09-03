@@ -400,18 +400,21 @@ src/
 │   │   ├── data/
 │   │   │   ├── teams/
 │   │   │   │   ├── byte_gophers.js
+│   │   │   │   ├── Cache_Rhinos.js
 │   │   │   │   ├── code_sharks.js
 │   │   │   │   ├── forge_minotaurs.js
 │   │   │   │   ├── gem_rubies.js
 │   │   │   │   ├── index.js
 │   │   │   │   ├── juggernaut_leopard.js
-│   │   │   │   ├── knight_coders.js
+│   │   │   │   ├── Kernel_Titans.js
 │   │   │   │   ├── knight_coders.js
 │   │   │   │   ├── phantom_viper.js
 │   │   │   │   ├── soar_swifts.js
+│   │   │   │   ├── Stack_Bisons.js
 │   │   │   │   ├── style_chamaleons.js
 │   │   │   │   ├── teamIds.js
 │   │   │   │   ├── tusk_elephants.js
+│   │   │   │   ├── Vector_Dragons.js
 │   │   │   │   ├── web_hawks.js
 │   │   │   │   └── wind_Jaguars.js
 │   │   │   │
