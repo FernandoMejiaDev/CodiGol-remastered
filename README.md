@@ -392,9 +392,24 @@ src/
 │   ├── league/              
 │   │   ├── data/
 │   │   │   ├── fixtures.js
-│   │   │   └── leagueData.jsx 
-│   │   └── pages/
-│   │       └── LeagueTable.jsx
+│   │   │   ├── leagueData.jsx 
+│   │   │   └── matchResults.js 
+│   │   ├── pages/
+│   │   │   └── LeagueTable.jsx
+│   │   └── utils/
+│   │       ├── strength/
+│   │       │   ├── calculateDefenseChance.js
+│   │       │   ├── calculateGoalChance.js
+│   │       │   ├── calculateGoalkeeperChance.js
+│   │       │   ├── calculateMatchResult.js
+│   │       │   ├── calculatePossessionChance.js
+│   │       │   ├── calculateScoringChance.js
+│   │       │   ├── rollChance.js
+│   │       │   ├── simulateLeagueRound.js
+│   │       │   └── testStrengthSystem.js
+│   │       ├── BuildMacthResult.jsx
+│   │       ├── calculateTable.jsx
+│   │       └── note.md 
 │   │ 
 │   ├── matches/              
 │   │   ├── data/
