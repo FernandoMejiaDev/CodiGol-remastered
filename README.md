@@ -255,7 +255,7 @@ La alerta incorpora la reacción correspondiente del entrenador para reforzar vi
 
  ### Advertencia
 
-a alerta de advertencia utiliza el color **amarillo** y aparece cuando la respuesta contiene un error que impide completar correctamente el ejercicio.
+La alerta de advertencia utiliza el color **amarillo** y aparece cuando la respuesta contiene un error que impide completar correctamente el ejercicio.
 
 En lugar de limitarse a indicar que la respuesta es incorrecta, el sistema proporciona una pequeña pista relacionada con el error cometido, permitiendo que el jugador pueda corregir su respuesta.
 
