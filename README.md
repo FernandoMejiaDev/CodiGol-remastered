@@ -24,7 +24,7 @@ El tiempo limitado de desarrollo hizo que algunas ideas y aspectos técnicos tuv
 
 ## La remasterización
 
-Esta versión de **CódiGol** nace como una **remasterización desarrollada desde cero.** En lugar de modificar progresivamente la versión vainilla, decidí reconstruir el proyecto utilizando una nueva arquitectura y replanteando diferentes aspectos de su desarrollo.
+Esta versión de **CódiGol** nace como una **remasterización desarrollada desde cero.** En lugar de modificar progresivamente la versión original, decidí reconstruir el proyecto utilizando una nueva arquitectura y replanteando diferentes aspectos de su desarrollo.
 
 El objetivo de esta remasterización no es únicamente mejorar la apariencia del proyecto, sino también **revisar su estructura, lógica, experiencia de usuario y contenido**, tomando como referencia todo lo aprendido durante el desarrollo de la primera versión.
 
@@ -212,52 +212,121 @@ Este modal tiene como objetivo evitar problemas de visualización y usabilidad, 
 
 ## Objetivo del juego
 
-- Ganar la liga enfrentando a 10 equipos diferentes
+- Ganar la liga enfrentando a 15 equipos diferentes
 - Resolver ejercicios reales de **Tailwind CSS** para avanzar
 - Mejorar tus habilidades de **Tailwind CSS** en un contexto práctico y divertido
 
 ## Mejoras de la remasterización
 
 <details>
-<summary>Alertas</summary>
+<summary>Sistema de alertas</summary>
 
-# Alertas
+# Sistema de alertas
 
-## Antiguas Alertas 
+Las alertas cumplen una función importante dentro de CódiGol: comunicar al jugador el resultado de cada ejercicio y mantener la respuesta integrada dentro del contexto del partido o del entrenamiento.
+
+## Versión original
+
+En **CódiGol (versión original)**, el sistema de retroalimentación se resolvía mediante las notificaciones proporcionadas por **React Toastify**. Debido al tiempo limitado de desarrollo de la Hackathon, se optó por utilizar esta dependencia en lugar de desarrollar un sistema de alertas propio.
+
+Las notificaciones estaban conectadas al sistema encargado de verificar las respuestas y únicamente diferenciaban entre dos estados principales: **respuesta correcta y respuesta incorrecta**.
 
 <br>
 
-<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_old_N4.webp"alt="Image_Readme_Training_old" /> <br/> <em></em> </p>
+<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_old_N4.webp"alt="Image_Readme_Training_old" /> <br/> <em></em> Sistema de alertas utilizado en CódiGol (versión original). </p>
 
- ---
+ # Remasterización
 
- # Nuevas Alertas
+ En **CódiGol Remastered**, se reemplazó React Toastify por un **sistema de alertas propio**, diseñado específicamente para las necesidades del juego.
 
- ## Alerta de tipo acierto
+El nuevo sistema mantiene una apariencia sencilla para no interrumpir la experiencia, pero incorpora diferentes estados, elementos visuales y mensajes adaptados al contexto en el que se producen. Cada alerta combina un indicador visual, un icono y una reacción del personaje correspondiente.
 
-<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N4.webp"alt="Alert_Success" /> <br/> <em></em> </p>
+Además, las alertas no representan exactamente lo mismo durante un entrenamiento que durante un partido. El mismo resultado puede tener una interpretación diferente dependiendo del momento del juego.
 
- ## Alerta de tipo advertencia
-<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N5.webp"alt="Alert_Warning " /> <br/> <em></em> </p>
+ ## Tipos de alertas
 
- ## Alerta de tipo error
-<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N6.webp"alt="Alert_Error" /> <br/> <em></em> </p>
+ ### Acierto
 
- ## Alerta de tiempo terminado
-<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N9.webp"alt="Alert_Timer" /> <br/> <em></em> </p>
+ La alerta de acierto utiliza el color **cian** y aparece cuando el jugador resuelve correctamente un ejercicio. En el contexto del partido, representa que la jugada ha terminado en gol.
 
- ## Alerta de completado
+La alerta incorpora la reacción correspondiente del entrenador para reforzar visualmente el resultado positivo.
 
-<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N7.webp"alt="Alert_Complete" /> <br/> <em></em> </p>
+<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N4.webp"alt="Alert_Success" /> <br/> <em></em>Alerta de acierto.</p>
+
+ ### Advertencia
+
+La alerta de advertencia utiliza el color **amarillo** y aparece cuando la respuesta contiene un error que impide completar correctamente el ejercicio.
+
+En lugar de limitarse a indicar que la respuesta es incorrecta, el sistema proporciona una pequeña pista relacionada con el error cometido, permitiendo que el jugador pueda corregir su respuesta.
+
+Durante el entrenamiento, esta retroalimentación ayuda al jugador a comprender dónde está su error antes de volver a intentarlo. En el partido, la alerta representa una oportunidad que no salió como estaba previsto, pero que todavía puede continuar.
+ 
+<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N5.webp"alt="Alert_Warning " /> <br/> <em></em>Alerta de advertencia con una pista.</p>
+
+ ### Error
+
+La alerta de error representa un fallo completo y utiliza el color **rojo**.
+
+En el entrenamiento, aparece cuando el jugador ha cometido demasiados errores y necesita revisar nuevamente el ejercicio. Para facilitar el aprendizaje, el jugador puede consultar la explicación de las clases de Tailwind CSS correspondientes a la lección antes de continuar.
+
+Durante el partido, esta alerta representa que la jugada se ha perdido y que el jugador debe continuar con la siguiente oportunidad.
+ 
+<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N6.webp"alt="Alert_Error" /> <br/> <em></em>Alerta de error.</p>
+
+ ### Tiempo agotado
+
+La alerta de tiempo utiliza el color **blanco** y aparece exclusivamente durante los partidos.
+
+Cada jugada dispone de 90 segundos para ser resuelta. Si el tiempo se agota antes de completar el ejercicio, la jugada se considera perdida.
+
+A diferencia de las demás alertas del partido, esta utiliza al comentarista como personaje encargado de comunicar el resultado, reforzando la sensación de que el encuentro está siendo narrado en tiempo real.
+ 
+<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N9.webp"alt="Alert_Timer" /> <br/> <em></em>Alerta de tiempo agotado.</p>
+
+ ### Completado
+
+ La alerta de completado utiliza el color **lima** y señala el final de una secuencia.
+
+Durante el entrenamiento, indica que el jugador ha completado correctamente todos los ejercicios de la lección y puede continuar hacia el partido.
+
+Durante el partido, indica que el encuentro ha llegado a su final y que ya no quedan más jugadas disponibles.
+
+Imagen: Alerta de entrenamiento/partido completado.
+
+<p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N7.webp"alt="Alert_Complete" /> <br/> <em></em>Alerta de entrenamiento/partido completado.</p>
+
+## Resultado de la mejora
+
+La principal mejora consistió en pasar de un sistema de notificaciones genérico proporcionado por **React Toastify** a un sistema desarrollado específicamente para **CódiGol Remastered**.
+
+Esto permitió controlar completamente su apariencia, comportamiento y contenido, además de adaptar cada estado al contexto del entrenamiento y del partido.
+
+Como consecuencia, **React Toastify dejó de ser necesaria y fue eliminada de las dependencias del proyecto**.
 
 ---
  
 </details>
 
 <details>
-<summary>Equipos</summary>
+<summary>Equipos de la liga Full Stack</summary>
 
-# Equipos de la liga Full Stack
+# Equipos de la liga
+
+Los equipos de la **Full Stack League** están inspirados en diferentes **lenguajes de programación y conceptos relacionados con el desarrollo de software**. Cada uno cuenta con una identidad propia representada principalmente a través de su escudo.
+
+## Rediseño de los escudos
+
+En **CódiGol (versión original)**, los escudos fueron diseñados utilizando estilos visuales diferentes entre sí. Algunos incorporaban mascotas, otros utilizaban elementos relacionados con el fútbol y cada equipo podía presentar una estética distinta, desde referencias al estilo anime hasta diseños inspirados en el origami.
+
+Para la remasterización se decidió establecer una **identidad visual más consistente para toda la liga**. Los escudos fueron rediseñados desde cero utilizando un estilo de **caricatura minimalista en 2D**, manteniendo la personalidad individual de cada equipo pero unificando su apariencia dentro del universo de CódiGol.
+
+El resultado es una liga visualmente más coherente, donde los equipos conservan sus referencias relacionadas con la programación, pero comparten un mismo lenguaje gráfico.
+
+## Equipos de la Full Stack League
+
+Los siguientes equipos forman parte de la competición:
+
+Galería de escudos de los equipos de la Full Stack League.
 
 <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Wind_Jaguars_team.webp" alt="Wind_Jaguars_team" /> 
 
@@ -392,26 +461,44 @@ src/
 │   ├── league/              
 │   │   ├── data/
 │   │   │   ├── fixtures.js
-│   │   │   └── leagueData.jsx 
-│   │   └── pages/
-│   │       └── LeagueTable.jsx
+│   │   │   ├── leagueData.jsx 
+│   │   │   └── matchResults.js 
+│   │   ├── pages/
+│   │   │   └── LeagueTable.jsx
+│   │   └── utils/
+│   │       ├── strength/
+│   │       │   ├── calculateDefenseChance.js
+│   │       │   ├── calculateGoalChance.js
+│   │       │   ├── calculateGoalkeeperChance.js
+│   │       │   ├── calculateMatchResult.js
+│   │       │   ├── calculatePossessionChance.js
+│   │       │   ├── calculateScoringChance.js
+│   │       │   ├── rollChance.js
+│   │       │   ├── simulateLeagueRound.js
+│   │       │   └── testStrengthSystem.js
+│   │       ├── BuildMacthResult.jsx
+│   │       ├── calculateTable.jsx
+│   │       └── note.md 
 │   │ 
 │   ├── matches/              
 │   │   ├── data/
 │   │   │   ├── teams/
 │   │   │   │   ├── byte_gophers.js
+│   │   │   │   ├── Cache_Rhinos.js
 │   │   │   │   ├── code_sharks.js
 │   │   │   │   ├── forge_minotaurs.js
 │   │   │   │   ├── gem_rubies.js
 │   │   │   │   ├── index.js
 │   │   │   │   ├── juggernaut_leopard.js
-│   │   │   │   ├── knight_coders.js
+│   │   │   │   ├── Kernel_Titans.js
 │   │   │   │   ├── knight_coders.js
 │   │   │   │   ├── phantom_viper.js
 │   │   │   │   ├── soar_swifts.js
+│   │   │   │   ├── Stack_Bisons.js
 │   │   │   │   ├── style_chamaleons.js
 │   │   │   │   ├── teamIds.js
 │   │   │   │   ├── tusk_elephants.js
+│   │   │   │   ├── Vector_Dragons.js
 │   │   │   │   ├── web_hawks.js
 │   │   │   │   └── wind_Jaguars.js
 │   │   │   │
@@ -434,7 +521,8 @@ src/
 │       │   └── trainingLessons.js 
 │       │ 
 │       └── Page/ 
-│           ├── LessonIntro.jsx 
+│           ├── LessonIntro.jsx
+│           ├── testStrengthSystemPage.jsx 
 │           └── Training.jsx
 │ 
 ├── styles/
