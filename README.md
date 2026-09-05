@@ -291,8 +291,6 @@ Durante el entrenamiento, indica que el jugador ha completado correctamente todo
 
 Durante el partido, indica que el encuentro ha llegado a su final y que ya no quedan más jugadas disponibles.
 
-Imagen: Alerta de entrenamiento/partido completado.
-
 <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_Readme_Training_New_N7.webp"alt="Alert_Complete" /> <br/> <em></em>Alerta de entrenamiento/partido completado.</p>
 
 ## Resultado de la mejora
