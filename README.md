@@ -10,7 +10,7 @@
 
 # CÓDIGOL
 
-CódiGol es un videojuego web educativo diseñado para aprender y practicar Tailwind CSS de una forma diferente, utilizando el fútbol como temática principal.
+**CódiGol** es un videojuego web educativo diseñado para aprender y practicar Tailwind CSS de una forma diferente, utilizando el fútbol como temática principal.
 
 La idea combina aprendizaje y competición: en lugar de controlar jugadores en un entorno 2D o 3D, el jugador se sitúa en distintos momentos de un partido y debe resolver ejercicios de Tailwind CSS para conseguir oportunidades de gol. Cada desafío completado correctamente permite avanzar en el partido, con el objetivo final de ganar encuentros y conquistar la liga.
 
