@@ -16,9 +16,9 @@ La idea combina aprendizaje y competición: en lugar de controlar jugadores en u
 
 ## Origen del proyecto
 
-CódiGol nació originalmente como un concepto que había dejado de lado tiempo atrás. La oportunidad de retomarlo llegó con la *[Hackathon de MiduDev 2025](https://github.com/midudev/hackaton-clerk-2025?tab=readme-ov-file#%EF%B8%8F-c%C3%B3mo-participar-en-la-hackat%C3%B3n)*, donde decidí convertir la idea en una demo funcional.
+**CódiGol** nació originalmente como un concepto que había dejado de lado tiempo atrás. La oportunidad de retomarlo llegó con la *[Hackathon de MiduDev 2025](https://github.com/midudev/hackaton-clerk-2025?tab=readme-ov-file#%EF%B8%8F-c%C3%B3mo-participar-en-la-hackat%C3%B3n)*, donde decidí convertir la idea en una demo funcional.
 
-La versión original de CódiGol, fue desarrollada en menos de 10 días, entre el 8 y el 21 de mayo de 2025, como parte del reto de la Hackathon. El proyecto recibió una mención honorífica durante la competición.
+**La versión original de CódiGol**, fue desarrollada en menos de **10 días, entre el 8 y el 21 de mayo de 2025**, como parte del reto de la Hackathon. El proyecto recibió una mención honorífica durante la competición.
 
 El tiempo limitado de desarrollo hizo que algunas ideas y aspectos técnicos tuvieran que simplificarse para poder completar una versión funcional dentro del plazo. Después de la Hackathon, y a partir de las críticas, comentarios y una revisión personal del proyecto, surgieron varias oportunidades de mejora.
 
