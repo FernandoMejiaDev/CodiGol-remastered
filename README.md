@@ -396,7 +396,7 @@ Esto permite que los encuentros de los demás equipos **no estén predeterminado
 
 Por ejemplo, un equipo con una mayor capacidad ofensiva puede tener una mayor probabilidad de conseguir un resultado favorable, mientras que una defensa más sólida puede influir en su capacidad para evitar una derrota. Sin embargo, las características de los equipos no garantizan un resultado concreto, permitiendo que la clasificación pueda cambiar entre jornadas.
 
-*Imágenes: Datos de fuerza, ataque y defensa de los equipos de la liga*
+*Datos de fuerza, ataque y defensa de los equipos de la liga*
 
 <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/wind_JaguarsData.webp" alt="Wind_JaguarsData" /> 
 
