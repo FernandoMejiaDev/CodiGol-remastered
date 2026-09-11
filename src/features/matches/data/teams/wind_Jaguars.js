@@ -7,7 +7,7 @@ const WindJaguars = {
 
   strength: 81,
   attack: 80,
-  defense: 78,
+  defense: 79,
   isPlayer: true,
 };
 

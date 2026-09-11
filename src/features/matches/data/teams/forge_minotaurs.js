@@ -5,9 +5,9 @@ const ForgeMinotaurs = {
   name: "Forge Minotaurs",
   logo: "/img/Forge_Minotaurs.webp",
 
-  strength: 83,
-  attack: 86,
-  defense: 84,
+  strength: 84,
+  attack: 85,
+  defense: 83,
   isPlayer: false,
 };
 

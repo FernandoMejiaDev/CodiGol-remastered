@@ -5,9 +5,9 @@ const CacheRhinos = {
   name: "Cache Rhinos",
   logo: "/img/Cache_Rhinos.webp",
 
-  strength: 85,
+  strength: 83,
   attack: 79,
-  defense: 89,
+  defense: 88,
   isPlayer: false,
 };
 

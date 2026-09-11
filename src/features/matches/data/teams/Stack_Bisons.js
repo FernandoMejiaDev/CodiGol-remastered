@@ -6,7 +6,7 @@ const StackBisons = {
   logo: "/img/Stack_Bisons.webp",
 
   strength: 84,
-  attack: 75,
+  attack: 77,
   defense: 88,
   isPlayer: false,
 };

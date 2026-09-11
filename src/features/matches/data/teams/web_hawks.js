@@ -5,9 +5,9 @@ const WebHawks = {
   name: "Web Hawks",
   logo: "/img/Web_Hawks.webp",
 
-  strength: 85,
-  attack: 87,
-  defense: 88,
+  strength: 84,
+  attack: 81,
+  defense: 82,
   isPlayer: false,
 };
 

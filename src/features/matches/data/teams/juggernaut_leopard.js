@@ -7,7 +7,7 @@ const JuggernautLeopards = {
 
   strength: 83,
   attack: 86,
-  defense: 75,
+  defense: 76,
   isPlayer: false,
 };
 

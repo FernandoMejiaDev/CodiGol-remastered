@@ -5,9 +5,9 @@ const StyleChameleons = {
   name: "Style Chameleons",
   logo: "/img/Style_Chameleons.webp",
 
-  strength: 85,
-  attack: 85,
-  defense: 85,
+  strength: 84,
+  attack: 84,
+  defense: 84,
   isPlayer: false,
 };
 

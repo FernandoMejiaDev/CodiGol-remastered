@@ -5,9 +5,9 @@ const CodeSharks = {
   name: "Code Sharks",
   logo: "/img/Code_Sharks.webp",
 
-  strength: 85,
-  attack: 86,
-  defense: 80,
+  strength: 86,
+  attack: 88,
+  defense: 82,
   isPlayer: false,
 };
 

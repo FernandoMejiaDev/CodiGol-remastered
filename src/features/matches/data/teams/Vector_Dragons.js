@@ -6,8 +6,8 @@ const VectorDragons = {
   logo: "/img/Vector_Dragons.webp",
 
   strength: 90,
-  attack: 86,
-  defense: 86,
+  attack: 85,
+  defense: 87,
   isPlayer: false,
 };
 

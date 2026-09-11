@@ -6,7 +6,7 @@ const KernelTitans = {
   logo: "/img/Kernel_Titans.webp",
 
   strength: 88,
-  attack: 82,
+  attack: 83,
   defense: 92,
   isPlayer: false,
 };

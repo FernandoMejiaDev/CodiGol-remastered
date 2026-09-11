@@ -6,7 +6,7 @@ const TuskElephants = {
   logo: "/img/Tusk_Elephants.webp",
 
   strength: 85,
-  attack: 76,
+  attack: 77,
   defense: 92,
   isPlayer: false,
 };
