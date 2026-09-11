@@ -349,9 +349,6 @@ Galería de escudos de los equipos de la Full Stack League.
 
 <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Web_Hawks_team.webp" alt="Web_Hawks_team" /> 
 
----
-###
-
 <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Cache_Rhinos_team.webp" alt="Cache_Rhinos_team" /> 
 
 <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Kernel_Titans_team.webp" alt="Kernel_Titans_team" /> 
@@ -399,7 +396,40 @@ Esto permite que los encuentros de los demás equipos **no estén predeterminado
 
 Por ejemplo, un equipo con una mayor capacidad ofensiva puede tener una mayor probabilidad de conseguir un resultado favorable, mientras que una defensa más sólida puede influir en su capacidad para evitar una derrota. Sin embargo, las características de los equipos no garantizan un resultado concreto, permitiendo que la clasificación pueda cambiar entre jornadas.
 
-*Imágenes: Datos de fuerza, ataque y defensa de los equipos de la liga*
+*Datos de fuerza, ataque y defensa de los equipos de la liga*
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/wind_JaguarsData.webp" alt="Wind_JaguarsData" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Gem_RubiesData.webp" alt="Gem_RubiesData" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Tusk_ElephantsData.webp" alt="Tusk_ElephantsData" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Juggernaut_LeopardData.webp" alt="Juggernaut_LeopardsData" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Code_SharksData.webp" alt="Code_SharksData" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Soar_SwiftsData.webp" alt="Soar_SwiftsData" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Knight_CodersData.webp" alt="Knight_CodersData" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Byte_GophersData.webp" alt="Byte_GophersData" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Style_ChameleonsData.webp" alt="Style_ChameleonsData" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Phantom_ViperData.webp" alt="Phantom_ViperData" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Forge_MinotaursData.webp" alt="Forge_MinotaursData" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Web_HawsData.webp" alt="Web_HawksData" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Cache_RhinosData.webp" alt="Cache_RhinosData" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Kernel_TitansData.webp" alt="Kernel_TitansData" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Stack_BisonsData.webp" alt="Stack_BisonsData" /> 
+
+<img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Vector_DragonsData.webp" alt="Vector_DragonsData" /> 
+
 
 ## Resultado de la mejora
 
