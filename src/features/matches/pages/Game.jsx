@@ -70,6 +70,9 @@ const Game = () => {
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
   const currentExercise = GameData[currentExerciseIndex];
 
+  //Status indicating that the match has ended
+  const [gameFinished, setGameFinished] = useState(false);
+
   //props of analyzeAnswer
   // `attempts` is a state variable that resides within the Training component, 
   // but the `analyzeAnswer` function (which is in an external file) has no 
@@ -243,7 +246,10 @@ const Game = () => {
                 setAlert={setAlert}
                 mode="match"
                 label="Disparar"
+                disabled={gameFinished}
                 onSuccess={() => {
+                    if (gameFinished) return;
+
                   setAttempts(0);
 
                   const newGoals = playerGoals + 1;
@@ -261,6 +267,9 @@ const Game = () => {
                     // Completed
 
                   } else {
+                    setGameFinished(true);
+
+
                     const completionMessage = getCompletionMessage();
 
                     setAlert({

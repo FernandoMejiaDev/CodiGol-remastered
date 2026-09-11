@@ -17,6 +17,7 @@ const VerifyButton = ({
   onFail,
   mode = "training",
   label,
+  disabled = false,
 }) => {
 
   /* 
@@ -26,6 +27,8 @@ const VerifyButton = ({
   */
 
   const handleVerify = () => {
+    if (disabled) return;
+
     const analysis = analyzeClasses(
       code,
       exercise.requiredClasses
@@ -75,6 +78,7 @@ const VerifyButton = ({
 
   return (
     <button
+      disabled={disabled}
       className="max-w-[20rem] p-2 font-bold text-white bg-sky-600 rounded hover:bg-sky-700"
       onClick={handleVerify}
     >
