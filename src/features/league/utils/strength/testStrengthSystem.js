@@ -88,15 +88,15 @@ const TestStrengthSystem = () => {
 
     const result = calculateMatchResult(
       PhantomViper,
-      TuskElephants,
+      StyleChameleons,
     );
 
-    console.log("PhantomViper VS TUSK ELEPHANTS");
+    console.log("PhantomViper VS Style Chameleons");
     console.log(result);
 
     simulateMatches(
       PhantomViper,
-      TuskElephants,
+      StyleChameleons,
     );
   }, []);
 
