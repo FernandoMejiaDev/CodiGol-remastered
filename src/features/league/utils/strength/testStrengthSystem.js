@@ -1,5 +1,4 @@
 import { useEffect, useRef} from "react";
-
 import TuskElephants from "@/features/matches/data/teams/tusk_elephants";
 import JuggernautLeopard from "@/features/matches/data/teams/juggernaut_leopard";
 import CodeSharks from "@/features/matches/data/teams/code_sharks";
