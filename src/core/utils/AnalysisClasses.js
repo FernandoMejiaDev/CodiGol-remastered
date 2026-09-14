@@ -70,6 +70,6 @@ export const analyzeClasses = (userInput, requiredClasses) => {
   // Result
   result.isCorrect = result.missing.length === 0;
 
-  //console.log(result);
+  // console.log(result);
   return result;
 };
