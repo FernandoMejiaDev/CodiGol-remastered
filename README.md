@@ -430,7 +430,6 @@ Por ejemplo, un equipo con una mayor capacidad ofensiva puede tener una mayor pr
 
 <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Vector_DragonsData.webp" alt="Vector_DragonsData" /> 
 
-
 ## Resultado de la mejora
 
 El cambio permite que la clasificación de la **Full Stack League** se genere de forma más dinámica y escalable.
