@@ -366,7 +366,7 @@ Galería de escudos de los equipos de la Full Stack League.
 
 Uno de los cambios más importantes de la remasterización fue replantear la forma en que se determinan los resultados de los partidos que el jugador no disputa directamente.
 
-# #### Documentación del sistema de fuerza
+# Documentación del sistema de fuerza
 
 La simulación de los partidos utiliza un sistema de fuerza basado en las características de cada equipo: **Strength**, **Attack** y **Defense**.
 
@@ -374,7 +374,7 @@ El cálculo completo, incluyendo la transformación de estos valores en probabil
 
 Para consultar el desarrollo paso a paso del sistema y las fórmulas utilizadas, puedes revisar la documentación técnica:
 
-*[![Ver documentación del sistema de fuerza →](()*
+*[![Ver documentación del sistema de fuerza →]()*
 
 ## Partidos de Wind Jaguars
 
