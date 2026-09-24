@@ -63,8 +63,6 @@ El flujo comienza en la pantalla principal, donde el usuario puede acceder al si
 ### Protección de rutas
 <p align="center"> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/Image_readme_Home_N4.webp"alt="Protección de rutas con Clerk" /> <br/> <em>Las rutas que requieren autenticación verifican si existe una sesión activa. Si un usuario intenta acceder directamente a una ruta protegida sin haber iniciado sesión, es redirigido a la pantalla principal para iniciar el proceso de autenticación.</em> </p>
 
-
-
 ## *Mención Especial en la Final de la Hackathon de Midudev* 
 
 Durante la transmisión final de la Hackathon organizada por *[Midudev](https://www.twitch.tv/videos/2465451345)* y *[Clerk](https://clerk.com/docs)*, ¡**CódiGol** fue destacado como uno de los proyectos más originales!
@@ -169,7 +167,6 @@ Durante el partido sí es posible equivocarse. Cada ejercicio cuenta con un máx
 Cuando la primera respuesta es incorrecta, la jugada no termina inmediatamente. La situación se representa dentro de la narrativa del partido: el balón puede ser detenido, rebotar en el poste o permanecer en juego, dando al jugador una última oportunidad para completar correctamente la jugada.
 
 Si el segundo intento también falla, la oportunidad se pierde y el partido continúa con la siguiente jugada.
-
 
 <p align="center"> <br/> <img src="https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/assets/img/img_readme_bench_scene_new.webp" alt="img_readme_bench_scene" /> <br/> <em>El entrenador explica la estrategia y las oportunidades disponibles antes del segundo tiempo.</em> </p> 
 
@@ -368,6 +365,16 @@ Galería de escudos de los equipos de la Full Stack League.
  La **Full Stack League** está formada por **16 equipos**. Cada equipo puede enfrentarse al resto de la competición en una temporada de ida y vuelta, dando lugar a un calendario de hasta 30 jornadas.
 
 Uno de los cambios más importantes de la remasterización fue replantear la forma en que se determinan los resultados de los partidos que el jugador no disputa directamente.
+
+# #### Documentación del sistema de fuerza
+
+La simulación de los partidos utiliza un sistema de fuerza basado en las características de cada equipo: **Strength**, **Attack** y **Defense**.
+
+El cálculo completo, incluyendo la transformación de estos valores en probabilidades y el proceso utilizado para determinar el resultado de cada encuentro, está documentado por separado.
+
+Para consultar el desarrollo paso a paso del sistema y las fórmulas utilizadas, puedes revisar la documentación técnica:
+
+*[![Ver documentación del sistema de fuerza →](()*
 
 ## Partidos de Wind Jaguars
 
