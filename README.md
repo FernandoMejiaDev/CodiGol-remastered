@@ -374,7 +374,7 @@ El cálculo completo, incluyendo la transformación de estos valores en probabil
 
 Para consultar el desarrollo paso a paso del sistema y las fórmulas utilizadas, puedes revisar la documentación técnica:
 
-*[![Ver documentación del sistema de fuerza →]()*
+*[Ver documentación del sistema de fuerza](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/note.md)*
 
 ## Partidos de Wind Jaguars
 
