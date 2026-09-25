@@ -1,6 +1,30 @@
-Force system notation
+# ### Sistema de fuerzas
 
-To simulate the results of the other matches from the 1st to 3rd round, a force system will be created, with a file containing formula annotations and sequences.
+Para simular los resultados de los partidos que no disputan directamente los **Wind Jaguars**, se desarrolló un **sistema de fuerzas** encargado de generar los encuentros de las demás jornadas y añadir sus resultados a la clasificación de la liga.
+
+En **CódiGol (versión original)**, estos resultados estaban definidos de manera predeterminada. Esto significaba que los marcadores de los demás equipos debían establecerse previamente dentro de los datos del proyecto. Aunque este enfoque era suficiente para una demo pequeña, no resultaba práctico a medida que aumentaba la cantidad de jornadas y enfrentamientos.
+
+La remasterización reemplaza este sistema predeterminado por una **simulación dinámica**, lo que permite generar los resultados automáticamente sin tener que definir manualmente cada combinación de partidos.
+
+Este cambio también mejora la escalabilidad del sistema. La **Full Stack League** está formada por 16 equipos y, en una temporada de ida y vuelta, puede llegar a tener hasta 30 jornadas. Definir manualmente los resultados de cada enfrentamiento implicaría crear y mantener una gran cantidad de combinaciones entre equipos, haciendo que los datos fueran cada vez más difíciles de gestionar.
+
+En su lugar, cada equipo dispone de un archivo dentro de:
+
+`src/features/matches/data/teams`
+
+En estos archivos se encuentran, entre otros datos, tres propiedades utilizadas por el sistema de fuerzas:
+
+- **Strength:** representa la fuerza general del equipo.
+- **Attack:** representa su capacidad ofensiva.
+- **Defense:** representa su capacidad defensiva.
+
+A partir de estos tres valores se realizan los cálculos necesarios para determinar las probabilidades de los posibles resultados de un encuentro.
+
+El sistema está diseñado para que las características de los equipos influyan en el resultado sin convertirlas en un resultado determinista. Es decir, un equipo con mejores valores puede tener una mayor probabilidad de ganar, pero **no tiene garantizada la victoria**. También existe la posibilidad de que pierda o empate.
+
+De esta manera, los partidos simulados mantienen una cierta variabilidad y la clasificación puede cambiar entre jornadas, mientras que las características de cada equipo siguen teniendo un impacto real sobre sus probabilidades de obtener un resultado favorable.
+
+El objetivo no es simplemente asignar un ganador según cuál equipo tenga los valores más altos, sino utilizar esos datos como base para **simular un encuentro con resultados variables**, evitando que los partidos secundarios de la liga sean completamente predecibles.
 
 calculate Match Result File
 
