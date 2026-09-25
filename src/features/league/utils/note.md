@@ -1,4 +1,4 @@
-# ### Sistema de fuerzas
+# Sistema de fuerzas
 
 Para simular los resultados de los partidos que no disputan directamente los **Wind Jaguars**, se desarrolló un **sistema de fuerzas** encargado de generar los encuentros de las demás jornadas y añadir sus resultados a la clasificación de la liga.
 
