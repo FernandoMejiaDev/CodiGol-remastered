@@ -57,6 +57,22 @@ Equipo local                         Equipo visitante
                     Marcador
   ```
 
+Las funciones que participan en este proceso se encuentran dentro de:
+`src/features/matches/utils/strength/`
+
+Cada archivo tiene una responsabilidad concreta:
+
+- **calculatePossessionChance.js:** calcula la probabilidad de posesión de cada equipo.
+- **calculateScoringChance.js:** calcula la probabilidad de que un equipo genere una ocasión de gol.
+- **calculateDefenseChance.js:** calcula la probabilidad de que la defensa detenga una ocasión.
+- **calculateGoalkeeperChance.js:** calcula la probabilidad de que el portero detenga el disparo.
+- **calculateGoalChance.js:** determina la posibilidad final de que la ocasión termine en gol después de superar los filtros anteriores.
+- **calculateMatchResult.js:** coordina los cálculos anteriores para simular el desarrollo del partido.
+- **rollChance.js:** convierte una probabilidad numérica en un resultado aleatorio de éxito o fracaso.
+- **simulateLeagueRound.js:** toma los partidos de una jornada y simula únicamente aquellos que no corresponden al encuentro que disputa el jugador.
+- **testStrengthSystem.js:** permite ejecutar simulaciones desde consola para comprobar el comportamiento del sistema, incluyendo pruebas repetidas de un mismo encuentro.
+- **BuildMacthResult.jsx:** construye los resultados que serán utilizados por la interfaz del partido.
+- **calculateTable.jsx:** utiliza los resultados de los encuentros para calcular la clasificación de la liga.
 
 calculate Match Result File
 
