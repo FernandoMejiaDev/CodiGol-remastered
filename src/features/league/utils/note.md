@@ -26,6 +26,38 @@ De esta manera, los partidos simulados mantienen una cierta variabilidad y la cl
 
 El objetivo no es simplemente asignar un ganador según cuál equipo tenga los valores más altos, sino utilizar esos datos como base para **simular un encuentro con resultados variables**, evitando que los partidos secundarios de la liga sean completamente predecibles.
 
+## Funcionamiento del sistema de fuerzas
+
+El sistema de fuerzas está dividido en varias funciones independientes, cada una encargada de una parte específica de la simulación. En lugar de concentrar toda la lógica en una única función, el proceso se divide en diferentes etapas que se conectan entre sí.
+
+Esta separación permite modificar, probar o ampliar una parte del sistema sin tener que intervenir directamente en toda la lógica de simulación.
+
+La secuencia principal del sistema es la siguiente:
+
+  ```
+Equipo local                         Equipo visitante
+     │                                      │
+     └──── Strength / Attack / Defense ────┘
+                       ↓
+         calculatePossessionChance
+                       ↓
+              Número de ocasiones
+                       ↓
+           calculateScoringChance
+                       ↓
+              Filtros de ocasión
+              ┌─────────────────┐
+              │ Defense         │
+              │ Goalkeeper      │
+              │ Completion      │
+              └─────────────────┘
+                       ↓
+             calculateMatchResult
+                       ↓
+                    Marcador
+  ```
+
+
 calculate Match Result File
 
 This file is responsible for simulating the match.
