@@ -58,7 +58,7 @@ Equipo local                         Equipo visitante
   ```
 
 Las funciones que participan en este proceso se encuentran dentro de:
-`src/features/matches/utils/strength/`
+`src/features/league/utils/strength/`
 
 Cada archivo tiene una responsabilidad concreta:
 
