@@ -62,7 +62,7 @@ Las funciones que participan en este proceso se encuentran dentro de:
 
   ```
 src/
-├── features/
+└── features/
      ├── Final/              
      │   └── pages/
      │       └── FinalScene.jsx 
