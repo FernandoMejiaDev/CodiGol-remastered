@@ -60,6 +60,46 @@ Equipo local                         Equipo visitante
 Las funciones que participan en este proceso se encuentran dentro de:
 `src/features/league/utils/strength/`
 
+  ```
+src/
+├── features/
+     ├── Final/              
+     │   └── pages/
+     │       └── FinalScene.jsx 
+     ├── auth/              
+     │   ├── components/
+     │   │   └── ProtectedRoute.jsx
+     │   └── services/
+     │       └── clerkSession.js
+     │ 
+     ├── home/              
+     │   └── pages/
+     │       ├── Home.jsx 
+     │       └── Prove.jsx
+     │ 
+     └── league/              
+         ├── data/
+         │   ├── fixtures.js
+         │   ├── leagueData.jsx 
+         │   └── matchResults.js 
+         ├── pages/
+         │   └── LeagueTable.jsx
+         └── utils/
+             ├── strength/
+             │   ├── calculateDefenseChance.js
+             │   ├── calculateGoalChance.js
+             │   ├── calculateGoalkeeperChance.js
+             │   ├── calculateMatchResult.js
+             │   ├── calculatePossessionChance.js
+             │   ├── calculateScoringChance.js
+             │   ├── rollChance.js
+             │   ├── simulateLeagueRound.js
+             │   └── testStrengthSystem.js
+             ├── BuildMacthResult.jsx
+             ├── calculateTable.jsx
+             └── note.md 
+  ```
+
 Cada archivo tiene una responsabilidad concreta:
 
 - **calculatePossessionChance.js:** calcula la probabilidad de posesión de cada equipo.
