@@ -114,10 +114,11 @@ Cada archivo tiene una responsabilidad concreta:
 - **BuildMacthResult.jsx:** construye los resultados que serán utilizados por la interfaz del partido.
 - **calculateTable.jsx:** utiliza los resultados de los encuentros para calcular la clasificación de la liga.
 
-calculate Match Result File
+## 1. Cálculo de la posesión
 
-This file is responsible for simulating the match.
-All matches have a total base of 20 chances which is divided between the possession of each one, corresponding to the percentage, the amount is assigned to each one
+El primer paso de la simulación consiste en determinar cómo se distribuye la posesión entre ambos equipos.
+
+Para realizar este cálculo, cada equipo utiliza sus valores de Attack y Defense. En el caso del equipo local, se compara su capacidad ofensiva con la defensa del rival:
 
 --
 The equations are done between the home and visiting teams, explaining the formulas in the home team but they are the same for the visiting team, only reversing the parameters of the formulas.
