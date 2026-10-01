@@ -120,6 +120,16 @@ El primer paso de la simulación consiste en determinar cómo se distribuye la p
 
 Para realizar este cálculo, cada equipo utiliza sus valores de Attack y Defense. En el caso del equipo local, se compara su capacidad ofensiva con la defensa del rival:
 
+  ```
+localTeam.attack / (localTeam.attack + visitorTeam.defense)
+  ```
+
+Para el equipo visitante se realiza el cálculo inverso:
+
+  ```
+visitorTeam.attack / (visitorTeam.attack + localTeam.defense)
+  ```
+
 --
 The equations are done between the home and visiting teams, explaining the formulas in the home team but they are the same for the visiting team, only reversing the parameters of the formulas.
 
