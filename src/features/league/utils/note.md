@@ -116,6 +116,14 @@ Para el equipo visitante se realiza el cálculo inverso:
 visitorTeam.attack / (visitorTeam.attack + localTeam.defense)
   ```
 
+El resultado representa la proporción de posesión que tendrá cada equipo durante el encuentro.
+
+A partir de esta proporción se establece una cantidad predeterminada de **20 ocasiones de juego** que serán distribuidas entre ambos equipos según la posesión calculada.
+
+Por ejemplo, una distribución aproximada podría resultar en **12 ocasiones para un equipo y 8 para el otro**. Esto representa que uno de los equipos tuvo un mayor dominio del encuentro, pero tener más posesión no garantiza ganar el partido.
+
+La posesión únicamente determina cómo se distribuyen las oportunidades de generar jugadas. El resultado final dependerá de las siguientes etapas de la simulación.
+
 --
 The equations are done between the home and visiting teams, explaining the formulas in the home team but they are the same for the visiting team, only reversing the parameters of the formulas.
 
