@@ -62,21 +62,7 @@ Las funciones que participan en este proceso se encuentran dentro de:
 
   ```
 src/
-└── features/
-     ├── Final/              
-     │   └── pages/
-     │       └── FinalScene.jsx 
-     ├── auth/              
-     │   ├── components/
-     │   │   └── ProtectedRoute.jsx
-     │   └── services/
-     │       └── clerkSession.js
-     │ 
-     ├── home/              
-     │   └── pages/
-     │       ├── Home.jsx 
-     │       └── Prove.jsx
-     │ 
+└── features/             
      └── league/              
          ├── data/
          │   ├── fixtures.js
