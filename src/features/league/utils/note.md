@@ -126,7 +126,7 @@ La posesión únicamente determina cómo se distribuyen las oportunidades de gen
 
 ## Cálculo de la probabilidad de generar una ocasión
 
-Una vez distribuido el número de ocasiones, el sistema calcula qué tan probable es que cada una de ellas se convierta en una ocasión de gol.
+Una vez distribuido el número de ocasiones, el sistema calcula qué tan probable es que cada una de ellas se convierta en una **ocasión de gol**.
 
 Para ello se utilizan nuevamente las características de ambos equipos. En el caso del equipo local, se combinan su capacidad ofensiva y su fuerza general con la capacidad defensiva y la fuerza del rival.
 
@@ -146,7 +146,7 @@ De esta manera, un equipo con mejores características ofensivas tiene una mayor
 
 El cálculo se realiza de forma equivalente para el equipo visitante, invirtiendo los parámetros correspondientes.
 
-Es importante distinguir esta probabilidad de una probabilidad de gol. Generar una ocasión no significa marcar automáticamente. Si todas las ocasiones pudieran convertirse directamente en goles según este porcentaje, los resultados serían demasiado elevados para representar un partido de fútbol de forma razonable.
+Es importante distinguir esta probabilidad de una probabilidad de gol. **Generar una ocasión no significa marcar automáticamente**. Si todas las ocasiones pudieran convertirse directamente en goles según este porcentaje, los resultados serían demasiado elevados para representar un partido de fútbol de forma razonable.
 
 Por esta razón, el sistema incorpora varias etapas adicionales que actúan como filtros.
 
