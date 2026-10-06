@@ -134,11 +134,13 @@ Para ello se utilizan nuevamente las características de ambos equipos. En el ca
 Conceptualmente, el cálculo compara:
 
   ```
+localTeam.attack × localTeam.Strength
   ```
 
 frente a:
 
   ```
+visitorTeam.defense × visitorTeam.Strength
   ```
 
 calculate Scoring Chance File
