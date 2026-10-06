@@ -124,7 +124,8 @@ Por ejemplo, una distribución aproximada podría resultar en **12 ocasiones par
 
 La posesión únicamente determina cómo se distribuyen las oportunidades de generar jugadas. El resultado final dependerá de las siguientes etapas de la simulación.
 
---
+---
+
 ## Cálculo de la probabilidad de generar una ocasión
 
 Una vez distribuido el número de ocasiones, el sistema calcula qué tan probable es que cada una de ellas se convierta en una ocasión de gol.
