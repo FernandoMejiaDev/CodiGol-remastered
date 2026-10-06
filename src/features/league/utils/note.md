@@ -125,16 +125,21 @@ Por ejemplo, una distribución aproximada podría resultar en **12 ocasiones par
 La posesión únicamente determina cómo se distribuyen las oportunidades de generar jugadas. El resultado final dependerá de las siguientes etapas de la simulación.
 
 --
-The equations are done between the home and visiting teams, explaining the formulas in the home team but they are the same for the visiting team, only reversing the parameters of the formulas.
+## Cálculo de la probabilidad de generar una ocasión
 
-calculate Possession Chance file
+Una vez distribuido el número de ocasiones, el sistema calcula qué tan probable es que cada una de ellas se convierta en una ocasión de gol.
 
-To calculate possession, each team has 3 properties of type number (strength, attack and defense)
-To calculate, we divide the local attack by the sum of the local attack and the visiting defense.
-localTeam.attack / (localTeam.attack + visitorTeam.defense)
-And the opposite for the visiting team.
-visitorTeam.attack / (visitorTeam.attack + localTeam.defense)
-The result will give us the percentage of possession for each team
+Para ello se utilizan nuevamente las características de ambos equipos. En el caso del equipo local, se combinan su capacidad ofensiva y su fuerza general con la capacidad defensiva y la fuerza del rival.
+
+Conceptualmente, el cálculo compara:
+
+  ```
+  ```
+
+frente a:
+
+  ```
+  ```
 
 calculate Scoring Chance File
 
