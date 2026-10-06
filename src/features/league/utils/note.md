@@ -143,6 +143,14 @@ frente a:
 visitorTeam.defense × visitorTeam.Strength
   ```
 
+De esta manera, un equipo con mejores características ofensivas tiene una mayor probabilidad de generar ocasiones, mientras que las características defensivas del rival influyen en esa posibilidad.
+
+El cálculo se realiza de forma equivalente para el equipo visitante, invirtiendo los parámetros correspondientes.
+
+Es importante distinguir esta probabilidad de una probabilidad de gol. Generar una ocasión no significa marcar automáticamente. Si todas las ocasiones pudieran convertirse directamente en goles según este porcentaje, los resultados serían demasiado elevados para representar un partido de fútbol de forma razonable.
+
+Por esta razón, el sistema incorpora varias etapas adicionales que actúan como filtros.
+
 calculate Scoring Chance File
 
 The probability of scoring refers to the likelihood that the team will create scoring opportunities.
