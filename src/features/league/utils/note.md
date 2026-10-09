@@ -124,7 +124,7 @@ Por ejemplo, una distribución aproximada podría resultar en **12 ocasiones par
 
 La posesión únicamente determina cómo se distribuyen las oportunidades de generar jugadas. El resultado final dependerá de las siguientes etapas de la simulación.
 
-## Cálculo de la probabilidad de generar una ocasión
+## 2. Cálculo de la probabilidad de generar una ocasión
 
 Una vez distribuido el número de ocasiones, el sistema calcula qué tan probable es que cada una de ellas se convierta en una **ocasión de gol**.
 
@@ -150,16 +150,25 @@ Es importante distinguir esta probabilidad de una probabilidad de gol. **Generar
 
 Por esta razón, el sistema incorpora varias etapas adicionales que actúan como filtros.
 
-calculate Scoring Chance File
+## 3. Filtros de las ocasiones
 
-The probability of scoring refers to the likelihood that the team will create scoring opportunities.
+Después de determinar la probabilidad de generar una ocasión, cada jugada pasa por diferentes filtros antes de poder convertirse en gol.
 
-The formula is (local attack * local strength) divided by (local attack * local strength) and the sum of (visiting defense * visiting strength)
+Estos filtros representan de forma simplificada algunos de los obstáculos que existen entre generar una ocasión y conseguir una anotación.
 
-Formula:
-localTeam.attack * localTeam.Strength / (localTeam.attack * localTeam.Strength) + (localTeam.defense X visitorTeam.strength)
+  ```
+Ocasión generada
+       ↓
+¿La defensa permite continuar la jugada?
+       ↓
+¿El portero consigue detener el disparo?
+       ↓
+¿La ocasión termina en gol?
+       ↓
+Gol / No gol
+  ```
 
-Reverse formula for the visiting team
+El sistema utiliza tres cálculos principales en esta etapa:
 
 filters of the occasion
 
