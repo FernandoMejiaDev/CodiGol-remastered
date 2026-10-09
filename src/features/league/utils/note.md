@@ -174,6 +174,7 @@ filters of the occasion
 
 Possession filters are used because possession and scoring probability do not guarantee a goal, but rather the probability of scoring. The scoring probability involves calculating the probability of the defense stopping the ball, the probability of the goalkeeper making a save (the defense property is used to refer to the goalkeeper as well), and the scoring probability itself.
 
+  ```
 strength, attack and defense
           ↓
 calculatePossessionChance
@@ -191,6 +192,7 @@ calculateScoringChance
 calculateMatchResult
           ↓
        marker
+  ```
 
 Therefore, an initial scoring opportunity would have a cumulative probability of approximately 10-15%. That is, roughly 1 out of every 10 initial scoring opportunities would result in a goal if these three probabilities were applied, thus avoiding potentially high-scoring matches and ensuring that individual team statistics have a significant impact.
 
