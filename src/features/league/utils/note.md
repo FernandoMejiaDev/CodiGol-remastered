@@ -10,7 +10,8 @@ Este cambio también mejora la escalabilidad del sistema. La **Full Stack League
 
 En su lugar, cada equipo dispone de un archivo dentro de:
 
-`src/features/matches/data/teams`
+*[src/features/matches/data/teams](https://github.com/FernandoMejiaDev/CodiGol-remastered/tree/main/src/features/matches/data/teams)*
+
 
 En estos archivos se encuentran, entre otros datos, tres propiedades utilizadas por el sistema de fuerzas:
 
