@@ -170,6 +170,26 @@ Gol / No gol
 
 El sistema utiliza tres cálculos principales en esta etapa:
 
+### Defensa
+
+calculateDefenseChance.js determina la probabilidad de que la defensa consiga detener o impedir que una ocasión continúe.
+
+### Portero
+
+calculateGoalkeeperChance.js determina la probabilidad de que el portero consiga realizar una parada. En esta parte se utiliza la propiedad Defense del equipo como representación simplificada de la capacidad defensiva asociada al portero.
+
+### Finalización
+
+calculateGoalChance.js determina la posibilidad final de que la ocasión termine en gol después de superar los filtros anteriores.
+
+Estos filtros no pretenden representar cada posible resultado de una jugada de fútbol. Por ejemplo, una ocasión puede terminar en un disparo desviado, un tiro al poste o una acción que simplemente no termina en gol. Incorporar cada uno de esos resultados como una categoría independiente requeriría añadir más variables y reglas al sistema.
+
+En su lugar, el sistema utiliza estos filtros como una simplificación de la secuencia ofensiva: una ocasión debe superar varias probabilidades antes de convertirse en una anotación.
+
+Como consecuencia, la probabilidad acumulada de marcar disminuye considerablemente respecto a la probabilidad inicial de generar una ocasión. Esto evita que una gran cantidad de ocasiones se convierta automáticamente en goles.
+
+El resultado es una distribución de marcadores más adecuada para un partido de fútbol, donde pueden aparecer resultados como 1-0, 2-0, 2-1 o 2-2, pero también existe la posibilidad de obtener un partido muy cerrado o una goleada dependiendo de las características y de la variación aleatoria de la simulación.
+
 filters of the occasion
 
 Possession filters are used because possession and scoring probability do not guarantee a goal, but rather the probability of scoring. The scoring probability involves calculating the probability of the defense stopping the ball, the probability of the goalkeeper making a save (the defense property is used to refer to the goalkeeper as well), and the scoring probability itself.
