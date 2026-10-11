@@ -181,7 +181,7 @@ El sistema utiliza tres cálculos principales en esta etapa:
 
 ### Finalización
 
-calculateGoalChance.js determina la posibilidad final de que la ocasión termine en gol después de superar los filtros anteriores.
+*[calculateGoalChance.js](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/strength/calculateGoalChance.js)* determina la posibilidad final de que la ocasión termine en gol después de superar los filtros anteriores.
 
 Estos filtros no pretenden representar cada posible resultado de una jugada de fútbol. Por ejemplo, una ocasión puede terminar en un disparo desviado, un tiro al poste o una acción que simplemente no termina en gol. Incorporar cada uno de esos resultados como una categoría independiente requeriría añadir más variables y reglas al sistema.
 
