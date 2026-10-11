@@ -59,7 +59,7 @@ Equipo local                         Equipo visitante
 
 Las funciones que participan en este proceso se encuentran dentro de:
 
-*[src/features/league/utils/strength/](https://github.com/FernandoMejiaDev/CodiGol-remastered/tree/main/src/features/league/utils/strength)*
+*[src/features/league/utils/strength](https://github.com/FernandoMejiaDev/CodiGol-remastered/tree/main/src/features/league/utils/strength)*
 
   ```
 src/
