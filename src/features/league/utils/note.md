@@ -12,7 +12,6 @@ En su lugar, cada equipo dispone de un archivo dentro de:
 
 *[src/features/matches/data/teams](https://github.com/FernandoMejiaDev/CodiGol-remastered/tree/main/src/features/matches/data/teams)*
 
-
 En estos archivos se encuentran, entre otros datos, tres propiedades utilizadas por el sistema de fuerzas:
 
 - **Strength:** representa la fuerza general del equipo.
@@ -59,7 +58,8 @@ Equipo local                         Equipo visitante
   ```
 
 Las funciones que participan en este proceso se encuentran dentro de:
-`src/features/league/utils/strength/`
+
+*[src/features/league/utils/strength/](https://github.com/FernandoMejiaDev/CodiGol-remastered/tree/main/src/features/league/utils/strength)*
 
   ```
 src/
