@@ -173,7 +173,7 @@ El sistema utiliza tres cálculos principales en esta etapa:
 
 ### Defensa
 
-calculateDefenseChance.js determina la probabilidad de que la defensa consiga detener o impedir que una ocasión continúe.
+*[calculateDefenseChance.js](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/strength/calculateDefenseChance.js)* determina la probabilidad de que la defensa consiga detener o impedir que una ocasión continúe.
 
 ### Portero
 
