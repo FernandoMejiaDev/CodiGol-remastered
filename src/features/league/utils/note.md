@@ -177,7 +177,7 @@ El sistema utiliza tres cálculos principales en esta etapa:
 
 ### Portero
 
-calculateGoalkeeperChance.js determina la probabilidad de que el portero consiga realizar una parada. En esta parte se utiliza la propiedad Defense del equipo como representación simplificada de la capacidad defensiva asociada al portero.
+*[calculateGoalkeeperChance.js](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/strength/calculateGoalkeeperChance.js)* determina la probabilidad de que el portero consiga realizar una parada. En esta parte se utiliza la propiedad Defense del equipo como representación simplificada de la capacidad defensiva asociada al portero.
 
 ### Finalización
 
