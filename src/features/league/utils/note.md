@@ -177,7 +177,7 @@ El sistema utiliza tres cálculos principales en esta etapa:
 
 ### Portero
 
-*[calculateGoalkeeperChance.js](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/strength/calculateGoalkeeperChance.js)* determina la probabilidad de que el portero consiga realizar una parada. En esta parte se utiliza la propiedad Defense del equipo como representación simplificada de la capacidad defensiva asociada al portero.
+*[calculateGoalkeeperChance.js](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/strength/calculateGoalkeeperChance.js)* determina la probabilidad de que el portero consiga realizar una parada. En esta parte se utiliza la propiedad **Defense** del equipo como representación simplificada de la capacidad defensiva asociada al portero.
 
 ### Finalización
 
@@ -185,11 +185,11 @@ El sistema utiliza tres cálculos principales en esta etapa:
 
 Estos filtros no pretenden representar cada posible resultado de una jugada de fútbol. Por ejemplo, una ocasión puede terminar en un disparo desviado, un tiro al poste o una acción que simplemente no termina en gol. Incorporar cada uno de esos resultados como una categoría independiente requeriría añadir más variables y reglas al sistema.
 
-En su lugar, el sistema utiliza estos filtros como una simplificación de la secuencia ofensiva: una ocasión debe superar varias probabilidades antes de convertirse en una anotación.
+En su lugar, el sistema utiliza estos filtros como una **simplificación de la secuencia ofensiva:** una ocasión debe superar varias probabilidades antes de convertirse en una anotación.
 
 Como consecuencia, la probabilidad acumulada de marcar disminuye considerablemente respecto a la probabilidad inicial de generar una ocasión. Esto evita que una gran cantidad de ocasiones se convierta automáticamente en goles.
 
-El resultado es una distribución de marcadores más adecuada para un partido de fútbol, donde pueden aparecer resultados como 1-0, 2-0, 2-1 o 2-2, pero también existe la posibilidad de obtener un partido muy cerrado o una goleada dependiendo de las características y de la variación aleatoria de la simulación.
+El resultado es una distribución de marcadores más adecuada para un partido de fútbol, donde pueden aparecer resultados como **1-0, 2-0, 2-1 o 2-2**, pero también existe la posibilidad de obtener un partido muy cerrado o una goleada dependiendo de las características y de la variación aleatoria de la simulación.
 
 filters of the occasion
 
