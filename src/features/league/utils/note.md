@@ -191,34 +191,6 @@ Como consecuencia, la probabilidad acumulada de marcar disminuye considerablemen
 
 El resultado es una distribución de marcadores más adecuada para un partido de fútbol, donde pueden aparecer resultados como **1-0, 2-0, 2-1 o 2-2**, pero también existe la posibilidad de obtener un partido muy cerrado o una goleada dependiendo de las características y de la variación aleatoria de la simulación.
 
-filters of the occasion
-
-Possession filters are used because possession and scoring probability do not guarantee a goal, but rather the probability of scoring. The scoring probability involves calculating the probability of the defense stopping the ball, the probability of the goalkeeper making a save (the defense property is used to refer to the goalkeeper as well), and the scoring probability itself.
-
-  ```
-strength, attack and defense
-          ↓
-calculatePossessionChance
-          ↓
-number of occasions
-          ↓
-calculateScoringChance
-          ↓
- ┌───────────────────────┐
- │ Filter 1: defense     │
- │ Filter 2: goalkeeper  │
- │ Filter 3: completion  │
- └───────────────────────┘
-          ↓
-calculateMatchResult
-          ↓
-       marker
-  ```
-
-Therefore, an initial scoring opportunity would have a cumulative probability of approximately 10-15%. That is, roughly 1 out of every 10 initial scoring opportunities would result in a goal if these three probabilities were applied, thus avoiding potentially high-scoring matches and ensuring that individual team statistics have a significant impact.
-
-The filter is to prevent matches of teams that are played in the background from ending with a 50% probability of scoring goals; by passing through filters, their accumulated percentage decreases, resulting in more realistic matches.
-
 calculate Defense Chance File
 
 The first filter is with the defense, where to know the result the local attack is divided between the local attack + the visiting defense
