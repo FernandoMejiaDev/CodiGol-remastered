@@ -191,7 +191,7 @@ Como consecuencia, la probabilidad acumulada de marcar disminuye considerablemen
 
 El resultado es una distribución de marcadores más adecuada para un partido de fútbol, donde pueden aparecer resultados como **1-0, 2-0, 2-1 o 2-2**, pero también existe la posibilidad de obtener un partido muy cerrado o una goleada dependiendo de las características y de la variación aleatoria de la simulación.
 
-4. Simulación del resultado
+## 4. Simulación del resultado
 
 Una vez procesadas las ocasiones y determinados los goles de cada equipo, calculateMatchResult.js reúne los resultados obtenidos y construye el marcador final del encuentro.
 
