@@ -193,7 +193,7 @@ El resultado es una distribución de marcadores más adecuada para un partido de
 
 ## 4. Simulación del resultado
 
-Una vez procesadas las ocasiones y determinados los goles de cada equipo, calculateMatchResult.js reúne los resultados obtenidos y construye el marcador final del encuentro.
+Una vez procesadas las ocasiones y determinados los goles de cada equipo, *[calculateMatchResult.js](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/strength/calculateMatchResult.js)* reúne los resultados obtenidos y construye el marcador final del encuentro.
 
 La simulación no selecciona directamente un marcador predeterminado. El resultado surge de la combinación de:
 
