@@ -214,6 +214,11 @@ Esta función recibe una probabilidad expresada entre 0 y 1 y la convierte en un
 
 De forma simplificada:
 
+  ```
+0 → resultado negativo
+1 → resultado positivo
+  ```
+
 calculate Defense Chance File
 
 The first filter is with the defense, where to know the result the local attack is divided between the local attack + the visiting defense
