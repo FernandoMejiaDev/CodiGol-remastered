@@ -206,6 +206,14 @@ La simulación no selecciona directamente un marcador predeterminado. El resulta
 
 De esta manera, las estadísticas de los equipos influyen en el resultado, pero no lo determinan completamente.
 
+## 5. Generación de resultados aleatorios
+
+Para resolver las diferentes probabilidades se utiliza rollChance.js.
+
+Esta función recibe una probabilidad expresada entre 0 y 1 y la convierte en un resultado de éxito o fracaso.
+
+De forma simplificada:
+
 calculate Defense Chance File
 
 The first filter is with the defense, where to know the result the local attack is divided between the local attack + the visiting defense
