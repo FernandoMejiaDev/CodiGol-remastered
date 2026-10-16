@@ -219,6 +219,10 @@ De forma simplificada:
 1 → resultado positivo
   ```
 
+Los valores intermedios representan diferentes probabilidades de que ocurra el resultado.
+
+Esta función es utilizada por las demás etapas que necesitan tomar una decisión aleatoria basada en una probabilidad calculada.
+
 calculate Defense Chance File
 
 The first filter is with the defense, where to know the result the local attack is divided between the local attack + the visiting defense
