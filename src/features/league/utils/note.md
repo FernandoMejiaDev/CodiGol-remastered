@@ -208,7 +208,7 @@ De esta manera, las estadísticas de los equipos influyen en el resultado, pero 
 
 ## 5. Generación de resultados aleatorios
 
-Para resolver las diferentes probabilidades se utiliza rollChance.js.
+Para resolver las diferentes probabilidades se utiliza *[rollChance.js](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/strength/rollChance.js)*.
 
 Esta función recibe una probabilidad expresada entre 0 y 1 y la convierte en un resultado de éxito o fracaso.
 
