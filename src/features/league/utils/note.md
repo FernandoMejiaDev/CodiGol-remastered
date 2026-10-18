@@ -223,6 +223,16 @@ Los valores intermedios representan diferentes probabilidades de que ocurra el r
 
 Esta función es utilizada por las demás etapas que necesitan tomar una decisión aleatoria basada en una probabilidad calculada.
 
+## 6. Simulación de la jornada
+
+Una vez definido el sistema capaz de simular un encuentro, simulateLeagueRound.js se encarga de utilizarlo para generar los resultados de una jornada completa.
+
+La función recibe los encuentros de la jornada y simula únicamente aquellos que **no corresponden al partido que está disputando el jugador.**
+
+De esta forma, mientras el partido de los **Wind Jaguars** depende directamente de las respuestas del jugador, los demás encuentros de la jornada pueden resolverse automáticamente utilizando el sistema de fuerzas.
+
+Sus resultados posteriormente se incorporan a la clasificación de la **Full Stack League.**
+
 calculate Defense Chance File
 
 The first filter is with the defense, where to know the result the local attack is divided between the local attack + the visiting defense
