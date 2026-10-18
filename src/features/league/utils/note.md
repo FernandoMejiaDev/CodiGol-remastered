@@ -225,7 +225,7 @@ Esta función es utilizada por las demás etapas que necesitan tomar una decisi�
 
 ## 6. Simulación de la jornada
 
-Una vez definido el sistema capaz de simular un encuentro, simulateLeagueRound.js se encarga de utilizarlo para generar los resultados de una jornada completa.
+Una vez definido el sistema capaz de simular un encuentro, *[simulateLeagueRound.js](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/strength/simulateLeagueRound.js)* se encarga de utilizarlo para generar los resultados de una jornada completa.
 
 La función recibe los encuentros de la jornada y simula únicamente aquellos que **no corresponden al partido que está disputando el jugador.**
 
