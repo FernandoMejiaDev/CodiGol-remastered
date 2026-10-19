@@ -235,7 +235,7 @@ Sus resultados posteriormente se incorporan a la clasificación de la **Full Sta
 
 ## 7. Pruebas del sistema
 
-Para comprobar que el sistema se comporta de la manera esperada se utiliza testStrengthSystem.js.
+Para comprobar que el sistema se comporta de la manera esperada se utiliza *[testStrengthSystem.js](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/strength/testStrengthSystem.js)*
 
 Esta herramienta permite ejecutar las simulaciones directamente desde la consola y repetir un mismo enfrentamiento múltiples veces.
 
