@@ -233,6 +233,16 @@ De esta forma, mientras el partido de los **Wind Jaguars** depende directamente 
 
 Sus resultados posteriormente se incorporan a la clasificación de la **Full Stack League.**
 
+## 7. Pruebas del sistema
+
+Para comprobar que el sistema se comporta de la manera esperada se utiliza testStrengthSystem.js.
+
+Esta herramienta permite ejecutar las simulaciones directamente desde la consola y repetir un mismo enfrentamiento múltiples veces.
+
+Por ejemplo, un partido puede simularse 1,000 veces para observar cómo se distribuyen sus resultados y comprobar si las características de los equipos producen un comportamiento coherente.
+
+Esto permite probar el sistema sin tener que ejecutar manualmente toda la interfaz del juego y facilita la detección de comportamientos inesperados en las probabilidades.
+
 calculate Defense Chance File
 
 The first filter is with the defense, where to know the result the local attack is divided between the local attack + the visiting defense
