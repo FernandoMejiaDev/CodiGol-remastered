@@ -243,6 +243,14 @@ Por ejemplo, un partido puede simularse 1,000 veces para observar cómo se distr
 
 Esto permite probar el sistema sin tener que ejecutar manualmente toda la interfaz del juego y facilita la detección de comportamientos inesperados en las probabilidades.
 
+## 8. Construcción del resultado y clasificación
+
+Finalmente, BuildMacthResult.jsx se encarga de construir los datos necesarios para representar el resultado del encuentro dentro de la aplicación.
+
+A partir de los resultados generados, calculateTable.jsx calcula la posición de los equipos en la clasificación de la liga.
+
+De esta manera, el proceso completo conecta la simulación matemática con el funcionamiento de la competición:
+
 calculate Defense Chance File
 
 The first filter is with the defense, where to know the result the local attack is divided between the local attack + the visiting defense
