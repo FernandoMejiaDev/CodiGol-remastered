@@ -263,6 +263,8 @@ Resultados de la jornada
 Clasificación de la liga
   ```
 
+El sistema de fuerzas permite así que los partidos secundarios de la competición se generen dinámicamente, manteniendo una relación entre las características de los equipos y sus probabilidades de obtener determinados resultados, sin convertir la competición en una secuencia completamente predeterminada.
+
 calculate Defense Chance File
 
 The first filter is with the defense, where to know the result the local attack is divided between the local attack + the visiting defense
