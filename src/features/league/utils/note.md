@@ -247,7 +247,7 @@ Esto permite probar el sistema sin tener que ejecutar manualmente toda la interf
 
 Finalmente, *[BuildMatchResults.js](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/BuildMatchResults.js)* se encarga de construir los datos necesarios para representar el resultado del encuentro dentro de la aplicación.
 
-A partir de los resultados generados, calculateTable.jsx calcula la posición de los equipos en la clasificación de la liga.
+A partir de los resultados generados, *[calculateTable.js](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/calculateTable.js)* calcula la posición de los equipos en la clasificación de la liga.
 
 De esta manera, el proceso completo conecta la simulación matemática con el funcionamiento de la competición:
 
