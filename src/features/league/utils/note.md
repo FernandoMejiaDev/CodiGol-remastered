@@ -267,5 +267,3 @@ El sistema de fuerzas permite as√≠ que los partidos secundarios de la competici√
 
 ---
 
-
-localTeam.attack + localTeam.Strength / localTeam.attack + localTeam.Strength + visitorTeam.defense
