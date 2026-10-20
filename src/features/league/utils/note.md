@@ -265,21 +265,7 @@ Clasificación de la liga
 
 El sistema de fuerzas permite así que los partidos secundarios de la competición se generen dinámicamente, manteniendo una relación entre las características de los equipos y sus probabilidades de obtener determinados resultados, sin convertir la competición en una secuencia completamente predeterminada.
 
-calculate Defense Chance File
+---
 
-The first filter is with the defense, where to know the result the local attack is divided between the local attack + the visiting defense
-
-localTeam.attack / (localTeam.attack + visitorTeam.defense)
-
-calculate Goalkeeper Chance File
-
-Using the same defense data as defenders and goalkeeper instead of the goalkeeper being a separate property, the local attack is calculated as the result of the away defense plus the away team's strength.
-
-localTeam.attack / localTeam.attack + (visitorTeam.defense + visitorTeam.Strength)
-
-calculate Goal Chance File
-If he manages to get past the defense and the goalkeeper, there remains a chance for him to score.
-
-calculating the local attack + the local strength divided by the local strength + the local strength + the local defense
 
 localTeam.attack + localTeam.Strength / localTeam.attack + localTeam.Strength + visitorTeam.defense
