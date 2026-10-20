@@ -251,6 +251,18 @@ A partir de los resultados generados, calculateTable.jsx calcula la posición de
 
 De esta manera, el proceso completo conecta la simulación matemática con el funcionamiento de la competición:
 
+  ```
+Datos de los equipos
+        ↓
+Sistema de fuerzas
+        ↓
+Simulación de encuentros
+        ↓
+Resultados de la jornada
+        ↓
+Clasificación de la liga
+  ```
+
 calculate Defense Chance File
 
 The first filter is with the defense, where to know the result the local attack is divided between the local attack + the visiting defense
