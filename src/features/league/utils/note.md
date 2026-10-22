@@ -183,6 +183,10 @@ localTeam.attack / (localTeam.attack + visitorTeam.defense)
 
 *[calculateGoalkeeperChance.js](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/strength/calculateGoalkeeperChance.js)* determina la probabilidad de que el portero consiga realizar una parada. En esta parte se utiliza la propiedad **Defense** del equipo como representación simplificada de la capacidad defensiva asociada al portero.
 
+  ```
+localTeam.attack / localTeam.attack + (visitorTeam.defense + visitorTeam.Strength)
+  ```
+
 ### Finalización
 
 *[calculateGoalChance.js](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/strength/calculateGoalChance.js)* determina la posibilidad final de que la ocasión termine en gol después de superar los filtros anteriores.
