@@ -282,7 +282,7 @@ El sistema de fuerzas permite as√≠ que los partidos secundarios de la competici√
   
 # Phantom Viper vs. Tusk Elephants
 
-<details>
+</details>
 
 ---
 
