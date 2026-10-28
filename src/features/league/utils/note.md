@@ -282,6 +282,10 @@ El sistema de fuerzas permite así que los partidos secundarios de la competici�
   
 # Phantom Viper vs. Tusk Elephants
 
+Para comprender cómo funciona el sistema de fuerzas, se puede analizar un enfrentamiento entre Phantom Viper, como equipo local, y Tusk Elephants, como visitante.
+
+Este partido permite observar cómo las características de cada equipo influyen en la simulación. Phantom Viper cuenta con mejores valores de fuerza general y ataque, mientras que Tusk Elephants posee una defensa superior. Por lo tanto, el primero parte con ventajas ofensivas, pero el segundo tiene características que pueden dificultar sus oportunidades de anotar.
+
 </details>
 
 ---
