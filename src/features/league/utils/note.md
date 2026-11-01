@@ -89,7 +89,7 @@ src/
 
 Cada archivo tiene una responsabilidad concreta:
 
-- **calculatePossessionChance.js:** calcula la probabilidad de posesión de cada equipo.
+- **[calculatePossessionChance](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/strength/calculatePossessionChance.js)** calcula la probabilidad de posesión de cada equipo.
 - **calculateScoringChance.js:** calcula la probabilidad de que un equipo genere una ocasión de gol.
 - **calculateDefenseChance.js:** calcula la probabilidad de que la defensa detenga una ocasión.
 - **calculateGoalkeeperChance.js:** calcula la probabilidad de que el portero detenga el disparo.
