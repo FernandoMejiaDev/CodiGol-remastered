@@ -82,8 +82,8 @@ src/
              │   ├── rollChance.js
              │   ├── simulateLeagueRound.js
              │   └── testStrengthSystem.js
-             ├── BuildMacthResult.jsx
-             ├── calculateTable.jsx
+             ├── BuildMacthResult.js
+             ├── calculateTable.js
              └── note.md 
   ```
 
