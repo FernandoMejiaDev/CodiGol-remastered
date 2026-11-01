@@ -93,10 +93,10 @@ Cada archivo tiene una responsabilidad concreta:
 - **[calculateScoringChance](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/strength/calculateScoringChance.js)** calcula la probabilidad de que un equipo genere una ocasión de gol.
 - **[calculateDefenseChance](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/strength/calculateDefenseChance.js)** calcula la probabilidad de que la defensa detenga una ocasión.
 - **[calculateGoalkeeperChance](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/strength/calculateGoalkeeperChance.js)** calcula la probabilidad de que el portero detenga el disparo.
-- **calculateGoalChance.js:** determina la posibilidad final de que la ocasión termine en gol después de superar los filtros anteriores.
-- **calculateMatchResult.js:** coordina los cálculos anteriores para simular el desarrollo del partido.
-- **rollChance.js:** convierte una probabilidad numérica en un resultado aleatorio de éxito o fracaso.
-- **simulateLeagueRound.js:** toma los partidos de una jornada y simula únicamente aquellos que no corresponden al encuentro que disputa el jugador.
+- **[calculateGoalChance](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/strength/calculateGoalChance.js)** determina la posibilidad final de que la ocasión termine en gol después de superar los filtros anteriores.
+- **[calculateMatchResult](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/strength/calculateMatchResult.js)** coordina los cálculos anteriores para simular el desarrollo del partido.
+- **[rollChance](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/strength/rollChance.js)** convierte una probabilidad numérica en un resultado aleatorio de éxito o fracaso.
+- **[simulateLeagueRound](https://github.com/FernandoMejiaDev/CodiGol-remastered/blob/main/src/features/league/utils/strength/simulateLeagueRound.js)** toma los partidos de una jornada y simula únicamente aquellos que no corresponden al encuentro que disputa el jugador.
 - **testStrengthSystem.js:** permite ejecutar simulaciones desde consola para comprobar el comportamiento del sistema, incluyendo pruebas repetidas de un mismo encuentro.
 - **BuildMacthResult.jsx:** construye los resultados que serán utilizados por la interfaz del partido.
 - **calculateTable.jsx:** utiliza los resultados de los encuentros para calcular la clasificación de la liga.
