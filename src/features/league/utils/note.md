@@ -302,7 +302,7 @@ Este partido permite observar cómo las características de cada equipo influyen
 
 Estos valores son la base de los cálculos posteriores. El sistema no utiliza únicamente la fuerza general para determinar quién gana, sino que combina diferentes propiedades para evaluar la posesión, la generación de ocasiones y las posibilidades de convertirlas en goles.
 
-2. Cálculo de la posesión
+### 2. Cálculo de la posesión
 
 La primera etapa utiliza calculatePossessionChance.js para calcular la proporción de posesión de cada equipo.
 
