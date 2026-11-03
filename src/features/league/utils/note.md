@@ -309,7 +309,7 @@ La primera etapa utiliza calculatePossessionChance.js para calcular la proporci√
 Para Phantom Viper se compara su ataque con la defensa de Tusk Elephants:
 
   ```
-95 / 95+92 =0.50802139037 (0.5080)
+95 / 95+92 = 0.50802139037
   ```
 
 El resultado es aproximadamente 50.80 %.
