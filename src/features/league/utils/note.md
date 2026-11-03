@@ -322,6 +322,10 @@ Para Tusk Elephants se utiliza su ataque frente a la defensa de Phantom Viper:
 
 El resultado es aproximadamente 46.39%.
 
+Estos cálculos se realizan de forma independiente, por lo que sus porcentajes no necesariamente suman el 100%. La distribución definitiva de las ocasiones depende de cómo el sistema procese estos valores.
+
+En este ejemplo se consideran 20 ocasiones de juego: 11 para Phantom Viper y 9 para Tusk Elephants. Esto concede una ligera ventaja de volumen de juego al equipo local, pero todavía no determina cuántas ocasiones terminarán en gol.
+
 
 </details>
 
