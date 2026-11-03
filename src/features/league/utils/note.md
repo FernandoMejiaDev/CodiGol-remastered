@@ -312,8 +312,15 @@ Para Phantom Viper se compara su ataque con la defensa de Tusk Elephants:
 95 / 95+92 = 0.50802139037
   ```
 
-El resultado es aproximadamente 50.80 %.
+El resultado es aproximadamente 50.80%.
 
+Para Tusk Elephants se utiliza su ataque frente a la defensa de Phantom Viper:
+
+  ```
+77/77+89 = 0.46913580247
+  ```
+
+El resultado es aproximadamente 46.39%.
 
 
 </details>
