@@ -333,10 +333,18 @@ A continuación, calculateScoringChance.js calcula la probabilidad de que una oc
 Para Phantom Viper, la fórmula utiliza su ataque y fuerza general frente a la defensa y fuerza de Tusk Elephants:
 
   ```
-95X92 / (95X92) + (92X85) = 0.52777777778
+95X92 / (95X92) + (92X85) = 0.5277
   ```
 
-La probabilidad resultante es aproximadamente 52.78 %.
+La probabilidad resultante es aproximadamente 52.78%.
+
+Para Tusk Elephants:
+
+  ```
+77X85/ (77X85) + (89X92) = 0.4442
+  ```
+
+La probabilidad resultante es aproximadamente 44.42%.
 
 
 </details>
