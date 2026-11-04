@@ -326,6 +326,11 @@ Estos cálculos se realizan de forma independiente, por lo que sus porcentajes n
 
 En este ejemplo se consideran 20 ocasiones de juego: 11 para Phantom Viper y 9 para Tusk Elephants. Esto concede una ligera ventaja de volumen de juego al equipo local, pero todavía no determina cuántas ocasiones terminarán en gol.
 
+### 3. Probabilidad de generar ocasiones de gol
+
+A continuación, calculateScoringChance.js calcula la probabilidad de que una ocasión de juego se convierta en una oportunidad de gol.
+
+Para Phantom Viper, la fórmula utiliza su ataque y fuerza general frente a la defensa y fuerza de Tusk Elephants:
 
 </details>
 
