@@ -346,6 +346,9 @@ Para Tusk Elephants:
 
 La probabilidad resultante es aproximadamente 44.42%.
 
+En esta etapa, Phantom Viper obtiene una ventaja ofensiva debido a sus valores de ataque y fuerza general. Sin embargo, estas cifras representan la probabilidad de generar una ocasión, no la probabilidad definitiva de marcar un gol.
+
+Si cada ocasión generada terminara directamente en gol, los marcadores podrían resultar excesivamente elevados. Por eso, el sistema incorpora filtros adicionales.
 
 </details>
 
