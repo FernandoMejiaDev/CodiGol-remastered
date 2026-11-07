@@ -352,6 +352,10 @@ Si cada ocasión generada terminara directamente en gol, los marcadores podrían
 
 ### 4. Primer filtro: la defensa
 
+La función calculateDefenseChance.js determina la posibilidad de que la defensa detenga una ocasión antes de que avance hacia la siguiente etapa.
+
+Para el equipo local, la probabilidad de superar la defensa visitante se calcula así:
+
 </details>
 
 ---
