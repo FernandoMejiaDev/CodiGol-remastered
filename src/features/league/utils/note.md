@@ -350,6 +350,8 @@ En esta etapa, Phantom Viper obtiene una ventaja ofensiva debido a sus valores d
 
 Si cada ocasión generada terminara directamente en gol, los marcadores podrían resultar excesivamente elevados. Por eso, el sistema incorpora filtros adicionales.
 
+### 4. Primer filtro: la defensa
+
 </details>
 
 ---
