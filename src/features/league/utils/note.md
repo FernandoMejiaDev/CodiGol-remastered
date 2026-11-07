@@ -356,6 +356,12 @@ La función calculateDefenseChance.js determina la posibilidad de que la defensa
 
 Para el equipo local, la probabilidad de superar la defensa visitante se calcula así:
 
+  ```
+95/ 95+92 = 0.50802139037
+  ```
+
+El resultado es aproximadamente 50.80 %.
+
 </details>
 
 ---
